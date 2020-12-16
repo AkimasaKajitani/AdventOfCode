@@ -1,0 +1,550 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="66" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input1</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="2" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="1" />
+                <Field name="2" />
+                <Field name="3" />
+                <Field name="4" />
+                <Field name="5" />
+                <Field name="6" />
+                <Field name="7" />
+                <Field name="8" />
+                <Field name="9" />
+                <Field name="10" />
+                <Field name="11" />
+                <Field name="12" />
+                <Field name="13" />
+                <Field name="14" />
+                <Field name="15" />
+                <Field name="16" />
+                <Field name="17" />
+                <Field name="18" />
+                <Field name="19" />
+                <Field name="20" />
+                <Field name="21" />
+                <Field name="22" />
+                <Field name="23" />
+                <Field name="24" />
+                <Field name="25" />
+                <Field name="26" />
+                <Field name="27" />
+                <Field name="28" />
+                <Field name="29" />
+                <Field name="30" />
+                <Field name="31" />
+                <Field name="32" />
+                <Field name="33" />
+                <Field name="34" />
+                <Field name="35" />
+                <Field name="36" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0,1</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>1</c>
+                  <c>0,1</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>1</c>
+                  <c>0,1</c>
+                  <c>0</c>
+                  <c>0,1</c>
+                  <c>0,1</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="1" source="TextInput:" type="Byte" />
+            <Field name="2" source="TextInput:" type="Byte" />
+            <Field name="3" source="TextInput:" type="Byte" />
+            <Field name="4" source="TextInput:" type="Byte" />
+            <Field name="5" source="TextInput:" type="Byte" />
+            <Field name="6" source="TextInput:" type="Byte" />
+            <Field name="7" source="TextInput:" type="Byte" />
+            <Field name="8" source="TextInput:" type="Byte" />
+            <Field name="9" source="TextInput:" type="Byte" />
+            <Field name="10" source="TextInput:" type="Byte" />
+            <Field name="11" source="TextInput:" type="Byte" />
+            <Field name="12" source="TextInput:" type="Byte" />
+            <Field name="13" source="TextInput:" type="Byte" />
+            <Field name="14" source="TextInput:" type="Byte" />
+            <Field name="15" source="TextInput:" type="Byte" />
+            <Field name="16" source="TextInput:" type="Byte" />
+            <Field name="17" source="TextInput:" type="Byte" />
+            <Field name="18" source="TextInput:" type="Byte" />
+            <Field name="19" source="TextInput:" type="Byte" />
+            <Field name="20" source="TextInput:" type="Byte" />
+            <Field name="21" source="TextInput:" type="Byte" />
+            <Field name="22" source="TextInput:" type="Byte" />
+            <Field name="23" source="TextInput:" type="Byte" />
+            <Field name="24" source="TextInput:" type="Byte" />
+            <Field name="25" source="TextInput:" type="Byte" />
+            <Field name="26" source="TextInput:" type="Byte" />
+            <Field name="27" source="TextInput:" type="Byte" />
+            <Field name="28" source="TextInput:" type="Byte" />
+            <Field name="29" source="TextInput:" type="Byte" />
+            <Field name="30" source="TextInput:" type="Byte" />
+            <Field name="31" size="3" source="TextInput:" type="String" />
+            <Field name="32" source="TextInput:" type="Byte" />
+            <Field name="33" size="3" source="TextInput:" type="String" />
+            <Field name="34" source="TextInput:" type="Byte" />
+            <Field name="35" size="3" source="TextInput:" type="String" />
+            <Field name="36" size="3" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="1" selected="True" type="V_String" size="3" />
+            <SelectField field="2" selected="True" type="V_String" size="3" />
+            <SelectField field="3" selected="True" type="V_String" size="3" />
+            <SelectField field="4" selected="True" type="V_String" size="3" />
+            <SelectField field="5" selected="True" type="V_String" size="3" />
+            <SelectField field="6" selected="True" type="V_String" size="3" />
+            <SelectField field="7" selected="True" type="V_String" size="3" />
+            <SelectField field="8" selected="True" type="V_String" size="3" />
+            <SelectField field="9" selected="True" type="V_String" size="3" />
+            <SelectField field="10" selected="True" type="V_String" size="3" />
+            <SelectField field="11" selected="True" type="V_String" size="3" />
+            <SelectField field="12" selected="True" type="V_String" size="3" />
+            <SelectField field="13" selected="True" type="V_String" size="3" />
+            <SelectField field="14" selected="True" type="V_String" size="3" />
+            <SelectField field="15" selected="True" type="V_String" size="3" />
+            <SelectField field="16" selected="True" type="V_String" size="3" />
+            <SelectField field="17" selected="True" type="V_String" size="3" />
+            <SelectField field="18" selected="True" type="V_String" size="3" />
+            <SelectField field="19" selected="True" type="V_String" size="3" />
+            <SelectField field="20" selected="True" type="V_String" size="3" />
+            <SelectField field="21" selected="True" type="V_String" size="3" />
+            <SelectField field="22" selected="True" type="V_String" size="3" />
+            <SelectField field="23" selected="True" type="V_String" size="3" />
+            <SelectField field="24" selected="True" type="V_String" size="3" />
+            <SelectField field="25" selected="True" type="V_String" size="3" />
+            <SelectField field="26" selected="True" type="V_String" size="3" />
+            <SelectField field="27" selected="True" type="V_String" size="3" />
+            <SelectField field="28" selected="True" type="V_String" size="3" />
+            <SelectField field="29" selected="True" type="V_String" size="3" />
+            <SelectField field="30" selected="True" type="V_String" size="3" />
+            <SelectField field="31" selected="True" type="V_String" size="3" />
+            <SelectField field="32" selected="True" type="V_String" size="3" />
+            <SelectField field="33" selected="True" type="V_String" size="3" />
+            <SelectField field="34" selected="True" type="V_String" size="3" />
+            <SelectField field="35" selected="True" type="V_String" size="3" />
+            <SelectField field="36" selected="True" type="V_String" size="3" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="1" size="3" source="TextInput:" type="V_String" />
+            <Field name="2" size="3" source="TextInput:" type="V_String" />
+            <Field name="3" size="3" source="TextInput:" type="V_String" />
+            <Field name="4" size="3" source="TextInput:" type="V_String" />
+            <Field name="5" size="3" source="TextInput:" type="V_String" />
+            <Field name="6" size="3" source="TextInput:" type="V_String" />
+            <Field name="7" size="3" source="TextInput:" type="V_String" />
+            <Field name="8" size="3" source="TextInput:" type="V_String" />
+            <Field name="9" size="3" source="TextInput:" type="V_String" />
+            <Field name="10" size="3" source="TextInput:" type="V_String" />
+            <Field name="11" size="3" source="TextInput:" type="V_String" />
+            <Field name="12" size="3" source="TextInput:" type="V_String" />
+            <Field name="13" size="3" source="TextInput:" type="V_String" />
+            <Field name="14" size="3" source="TextInput:" type="V_String" />
+            <Field name="15" size="3" source="TextInput:" type="V_String" />
+            <Field name="16" size="3" source="TextInput:" type="V_String" />
+            <Field name="17" size="3" source="TextInput:" type="V_String" />
+            <Field name="18" size="3" source="TextInput:" type="V_String" />
+            <Field name="19" size="3" source="TextInput:" type="V_String" />
+            <Field name="20" size="3" source="TextInput:" type="V_String" />
+            <Field name="21" size="3" source="TextInput:" type="V_String" />
+            <Field name="22" size="3" source="TextInput:" type="V_String" />
+            <Field name="23" size="3" source="TextInput:" type="V_String" />
+            <Field name="24" size="3" source="TextInput:" type="V_String" />
+            <Field name="25" size="3" source="TextInput:" type="V_String" />
+            <Field name="26" size="3" source="TextInput:" type="V_String" />
+            <Field name="27" size="3" source="TextInput:" type="V_String" />
+            <Field name="28" size="3" source="TextInput:" type="V_String" />
+            <Field name="29" size="3" source="TextInput:" type="V_String" />
+            <Field name="30" size="3" source="TextInput:" type="V_String" />
+            <Field name="31" size="3" source="TextInput:" type="V_String" />
+            <Field name="32" size="3" source="TextInput:" type="V_String" />
+            <Field name="33" size="3" source="TextInput:" type="V_String" />
+            <Field name="34" size="3" source="TextInput:" type="V_String" />
+            <Field name="35" size="3" source="TextInput:" type="V_String" />
+            <Field name="36" size="3" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings>
+        <Position x="294" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="BatchMacroGroupBy" />
+          <Value name="ControlParams"><![CDATA[Control Parameter (8)=FieldName
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output4">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="1" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="2" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="3" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="4" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="5" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="6" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="7" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="8" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="9" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="10" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="11" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="12" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="13" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="14" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="15" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="16" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="17" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="18" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="19" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="20" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="21" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="22" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="23" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="24" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="25" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="26" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="27" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="28" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="29" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="30" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from 31" name="31" size="3" source="TextToColumns: Parsed from 31 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="32" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="33" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="34" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="35" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field name="36" size="3" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="WeeklyChallenge\Day14InnerBatch.yxmc" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="66" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Dummy</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Dummy</AnnotationText>
+          <DefaultAnnotationText>Dummy</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" size="5" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="162" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToString([Engine.IterationNumber]+1)" field="FieldName" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[FieldName = ToString([Engine.IterationNumber]+1)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" size="5" source="TextInput:" type="String" />
+            <Field name="FieldName" size="1073741823" source="Formula: ToString([Engine.IterationNumber]+1)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="402" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output7</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>R Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="4" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output4" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (7)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day14OuterIterative</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (1)</Name>
+          <ToolId value="1" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (2)</Name>
+              <ToolId value="2" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (7)</Description>
+              <Name>Macro Output (7)</Name>
+              <ToolId value="7" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input1</Input>
+        <Output>Output7</Output>
+        <IterationLimit value="36" />
+        <LimitBehavior>Ignore</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="2" Selected="True" />
+        <Tool ToolId="4" Selected="True" />
+        <Tool ToolId="7" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
