@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="42" y="126" />
+        <Position x="54" y="142" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -991,9 +991,210 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="152" y="524" width="427" height="407" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Part2</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="79">
+          <GuiSettings>
+            <Position x="162" y="702" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Numeric Up Down (19)">5</Value>
+              <Value name="Numeric Up Down (21)">1</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Right 5, down 1</AnnotationText>
+              <DefaultAnnotationText>Right 5, down 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="WeeklyChallenge\Day03.yxmc" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings>
+            <Position x="162" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Numeric Up Down (19)">7</Value>
+              <Value name="Numeric Up Down (21)">1</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Right 7, down 1</AnnotationText>
+              <DefaultAnnotationText>Right 7, down 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="WeeklyChallenge\Day03.yxmc" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings>
+            <Position x="162" y="846" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Numeric Up Down (19)">1</Value>
+              <Value name="Numeric Up Down (21)">2</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Right 1, down 2</AnnotationText>
+              <DefaultAnnotationText>Right 1, down 2</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="WeeklyChallenge\Day03.yxmc" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+            <Position x="330" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JoinByRecPos value="True" />
+              <OutputJoinOnly value="False" />
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Input_#2_Count" selected="True" rename="Input_#2_Count" />
+                    <SelectField field="Input_#3_Count" selected="True" rename="Input_#3_Count" />
+                    <SelectField field="Input_#4_Count" selected="True" rename="Input_#4_Count" />
+                    <SelectField field="Input_#5_Count" selected="True" rename="Input_#5_Count" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="414" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Input_#2_Count]*[Count]*[Input_#3_Count]*[Input_#4_Count]*[Input_#5_Count]" field="Result" size="8" type="Int64" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Result = [Input_#2_Count]*[Count]*[Input_#3_Count]*[Input_#4_Count]*[Input_#5_Co...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="84">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="510" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_12112_0bb9ff3522344923b312aeb32287a97f_\Engine_21164_eeeb609d133745edb474cdbe66cb2c82_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings>
+            <Position x="161" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Numeric Up Down (19)">1</Value>
+              <Value name="Numeric Up Down (21)">1</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Right 1, down 1</AnnotationText>
+              <DefaultAnnotationText>Right 1, down 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="WeeklyChallenge\Day03.yxmc" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings>
+            <Position x="162" y="630" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Numeric Up Down (19)">3</Value>
+              <Value name="Numeric Up Down (21)">1</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Right 3, down 1</AnnotationText>
+              <DefaultAnnotationText>Right 3, down 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="WeeklyChallenge\Day03.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="136" y="38" width="1363" height="457" />
+        <Position x="148" y="54" width="1364" height="457" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1011,7 +1212,7 @@
       <ChildNodes>
         <Node ToolID="2">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-            <Position x="162" y="170" />
+            <Position x="174" y="186" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1029,7 +1230,7 @@
         </Node>
         <Node ToolID="3">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="245" y="169" />
+            <Position x="257" y="185" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1048,7 +1249,7 @@
         </Node>
         <Node ToolID="4">
           <GuiSettings>
-            <Position x="161" y="254" />
+            <Position x="173" y="269" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -1057,15 +1258,12 @@
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
           </Properties>
           <EngineSettings Macro="CountRecords.yxmc" />
         </Node>
         <Node ToolID="5">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-            <Position x="342" y="169" />
+            <Position x="354" y="184" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1090,7 +1288,7 @@
         </Node>
         <Node ToolID="6">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="426" y="170" />
+            <Position x="438" y="186" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1109,7 +1307,7 @@
         </Node>
         <Node ToolID="8">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-            <Position x="522" y="133" />
+            <Position x="534" y="148" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1137,7 +1335,7 @@
         </Node>
         <Node ToolID="10">
           <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-            <Position x="606" y="133" />
+            <Position x="618" y="149" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1157,7 +1355,7 @@
         </Node>
         <Node ToolID="11">
           <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-            <Position x="690" y="133" />
+            <Position x="702" y="149" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1180,7 +1378,7 @@
         </Node>
         <Node ToolID="12">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="774" y="134" />
+            <Position x="786" y="150" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1203,7 +1401,7 @@
         </Node>
         <Node ToolID="13">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="858" y="87" />
+            <Position x="870" y="103" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1222,7 +1420,7 @@
         </Node>
         <Node ToolID="14">
           <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-            <Position x="858" y="231" />
+            <Position x="870" y="247" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1254,7 +1452,7 @@
         </Node>
         <Node ToolID="15">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Tile.Tile">
-            <Position x="942" y="231" />
+            <Position x="954" y="247" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1277,7 +1475,7 @@
         </Node>
         <Node ToolID="16">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="1026" y="231" />
+            <Position x="1038" y="247" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2302,7 +2500,7 @@
         </Node>
         <Node ToolID="17">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="942" y="87" />
+            <Position x="954" y="103" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2333,7 +2531,7 @@
         </Node>
         <Node ToolID="18">
           <GuiSettings>
-            <Position x="1026" y="88" />
+            <Position x="1038" y="104" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -2342,19 +2540,16 @@
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
           </Properties>
           <EngineSettings Macro="CountRecords.yxmc" />
         </Node>
         <Node ToolID="19">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1110" y="88" />
+            <Position x="1122" y="104" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_30692_911b1031855d401086981f309ce4791b_\Engine_6908_32f818007e554762adfdcec54d393d06_.yxdb</TempFile>
+              <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_12112_0bb9ff3522344923b312aeb32287a97f_\Engine_21164_86f4a6d6c9574969857a74f14424166f_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -2379,11 +2574,11 @@
         </Node>
         <Node ToolID="20">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1110" y="231" />
+            <Position x="1122" y="247" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_30692_911b1031855d401086981f309ce4791b_\Engine_6908_f7dcec1f4762416c89dc30bac970875a_.yxdb</TempFile>
+              <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_12112_0bb9ff3522344923b312aeb32287a97f_\Engine_21164_85a786d3a1be48bf8f02d86cad543c9a_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -2408,7 +2603,7 @@
         </Node>
         <Node ToolID="71">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="1016" y="319" width="459" height="150" />
+            <Position x="1028" y="335" width="459" height="151" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2426,7 +2621,7 @@
           <ChildNodes>
             <Node ToolID="21">
               <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-                <Position x="1026" y="353" />
+                <Position x="1038" y="369" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -2445,7 +2640,7 @@
             </Node>
             <Node ToolID="22">
               <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-                <Position x="1110" y="354" />
+                <Position x="1122" y="370" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -2462,7 +2657,7 @@
             </Node>
             <Node ToolID="23">
               <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-                <Position x="1194" y="354" />
+                <Position x="1206" y="370" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -2493,7 +2688,7 @@
             </Node>
             <Node ToolID="24">
               <GuiSettings>
-                <Position x="1278" y="354" />
+                <Position x="1290" y="370" />
               </GuiSettings>
               <Properties>
                 <Configuration />
@@ -2502,19 +2697,16 @@
                   <DefaultAnnotationText />
                   <Left value="False" />
                 </Annotation>
-                <Dependencies>
-                  <Implicit />
-                </Dependencies>
               </Properties>
               <EngineSettings Macro="CountRecords.yxmc" />
             </Node>
             <Node ToolID="25">
               <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                <Position x="1362" y="354" />
+                <Position x="1374" y="370" />
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_30692_911b1031855d401086981f309ce4791b_\Engine_6908_b634c231ad934eca8565be24838a5a0a_.yxdb</TempFile>
+                  <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_12112_0bb9ff3522344923b312aeb32287a97f_\Engine_21164_1095eaea73b44a8ab79103d7b069e4a6_.yxdb</TempFile>
                   <TempFileDataProfiling />
                   <Layout>
                     <ViewMode>Single</ViewMode>
@@ -2541,332 +2733,6 @@
         </Node>
       </ChildNodes>
     </Node>
-    <Node ToolID="65">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="63" y="317" width="482" height="437" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Caption>Part2</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="False" />
-          <Folded value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <ChildNodes>
-        <Node ToolID="37">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
-            <Position x="282" y="366" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <JoinByRecPos value="True" />
-              <OutputJoinOnly value="False" />
-              <SelectConfiguration>
-                <Configuration outputConnection="Output">
-                  <OrderChanged value="False" />
-                  <CommaDecimal value="False" />
-                  <SelectFields>
-                    <SelectField field="Input_#2_Count" selected="True" rename="Input_#2_Count" />
-                    <SelectField field="Input_#3_Count" selected="True" rename="Input_#3_Count" />
-                    <SelectField field="Input_#4_Count" selected="True" rename="Input_#4_Count" />
-                    <SelectField field="Input_#5_Count" selected="True" rename="Input_#5_Count" />
-                    <SelectField field="*Unknown" selected="True" />
-                  </SelectFields>
-                </Configuration>
-              </SelectConfiguration>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
-        </Node>
-        <Node ToolID="38">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="366" y="366" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <FormulaFields>
-                <FormulaField expression="[Input_#2_Count]*[Count]*[Input_#3_Count]*[Input_#4_Count]*[Input_#5_Count]" field="Result" size="8" type="Int64" />
-              </FormulaFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>Result = [Input_#2_Count]*[Count]*[Input_#3_Count]*[Input_#4_Count]*[Input_#5_Co...</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-        </Node>
-        <Node ToolID="39">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="462" y="366" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_30692_911b1031855d401086981f309ce4791b_\Engine_6908_9c8991044f8f43e0931bf5d0b9697106_.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Profile</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-        <Node ToolID="55">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="174" y="378" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_30692_911b1031855d401086981f309ce4791b_\Engine_6908_1da25d053e9a48c19b6af5428da0540a_.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Profile</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-        <Node ToolID="56">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="174" y="450" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_30692_911b1031855d401086981f309ce4791b_\Engine_6908_25447c7b8c67417887d74459429b4a5b_.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Profile</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-        <Node ToolID="57">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="174" y="522" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_30692_911b1031855d401086981f309ce4791b_\Engine_6908_a187757dc26a49b2aee91b570df73e60_.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Profile</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-        <Node ToolID="58">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="174" y="594" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_30692_911b1031855d401086981f309ce4791b_\Engine_6908_bd1bb749f9414d4aa04226b08a6aee06_.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Profile</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-        <Node ToolID="59">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="174" y="666" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_30692_911b1031855d401086981f309ce4791b_\Engine_6908_5182d3510bc8491d8c5f0f4b4e176515_.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Profile</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-        <Node ToolID="72">
-          <GuiSettings>
-            <Position x="89" y="438" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Value name="Numeric Up Down (19)">3</Value>
-              <Value name="Numeric Up Down (21)">1</Value>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name>adventofcode2020_day03 (27)</Name>
-              <AnnotationText>Right 3, down 1</AnnotationText>
-              <DefaultAnnotationText>Right 3, down 1</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="WeeklyChallenge\adventofcode2020_day03.yxmc" />
-        </Node>
-        <Node ToolID="73">
-          <GuiSettings>
-            <Position x="90" y="366" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Value name="Numeric Up Down (19)">1</Value>
-              <Value name="Numeric Up Down (21)">1</Value>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name>adventofcode2020_day03 (29)</Name>
-              <AnnotationText>Right 1, down 1</AnnotationText>
-              <DefaultAnnotationText>Right 1, down 1</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="WeeklyChallenge\adventofcode2020_day03.yxmc" />
-        </Node>
-        <Node ToolID="74">
-          <GuiSettings>
-            <Position x="90" y="510" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Value name="Numeric Up Down (19)">5</Value>
-              <Value name="Numeric Up Down (21)">1</Value>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name>adventofcode2020_day03 (31)</Name>
-              <AnnotationText>Right 5, down 1</AnnotationText>
-              <DefaultAnnotationText>Right 5, down 1</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="WeeklyChallenge\adventofcode2020_day03.yxmc" />
-        </Node>
-        <Node ToolID="75">
-          <GuiSettings>
-            <Position x="88" y="582" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Value name="Numeric Up Down (19)">7</Value>
-              <Value name="Numeric Up Down (21)">1</Value>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name>adventofcode2020_day03 (33)</Name>
-              <AnnotationText>Right 7, down 1</AnnotationText>
-              <DefaultAnnotationText>Right 7, down 1</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="WeeklyChallenge\adventofcode2020_day03.yxmc" />
-        </Node>
-        <Node ToolID="76">
-          <GuiSettings>
-            <Position x="90" y="654" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Value name="Numeric Up Down (19)">1</Value>
-              <Value name="Numeric Up Down (21)">2</Value>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name>adventofcode2020_day03 (35)</Name>
-              <AnnotationText>Right 1, down 2</AnnotationText>
-              <DefaultAnnotationText>Right 1, down 2</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="WeeklyChallenge\adventofcode2020_day03.yxmc" />
-        </Node>
-      </ChildNodes>
-    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -2884,6 +2750,34 @@
     <Connection>
       <Origin ToolID="6" Connection="Output" />
       <Destination ToolID="8" Connection="Source" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="79" Connection="Output17" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="80" Connection="Output17" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="81" Connection="Output17" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="77" Connection="Output17" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="78" Connection="Output17" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="2" Connection="Output" />
@@ -2964,54 +2858,6 @@
     <Connection>
       <Origin ToolID="24" Connection="Output9" />
       <Destination ToolID="25" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="37" Connection="Output" />
-      <Destination ToolID="38" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="38" Connection="Output" />
-      <Destination ToolID="39" Connection="Input" />
-    </Connection>
-    <Connection name="#2">
-      <Origin ToolID="72" Connection="Output17" />
-      <Destination ToolID="37" Connection="Input" />
-    </Connection>
-    <Connection name="#1">
-      <Origin ToolID="73" Connection="Output17" />
-      <Destination ToolID="37" Connection="Input" />
-    </Connection>
-    <Connection name="#3">
-      <Origin ToolID="74" Connection="Output17" />
-      <Destination ToolID="37" Connection="Input" />
-    </Connection>
-    <Connection name="#4">
-      <Origin ToolID="75" Connection="Output17" />
-      <Destination ToolID="37" Connection="Input" />
-    </Connection>
-    <Connection name="#5">
-      <Origin ToolID="76" Connection="Output17" />
-      <Destination ToolID="37" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="72" Connection="Output29" />
-      <Destination ToolID="56" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="73" Connection="Output29" />
-      <Destination ToolID="55" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="74" Connection="Output29" />
-      <Destination ToolID="57" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="75" Connection="Output29" />
-      <Destination ToolID="58" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="76" Connection="Output29" />
-      <Destination ToolID="59" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
