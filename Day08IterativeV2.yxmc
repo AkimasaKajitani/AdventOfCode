@@ -1,0 +1,1581 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="102" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input1</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="Order" />
+                <Field name="Value" />
+                <Field name="Current" />
+                <Field name="global value" />
+                <Field name="next" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>nop</c>
+                  <c>0</c>
+                  <c>True</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>jmp</c>
+                  <c>4</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>acc</c>
+                  <c>3</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>jmp</c>
+                  <c>-3</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>acc</c>
+                  <c>-99</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>jmp</c>
+                  <c>-4</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>acc</c>
+                  <c>6</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step0</AnnotationText>
+          <DefaultAnnotationText>Step0
+Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Order" size="3" source="TextInput:" type="String" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Current" source="TextInput:" type="Bool" />
+            <Field name="global value" source="TextInput:" type="Byte" />
+            <Field name="next" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="198" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsTrue</Operator>
+            <Field>Current</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-12-08 21:34:43</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2020-12-08 21:34:43</StartDate>
+              <EndDate>2020-12-08 21:34:43</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Current] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Order" size="3" source="TextInput:" type="String" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Current" source="TextInput:" type="Bool" />
+            <Field name="global value" source="TextInput:" type="Byte" />
+            <Field name="next" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Order" size="3" source="TextInput:" type="String" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Current" source="TextInput:" type="Bool" />
+            <Field name="global value" source="TextInput:" type="Byte" />
+            <Field name="next" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="294" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [next]!=0 THEN&#xA;[global value]&#xA;ELSEIF [Order]=&quot;nop&quot; THEN [global value]&#xA;ELSEIF [Order]=&quot;acc&quot; THEN [global value]+[Value]&#xA;ELSE&#xA;[global value]&#xA;ENDIF" field="global value" size="1" type="Byte" />
+            <FormulaField expression="&quot;False&quot;" field="Current" size="1" type="Bool" />
+            <FormulaField expression="IF [next]!=0 THEN&#xA;-1&#xA;ELSEIF [Order]=&quot;nop&quot; or [Order]=&quot;acc&quot; THEN [RecordID]+1&#xA;ELSE&#xA;[RecordID]+[Value]&#xA;ENDIF" field="next" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>global value = IF [next]!=0 THEN
+[global value]
+ELSEIF [Order]="nop" THEN [globa...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Order" size="3" source="TextInput:" type="String" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Current" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="global value" source="Formula: IF [next]!=0 THEN&#xA;[global value]&#xA;ELSEIF [Order]=&quot;nop&quot; THEN [global value]&#xA;ELSEIF [Order]=&quot;acc&quot; THEN [global value]+[Value]&#xA;ELSE&#xA;[global value]&#xA;ENDIF" type="Byte" />
+            <Field name="next" source="Formula: IF [next]!=0 THEN&#xA;-1&#xA;ELSEIF [Order]=&quot;nop&quot; or [Order]=&quot;acc&quot; THEN [RecordID]+1&#xA;ELSE&#xA;[RecordID]+[Value]&#xA;ENDIF" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="582" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+            <Connection>#3</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Order" size="3" source="TextInput:" type="String" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Current" source="(Multiple Sources)" type="Bool" />
+            <Field name="next" source="TextInput:" type="Byte" />
+            <Field name="global value" source="(Multiple Sources)" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1098" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputRep</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>R Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="390" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="next" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_global value" selected="False" input="Left_" />
+                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Right_Order" selected="False" rename="Right_Order" input="Right_" />
+                <SelectField field="Right_Value" selected="False" rename="Right_Value" input="Right_" />
+                <SelectField field="Right_Current" selected="False" rename="Right_Current" input="Right_" />
+                <SelectField field="Right_next" selected="False" rename="Right_next" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Order" size="3" source="TextInput:" type="String" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Current" source="TextInput:" type="Bool" />
+            <Field name="global value" source="TextInput:" type="Byte" />
+            <Field name="next" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Order" size="3" source="TextInput:" type="String" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Current" source="TextInput:" type="Bool" />
+            <Field name="next" source="TextInput:" type="Byte" />
+            <Field name="global value" source="Formula: IF [next]!=0 THEN&#xA;[global value]&#xA;ELSEIF [Order]=&quot;nop&quot; THEN [global value]&#xA;ELSEIF [Order]=&quot;acc&quot; THEN [global value]+[Value]&#xA;ELSE&#xA;[global value]&#xA;ENDIF" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="global value" source="Formula: IF [next]!=0 THEN&#xA;[global value]&#xA;ELSEIF [Order]=&quot;nop&quot; THEN [global value]&#xA;ELSEIF [Order]=&quot;acc&quot; THEN [global value]+[Value]&#xA;ELSE&#xA;[global value]&#xA;ENDIF" type="Byte" />
+            <Field name="next" source="Formula: IF [next]!=0 THEN&#xA;-1&#xA;ELSEIF [Order]=&quot;nop&quot; or [Order]=&quot;acc&quot; THEN [RecordID]+1&#xA;ELSE&#xA;[RecordID]+[Value]&#xA;ENDIF" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="next" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="486" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;True&quot;" field="Current" size="1" type="Bool" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Current = "True"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Order" size="3" source="TextInput:" type="String" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Current" source="Formula: &quot;True&quot;" type="Bool" />
+            <Field name="next" source="TextInput:" type="Byte" />
+            <Field name="global value" source="Formula: IF [next]!=0 THEN&#xA;[global value]&#xA;ELSEIF [Order]=&quot;nop&quot; THEN [global value]&#xA;ELSEIF [Order]=&quot;acc&quot; THEN [global value]+[Value]&#xA;ELSE&#xA;[global value]&#xA;ENDIF" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="582" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output26</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1014" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="Order" selected="True" />
+            <SelectField field="Value" selected="True" />
+            <SelectField field="Current" selected="True" />
+            <SelectField field="global value" selected="True" />
+            <SelectField field="next" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Order" size="3" source="TextInput:" type="String" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Current" source="(Multiple Sources)" type="Bool" />
+            <Field name="next" source="TextInput:" type="Byte" />
+            <Field name="global value" source="(Multiple Sources)" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="486" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.IterationNumber]" field="Iterative" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Iterative = [Engine.IterationNumber]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Order" size="3" source="TextInput:" type="String" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Current" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="global value" source="Formula: IF [next]!=0 THEN&#xA;[global value]&#xA;ELSEIF [Order]=&quot;nop&quot; THEN [global value]&#xA;ELSEIF [Order]=&quot;acc&quot; THEN [global value]+[Value]&#xA;ELSE&#xA;[global value]&#xA;ENDIF" type="Byte" />
+            <Field name="next" source="Formula: IF [next]!=0 THEN&#xA;-1&#xA;ELSEIF [Order]=&quot;nop&quot; or [Order]=&quot;acc&quot; THEN [RecordID]+1&#xA;ELSE&#xA;[RecordID]+[Value]&#xA;ENDIF" type="Byte" />
+            <Field name="Iterative" source="Formula: [Engine.IterationNumber]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="77" y="305" width="147" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Debug Data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="101" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="Order" />
+                <Field name="Value" />
+                <Field name="Current" />
+                <Field name="global value" />
+                <Field name="next" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>nop</c>
+                  <c>0</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>True</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>jmp</c>
+                  <c>4</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>acc</c>
+                  <c>3</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>jmp</c>
+                  <c>-3</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>acc</c>
+                  <c>-99</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>jmp</c>
+                  <c>-4</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>acc</c>
+                  <c>6</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Step1</AnnotationText>
+              <DefaultAnnotationText>Step1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Order" size="3" source="TextInput:" type="String" />
+                <Field name="Value" source="TextInput:" type="Int16" />
+                <Field name="Current" source="TextInput:" type="Bool" />
+                <Field name="global value" source="TextInput:" type="Byte" />
+                <Field name="next" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="102" y="450" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="Order" />
+                <Field name="Value" />
+                <Field name="Current" />
+                <Field name="global value" />
+                <Field name="next" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>2</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>jmp</c>
+                  <c>4</c>
+                  <c>True</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>nop</c>
+                  <c>0</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>acc</c>
+                  <c>3</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>jmp</c>
+                  <c>-3</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>acc</c>
+                  <c>-99</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>jmp</c>
+                  <c>-4</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>acc</c>
+                  <c>6</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Step2</AnnotationText>
+              <DefaultAnnotationText>Step2</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Order" size="3" source="TextInput:" type="String" />
+                <Field name="Value" source="TextInput:" type="Int16" />
+                <Field name="Current" source="TextInput:" type="Bool" />
+                <Field name="global value" source="TextInput:" type="Byte" />
+                <Field name="next" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="101" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="Order" />
+                <Field name="Value" />
+                <Field name="Current" />
+                <Field name="global value" />
+                <Field name="next" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>3</c>
+                  <c>jmp</c>
+                  <c>4</c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>True</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>nop</c>
+                  <c>0</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>acc</c>
+                  <c>3</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>jmp</c>
+                  <c>-3</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>acc</c>
+                  <c>-99</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>jmp</c>
+                  <c>-4</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>acc</c>
+                  <c>6</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Step3</AnnotationText>
+              <DefaultAnnotationText>Step3</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Order" size="3" source="TextInput:" type="String" />
+                <Field name="Value" source="TextInput:" type="Int16" />
+                <Field name="Current" source="TextInput:" type="Bool" />
+                <Field name="global value" source="TextInput:" type="Byte" />
+                <Field name="next" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="210" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="Order" />
+                <Field name="Value" />
+                <Field name="Current" />
+                <Field name="global value" />
+                <Field name="next" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>7</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>jmp</c>
+                  <c>-4</c>
+                  <c>True</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>nop</c>
+                  <c>0</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>jmp</c>
+                  <c>4</c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>acc</c>
+                  <c>3</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>jmp</c>
+                  <c>-3</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>acc</c>
+                  <c>-99</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>acc</c>
+                  <c>6</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Step4</AnnotationText>
+              <DefaultAnnotationText>Step4</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Order" size="3" source="TextInput:" type="String" />
+                <Field name="Value" source="TextInput:" type="Int16" />
+                <Field name="Current" source="TextInput:" type="Bool" />
+                <Field name="global value" source="TextInput:" type="Byte" />
+                <Field name="next" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="209" y="450" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="Order" />
+                <Field name="Value" />
+                <Field name="Current" />
+                <Field name="global value" />
+                <Field name="next" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>8</c>
+                  <c>jmp</c>
+                  <c>-4</c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>acc</c>
+                  <c>3</c>
+                  <c>True</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>nop</c>
+                  <c>0</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>jmp</c>
+                  <c>4</c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>jmp</c>
+                  <c>-3</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>acc</c>
+                  <c>-99</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>acc</c>
+                  <c>6</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Step5</AnnotationText>
+              <DefaultAnnotationText>Step5</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Order" size="3" source="TextInput:" type="String" />
+                <Field name="Value" source="TextInput:" type="Int16" />
+                <Field name="Current" source="TextInput:" type="Bool" />
+                <Field name="global value" source="TextInput:" type="Byte" />
+                <Field name="next" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="210" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="Order" />
+                <Field name="Value" />
+                <Field name="Current" />
+                <Field name="global value" />
+                <Field name="next" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>4</c>
+                  <c>acc</c>
+                  <c>3</c>
+                  <c>False</c>
+                  <c>5</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>jmp</c>
+                  <c>-3</c>
+                  <c>True</c>
+                  <c>5</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>nop</c>
+                  <c>0</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>jmp</c>
+                  <c>4</c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>acc</c>
+                  <c>-99</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>jmp</c>
+                  <c>-4</c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>acc</c>
+                  <c>6</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Step6</AnnotationText>
+              <DefaultAnnotationText>Step6</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Order" size="3" source="TextInput:" type="String" />
+                <Field name="Value" source="TextInput:" type="Int16" />
+                <Field name="Current" source="TextInput:" type="Bool" />
+                <Field name="global value" source="TextInput:" type="Byte" />
+                <Field name="next" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="306" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="Order" />
+                <Field name="Value" />
+                <Field name="Current" />
+                <Field name="global value" />
+                <Field name="next" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>5</c>
+                  <c>jmp</c>
+                  <c>-3</c>
+                  <c>False</c>
+                  <c>5</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>True</c>
+                  <c>5</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>nop</c>
+                  <c>0</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>jmp</c>
+                  <c>4</c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>acc</c>
+                  <c>3</c>
+                  <c>False</c>
+                  <c>5</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>acc</c>
+                  <c>-99</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>acc</c>
+                  <c>1</c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>jmp</c>
+                  <c>-4</c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>acc</c>
+                  <c>6</c>
+                  <c>False</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Step7</AnnotationText>
+              <DefaultAnnotationText>Step7</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Order" size="3" source="TextInput:" type="String" />
+                <Field name="Value" source="TextInput:" type="Int16" />
+                <Field name="Current" source="TextInput:" type="Bool" />
+                <Field name="global value" source="TextInput:" type="Byte" />
+                <Field name="next" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="668" y="116" width="335" height="179" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Exit Decision</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="678" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsTrue</Operator>
+                <Field>Current</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2020-12-08 21:55:07</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2020-12-08 21:55:07</StartDate>
+                  <EndDate>2020-12-08 21:55:07</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Current] = 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Order" size="3" source="TextInput:" type="String" />
+                <Field name="Value" source="TextInput:" type="Int16" />
+                <Field name="Current" source="(Multiple Sources)" type="Bool" />
+                <Field name="next" source="TextInput:" type="Byte" />
+                <Field name="global value" source="(Multiple Sources)" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Order" size="3" source="TextInput:" type="String" />
+                <Field name="Value" source="TextInput:" type="Int16" />
+                <Field name="Current" source="(Multiple Sources)" type="Bool" />
+                <Field name="next" source="TextInput:" type="Byte" />
+                <Field name="global value" source="(Multiple Sources)" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings>
+            <Position x="750" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output9">
+              <RecordInfo>
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="CountRecords.yxmc" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="846" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Order" size="3" source="TextInput:" type="String" />
+                <Field name="Value" source="TextInput:" type="Int16" />
+                <Field name="Current" source="(Multiple Sources)" type="Bool" />
+                <Field name="next" source="TextInput:" type="Byte" />
+                <Field name="global value" source="(Multiple Sources)" type="Byte" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="918" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>!=</Operator>
+                <Field>Count</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2020-12-08 21:55:52</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>0</Operand>
+                  <StartDate>2020-12-08 21:55:52</StartDate>
+                  <EndDate>2020-12-08 21:55:52</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Count] != 0</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Order" size="3" source="TextInput:" type="String" />
+                <Field name="Value" source="TextInput:" type="Int16" />
+                <Field name="Current" source="(Multiple Sources)" type="Bool" />
+                <Field name="next" source="TextInput:" type="Byte" />
+                <Field name="global value" source="(Multiple Sources)" type="Byte" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Order" size="3" source="TextInput:" type="String" />
+                <Field name="Value" source="TextInput:" type="Int16" />
+                <Field name="Current" source="(Multiple Sources)" type="Bool" />
+                <Field name="next" source="TextInput:" type="Byte" />
+                <Field name="global value" source="(Multiple Sources)" type="Byte" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="False" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="24" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output9" />
+      <Destination ToolID="24" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="13" Connection="Left" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="True" />
+      <Destination ToolID="23" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="True" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day08IterativeV2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (28)</Name>
+          <ToolId value="28" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (7)</Name>
+              <ToolId value="7" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (26)</Name>
+              <ToolId value="26" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input1</Input>
+        <Output>OutputRep</Output>
+        <IterationLimit value="999" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="7" Selected="True" />
+        <Tool ToolId="26" Selected="True" />
+        <Tool ToolId="23" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
