@@ -1,0 +1,1324 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="30" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input7</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="170" />
+              <Fields>
+                <Field name="Field1" />
+                <Field name="Min_Field1" />
+                <Field name="Max_Field1" />
+                <Field name="TargetPos" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>16</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="Min_Field1" source="TextInput:" type="Byte" />
+            <Field name="Max_Field1" source="TextInput:" type="Byte" />
+            <Field name="TargetPos" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="366" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output5</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="30" y="18" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Control Parameter (9)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="126" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>Factorial</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>1</Expression_Init>
+          <Expression_Cond>Factorial &lt;= ABS([Field1]-[TargetPos])</Expression_Cond>
+          <Expression_Loop>Factorial + 1</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="Min_Field1" source="TextInput:" type="Byte" />
+            <Field name="Max_Field1" source="TextInput:" type="Byte" />
+            <Field name="TargetPos" source="TextInput:" type="Byte" />
+            <Field name="Factorial" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="198" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Field1" action="GroupBy" rename="Field1" />
+            <SummarizeField field="TargetPos" action="GroupBy" rename="TargetPos" />
+            <SummarizeField field="Factorial" action="Sum" rename="Fuel" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" source="Summarize: GroupBy - Field1" type="Byte" />
+            <Field name="TargetPos" source="Summarize: GroupBy - TargetPos" type="Byte" />
+            <Field name="Fuel" source="Summarize: Sum - Factorial" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Field1" order="Asc" />
+            <Field field="TargetPos" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="270" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="TargetPos" action="GroupBy" rename="TargetPos" />
+            <SummarizeField field="Fuel" action="Sum" rename="Sum_Fuel" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="TargetPos" source="Summarize: GroupBy - TargetPos" type="Byte" />
+            <Field name="Sum_Fuel" source="Summarize: Sum - Fuel" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="TargetPos" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (9)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day07_macro</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ae2a1e59-5549-4ee7-84a5-c9f698332c85" />
+      <Telemetry>
+        <PreviousWorkflowId value="a53f5a40-3bb9-4385-8a5f-8fb2a38e4be6" />
+        <OriginWorkflowId value="a53f5a40-3bb9-4385-8a5f-8fb2a38e4be6" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (8)</Name>
+          <ToolId value="8" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (7)</Name>
+              <ToolId value="7" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (5)</Name>
+              <ToolId value="5" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Group input</Description>
+              <Name>Control Parameter (9)</Name>
+              <ToolId value="9" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (9)</Name>
+            <Description>Group input</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="5" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
