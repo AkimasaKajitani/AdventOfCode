@@ -1,0 +1,1020 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="30" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input1</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="35" />
+              <Fields>
+                <Field name="RowID" />
+                <Field name="FieldID" />
+                <Field name="Field1" />
+                <Field name="basin" />
+                <Field name="Grouped" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>4</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>7</c>
+                  <c>3</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>8</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>9</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>10</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>8</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>7</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>5</c>
+                  <c>8</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>7</c>
+                  <c>4</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>9</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>10</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>8</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>5</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>4</c>
+                  <c>6</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>5</c>
+                  <c>7</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>6</c>
+                  <c>8</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>8</c>
+                  <c>8</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>10</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>1</c>
+                  <c>8</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>2</c>
+                  <c>7</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>3</c>
+                  <c>6</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>4</c>
+                  <c>7</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>5</c>
+                  <c>8</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>7</c>
+                  <c>6</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>8</c>
+                  <c>7</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>9</c>
+                  <c>8</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>2</c>
+                  <c>8</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>6</c>
+                  <c>6</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>7</c>
+                  <c>5</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>8</c>
+                  <c>6</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>9</c>
+                  <c>7</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>10</c>
+                  <c>8</c>
+                  <c>0</c>
+                  <c />
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field name="Grouped" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="294" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="True" />
+          <UpdateField_Name>Grouped</UpdateField_Name>
+          <CreateField_Name>Grouped</CreateField_Name>
+          <CreateField_Type>Int64</CreateField_Type>
+          <CreateField_Size>8</CreateField_Size>
+          <OtherRows>NULL</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF IsNull([Row-1:FieldID]) THEN 0 
+ELSEIF ([Row-1:FieldID]+1=[FieldID] AND [Row-1:RowID]=[RowID]) THEN [Row-1:Grouped] ELSE [Row-1:Grouped]+1 ENDIF</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF IsNull([Row-1:FieldID]) THEN 0 
+ELSEIF ([Row-1:FieldID]+1=...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF IsNull([Row-1:FieldID]) THEN 0 &#xA;ELSEIF ([Row-1:FieldID]+1=[FieldID] AND [Row-1:RowID]=[RowID]) THEN [Row-1:Grouped] ELSE [Row-1:Grouped]+1 ENDIF" name="Grouped" source="Formula: IF IsNull([Row-1:FieldID]) THEN 0 &#xA;ELSEIF ([Row-1:FieldID]+1=[FieldID] AND [Row-1:RowID]=[RowID]) THEN [Row-1:Grouped] ELSE [Row-1:Grouped]+1 ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="546" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="FieldID" order="Ascending" />
+            <Field field="RowID" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>FieldID - Ascending
+RowID - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF [Row-1:Grouped]=0 AND [Row-1:FieldID]-1=[FieldID] THEN 0 ELSE [Grouped] ENDIF" name="Grouped" source="Formula: IF [Row-1:Grouped]=0 AND [Row-1:FieldID]-1=[FieldID] THEN 0 ELSE [Grouped] ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="630" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="True" />
+          <UpdateField_Name>Grouped</UpdateField_Name>
+          <CreateField_Name>New Field</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF [Row-1:Grouped]=0 AND [Row-1:RowID]+1=[RowID] THEN 0 ELSE [Grouped] ENDIF</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF [Row-1:Grouped]=0 AND [Row-1:RowID]+1=[RowID] THEN 0 ELSE ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]+1=[RowID] THEN 0 ELSE [Grouped] ENDIF" name="Grouped" source="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]+1=[RowID] THEN 0 ELSE [Grouped] ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1050" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Grouped</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-12-09 23:44:39</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2021-12-09 23:44:39</StartDate>
+              <EndDate>2021-12-09 23:44:39</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Grouped] = 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" name="Grouped" source="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" name="Grouped" source="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1230" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Grouped" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field name="GroupID" source="Formula: [Engine.IterationNumber]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1314" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output8</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1146" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.IterationNumber]" field="GroupID" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[GroupID = [Engine.IterationNumber]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" name="Grouped" source="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" type="Int64" />
+            <Field name="GroupID" source="Formula: [Engine.IterationNumber]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1146" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" name="Grouped" source="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1314" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>R Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="210" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="RowID" order="Ascending" />
+            <Field field="FieldID" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RowID - Ascending
+FieldID - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field name="Grouped" source="TextInput:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="462" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="True" />
+          <UpdateField_Name>Grouped</UpdateField_Name>
+          <CreateField_Name>Grouped</CreateField_Name>
+          <CreateField_Type>Int64</CreateField_Type>
+          <CreateField_Size>8</CreateField_Size>
+          <OtherRows>NULL</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF [Row-1:Grouped]=0 AND [Row-1:FieldID]-1=[FieldID] THEN 0 ELSE [Grouped] ENDIF</Expression>
+          <GroupByFields>
+            <Field field="RowID" />
+          </GroupByFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF [Row-1:Grouped]=0 AND [Row-1:FieldID]-1=[FieldID] THEN 0 E...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF [Row-1:Grouped]=0 AND [Row-1:FieldID]-1=[FieldID] THEN 0 ELSE [Grouped] ENDIF" name="Grouped" source="Formula: IF [Row-1:Grouped]=0 AND [Row-1:FieldID]-1=[FieldID] THEN 0 ELSE [Grouped] ENDIF" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RowID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="378" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="RowID" order="Ascending" />
+            <Field field="FieldID" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RowID - Ascending
+FieldID - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF IsNull([Row-1:FieldID]) THEN 0 &#xA;ELSEIF ([Row-1:FieldID]+1=[FieldID] AND [Row-1:RowID]=[RowID]) THEN [Row-1:Grouped] ELSE [Row-1:Grouped]+1 ENDIF" name="Grouped" source="Formula: IF IsNull([Row-1:FieldID]) THEN 0 &#xA;ELSEIF ([Row-1:FieldID]+1=[FieldID] AND [Row-1:RowID]=[RowID]) THEN [Row-1:Grouped] ELSE [Row-1:Grouped]+1 ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="126" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Grouped" selected="True" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field name="Grouped" source="TextInput:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="714" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="FieldID" order="Ascending" />
+            <Field field="RowID" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>FieldID - Ascending
+RowID - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]+1=[RowID] THEN 0 ELSE [Grouped] ENDIF" name="Grouped" source="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]+1=[RowID] THEN 0 ELSE [Grouped] ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="798" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="True" />
+          <UpdateField_Name>Grouped</UpdateField_Name>
+          <CreateField_Name>New Field</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" name="Grouped" source="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1230" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Null()" field="Grouped" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Grouped = Null()
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" name="Grouped" source="Formula: Null()" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings>
+        <Position x="882" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output11">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" name="Grouped" source="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Day09_macro_inner.yxmc" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings>
+        <Position x="966" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output11">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Byte" />
+            <Field name="FieldID" source="TextInput:" type="Byte" />
+            <Field name="Field1" source="TextInput:" type="Byte" />
+            <Field name="basin" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" name="Grouped" source="Formula: IF [Row-1:Grouped]=0 AND [Row-1:RowID]-1=[RowID] THEN 0 ELSE [Grouped] ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="C:\Users\000350905\Documents\Alteryx\WeeklyChallenge\AdventofCode\2021\Day09_macro_inner.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="False" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="31" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output11" />
+      <Destination ToolID="32" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output11" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (11)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day09_macro</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="1774c2da-da9e-4f33-b222-fc80fb58df66" />
+      <Telemetry>
+        <PreviousWorkflowId value="2ee17833-494e-4134-b287-7f4c52aba4f7" />
+        <OriginWorkflowId value="d140ee8c-8b03-4748-ab28-31fc5e8afd05" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (8)</Name>
+              <ToolId value="8" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (11)</Name>
+              <ToolId value="11" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input1</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="1000" />
+        <LimitBehavior>Ignore</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="8" Selected="False" />
+        <Tool ToolId="11" Selected="False" />
+        <Tool ToolId="31" Selected="True" />
+        <Tool ToolId="32" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
