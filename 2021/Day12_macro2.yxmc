@@ -1,0 +1,663 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="390" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Route]+&quot;,&quot;+[Next]" field="Route" size="1073741823" type="V_WString" />
+            <FormulaField expression="[RouteCombi]+&quot;,&quot;+[Right_RouteCombi]" field="RouteCombi" size="1073741823" type="V_WString" />
+            <FormulaField expression="IF IsNull([SmallCave]) THEN&#xA;  IF REGEX_Match([Next], &quot;[a-z]+&quot;,0) THEN&#xA;    IF REGEX_CountMatches([Route], [Next])=2 THEN&#xA;    [Next]&#xA;    ELSE&#xA;    [SmallCave]&#xA;    ENDIF&#xA;  ELSE&#xA;  [SmallCave]&#xA;  ENDIF&#xA;ELSE&#xA;[SmallCave]&#xA;ENDIF" field="SmallCave" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Route = [Route]+","+[Next]
+RouteCombi = [RouteCombi]+","+[Right_RouteCombi]
+Smal...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" size="7" source="TextInput:" type="String" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+[Next]" type="V_WString" />
+            <Field name="Next1" size="1" source="TextInput:" type="String" />
+            <Field name="RouteCombi" size="1073741823" source="Formula: [RouteCombi]+&quot;,&quot;+[Right_RouteCombi]" type="V_WString" />
+            <Field name="SmallCave" size="1073741823" source="Formula: IF IsNull([SmallCave]) THEN&#xA;  IF REGEX_Match([Next], &quot;[a-z]+&quot;,0) THEN&#xA;    IF REGEX_CountMatches([Route], [Next])=2 THEN&#xA;    [Next]&#xA;    ELSE&#xA;    [SmallCave]&#xA;    ENDIF&#xA;  ELSE&#xA;  [SmallCave]&#xA;  ENDIF&#xA;ELSE&#xA;[SmallCave]&#xA;ENDIF" type="V_WString" />
+            <Field name="Current" size="1" source="TextInput:" type="String" />
+            <Field name="Next" size="3" source="TextInput:" type="String" />
+            <Field name="Right_RouteCombi" size="5" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Next1" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="558" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Next1</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-12-12 14:20:24</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>end</Operand>
+              <StartDate>2021-12-12 14:20:24</StartDate>
+              <EndDate>2021-12-12 14:20:24</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Next1] = "end"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+[Next]" type="V_WString" />
+            <Field name="RouteCombi" size="1073741823" source="Formula: [RouteCombi]+&quot;,&quot;+[Right_RouteCombi]" type="V_WString" />
+            <Field name="Field1" size="7" source="TextInput:" type="String" />
+            <Field name="Next1" size="3" source="TextInput:" type="String" />
+            <Field name="SmallCave" size="1073741823" source="Formula: IF IsNull([SmallCave]) THEN&#xA;  IF REGEX_Match([Next], &quot;[a-z]+&quot;,0) THEN&#xA;    IF REGEX_CountMatches([Route], [Next])=2 THEN&#xA;    [Next]&#xA;    ELSE&#xA;    [SmallCave]&#xA;    ENDIF&#xA;  ELSE&#xA;  [SmallCave]&#xA;  ENDIF&#xA;ELSE&#xA;[SmallCave]&#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+[Next]" type="V_WString" />
+            <Field name="RouteCombi" size="1073741823" source="Formula: [RouteCombi]+&quot;,&quot;+[Right_RouteCombi]" type="V_WString" />
+            <Field name="Field1" size="7" source="TextInput:" type="String" />
+            <Field name="Next1" size="3" source="TextInput:" type="String" />
+            <Field name="SmallCave" size="1073741823" source="Formula: IF IsNull([SmallCave]) THEN&#xA;  IF REGEX_Match([Next], &quot;[a-z]+&quot;,0) THEN&#xA;    IF REGEX_CountMatches([Route], [Next])=2 THEN&#xA;    [Next]&#xA;    ELSE&#xA;    [SmallCave]&#xA;    ENDIF&#xA;  ELSE&#xA;  [SmallCave]&#xA;  ENDIF&#xA;ELSE&#xA;[SmallCave]&#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="474" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Route" selected="True" />
+            <SelectField field="RouteCombi" selected="True" />
+            <SelectField field="Field1" selected="True" />
+            <SelectField field="Current" selected="False" />
+            <SelectField field="Next" selected="True" rename="Next1" />
+            <SelectField field="Right_RouteCombi" selected="False" />
+            <SelectField field="Next1" selected="False" />
+            <SelectField field="SmallCave" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+[Next]" type="V_WString" />
+            <Field name="RouteCombi" size="1073741823" source="Formula: [RouteCombi]+&quot;,&quot;+[Right_RouteCombi]" type="V_WString" />
+            <Field name="Field1" size="7" source="TextInput:" type="String" />
+            <Field name="Next1" size="3" source="TextInput:" type="String" />
+            <Field name="SmallCave" size="1073741823" source="Formula: IF IsNull([SmallCave]) THEN&#xA;  IF REGEX_Match([Next], &quot;[a-z]+&quot;,0) THEN&#xA;    IF REGEX_CountMatches([Route], [Next])=2 THEN&#xA;    [Next]&#xA;    ELSE&#xA;    [SmallCave]&#xA;    ENDIF&#xA;  ELSE&#xA;  [SmallCave]&#xA;  ENDIF&#xA;ELSE&#xA;[SmallCave]&#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input9</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="Field1" />
+                <Field name="Current" />
+                <Field name="Next" />
+                <Field name="Route" />
+                <Field name="RouteCombi" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>A-b</c>
+                  <c>A</c>
+                  <c>b</c>
+                  <c>b</c>
+                  <c>A-b</c>
+                </r>
+                <r>
+                  <c>A-b</c>
+                  <c>b</c>
+                  <c>A</c>
+                  <c>b</c>
+                  <c>b-A</c>
+                </r>
+                <r>
+                  <c>A-c</c>
+                  <c>A</c>
+                  <c>c</c>
+                  <c>c</c>
+                  <c>A-c</c>
+                </r>
+                <r>
+                  <c>A-c</c>
+                  <c>c</c>
+                  <c>A</c>
+                  <c>c</c>
+                  <c>c-A</c>
+                </r>
+                <r>
+                  <c>A-end</c>
+                  <c>A</c>
+                  <c>end</c>
+                  <c>A</c>
+                  <c>A-end</c>
+                </r>
+                <r>
+                  <c>b-end</c>
+                  <c>b</c>
+                  <c>end</c>
+                  <c>b</c>
+                  <c>b-end</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" size="5" source="TextInput:" type="String" />
+            <Field name="Current" size="1" source="TextInput:" type="String" />
+            <Field name="Next" size="3" source="TextInput:" type="String" />
+            <Field name="Route" size="1" source="TextInput:" type="String" />
+            <Field name="RouteCombi" size="5" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="642" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Next1" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+[Next]" type="V_WString" />
+            <Field name="RouteCombi" size="1073741823" source="Formula: [RouteCombi]+&quot;,&quot;+[Right_RouteCombi]" type="V_WString" />
+            <Field name="Field1" size="7" source="TextInput:" type="String" />
+            <Field name="SmallCave" size="1073741823" source="Formula: IF IsNull([SmallCave]) THEN&#xA;  IF REGEX_Match([Next], &quot;[a-z]+&quot;,0) THEN&#xA;    IF REGEX_CountMatches([Route], [Next])=2 THEN&#xA;    [Next]&#xA;    ELSE&#xA;    [SmallCave]&#xA;    ENDIF&#xA;  ELSE&#xA;  [SmallCave]&#xA;  ENDIF&#xA;ELSE&#xA;[SmallCave]&#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="738" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output14</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="642" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>R Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>InputStartAnchor</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="2" />
+              <Fields>
+                <Field name="Field1" />
+                <Field name="Route" />
+                <Field name="Next1" />
+                <Field name="RouteCombi" />
+                <Field name="SmallCave" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>start-A</c>
+                  <c>start,A</c>
+                  <c>A</c>
+                  <c>start-A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>start-b</c>
+                  <c>start,b</c>
+                  <c>b</c>
+                  <c>start-b</c>
+                  <c />
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>R Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" size="7" source="TextInput:" type="String" />
+            <Field name="Route" size="7" source="TextInput:" type="String" />
+            <Field name="Next1" size="1" source="TextInput:" type="String" />
+            <Field name="RouteCombi" size="7" source="TextInput:" type="String" />
+            <Field name="SmallCave" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="138" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Route" selected="True" type="V_WString" size="1073741823" />
+            <SelectField field="RouteCombi" selected="True" type="V_WString" size="1073741823" />
+            <SelectField field="SmallCave" selected="True" type="V_WString" size="1073741823" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" size="7" source="TextInput:" type="String" />
+            <Field name="Route" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Next1" size="1" source="TextInput:" type="String" />
+            <Field name="RouteCombi" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="SmallCave" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="234" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Next1" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Current" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Field1" selected="False" rename="Right_Field1" input="Right_" />
+                <SelectField field="Right_Route" selected="False" rename="Right_Route" input="Right_" />
+                <SelectField field="Right_RouteCombi" selected="True" rename="Right_RouteCombi" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Field1" size="7" source="TextInput:" type="String" />
+            <Field name="Route" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Next1" size="1" source="TextInput:" type="String" />
+            <Field name="RouteCombi" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="SmallCave" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Next1" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Field1" size="7" source="TextInput:" type="String" />
+            <Field name="Route" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Next1" size="1" source="TextInput:" type="String" />
+            <Field name="RouteCombi" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="SmallCave" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Current" size="1" source="TextInput:" type="String" />
+            <Field name="Next" size="3" source="TextInput:" type="String" />
+            <Field name="Right_RouteCombi" size="5" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Next1" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Field1" size="5" source="TextInput:" type="String" />
+            <Field name="Current" size="1" source="TextInput:" type="String" />
+            <Field name="Next" size="3" source="TextInput:" type="String" />
+            <Field name="Route" size="1" source="TextInput:" type="String" />
+            <Field name="RouteCombi" size="5" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Current" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="306" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>IF [SmallCave]=[Next] THEN
+  REGEX_CountMatches([Route], [Next],0)&lt;2
+ELSEIF IsNull([SmallCave]) AND REGEX_Match([Next], "[a-z]+",0) THEN
+  REGEX_CountMatches([Route], [Next],0)&lt;2
+ELSEIF NOT IsNull([SmallCave]) AND REGEX_Match([Next], "[a-z]+",0) THEN
+  REGEX_CountMatches([Route], [Next],0)&lt;1
+ELSE
+"true"
+ENDIF</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF [SmallCave]=[Next] THEN
+  REGEX_CountMatches([Route], [Next],0)&lt;2
+ELSEIF IsNu...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Field1" size="7" source="TextInput:" type="String" />
+            <Field name="Route" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Next1" size="1" source="TextInput:" type="String" />
+            <Field name="RouteCombi" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="SmallCave" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Current" size="1" source="TextInput:" type="String" />
+            <Field name="Next" size="3" source="TextInput:" type="String" />
+            <Field name="Right_RouteCombi" size="5" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Next1" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Field1" size="7" source="TextInput:" type="String" />
+            <Field name="Route" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Next1" size="1" source="TextInput:" type="String" />
+            <Field name="RouteCombi" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="SmallCave" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Current" size="1" source="TextInput:" type="String" />
+            <Field name="Next" size="3" source="TextInput:" type="String" />
+            <Field name="Right_RouteCombi" size="5" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Next1" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="False" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="23" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="23" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Join" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="True" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (16)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day12_macro2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d6d82e26-11ac-4981-bf47-cfbf2344d947" />
+      <Telemetry>
+        <PreviousWorkflowId value="bbf8c549-fb3f-4568-9675-3b52dd54eaa6" />
+        <OriginWorkflowId value="e4ba5f31-3e3a-4a4c-88b3-9a69e702480a" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (10)</Name>
+          <ToolId value="10" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (9)</Name>
+              <ToolId value="9" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (14)</Name>
+              <ToolId value="14" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (15)</Description>
+              <Name>Macro Output (15)</Name>
+              <ToolId value="15" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (16)</Description>
+              <Name>Macro Input (16)</Name>
+              <ToolId value="16" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputStartAnchor</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Ignore</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="9" Selected="True" />
+        <Tool ToolId="14" Selected="True" />
+        <Tool ToolId="15" Selected="True" />
+        <Tool ToolId="16" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
