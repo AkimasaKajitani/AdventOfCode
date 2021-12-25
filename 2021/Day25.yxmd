@@ -1,0 +1,886 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="18" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>...&gt;&gt;&gt;&gt;&gt;...</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="150" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>y</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="222" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Field1</Field>
+          <RegExExpression value="." />
+          <CaseInsensitve value="True" />
+          <Method>ParseSimple</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="True" />
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+          </ParseComplex>
+          <Match>
+            <Field>Field1_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Tile.Tile">
+        <Position x="294" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Method>UniqueValue</Method>
+          <UniqueValue>
+            <UniqueFields>
+              <Field field="y" />
+            </UniqueFields>
+            <DontSort value="False" />
+          </UniqueValue>
+          <GroupFields orderChanged="False">
+            <Field name="y" />
+          </GroupFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTile" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="366" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Tile_SequenceNum" selected="True" rename="x" />
+            <SelectField field="y" selected="True" />
+            <SelectField field="Field1" selected="True" />
+            <SelectField field="Tile_Num" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="78" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="4" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>..........</c>
+            </r>
+            <r>
+              <c>.&gt;v....v..</c>
+            </r>
+            <r>
+              <c>.......&gt;..</c>
+            </r>
+            <r>
+              <c>..........</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="138" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="7" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>...&gt;...</c>
+            </r>
+            <r>
+              <c>.......</c>
+            </r>
+            <r>
+              <c>......&gt;</c>
+            </r>
+            <r>
+              <c>v.....&gt;</c>
+            </r>
+            <r>
+              <c>......&gt;</c>
+            </r>
+            <r>
+              <c>.......</c>
+            </r>
+            <r>
+              <c>..vvv..</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="438" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="x" action="Max" rename="Max_x" />
+            <SummarizeField field="y" action="Max" rename="Max_y" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="510" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings>
+        <Position x="594" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>Day25_macro (32)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Day25_macro.yxmc" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="690" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_4712_cd235bc594004f13a5b85be7c635debd_\Engine_23504_961e2d1ed74c483a8c9100a536275d42_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="690" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\000350905\AppData\Local\Temp\Engine_4712_cd235bc594004f13a5b85be7c635debd_\Engine_23504_6876d6a427b14baea8af0c654f290bb7_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>star 1</AnnotationText>
+          <DefaultAnnotationText>star 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="198" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="9" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>v...&gt;&gt;.vv&gt;</c>
+            </r>
+            <r>
+              <c>.vv&gt;&gt;.vv..</c>
+            </r>
+            <r>
+              <c>&gt;&gt;.&gt;v&gt;...v</c>
+            </r>
+            <r>
+              <c>&gt;&gt;v&gt;&gt;.&gt;.v.</c>
+            </r>
+            <r>
+              <c>v&gt;v.vv.v..</c>
+            </r>
+            <r>
+              <c>&gt;.&gt;&gt;..v...</c>
+            </r>
+            <r>
+              <c>.vv..&gt;.&gt;v.</c>
+            </r>
+            <r>
+              <c>v.v..&gt;&gt;v.v</c>
+            </r>
+            <r>
+              <c>....v..v.&gt;</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="66" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="137" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>&gt;...&gt;.v&gt;vv&gt;&gt;..&gt;&gt;v...v..&gt;&gt;v.&gt;..&gt;.&gt;&gt;..&gt;&gt;&gt;...&gt;.&gt;&gt;&gt;.&gt;v.&gt;..v&gt;.v&gt;.&gt;v.v.......&gt;..vv.......&gt;v..&gt;.&gt;&gt;...&gt;&gt;&gt;vv....&gt;v.&gt;&gt;.v&gt;vvv..&gt;&gt;.v..v&gt;.v..vv.v..vvvv.</c>
+            </r>
+            <r>
+              <c>.&gt;....&gt;&gt;......&gt;..v..v...v.v.vvv&gt;&gt;&gt;.v.vv&gt;&gt;v&gt;&gt;.&gt;&gt;&gt;..vv...vv..vvv.v..&gt;...&gt;vv.&gt;v.v&gt;.v&gt;&gt;....vv.v...&gt;v&gt;&gt;&gt;vv.v......&gt;v&gt;..&gt;v.v&gt;....v.v.v&gt;&gt;v...v&gt;..v</c>
+            </r>
+            <r>
+              <c>vv&gt;.&gt;&gt;&gt;&gt;.v..vv..v&gt;v....&gt;..vv.&gt;...&gt;&gt;v.v.v&gt;&gt;v&gt;.&gt;&gt;.v.v.&gt;v.v.vv&gt;v&gt;&gt;v.....v&gt;v....vv.v&gt;&gt;v.v&gt;&gt;....v.&gt;.....&gt;v...&gt;v.v.&gt;.v..&gt;.v.v.&gt;v..vv.v..v&gt;&gt;v.v&gt;..</c>
+            </r>
+            <r>
+              <c>.v&gt;&gt;.&gt;&gt;v.....&gt;&gt;v&gt;&gt;&gt;..&gt;..&gt;.v...&gt;...&gt;v.v..v&gt;&gt;v.&gt;..v.v.&gt;&gt;v.&gt;.&gt;.v.&gt;..&gt;&gt;.&gt;.......vv&gt;&gt;.&gt;v&gt;&gt;v..v..v.&gt;v.vvvv.&gt;.....v&gt;&gt;.&gt;&gt;.v..&gt;&gt;vv&gt;vvv.&gt;.v&gt;v...vv.v.</c>
+            </r>
+            <r>
+              <c>..&gt;v&gt;.vvv.&gt;.v..v&gt;&gt;..&gt;.v&gt;vv.....&gt;.v..v&gt;v......v&gt;..&gt;v.&gt;....&gt;.&gt;.vv.v...&gt;.&gt;..v.........vv&gt;v...vv&gt;v&gt;v..v.&gt;vvv..vv.&gt;.&gt;.&gt;vvvv.vv..v.....&gt;.&gt;&gt;&gt;...&gt;v</c>
+            </r>
+            <r>
+              <c>v..&gt;..v&gt;&gt;..&gt;..&gt;.v.&gt;.&gt;......vv.&gt;..&gt;&gt;&gt;v.&gt;.&gt;....vv&gt;vv&gt;...v&gt;v&gt;.&gt;&gt;&gt;&gt;v..&gt;v..&gt;v&gt;&gt;..&gt;.&gt;.&gt;&gt;&gt;...vv&gt;..&gt;..v.&gt;.&gt;&gt;.&gt;&gt;.&gt;&gt;...&gt;&gt;....v.v...&gt;.v..v........&gt;.vv</c>
+            </r>
+            <r>
+              <c>..&gt;..vv.v..v...&gt;&gt;&gt;vvvvvv.v..vv..&gt;v&gt;&gt;&gt;&gt;v.....v..v....&gt;v.v..v.&gt;...v.v.&gt;..v..&gt;.vvv..&gt;..vv..v.v..v.&gt;&gt;...vv.v....v&gt;...vv...&gt;v.&gt;v..&gt;v..&gt;.v......&gt;</c>
+            </r>
+            <r>
+              <c>..&gt;&gt;v....&gt;.v..vvv&gt;...&gt;&gt;v.vv......&gt;v.v.vv.v&gt;..&gt;v&gt;.&gt;......v.v&gt;.&gt;&gt;v.vv..v.&gt;....vvv&gt;.v.&gt;v&gt;v.vv.&gt;v.&gt;vvv.v&gt;.......&gt;.v&gt;....&gt;..&gt;v.vvv...v.v&gt;&gt;v...&gt;v</c>
+            </r>
+            <r>
+              <c>..v&gt;..&gt;v.&gt;v.&gt;&gt;....vvv.&gt;&gt;.&gt;..v&gt;&gt;v&gt;&gt;v&gt;.....v....v.&gt;v..&gt;...v&gt;.....&gt;.vv.&gt;.....&gt;.&gt;.vv..&gt;&gt;v&gt;.&gt;.&gt;&gt;v.vvv....&gt;v....&gt;v.vvvv&gt;.&gt;&gt;.v.v.v...&gt;.&gt;.vv..&gt;.&gt;..</c>
+            </r>
+            <r>
+              <c>...&gt;&gt;.v..v&gt;..&gt;vvv..&gt;v&gt;..v.v......v.v.v&gt;v&gt;.v.&gt;vv.v&gt;.&gt;v.&gt;v...v&gt;&gt;&gt;&gt;&gt;.&gt;&gt;v...&gt;..&gt;&gt;v...v..&gt;v&gt;.v..vv&gt;...v&gt;v..&gt;&gt;v&gt;&gt;.v...v.&gt;&gt;.&gt;...v.vv..&gt;&gt;&gt;.&gt;.v&gt;v.v.</c>
+            </r>
+            <r>
+              <c>vv...&gt;&gt;v.&gt;&gt;..v&gt;v..&gt;...&gt;v...v&gt;&gt;vvvv..&gt;v.v.v.&gt;v...v&gt;v.&gt;v....v.v&gt;v&gt;v&gt;vv.....v&gt;..vv.v&gt;.v...vv&gt;.v&gt;v..&gt;&gt;.vv&gt;&gt;.&gt;.v.&gt;.&gt;vv.v..v&gt;&gt;....&gt;&gt;v.&gt;...vv.v..&gt;</c>
+            </r>
+            <r>
+              <c>vv.&gt;.&gt;......&gt;v.v.vv...v&gt;v..v.&gt;v.vvvv.&gt;..vv&gt;v.v.v..&gt;&gt;v&gt;&gt;&gt;v....&gt;.&gt;.v.v&gt;&gt;...v.&gt;v..&gt;..&gt;.&gt;&gt;v&gt;&gt;..&gt;.vv.vv.&gt;...v&gt;&gt;..v&gt;..v...v.&gt;.&gt;.&gt;....v&gt;&gt;..&gt;vvv..&gt;</c>
+            </r>
+            <r>
+              <c>...&gt;&gt;.v&gt;..&gt;..v..v&gt;&gt;..v&gt;&gt;....&gt;&gt;....&gt;..&gt;&gt;..&gt;....&gt;v.&gt;v&gt;vv...v.&gt;...&gt;vvv..v&gt;v..&gt;&gt;...v.......v..&gt;.vv&gt;v&gt;vv....&gt;..v&gt;..v&gt;.&gt;...v.vv&gt;.v.vv..&gt;....&gt;.v..</c>
+            </r>
+            <r>
+              <c>.v.v.&gt;..&gt;vvvvv..v&gt;&gt;..v.vv...&gt;v....&gt;.v.&gt;.v..&gt;...&gt;..&gt;&gt;...v.&gt;&gt;&gt;v.&gt;&gt;v.v....vv&gt;.v&gt;.&gt;.vv.v....v&gt;vvv.v&gt;&gt;...&gt;v&gt;.v.&gt;vvvv.v.vv..&gt;.&gt;&gt;.vvvvvv..vv&gt;.v&gt;&gt;&gt;</c>
+            </r>
+            <r>
+              <c>v.v&gt;.vv.&gt;..v&gt;vv&gt;v&gt;vv.&gt;v.....v..&gt;.......vv.....v&gt;.v..v&gt;.v....&gt;....&gt;&gt;&gt;..&gt;...v&gt;..&gt;&gt;..vv.v&gt;.&gt;....&gt;.v.&gt;...&gt;..vvv&gt;.&gt;.v.v.&gt;vv...&gt;&gt;&gt;&gt;.vvv.v.v...&gt;&gt;.</c>
+            </r>
+            <r>
+              <c>.vvv...&gt;....v.&gt;.&gt;v..&gt;.vv.v.vv&gt;v...v...........&gt;.v&gt;&gt;.........&gt;v....v..&gt;v.&gt;&gt;..&gt;.v&gt;&gt;.v&gt;v....&gt;&gt;&gt;v.v...v&gt;&gt;v..v.v&gt;&gt;&gt;v....&gt;.&gt;.v....v&gt;&gt;.v..v..vv..&gt;</c>
+            </r>
+            <r>
+              <c>.v&gt;&gt;..&gt;.....&gt;.v.&gt;&gt;.v&gt;......&gt;v.&gt;v......v..v&gt;..v...&gt;.....v&gt;v..........&gt;v.v.&gt;.&gt;&gt;&gt;.vvv&gt;.&gt;&gt;.v.&gt;v.v.&gt;&gt;.vvv..v......v&gt;.v.&gt;.v.&gt;&gt;&gt;v.&gt;v....&gt;v&gt;.v&gt;..&gt;.</c>
+            </r>
+            <r>
+              <c>&gt;&gt;.&gt;&gt;&gt;v.&gt;v..v.&gt;&gt;&gt;.v.v..&gt;&gt;v&gt;...v.&gt;vv&gt;v..&gt;v.&gt;.vv.vv......&gt;.&gt;.&gt;..&gt;...&gt;...&gt;&gt;.&gt;v&gt;...v...&gt;.&gt;vv...&gt;....&gt;.v.&gt;....&gt;.&gt;.&gt;..v.v..v..vvvv.&gt;v.&gt;......v&gt;&gt;.</c>
+            </r>
+            <r>
+              <c>vv....&gt;.&gt;&gt;.&gt;&gt;vv......v&gt;&gt;..v&gt;&gt;vv.v&gt;v.&gt;.&gt;....v..vv..&gt;..v&gt;.v..v&gt;vvv&gt;.&gt;&gt;v....v..v.v&gt;v.v.v&gt;.v&gt;v.v&gt;....v.....vv...&gt;vv.vvv.v..vv...v.&gt;v.&gt;v..v...&gt;&gt;</c>
+            </r>
+            <r>
+              <c>...&gt;.&gt;...v....&gt;...&gt;&gt;.&gt;....v&gt;v....&gt;vv..v&gt;...v&gt;.....v&gt;.v&gt;..&gt;&gt;&gt;&gt;.&gt;.v.&gt;...vv..&gt;&gt;&gt;v.&gt;v.&gt;&gt;..&gt;.v...&gt;.&gt;&gt;.v&gt;.v.........v..v.v&gt;v.v.&gt;.v&gt;...&gt;vv..&gt;v&gt;.v&gt;</c>
+            </r>
+            <r>
+              <c>&gt;..vv..v.....&gt;v.v.....vv.....&gt;..&gt;.&gt;..&gt;.v...&gt;..&gt;....&gt;.&gt;&gt;vv......v..v&gt;..v&gt;vvv..&gt;.&gt;..vv..&gt;&gt;v&gt;vv.&gt;...&gt;&gt;..v.&gt;.v.vv&gt;&gt;.&gt;.v&gt;&gt;v..vv.&gt;&gt;....&gt;...v...&gt;&gt;</c>
+            </r>
+            <r>
+              <c>....&gt;v&gt;&gt;v.&gt;...&gt;vv..v&gt;&gt;.&gt;v.vv...v.&gt;v.&gt;.&gt;&gt;...&gt;&gt;v.v&gt;.vv&gt;v..vvv.v&gt;..vv.v.v&gt;..v&gt;.&gt;&gt;v...&gt;......&gt;vv...vvv.v&gt;v.&gt;....vvv.vv.vv.&gt;..&gt;&gt;v.&gt;&gt;&gt;&gt;.&gt;.&gt;v&gt;.v..</c>
+            </r>
+            <r>
+              <c>...v...&gt;&gt;.&gt;.&gt;.....v.v.&gt;.....v..&gt;.v&gt;&gt;.&gt;..&gt;vvvv..&gt;..&gt;v&gt;.&gt;.v..&gt;&gt;.v......&gt;..vvv.v.v...v...&gt;.&gt;.v.....&gt;v&gt;...&gt;.&gt;....&gt;.v.v&gt;&gt;.vv.....v..&gt;&gt;&gt;vvv.&gt;&gt;..v</c>
+            </r>
+            <r>
+              <c>..v.&gt;v&gt;.v.v.&gt;&gt;v&gt;v&gt;v...&gt;..&gt;..v.v&gt;.&gt;..v..&gt;..&gt;&gt;..&gt;&gt;v.&gt;.&gt;...vvv..&gt;v..v..&gt;&gt;v&gt;...&gt;v..v&gt;......&gt;.&gt;vv.&gt;.....&gt;..&gt;&gt;&gt;&gt;&gt;&gt;v.v&gt;..v..&gt;v..&gt;&gt;&gt;..&gt;vvv&gt;.v..v.&gt;.</c>
+            </r>
+            <r>
+              <c>v.&gt;.&gt;.v.&gt;v...&gt;.v.......&gt;&gt;....&gt;...v.v&gt;..&gt;v&gt;.v..v&gt;..vv..v&gt;...v.&gt;..&gt;&gt;...v&gt;..&gt;.&gt;.&gt;v..&gt;v&gt;vv.v...v...&gt;..v..&gt;vv...&gt;v&gt;....&gt;&gt;v&gt;.&gt;.......v&gt;&gt;.....&gt;v&gt;v</c>
+            </r>
+            <r>
+              <c>&gt;.&gt;&gt;..v...&gt;v...vvv.&gt;vv......&gt;&gt;.v&gt;.v...&gt;&gt;.v........&gt;.&gt;.v......vv.&gt;&gt;v&gt;.&gt;v.vvv&gt;.v&gt;.v..&gt;.....v.v&gt;v.v...v&gt;&gt;....&gt;&gt;..v....vv&gt;&gt;&gt;v.&gt;.v..v.&gt;.v.v..vvv</c>
+            </r>
+            <r>
+              <c>&gt;.&gt;.&gt;....v...&gt;&gt;&gt;...&gt;v..&gt;.v...&gt;.vvv..v.....&gt;&gt;...&gt;.&gt;.v&gt;..v..vv&gt;&gt;v&gt;&gt;.v&gt;...v..&gt;v&gt;.vv.v.&gt;.&gt;..&gt;.&gt;v&gt;&gt;....&gt;.&gt;vv&gt;..&gt;&gt;.&gt;v...vv......vv&gt;&gt;&gt;&gt;&gt;.&gt;..&gt;.&gt;.v&gt;</c>
+            </r>
+            <r>
+              <c>&gt;...&gt;&gt;....&gt;...vv.v.&gt;.v&gt;..&gt;.vv.vv....v.v.&gt;.v&gt;&gt;....&gt;&gt;vvv&gt;...&gt;&gt;&gt;.v.&gt;&gt;..v.vv..&gt;v&gt;v&gt;.v&gt;&gt;..........vvvv...&gt;&gt;vv..vv..&gt;&gt;v...vv&gt;&gt;...v&gt;...v&gt;.v...&gt;&gt;.v</c>
+            </r>
+            <r>
+              <c>.v.&gt;..v...vv..v&gt;...v....&gt;vv&gt;v..&gt;v..&gt;..v&gt;&gt;v....&gt;.v&gt;.v.&gt;.vv...v..v&gt;&gt;&gt;&gt;.v&gt;&gt;.vvv...&gt;.v.&gt;.&gt;&gt;&gt;....&gt;....v.v..&gt;&gt;&gt;.v.&gt;..v.&gt;.....v..&gt;&gt;&gt;&gt;.v&gt;..vv.v&gt;&gt;&gt;&gt;</c>
+            </r>
+            <r>
+              <c>vv.v...v...v&gt;..v&gt;v&gt;&gt;..v.vv&gt;&gt;&gt;&gt;vvv.&gt;v&gt;vv...v&gt;v......v...v&gt;.......v.v..&gt;.&gt;....&gt;&gt;..&gt;v&gt;.v&gt;&gt;v.v.&gt;.&gt;v&gt;&gt;&gt;.vv.v&gt;&gt;&gt;..vv.&gt;v.v&gt;...&gt;.v..v.vv.....&gt;&gt;&gt;.&gt;.</c>
+            </r>
+            <r>
+              <c>.&gt;.&gt;v&gt;..&gt;.v.&gt;v.vv.vv..v..&gt;v..v&gt;.&gt;vv.&gt;&gt;.&gt;..v...&gt;&gt;&gt;.&gt;.&gt;.&gt;&gt;..&gt;..&gt;v&gt;.v...vv.&gt;.v.v.v.&gt;&gt;.&gt;&gt;&gt;v&gt;..&gt;v..&gt;&gt;....&gt;v.&gt;&gt;.....v.&gt;.&gt;&gt;.............&gt;...&gt;.&gt;&gt;v.</c>
+            </r>
+            <r>
+              <c>&gt;..v..vvv&gt;v&gt;..&gt;vv&gt;...&gt;.v.v.&gt;v.&gt;..&gt;.&gt;..&gt;..&gt;v.v.vvvv.v.....vv.v..v...vv.vv..&gt;.v.v&gt;&gt;...v&gt;&gt;....v..&gt;.v.v..v&gt;..&gt;&gt;vv....&gt;&gt;&gt;&gt;..&gt;..&gt;&gt;&gt;&gt;v&gt;v...&gt;...vv.</c>
+            </r>
+            <r>
+              <c>..&gt;.v....&gt;v.v.v.&gt;.&gt;...&gt;....&gt;.&gt;.&gt;v.&gt;&gt;&gt;.v&gt;.vv.v&gt;..vv&gt;.v.&gt;..&gt;.vv&gt;v..vv&gt;&gt;...&gt;v&gt;v..&gt;vvvvv.vv....&gt;&gt;..vv&gt;v&gt;&gt;v&gt;....v&gt;&gt;...&gt;v&gt;vv&gt;..vv&gt;&gt;&gt;vvv..v.v&gt;.&gt;&gt;v</c>
+            </r>
+            <r>
+              <c>.v.v..v&gt;....&gt;&gt;vv.vv.&gt;.&gt;..&gt;v&gt;..&gt;.v.vv.&gt;&gt;v&gt;.v.v.v...&gt;.&gt;&gt;v.....&gt;.&gt;..&gt;&gt;v&gt;.&gt;..v.vv.&gt;&gt;&gt;.vv&gt;...v..&gt;..v&gt;vvvv&gt;.....vv.v.&gt;&gt;&gt;&gt;..&gt;&gt;vv.&gt;vv&gt;.&gt;&gt;v&gt;..&gt;...&gt;v</c>
+            </r>
+            <r>
+              <c>.&gt;v&gt;.&gt;&gt;.&gt;&gt;&gt;..v&gt;v&gt;.&gt;&gt;.v..&gt;..&gt;vv.v.&gt;.vv.v.v&gt;.&gt;.vv.&gt;..&gt;&gt;...&gt;vv.&gt;&gt;..v..&gt;..v.v.&gt;&gt;.v..v.vvvv&gt;v&gt;.v.&gt;v..&gt;v..&gt;v.....&gt;.v..v.&gt;v....&gt;.v&gt;&gt;&gt;v.v&gt;.&gt;..&gt;.v.v</c>
+            </r>
+            <r>
+              <c>&gt;..&gt;v.....vv.v&gt;v&gt;&gt;.v.&gt;.vvvv..&gt;vv.v.v&gt;.vv&gt;...&gt;......v..&gt;&gt;.&gt;..&gt;.v...&gt;.v.vv.....vv..vv....v&gt;v&gt;&gt;vv..v...v..&gt;&gt;.&gt;v&gt;.&gt;v......vvv.vv.v...&gt;&gt;..&gt;.&gt;v.&gt;</c>
+            </r>
+            <r>
+              <c>.v.v...&gt;&gt;v&gt;v&gt;...&gt;&gt;..v..v...v.v.&gt;&gt;.v&gt;.v&gt;v&gt;.&gt;vv&gt;v...v&gt;&gt;.v&gt;v.&gt;.....v.&gt;.&gt;....v..v&gt;v.&gt;v&gt;...&gt;..&gt;&gt;...vvv&gt;.vvv.&gt;&gt;&gt;vvvvv&gt;..&gt;.v....v.&gt;&gt;&gt;.&gt;.vvv..&gt;v.&gt;v</c>
+            </r>
+            <r>
+              <c>..vv&gt;v..v&gt;.&gt;&gt;..vvv....v&gt;&gt;&gt;v..v....&gt;.&gt;.&gt;...v.v.v.&gt;&gt;..v....&gt;v&gt;..v&gt;&gt;..v..&gt;....v...vvvv.&gt;v..&gt;...v&gt;.......&gt;..v.vvv..&gt;..&gt;v....v&gt;v&gt;vv&gt;....v.&gt;..v&gt;v</c>
+            </r>
+            <r>
+              <c>.&gt;&gt;...v&gt;vv.&gt;.&gt;v&gt;&gt;v.&gt;v...&gt;&gt;.&gt;.&gt;..&gt;v&gt;v&gt;&gt;..&gt;&gt;&gt;.&gt;&gt;v...&gt;vv.&gt;vv&gt;v...v&gt;v&gt;...&gt;&gt;..v&gt;..&gt;.v&gt;.&gt;.&gt;vv&gt;.vv...&gt;v.......v&gt;.&gt;v&gt;.&gt;....vv&gt;...v.v.v.v.v&gt;.&gt;.&gt;..v&gt;</c>
+            </r>
+            <r>
+              <c>&gt;vv.v.vv&gt;...v.&gt;&gt;&gt;&gt;&gt;v.&gt;&gt;..v&gt;..v.vvv...v...&gt;.v...&gt;...&gt;vv..&gt;.v.v....&gt;.&gt;v&gt;.v..&gt;.v...v&gt;.&gt;&gt;...v..v&gt;&gt;..vv...v.&gt;..v...&gt;...v.&gt;v..&gt;v&gt;&gt;v.v&gt;v.v..&gt;&gt;..v&gt;</c>
+            </r>
+            <r>
+              <c>..v...vv..&gt;v.vvv&gt;.....v..v..&gt;&gt;..vv&gt;....v...&gt;..&gt;.....v.vv&gt;.v&gt;&gt;&gt;...&gt;v.vv.v..&gt;&gt;v&gt;&gt;v..&gt;v.....&gt;..&gt;.&gt;.&gt;.....v.&gt;..v.....&gt;.v.&gt;&gt;&gt;vv.&gt;&gt;.vv&gt;&gt;..&gt;.vvv.v</c>
+            </r>
+            <r>
+              <c>vv...&gt;..vvvv&gt;&gt;v..&gt;v&gt;.v.&gt;&gt;..&gt;&gt;v..&gt;&gt;.&gt;.v&gt;.&gt;...&gt;&gt;...&gt;.vvv&gt;..vvv..v&gt;....&gt;.v&gt;.&gt;...&gt;.&gt;&gt;&gt;...vv...&gt;.v&gt;&gt;.&gt;.vv...&gt;&gt;&gt;&gt;.....v&gt;&gt;&gt;..v..v...v..v..v...&gt;...</c>
+            </r>
+            <r>
+              <c>v&gt;..v...&gt;v..v..&gt;....v.&gt;&gt;...&gt;vv..v&gt;..vv.v..v.v.vvvv&gt;.&gt;...v&gt;&gt;.&gt;&gt;&gt;v.vvv..v...vv..v.&gt;v&gt;.v&gt;&gt;v&gt;..vvvvv.&gt;v.&gt;.&gt;...&gt;&gt;.v&gt;.&gt;.v.vvv....&gt;..&gt;...v&gt;&gt;..&gt;v&gt;.</c>
+            </r>
+            <r>
+              <c>.&gt;&gt;v&gt;vv.v&gt;....&gt;.&gt;.v...vv&gt;v..v&gt;.v.v...&gt;.&gt;&gt;....&gt;.v.&gt;.&gt;v&gt;&gt;&gt;.&gt;.............v.vv.v&gt;.vv.vv&gt;&gt;...v&gt;..&gt;.v..&gt;v....v&gt;v..v...v....&gt;.&gt;.....vv&gt;&gt;.....vvv.</c>
+            </r>
+            <r>
+              <c>..v&gt;.&gt;&gt;.&gt;v......&gt;.v.v.&gt;vv&gt;....&gt;&gt;...vvv&gt;...v&gt;.&gt;.v..&gt;vv..&gt;&gt;v......&gt;v.&gt;&gt;vv.v....&gt;..&gt;vv.&gt;&gt;.v..&gt;..&gt;...vv&gt;vv&gt;&gt;.vv.&gt;&gt;&gt;&gt;&gt;&gt;.&gt;.vv.&gt;vvv...&gt;v&gt;.&gt;&gt;v&gt;v.&gt;.</c>
+            </r>
+            <r>
+              <c>v&gt;..v.v.v..vv.&gt;&gt;.v&gt;.v....v..&gt;.&gt;..v.v&gt;v..&gt;vv.v&gt;....vv..v...&gt;.&gt;v.vv&gt;....&gt;.v&gt;...v&gt;..v.&gt;.....&gt;v...&gt;&gt;.v&gt;.&gt;.vv.&gt;&gt;.....&gt;v&gt;.vv.v...v...&gt;v&gt;&gt;&gt;v.&gt;v&gt;..</c>
+            </r>
+            <r>
+              <c>&gt;v&gt;..v...&gt;v..v.v..&gt;&gt;.v&gt;&gt;....&gt;v.&gt;v.&gt;v.v.v.v..&gt;&gt;&gt;.vv&gt;&gt;&gt;.&gt;vv..v....v..&gt;..&gt;v..&gt;v..&gt;.....&gt;&gt;v.&gt;...&gt;vv..&gt;..&gt;..vvv..v&gt;..&gt;.v&gt;&gt;&gt;v.v.v&gt;&gt;...v.&gt;v...&gt;...</c>
+            </r>
+            <r>
+              <c>..v...&gt;...v...v..&gt;&gt;..v...&gt;v..&gt;.vv..v&gt;.....&gt;.v..vv&gt;.&gt;&gt;.&gt;...&gt;&gt;.v.v&gt;&gt;..v&gt;.&gt;...v&gt;...&gt;&gt;v.vv..&gt;&gt;vv&gt;..&gt;v&gt;...&gt;..&gt;v.&gt;vv...&gt;.v..v..v&gt;...vv..&gt;..&gt;&gt;..&gt;.</c>
+            </r>
+            <r>
+              <c>&gt;...v.&gt;......vv.&gt;&gt;..v.&gt;........&gt;v...v.&gt;&gt;v&gt;&gt;v.vv.&gt;...v&gt;..vv&gt;&gt;..&gt;v..v&gt;v.v&gt;.v..v&gt;.v.....&gt;vv.v&gt;&gt;&gt;..&gt;.vv&gt;vvv..v.&gt;v...v.v.&gt;...&gt;&gt;v.v.&gt;&gt;v&gt;..v.vv.vv</c>
+            </r>
+            <r>
+              <c>.&gt;..vv&gt;.&gt;.v..&gt;.v.v&gt;..&gt;.v&gt;&gt;&gt;..&gt;v&gt;.v&gt;.v.&gt;&gt;&gt;&gt;....v..&gt;&gt;&gt;v&gt;v.v..v&gt;..vv&gt;vv..vv.&gt;v.v.vvv&gt;.......&gt;&gt;.&gt;&gt;.v.&gt;vvv..&gt;v&gt;....vv.v..&gt;&gt;.....&gt;vv.v..&gt;.vv&gt;v.&gt;.</c>
+            </r>
+            <r>
+              <c>&gt;&gt;.v&gt;.&gt;.&gt;....&gt;....&gt;v..&gt;vv..&gt;&gt;v..&gt;&gt;&gt;....v.&gt;vvvv&gt;&gt;.&gt;v...&gt;...v&gt;v..&gt;...v.&gt;..&gt;.vv.vv..v&gt;.vv&gt;&gt;.....v&gt;..&gt;v....&gt;.&gt;..v.v..&gt;..&gt;v&gt;...v..&gt;.v.......v.vv</c>
+            </r>
+            <r>
+              <c>v&gt;&gt;....v.&gt;.vv.vvv&gt;&gt;.v.v&gt;&gt;..&gt;.&gt;.....v...&gt;v.&gt;&gt;..v...&gt;...&gt;v..vvv&gt;.&gt;.&gt;&gt;&gt;v.vv&gt;..&gt;&gt;..v&gt;v.&gt;vv...&gt;..&gt;v.&gt;.&gt;.v.&gt;.&gt;vv..vvv&gt;&gt;.&gt;..&gt;...v&gt;.v&gt;...v&gt;.v&gt;.&gt;..v</c>
+            </r>
+            <r>
+              <c>..&gt;vvv..v..v&gt;&gt;.vvv&gt;.v....vv.v&gt;&gt;vvv&gt;&gt;v......vv.....v&gt;&gt;&gt;..&gt;.v..&gt;.v&gt;v&gt;v&gt;v&gt;v&gt;.&gt;....v&gt;.vvv...vv&gt;.v.v.&gt;&gt;.vv&gt;...v&gt;....v...&gt;....&gt;&gt;&gt;.&gt;vv.&gt;....&gt;.&gt;&gt;vv</c>
+            </r>
+            <r>
+              <c>v&gt;vv...&gt;&gt;..&gt;v.&gt;v..v..v&gt;v...vv..v&gt;&gt;.&gt;v&gt;..&gt;...&gt;&gt;&gt;.v.&gt;vv.vv.&gt;.&gt;...v...&gt;.&gt;.v&gt;..v&gt;v..&gt;v&gt;vvv&gt;vvv..v&gt;&gt;v&gt;vv.&gt;v&gt;.&gt;v....&gt;vv...&gt;&gt;.v.&gt;v..&gt;.&gt;&gt;v..&gt;...&gt;..</c>
+            </r>
+            <r>
+              <c>.&gt;.vv.....&gt;&gt;v.&gt;..vv...vv.v.&gt;.&gt;......vv..v&gt;.&gt;...v..v..v&gt;.&gt;.vvv...vv.v.....&gt;.vvv.v..v&gt;...&gt;&gt;v&gt;v..&gt;&gt;v&gt;....&gt;.&gt;..v.&gt;v.&gt;vv.&gt;&gt;..v.v..v.v&gt;.v..&gt;&gt;&gt;...</c>
+            </r>
+            <r>
+              <c>v.&gt;...v..v..&gt;.v&gt;v.&gt;v.&gt;.&gt;..v&gt;...&gt;...&gt;&gt;v.&gt;.&gt;.&gt;&gt;vv&gt;&gt;&gt;&gt;&gt;v..&gt;.......&gt;&gt;...&gt;.......&gt;vv&gt;&gt;&gt;&gt;&gt;....&gt;.......vv&gt;.&gt;...v&gt;..&gt;v..&gt;vv&gt;&gt;...&gt;...&gt;.v&gt;.&gt;&gt;vv.&gt;&gt;...</c>
+            </r>
+            <r>
+              <c>v.v..v&gt;vv.v.&gt;..&gt;.v..&gt;&gt;v&gt;....&gt;&gt;.v.&gt;v&gt;&gt;v.&gt;..v&gt;v.v&gt;...&gt;&gt;v&gt;&gt;vvv.&gt;...vvv....v&gt;.&gt;&gt;vv.v.....&gt;&gt;..v&gt;.&gt;.&gt;&gt;v......v&gt;&gt;..v&gt;....v..&gt;vv&gt;.&gt;vv&gt;.&gt;..v.&gt;&gt;.v.vv</c>
+            </r>
+            <r>
+              <c>&gt;..v....v.&gt;&gt;v&gt;&gt;vv.&gt;.&gt;.vv.&gt;&gt;..&gt;v..&gt;.v..&gt;......&gt;&gt;.......vvv&gt;.&gt;&gt;&gt;&gt;&gt;&gt;v.&gt;&gt;&gt;&gt;v.&gt;v.&gt;vv...v&gt;vv..v&gt;&gt;..&gt;..&gt;.&gt;&gt;..vv.&gt;&gt;v&gt;...v...&gt;.&gt;..&gt;.&gt;v..&gt;..v.vv&gt;&gt;..v</c>
+            </r>
+            <r>
+              <c>vvv.v..&gt;.&gt;vvv.&gt;&gt;...&gt;&gt;.....v.v&gt;v&gt;.&gt;&gt;&gt;...v&gt;v&gt;v.vv&gt;&gt;&gt;&gt;vv...v&gt;.....&gt;v&gt;v..v&gt;&gt;v...&gt;.v..&gt;&gt;v&gt;.v...&gt;..vv....v.v.v.v.v...&gt;.&gt;.&gt;.vv.&gt;v.&gt;&gt;&gt;&gt;v&gt;v&gt;.&gt;...v..</c>
+            </r>
+            <r>
+              <c>v.v..&gt;....v...v&gt;.vv.v&gt;.&gt;&gt;.&gt;v..v&gt;......&gt;..v.&gt;&gt;vv&gt;&gt;.v...&gt;......&gt;&gt;.&gt;vvv.&gt;&gt;&gt;v&gt;.v..v...v...vvvvv&gt;v..v..v&gt;..&gt;...v.....v&gt;.&gt;v..&gt;v..v.&gt;&gt;v.&gt;&gt;.&gt;v...v.</c>
+            </r>
+            <r>
+              <c>v&gt;&gt;..&gt;vv&gt;&gt;&gt;........v.&gt;&gt;&gt;.&gt;&gt;&gt;&gt;&gt;&gt;..&gt;..&gt;...&gt;&gt;.vv&gt;vv.&gt;..&gt;..v.vvvv...&gt;.&gt;.&gt;.v....&gt;.&gt;&gt;v&gt;v.&gt;&gt;.vv&gt;.&gt;..v..&gt;...v.v...v&gt;.&gt;.v.&gt;v&gt;.v..&gt;....vv.&gt;&gt;.vv.&gt;&gt;&gt;..</c>
+            </r>
+            <r>
+              <c>.v&gt;.&gt;....vv..&gt;....v&gt;.&gt;&gt;...&gt;v&gt;.v&gt;.v......vv.&gt;...&gt;.......&gt;.&gt;v&gt;vv.....&gt;..&gt;v&gt;v.&gt;....v.&gt;&gt;v.&gt;&gt;v&gt;v.....&gt;...v...vv..v&gt;v&gt;v&gt;v..&gt;&gt;.vv&gt;....v.v&gt;...&gt;..&gt;.</c>
+            </r>
+            <r>
+              <c>.&gt;..vvvv.&gt;...v......&gt;&gt;.v..&gt;....&gt;v&gt;.v&gt;.&gt;...&gt;.v.v..v......&gt;.v&gt;vv&gt;v..&gt;&gt;..v&gt;.&gt;.....&gt;.v...&gt;..v.v..vv.vv&gt;v..&gt;&gt;..&gt;&gt;..&gt;vv&gt;&gt;&gt;...v.v.&gt;&gt;&gt;..&gt;&gt;v.&gt;v&gt;&gt;..&gt;</c>
+            </r>
+            <r>
+              <c>&gt;...&gt;v&gt;v.&gt;.....v..&gt;....v.&gt;..&gt;.&gt;vv&gt;&gt;....v&gt;....&gt;v.&gt;...v.&gt;v.v....&gt;...&gt;v&gt;v.&gt;.v.....v.&gt;&gt;.&gt;&gt;v.&gt;v..&gt;v.vv.&gt;v...&gt;.v&gt;.v....&gt;&gt;&gt;..v&gt;.&gt;v.&gt;&gt;&gt;&gt;vv...v.&gt;.&gt;&gt;</c>
+            </r>
+            <r>
+              <c>v.....v&gt;v&gt;v&gt;&gt;v.&gt;&gt;&gt;.&gt;.&gt;...&gt;v..v......v.v&gt;..vv&gt;&gt;.&gt;v&gt;v..v.&gt;v&gt;.&gt;.&gt;vv..&gt;...v..&gt;...&gt;v.&gt;&gt;.....&gt;&gt;...&gt;.&gt;v.&gt;v.v...&gt;.&gt;v.v&gt;.v&gt;.&gt;..&gt;&gt;&gt;.....&gt;&gt;v.&gt;..v....v</c>
+            </r>
+            <r>
+              <c>v...v..v&gt;&gt;.v.....&gt;v&gt;..&gt;v.v.v...v...vv.&gt;.&gt;..vv&gt;.&gt;&gt;...v.v&gt;vv.v.&gt;&gt;...vv.v...v.&gt;....v.&gt;...&gt;&gt;..vvvv..v&gt;&gt;&gt;vv.&gt;&gt;....v.v...v.&gt;&gt;vvv&gt;..&gt;v.vv&gt;.&gt;&gt;.&gt;.v.</c>
+            </r>
+            <r>
+              <c>.vvv.vv..&gt;vvv&gt;.&gt;..&gt;..&gt;&gt;&gt;v.vv&gt;..v&gt;.v..&gt;.v.&gt;v&gt;vv..v.&gt;.vvv..v&gt;.v...&gt;.v&gt;&gt;.&gt;&gt;.vv...&gt;&gt;.vv...v..vv..&gt;v&gt;vv&gt;v.v...&gt;v&gt;&gt;vvv.v&gt;.vvv&gt;.&gt;.&gt;.v....&gt;..&gt;&gt;v.v.</c>
+            </r>
+            <r>
+              <c>&gt;&gt;v&gt;......v&gt;v&gt;...v.&gt;v&gt;v&gt;&gt;.vv.&gt;..vv..&gt;&gt;..&gt;v.&gt;...&gt;....v&gt;..v.&gt;.....v.&gt;&gt;.v.&gt;...&gt;&gt;.&gt;&gt;.v&gt;..&gt;v..v..&gt;...&gt;v.&gt;v.v...v&gt;v..&gt;&gt;..v.v.&gt;v..v..&gt;&gt;...&gt;.vv.v..</c>
+            </r>
+            <r>
+              <c>v.&gt;.v.&gt;.vv.vvv.vv.&gt;v&gt;....v......vv..vvv&gt;...&gt;&gt;.&gt;....v&gt;.&gt;.v....v....&gt;&gt;.....&gt;.vv&gt;.vv&gt;v.&gt;v.....&gt;..&gt;&gt;.&gt;v.vv..&gt;v.&gt;..v&gt;v.v.&gt;vvv&gt;vv&gt;.......v.v.vv&gt;.</c>
+            </r>
+            <r>
+              <c>v....&gt;.&gt;..v.&gt;.&gt;v&gt;.v&gt;vv..&gt;&gt;.v..v..v..&gt;&gt;.v&gt;&gt;...&gt;v&gt;...&gt;v..v....&gt;....v..&gt;&gt;..&gt;&gt;.v...&gt;&gt;....v..v.&gt;v..&gt;v&gt;....&gt;.v&gt;&gt;.v&gt;v..&gt;v&gt;...v..v.&gt;....v.....&gt;..v&gt;</c>
+            </r>
+            <r>
+              <c>..&gt;&gt;...&gt;v....&gt;v&gt;v&gt;&gt;&gt;....v&gt;v.....&gt;&gt;.v....&gt;&gt;&gt;v.&gt;...&gt;..&gt;.&gt;&gt;v.v.&gt;v&gt;&gt;..v.&gt;&gt;.&gt;vvv&gt;&gt;&gt;.vvv.&gt;..v.....&gt;.vv..v.......v..&gt;...&gt;...&gt;....&gt;vvv..&gt;&gt;v.&gt;..vv&gt;&gt;</c>
+            </r>
+            <r>
+              <c>.v..v&gt;....vv.&gt;&gt;v...&gt;v..v.&gt;....v&gt;v.&gt;..&gt;&gt;vv.&gt;..&gt;..v&gt;.&gt;...&gt;v&gt;v&gt;v.v&gt;.&gt;.v..&gt;&gt;v&gt;..vv..vv..&gt;.v..vv&gt;&gt;&gt;......vv.&gt;v&gt;&gt;...&gt;v.v.&gt;&gt;.&gt;..vv.vv.&gt;.&gt;&gt;&gt;v&gt;vv...</c>
+            </r>
+            <r>
+              <c>&gt;v&gt;vv.......&gt;v&gt;.v...&gt;v.vvv&gt;...v.&gt;.&gt;v.v..v.v&gt;v&gt;v.v..v.v.&gt;.v&gt;&gt;.&gt;&gt;..&gt;..&gt;.&gt;&gt;.&gt;v&gt;v..&gt;.&gt;...&gt;vvv.v&gt;v&gt;.....v.vv&gt;&gt;.&gt;.vv...&gt;.&gt;...v...v.&gt;vv.v..&gt;.vvv..</c>
+            </r>
+            <r>
+              <c>&gt;&gt;.&gt;&gt;&gt;......vvv&gt;v..vv.v..v&gt;&gt;..v....&gt;&gt;.v..&gt;vvvv&gt;v&gt;&gt;...v&gt;&gt;&gt;..&gt;&gt;vv...&gt;&gt;vv.&gt;.vv&gt;&gt;&gt;..vv&gt;.v&gt;..v.&gt;..v.vv...v.&gt;.vv&gt;&gt;vv&gt;&gt;&gt;..&gt;.v....v&gt;&gt;vv.&gt;&gt;.vv...&gt;..</c>
+            </r>
+            <r>
+              <c>v....&gt;&gt;&gt;..v..&gt;v..&gt;.v&gt;v...v&gt;v..vv......&gt;vv.v.&gt;....&gt;..v.vv..&gt;vv&gt;v.v..vvv.v.&gt;v.&gt;.v...&gt;....v..&gt;.&gt;v.v&gt;&gt;.&gt;.&gt;v&gt;&gt;..&gt;.vvv&gt;vv.v.v.&gt;vvvv&gt;..&gt;.........v</c>
+            </r>
+            <r>
+              <c>......v&gt;..&gt;...v..vvv.v&gt;...v.v&gt;&gt;vvv.v.&gt;....v.v.v.&gt;...v..v&gt;&gt;&gt;&gt;..vv.&gt;v.&gt;..&gt;.v&gt;&gt;..&gt;&gt;.&gt;vv.v&gt;..v.&gt;v&gt;&gt;..&gt;v..&gt;vv..&gt;.vvv&gt;..vv.vv...&gt;.&gt;&gt;.vv..&gt;...v&gt;v&gt;</c>
+            </r>
+            <r>
+              <c>..v&gt;&gt;.&gt;v.&gt;.&gt;v&gt;..vv..&gt;&gt;..&gt;&gt;.&gt;..v&gt;...v..&gt;&gt;&gt;..v..&gt;.v.&gt;v&gt;..&gt;&gt;...vv.&gt;v.&gt;v...v&gt;v..v&gt;..&gt;&gt;vvv......vv.&gt;...v..v&gt;&gt;&gt;vv.v...v.v.v.&gt;&gt;&gt;..vv&gt;v&gt;v...v&gt;.....</c>
+            </r>
+            <r>
+              <c>..v&gt;&gt;&gt;..v..v.&gt;&gt;.&gt;&gt;.v..v......&gt;&gt;.vv&gt;.v.v&gt;&gt;.&gt;...&gt;.v&gt;&gt;.&gt;&gt;..v.v&gt;.v.&gt;&gt;....v.&gt;.....&gt;.&gt;&gt;v.v.....v&gt;vv.&gt;.&gt;&gt;&gt;..v..&gt;v....v&gt;.vv&gt;...v.v&gt;v..v...&gt;...&gt;.&gt;v.</c>
+            </r>
+            <r>
+              <c>.&gt;.v.....&gt;v.vv..&gt;.&gt;v&gt;v.&gt;&gt;v.v.&gt;&gt;..vv&gt;&gt;v...vvv..vv.v.&gt;v....vv&gt;....vvv.v..&gt;&gt;.v..&gt;&gt;&gt;....v..&gt;..&gt;&gt;&gt;&gt;&gt;&gt;.&gt;.&gt;.&gt;.v..&gt;.&gt;...&gt;&gt;&gt;.v&gt;vvvvv.&gt;..v.&gt;&gt;..vv.&gt;&gt;.</c>
+            </r>
+            <r>
+              <c>&gt;.&gt;...&gt;v..&gt;&gt;..v..v.v..v&gt;....&gt;.v.v&gt;..v...v..vv.&gt;v&gt;vv.&gt;....&gt;&gt;v.v&gt;vv...&gt;..v&gt;..v..v&gt;.v&gt;..........vv&gt;v.v.&gt;....&gt;.&gt;.vv&gt;&gt;....&gt;.v..v.v.&gt;v&gt;&gt;&gt;&gt;..v.v..</c>
+            </r>
+            <r>
+              <c>v.v&gt;.v&gt;&gt;.&gt;&gt;.v.&gt;&gt;....v...&gt;...v...v.v..&gt;..&gt;...&gt;vvv&gt;......vv...&gt;&gt;..vv.v&gt;&gt;&gt;&gt;..vvv....v.&gt;v...vv.v.&gt;v&gt;..v.........&gt;v&gt;&gt;.&gt;..&gt;.v..v..v.v.v.&gt;.v&gt;...v&gt;</c>
+            </r>
+            <r>
+              <c>vv.&gt;.v..v...v.v.&gt;&gt;&gt;vv..&gt;...&gt;.vvv&gt;v.v&gt;&gt;&gt;&gt;&gt;&gt;....&gt;&gt;&gt;...&gt;v&gt;&gt;..v.&gt;.vv&gt;&gt;v..v.&gt;vv&gt;.vvvv...&gt;vv..v...&gt;.&gt;...vv&gt;..v&gt;.v.&gt;v&gt;.v&gt;.v....v.v.&gt;v..&gt;........&gt;.</c>
+            </r>
+            <r>
+              <c>v&gt;v&gt;&gt;..&gt;.v.v..&gt;v....&gt;.&gt;&gt;..v&gt;...v....&gt;v.&gt;.&gt;..v.vvv..&gt;.&gt;vvv.&gt;v..vv&gt;...v.&gt;.&gt;v.&gt;.v&gt;.&gt;...v.v&gt;.&gt;&gt;&gt;&gt;&gt;.&gt;.....v.&gt;..&gt;v&gt;.v..&gt;&gt;.&gt;.&gt;&gt;...vv..vvv....v&gt;.&gt;.</c>
+            </r>
+            <r>
+              <c>&gt;..v.v.v...vv&gt;..&gt;&gt;vv&gt;v....vv&gt;vv.v&gt;v&gt;&gt;v&gt;&gt;....&gt;.&gt;.v&gt;.&gt;...v.&gt;...&gt;v..&gt;v&gt;vv..vv....&gt;..vv..v&gt;..&gt;vv.v&gt;&gt;..&gt;....&gt;v.&gt;&gt;.v...&gt;.&gt;..v&gt;&gt;vv...vvvv.....&gt;v&gt;.</c>
+            </r>
+            <r>
+              <c>v.v........&gt;......v.v..v...&gt;&gt;&gt;.v&gt;v.&gt;....vv&gt;v&gt;.v.v&gt;..&gt;&gt;.v.&gt;..&gt;..vvvv&gt;&gt;.v.&gt;v..vvv.v..&gt;.vvvvv.&gt;&gt;&gt;...v&gt;.&gt;v...v&gt;&gt;..&gt;v.&gt;&gt;.v&gt;&gt;..v&gt;.vv.vv.v&gt;.v&gt;v.v.</c>
+            </r>
+            <r>
+              <c>v....&gt;.v..v...vv.&gt;.....v..v...&gt;.....v.v.&gt;...v..v.v&gt;&gt;&gt;...&gt;.v..vv.v.&gt;&gt;&gt;v...&gt;v.v...v.&gt;&gt;v..&gt;..&gt;.&gt;.&gt;&gt;&gt;..&gt;v.&gt;vv&gt;vvvvvvv..&gt;&gt;...&gt;v.&gt;.v.v&gt;&gt;vv.&gt;.v&gt;&gt;&gt;</c>
+            </r>
+            <r>
+              <c>&gt;&gt;.vv...v....&gt;.v.v...&gt;&gt;.&gt;&gt;v.&gt;..&gt;&gt;v.&gt;&gt;.....&gt;&gt;&gt;vv........&gt;&gt;..v...v&gt;v...v.vv..v.v&gt;vvv.&gt;.&gt;v.....v..&gt;&gt;..&gt;vv.v&gt;..vvv&gt;.....vv&gt;....v...&gt;.vv.v.&gt;.&gt;v&gt;</c>
+            </r>
+            <r>
+              <c>v.&gt;.&gt;.v&gt;&gt;...v.&gt;&gt;.&gt;vv....v..v..&gt;.&gt;.&gt;&gt;vvvv.&gt;&gt;&gt;.vvv.v.....&gt;&gt;&gt;.&gt;..v..&gt;.vvvv&gt;.v...v.v&gt;..v.vvv..vv.&gt;..v.&gt;vv.&gt;.vvv...v.vv..&gt;v&gt;v&gt;&gt;v&gt;&gt;..&gt;v&gt;&gt;.&gt;&gt;.&gt;...</c>
+            </r>
+            <r>
+              <c>...&gt;.&gt;&gt;&gt;...v.&gt;&gt;.......&gt;.&gt;..v.v..&gt;vvv...vv..v...&gt;v&gt;&gt;.....&gt;.vv.&gt;v&gt;.v.&gt;vv&gt;v&gt;.......v&gt;vvv..v&gt;.......&gt;..&gt;v..&gt;.&gt;&gt;...v..&gt;..&gt;...&gt;&gt;v..&gt;.v.&gt;v.v.v&gt;...</c>
+            </r>
+            <r>
+              <c>v...&gt;.v&gt;v&gt;..&gt;v.v......&gt;.v....&gt;v.&gt;vv........vv.&gt;&gt;v.&gt;.&gt;......v.&gt;v.&gt;&gt;&gt;v..&gt;.&gt;&gt;&gt;..vv.v...v&gt;&gt;.v&gt;...v&gt;v..vv.&gt;.&gt;&gt;..&gt;.v..v.v.v.&gt;...&gt;v&gt;&gt;..&gt;&gt;&gt;&gt;&gt;..v...</c>
+            </r>
+            <r>
+              <c>v&gt;.....&gt;.&gt;&gt;vv&gt;&gt;v....&gt;v.v..&gt;v..&gt;v..&gt;v.v&gt;v.&gt;v..v.&gt;v...&gt;...v&gt;..v..&gt;.......v..&gt;&gt;v.vv......&gt;&gt;v&gt;&gt;v.vvv&gt;..&gt;&gt;&gt;v..v.&gt;v..v&gt;vv..v.&gt;v.v.vvv&gt;..v..&gt;.....</c>
+            </r>
+            <r>
+              <c>..vv.&gt;vv.&gt;vv..&gt;..&gt;&gt;v.v.&gt;&gt;v.v&gt;.&gt;v&gt;..&gt;vv.&gt;....&gt;vv.v.&gt;.........v...v.&gt;&gt;v&gt;v&gt;&gt;&gt;&gt;.&gt;..v...vvvv.&gt;.v.........v..vv..v.&gt;&gt;.&gt;.&gt;v.&gt;.vv.&gt;....&gt;vvvv.v..&gt;.&gt;</c>
+            </r>
+            <r>
+              <c>..&gt;..v&gt;....&gt;.vv.v..&gt;...v&gt;.....&gt;&gt;...v.v......v&gt;&gt;.vvvv..&gt;....&gt;..&gt;.v...vv...&gt;&gt;vv&gt;vv&gt;....&gt;v.v.&gt;v&gt;....vv.......&gt;.&gt;v.v&gt;&gt;v.v..&gt;&gt;....v.v.&gt;&gt;&gt;v&gt;.v..&gt;</c>
+            </r>
+            <r>
+              <c>..v&gt;&gt;vv&gt;v.v.vv&gt;&gt;v.&gt;v.v.v..&gt;.v.&gt;v..&gt;v....&gt;v.....v&gt;vv....vv.v.....&gt;.......v.&gt;vvv..v.v.&gt;..&gt;.vv.&gt;&gt;v&gt;..v.&gt;..v.&gt;&gt;&gt;..vv......&gt;.&gt;..........&gt;v.v..v&gt;</c>
+            </r>
+            <r>
+              <c>.&gt;&gt;vvv.......v&gt;...&gt;&gt;.&gt;v&gt;....v&gt;v....vvv.v&gt;......v...v..&gt;v&gt;&gt;&gt;&gt;&gt;.&gt;.&gt;v.&gt;&gt;&gt;.&gt;&gt;&gt;.&gt;&gt;&gt;.vv.vv.....&gt;...v.v&gt;&gt;.v.v..&gt;&gt;...&gt;.v&gt;v&gt;vv.&gt;vv.v..v&gt;vvv.&gt;v.&gt;....</c>
+            </r>
+            <r>
+              <c>..v.vv.v..v&gt;v&gt;......v.&gt;..v..v&gt;v..v...&gt;..v.&gt;....v&gt;...vv&gt;..&gt;..vv.&gt;..v.......v.v.&gt;.&gt;.vv...vvv&gt;v&gt;..v.&gt;v&gt;...v&gt;.&gt;vv.&gt;v.&gt;.&gt;vvv.&gt;..v.v.&gt;.&gt;.&gt;v..v&gt;&gt;v</c>
+            </r>
+            <r>
+              <c>vv&gt;...vv&gt;.vv..&gt;.vv.v&gt;.&gt;......&gt;.&gt;.&gt;&gt;&gt;&gt;&gt;.&gt;....v...&gt;.v.&gt;..&gt;v&gt;..&gt;&gt;.v&gt;v.&gt;..&gt;.v.....v.v&gt;....v.v&gt;.v.v&gt;v.v&gt;&gt;&gt;..v...&gt;v&gt;.v....vv..&gt;.&gt;..v..v.&gt;&gt;v.v...v</c>
+            </r>
+            <r>
+              <c>vvv&gt;.vv..v.&gt;vv&gt;..v...&gt;&gt;..v.......vv...v..v&gt;...&gt;&gt;.&gt;&gt;&gt;v&gt;.v....&gt;&gt;.v....&gt;&gt;.&gt;&gt;.&gt;vvv..&gt;&gt;&gt;v.v.v...&gt;.......&gt;v&gt;.&gt;vv.vvvv.v..v.v...&gt;..v.&gt;.v..&gt;v&gt;vv&gt;v.</c>
+            </r>
+            <r>
+              <c>&gt;.....v&gt;&gt;v....vv..v&gt;...v&gt;...&gt;.&gt;.v&gt;&gt;........v.&gt;.......v.vv.v.v..vv..&gt;..&gt;&gt;v.&gt;.&gt;&gt;.v.&gt;..&gt;&gt;&gt;v..v.v.v....v.v..&gt;&gt;vv.v...v.v....v.&gt;&gt;v..v....v.v....</c>
+            </r>
+            <r>
+              <c>.v.&gt;....v.&gt;.&gt;&gt;&gt;v...v&gt;v.&gt;&gt;.&gt;.&gt;.&gt;&gt;.&gt;&gt;&gt;.&gt;.vv...&gt;.&gt;&gt;.&gt;&gt;...v....vv..&gt;...&gt;..v.&gt;...vv...&gt;v.&gt;v&gt;.v..&gt;.&gt;..v&gt;&gt;&gt;v.vv..v..vv&gt;&gt;..v..v.v&gt;.&gt;&gt;....&gt;vvv.v&gt;v..</c>
+            </r>
+            <r>
+              <c>.&gt;.&gt;vvv...v.v..&gt;..v...&gt;.....&gt;&gt;&gt;v.v&gt;.&gt;&gt;v.v.v&gt;.&gt;vv......&gt;..vv.v&gt;.&gt;.vv&gt;v......v&gt;....vv&gt;.vv&gt;....v..&gt;&gt;..v.&gt;v.&gt;.v.&gt;&gt;&gt;&gt;v&gt;......&gt;..&gt;..v&gt;...&gt;.&gt;vv&gt;&gt;.</c>
+            </r>
+            <r>
+              <c>&gt;v&gt;v...&gt;...v.vv&gt;&gt;.&gt;.&gt;v.&gt;&gt;.v..v..v..v&gt;...vv&gt;.....v...&gt;...v.......&gt;.v.....&gt;&gt;&gt;.v...&gt;..&gt;v&gt;.&gt;&gt;...v.&gt;&gt;.&gt;..vv&gt;.&gt;v&gt;..&gt;.&gt;...v.......v..vv.vv&gt;.v.v&gt;.v</c>
+            </r>
+            <r>
+              <c>v.vv..v.v..v&gt;.vv....&gt;.&gt;....&gt;...v&gt;&gt;.&gt;.&gt;&gt;v.vv&gt;.&gt;&gt;...&gt;&gt;.&gt;..&gt;&gt;&gt;vv&gt;.&gt;.vvv...v..v..v.......v........v&gt;v..v&gt;..v.&gt;vv&gt;.&gt;&gt;..&gt;....&gt;..v.v&gt;.vvv&gt;.&gt;.v..&gt;.</c>
+            </r>
+            <r>
+              <c>&gt;.....&gt;&gt;..v&gt;..v..&gt;&gt;.&gt;v..v.v...v..v&gt;.v.v&gt;.v.v...v.&gt;..vv.vv.&gt;&gt;...v...vv.&gt;&gt;.&gt;.v&gt;..v.....v.....&gt;v.....&gt;v&gt;&gt;v.&gt;vv&gt;..vv.vv&gt;v&gt;..v&gt;..&gt;.&gt;v&gt;v..&gt;.&gt;....</c>
+            </r>
+            <r>
+              <c>&gt;..v&gt;..&gt;..&gt;...&gt;.vv...v&gt;..vv..&gt;&gt;.&gt;&gt;.&gt;.vv.v......&gt;&gt;.&gt;...........v.v&gt;..v..........v.&gt;&gt;.&gt;&gt;&gt;.v.vvv&gt;vv.&gt;.vvv&gt;...&gt;...v..&gt;v..&gt;&gt;.&gt;...v.&gt;&gt;&gt;.&gt;&gt;&gt;v&gt;v&gt;.v</c>
+            </r>
+            <r>
+              <c>vvv......v..&gt;&gt;vv&gt;.v&gt;.vv&gt;.&gt;v...vvv&gt;.&gt;v.v&gt;v..&gt;&gt;...v&gt;..&gt;..v&gt;&gt;&gt;&gt;&gt;&gt;..&gt;&gt;..vvv&gt;.&gt;&gt;....&gt;.v&gt;..&gt;...v..&gt;&gt;..vv&gt;.&gt;.v.v.v&gt;.&gt;&gt;&gt;.vvv&gt;.v.&gt;v&gt;v&gt;v.v.v..vv&gt;v&gt;&gt;.</c>
+            </r>
+            <r>
+              <c>.v..v.&gt;&gt;v..&gt;.&gt;.v&gt;..&gt;.&gt;.......&gt;.&gt;v...vv.&gt;&gt;&gt;.vv..v..&gt;v.&gt;vv.v......&gt;v.&gt;&gt;.&gt;v&gt;v.&gt;.v&gt;..............&gt;&gt;.&gt;&gt;&gt;v&gt;&gt;&gt;v&gt;.&gt;vv&gt;&gt;.v.......v.v...v&gt;vvv.v&gt;&gt;v&gt;..</c>
+            </r>
+            <r>
+              <c>...v&gt;v.vvv...&gt;.&gt;.&gt;&gt;v&gt;&gt;&gt;..v..&gt;.....&gt;....v..vv&gt;v&gt;&gt;v.v.&gt;&gt;.v&gt;&gt;v..&gt;.......vv...&gt;......v.&gt;.v..v.&gt;&gt;.&gt;v..&gt;&gt;..&gt;v&gt;v.vvv&gt;vvv...&gt;..&gt;v.v..v...v...v&gt;....</c>
+            </r>
+            <r>
+              <c>v..&gt;.v.&gt;&gt;v..&gt;v....vv.&gt;...&gt;v&gt;..vvv..vv&gt;&gt;.&gt;&gt;.&gt;&gt;v&gt;&gt;&gt;..&gt;&gt;..vv.&gt;v......v.v&gt;v.&gt;.v&gt;v.&gt;.v..&gt;..v...v&gt;&gt;....&gt;v....v.&gt;v.v.&gt;...v..v..&gt;v.&gt;.&gt;.v&gt;v..&gt;vv.&gt;.v</c>
+            </r>
+            <r>
+              <c>.&gt;....vv&gt;..vv&gt;.&gt;..vv.&gt;v..v.v&gt;&gt;.v..&gt;.......&gt;vvv..v&gt;vv.v&gt;.v.vv.&gt;......v.&gt;.vv..v&gt;...vvv&gt;..v.&gt;....vvv..&gt;..vv.&gt;&gt;..&gt;&gt;....&gt;.....v&gt;&gt;&gt;.&gt;.v..v.v..&gt;..</c>
+            </r>
+            <r>
+              <c>vv..v&gt;v&gt;...&gt;..vv.&gt;.&gt;.....v..v..&gt;vv&gt;&gt;...vv&gt;&gt;..&gt;v.&gt;v.&gt;vvv&gt;vv&gt;&gt;.v.&gt;.vvvv.&gt;...v&gt;&gt;.&gt;..v.v&gt;&gt;v.vv...&gt;..&gt;..vv&gt;.v.vvv&gt;v.&gt;&gt;..&gt;&gt;......vv&gt;&gt;vvv...&gt;..v&gt;.</c>
+            </r>
+            <r>
+              <c>&gt;&gt;&gt;&gt;...v.v.&gt;vvv..&gt;.v..&gt;&gt;&gt;.&gt;&gt;..v...v&gt;&gt;.&gt;v&gt;&gt;v....v&gt;&gt;v..v.....v..vv.v&gt;..v&gt;v&gt;.....v.&gt;...&gt;&gt;&gt;vv.v.v.v...vv.v.....vv....v&gt;.v.&gt;.vv.&gt;.v...vvv..vv.&gt;&gt;</c>
+            </r>
+            <r>
+              <c>v.vvv&gt;...v&gt;vv.....v.vv.&gt;.&gt;v....v.&gt;vv.v&gt;&gt;.v&gt;..vv...&gt;.v....&gt;...&gt;..&gt;.v.&gt;.v.vv.&gt;.&gt;&gt;.&gt;&gt;v.&gt;.v..&gt;v..vv...v.&gt;..v.&gt;&gt;.v&gt;..&gt;...v&gt;.&gt;&gt;.&gt;...&gt;&gt;....v....&gt;.</c>
+            </r>
+            <r>
+              <c>&gt;.&gt;.vv&gt;&gt;&gt;.......&gt;v....&gt;&gt;&gt;...v.vv&gt;&gt;..&gt;.v.v..v&gt;.v.v.....&gt;..&gt;v&gt;&gt;.&gt;..&gt;.vv...&gt;..&gt;.&gt;&gt;vv....&gt;..v...v....v&gt;&gt;vv.&gt;v....v.v&gt;&gt;....vv&gt;.vv.&gt;v&gt;&gt;.v.&gt;.&gt;.&gt;v.</c>
+            </r>
+            <r>
+              <c>..v.&gt;vv..v&gt;.v..&gt;.v......v...&gt;.......v&gt;v...vv&gt;.v&gt;....v.&gt;....&gt;....&gt;v..v.&gt;&gt;&gt;v&gt;.v&gt;..&gt;.&gt;v..&gt;vv&gt;&gt;.&gt;.&gt;&gt;.&gt;..&gt;v..v&gt;&gt;&gt;...&gt;&gt;.v...&gt;.vv&gt;&gt;.v.v&gt;..v&gt;.&gt;.&gt;&gt;.</c>
+            </r>
+            <r>
+              <c>v&gt;&gt;&gt;.&gt;v.v.&gt;&gt;v&gt;.vvv.&gt;v....&gt;..&gt;.v&gt;..v&gt;..v.v.v..&gt;&gt;.&gt;&gt;..vv&gt;&gt;..&gt;v..&gt;.vv...v...&gt;v...v.v&gt;vv&gt;&gt;.....v&gt;v...v.v.&gt;.&gt;&gt;..&gt;&gt;..&gt;v......&gt;vv.&gt;&gt;&gt;&gt;vvv&gt;..v&gt;vv&gt;.</c>
+            </r>
+            <r>
+              <c>v.vv..&gt;v.v...&gt;.&gt;.&gt;v.&gt;vvv..&gt;v.&gt;vv.&gt;v..v&gt;.....&gt;.&gt;&gt;.&gt;&gt;..v..v..v...v..v...v&gt;.&gt;v..v.&gt;.&gt;&gt;.vvv&gt;v..&gt;...vvv.v&gt;.&gt;&gt;....&gt;&gt;&gt;..&gt;.v..v.v.&gt;.v....v&gt;.v&gt;...v.</c>
+            </r>
+            <r>
+              <c>..v.v........v...&gt;&gt;vv&gt;&gt;.vv&gt;&gt;&gt;&gt;v......v&gt;&gt;v..v.v.....&gt;.v.&gt;.v..v.....&gt;v..&gt;&gt;..&gt;&gt;&gt;....v..&gt;.vvv&gt;&gt;.&gt;&gt;vv.v&gt;.v..&gt;v..&gt;....v.vv....v&gt;&gt;&gt;v...&gt;.&gt;&gt;&gt;.v...v</c>
+            </r>
+            <r>
+              <c>..&gt;v.....v&gt;.....v.&gt;vv...v.v...&gt;vv..v.v...&gt;&gt;.v&gt;.v...&gt;..&gt;v&gt;&gt;v&gt;&gt;v&gt;&gt;&gt;.vv&gt;&gt;&gt;vv...v&gt;..&gt;vv..v&gt;v&gt;.&gt;.v&gt;&gt;vv&gt;...v.v&gt;&gt;.&gt;.&gt;.v..&gt;v.....&gt;&gt;&gt;.v.&gt;v....v&gt;v&gt;v.</c>
+            </r>
+            <r>
+              <c>.....v..v...&gt;&gt;&gt;vv.&gt;&gt;&gt;&gt;&gt;&gt;&gt;v...&gt;.v&gt;&gt;&gt;&gt;v.vv.&gt;.....v.&gt;.v&gt;...&gt;.&gt;.vvvvvv...&gt;&gt;&gt;.vv&gt;..&gt;&gt;...v.v&gt;..&gt;v.v&gt;&gt;v.vv&gt;...v&gt;...v&gt;...&gt;...vv....&gt;vv....&gt;.v.v.v&gt;v</c>
+            </r>
+            <r>
+              <c>..&gt;&gt;v&gt;v.&gt;..vv&gt;..&gt;...vv.&gt;...&gt;vv&gt;&gt;.v.....&gt;....&gt;.&gt;.v&gt;.v..&gt;v..v.......v.......&gt;&gt;v&gt;.&gt;&gt;v&gt;&gt;...vv&gt;&gt;&gt;&gt;....&gt;&gt;v&gt;&gt;......v.&gt;..v&gt;.&gt;..&gt;v...&gt;&gt;.&gt;&gt;&gt;&gt;.v.&gt;..v.</c>
+            </r>
+            <r>
+              <c>v&gt;..v.&gt;vv.&gt;&gt;..vvv&gt;vv&gt;vv&gt;&gt;.v&gt;&gt;.&gt;&gt;.&gt;.&gt;&gt;&gt;.v......v..&gt;.&gt;&gt;v&gt;.....&gt;v&gt;&gt;.&gt;vvvv..v....v..&gt;&gt;vv..&gt;...&gt;&gt;&gt;...v&gt;.v.&gt;..v.....&gt;&gt;.v.v&gt;.&gt;...&gt;.&gt;.v.&gt;.v&gt;...&gt;&gt;vv</c>
+            </r>
+            <r>
+              <c>.v...vv.v&gt;..v&gt;.v.v&gt;...&gt;v.v&gt;&gt;&gt;&gt;..&gt;.vv.........&gt;v....v.vv.v&gt;&gt;v...&gt;vv&gt;&gt;v..vv.v&gt;.&gt;.&gt;&gt;.v&gt;..vv.v.&gt;......v.&gt;.v..&gt;&gt;&gt;&gt;&gt;..v.&gt;vv..v&gt;.&gt;.v..&gt;..&gt;..v..&gt;v.</c>
+            </r>
+            <r>
+              <c>&gt;..&gt;v.&gt;.&gt;..v.&gt;......v&gt;..&gt;.&gt;..v&gt;.vv.&gt;.&gt;&gt;&gt;.vv&gt;&gt;v..&gt;..&gt;.&gt;.&gt;.v&gt;&gt;v.&gt;&gt;...&gt;..&gt;&gt;......&gt;..&gt;&gt;v.v&gt;..&gt;..v.....&gt;.&gt;.&gt;&gt;v.&gt;..&gt;.v...&gt;.&gt;...v.&gt;&gt;&gt;v...&gt;.v&gt;v....</c>
+            </r>
+            <r>
+              <c>&gt;.v&gt;&gt;.vv...v&gt;vv.&gt;&gt;.&gt;vvv&gt;&gt;&gt;&gt;..v.v&gt;vv..v..&gt;vv.........v&gt;...v..vvv.&gt;.vv&gt;&gt;v&gt;&gt;&gt;...&gt;&gt;v&gt;vv...&gt;..v.&gt;.v.&gt;&gt;.&gt;..&gt;..&gt;&gt;..&gt;v....&gt;..&gt;vv.....&gt;&gt;...&gt;..v.v.&gt;.</c>
+            </r>
+            <r>
+              <c>..v&gt;v&gt;..&gt;.v.....&gt;&gt;.v..v.v.v.&gt;&gt;vv..&gt;v.&gt;&gt;..&gt;.v&gt;.v.vvv.....vv&gt;...&gt;.v&gt;v.&gt;v.&gt;.&gt;v.&gt;&gt;.&gt;vv&gt;.&gt;&gt;v..vv&gt;v.v&gt;v..&gt;vv...v&gt;&gt;.&gt;&gt;&gt;...v...&gt;.&gt;.vv.&gt;&gt;v&gt;..v&gt;v..v.</c>
+            </r>
+            <r>
+              <c>.v&gt;..v&gt;v&gt;&gt;&gt;..v.&gt;..v..&gt;.&gt;&gt;..&gt;.&gt;.&gt;&gt;.....vvv..v...vv.v&gt;&gt;&gt;.&gt;&gt;.vv.v.v.&gt;vv..v.....&gt;.v&gt;......v.&gt;..v..&gt;&gt;..&gt;vv...v&gt;.&gt;..&gt;.&gt;.vv&gt;...v.&gt;v...&gt;.&gt;&gt;&gt;.&gt;..&gt;vv</c>
+            </r>
+            <r>
+              <c>.&gt;..&gt;v.vv.&gt;vv.&gt;vv..&gt;..v&gt;&gt;.v.&gt;.&gt;v&gt;v&gt;&gt;v...vv.&gt;.&gt;&gt;&gt;..v&gt;.&gt;v.&gt;vv&gt;.&gt;..vv&gt;v&gt;.&gt;v.&gt;&gt;.&gt;.v..v.&gt;.v&gt;.&gt;.&gt;.v.v........&gt;vv.vv.&gt;vv&gt;.&gt;.v..v&gt;.....&gt;v.&gt;vv.&gt;vv.&gt;</c>
+            </r>
+            <r>
+              <c>..&gt;.&gt;vv.vv..&gt;&gt;.&gt;vv.v.&gt;...&gt;vv.v.......&gt;....&gt;vv&gt;vvvv&gt;..v...&gt;v.....&gt;v&gt;.&gt;&gt;v.&gt;..vv&gt;&gt;v..v....v&gt;vvvvvv.&gt;....&gt;.&gt;&gt;v..&gt;.v...v&gt;.&gt;....vv...&gt;.vvv&gt;&gt;&gt;&gt;.v.</c>
+            </r>
+            <r>
+              <c>vv.&gt;.v.v..&gt;.&gt;.........&gt;v.v.v..&gt;v....&gt;.v&gt;..&gt;.&gt;v&gt;v..v&gt;v....vv.&gt;.....v.v.v&gt;&gt;&gt;.v..v&gt;.v.v..v..&gt;v&gt;..&gt;......&gt;.vvv..&gt;..v...v........v..&gt;....&gt;..v..&gt;</c>
+            </r>
+            <r>
+              <c>&gt;vv..&gt;&gt;v..&gt;&gt;vv...&gt;...&gt;&gt;..v.v&gt;....&gt;&gt;v&gt;v&gt;&gt;.v.vv&gt;.v.&gt;&gt;..v&gt;&gt;&gt;&gt;v&gt;&gt;v&gt;&gt;v.v.&gt;&gt;..&gt;&gt;&gt;&gt;&gt;.&gt;...&gt;.&gt;.&gt;v....&gt;..&gt;&gt;.vv....&gt;....&gt;vv&gt;vv&gt;....&gt;....&gt;vv&gt;&gt;&gt;.&gt;&gt;&gt;....</c>
+            </r>
+            <r>
+              <c>.&gt;v&gt;....&gt;&gt;&gt;.v&gt;&gt;&gt;v.&gt;v.vv&gt;v&gt;...v&gt;v&gt;..v.v.&gt;&gt;......&gt;.....&gt;.v..&gt;vv&gt;.vv..&gt;.&gt;v&gt;v&gt;.v&gt;.v..&gt;v..vv.v.&gt;......&gt;&gt;&gt;...&gt;..vv.v&gt;vvv&gt;v.....v&gt;&gt;vv&gt;v&gt;.&gt;.&gt;.&gt;.&gt;&gt;&gt;</c>
+            </r>
+            <r>
+              <c>....&gt;v&gt;..v&gt;&gt;v.v.&gt;v.vv.&gt;v...vv.v..&gt;&gt;v&gt;&gt;.&gt;v.v&gt;.....&gt;v&gt;.v&gt;..&gt;v..&gt;.&gt;vv&gt;v.v&gt;v.v.&gt;vvv..v&gt;..v.v.vv&gt;....vvv...vv.vv&gt;&gt;.&gt;vvv..&gt;v&gt;v..v..v.v&gt;&gt;&gt;..&gt;.&gt;...</c>
+            </r>
+            <r>
+              <c>&gt;v&gt;v.v...v.vv...&gt;&gt;vv&gt;.....v....&gt;...v..&gt;.&gt;......&gt;v&gt;&gt;.&gt;..v..&gt;.&gt;..&gt;&gt;.&gt;....v..&gt;&gt;v.&gt;v..&gt;.&gt;.vv&gt;v..v...v&gt;.&gt;v.&gt;&gt;..&gt;vv.&gt;...v..&gt;.&gt;v....&gt;..v&gt;v....v.v.</c>
+            </r>
+            <r>
+              <c>.&gt;&gt;.....&gt;.vvv.v&gt;.&gt;v&gt;&gt;.....vv&gt;....&gt;..vvv&gt;v.v..&gt;v&gt;&gt;....&gt;vv...v.v.&gt;.vv.&gt;&gt;&gt;.v&gt;.&gt;v.&gt;&gt;v.vv&gt;..&gt;&gt;v&gt;.vvv.v.v.v&gt;&gt;..v....&gt;&gt;.vv&gt;v.&gt;.&gt;v.....v.&gt;.....&gt;...</c>
+            </r>
+            <r>
+              <c>v...v..&gt;v.&gt;.&gt;.v..&gt;...&gt;v.&gt;..v..vv.v..&gt;.&gt;.v...v...&gt;v&gt;.vv..&gt;.&gt;v.&gt;&gt;.&gt;v&gt;..v.v.v.&gt;v...&gt;.&gt;v&gt;..v&gt;.....v..v&gt;&gt;..&gt;..vv&gt;..&gt;...v&gt;&gt;&gt;..&gt;&gt;...v.&gt;.v.v..&gt;.&gt;&gt;&gt;</c>
+            </r>
+            <r>
+              <c>.&gt;&gt;&gt;.&gt;v.&gt;&gt;.&gt;..&gt;&gt;...&gt;v..v..&gt;.&gt;..v&gt;v.&gt;.&gt;vv.v.v....vv..&gt;.v&gt;v...v.....v&gt;...&gt;&gt;v.&gt;.&gt;.vv..&gt;vv..&gt;v&gt;..&gt;vv.&gt;v..&gt;&gt;.v.&gt;v.&gt;&gt;.&gt;.v&gt;..&gt;&gt;v&gt;v.v&gt;v..vv.&gt;vv.&gt;.&gt;</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="30" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="42" Connection="InputR" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="OutputR" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output36" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day25</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="54f12829-6e87-4c07-9225-7e4bd0e25b98" />
+      <Telemetry>
+        <PreviousWorkflowId value="a7ffa66b-7d7c-430b-b307-f02faa855d63" />
+        <OriginWorkflowId value="a7ffa66b-7d7c-430b-b307-f02faa855d63" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
