@@ -1,0 +1,833 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Input" selected="False" />
+            <SelectField field="SRC" selected="False" />
+            <SelectField field="SRC1" selected="True" />
+            <SelectField field="SRC2" selected="False" />
+            <SelectField field="SRC3" selected="True" />
+            <SelectField field="Operator" selected="True" />
+            <SelectField field="TGT" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from SRC" name="SRC1" size="1073741823" source="Formula: IF [Operator]=&quot;NOT&quot; THEN [SRC2]&#xA;ELSE [SRC1] ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: IF [SRC2] IN (&quot;AND&quot;,&quot;OR&quot;,&quot;RSHIFT&quot;,&quot;LSHIFT&quot;) THEN [SRC2]&#xA;ELSEIF [SRC1]=&quot;NOT&quot; THEN [SRC1]&#xA;ELSEIF IsNull([SRC2]) THEN &quot;=&quot;&#xA;ELSE&#xA;Null()&#xA;ENDIF" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1674" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="66" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\MyDoc\AYX\AdventOfCode\2015\Day07\temp.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText>temp.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from SRC" name="SRC1" size="1073741823" source="Formula: IF [Operator]=&quot;NOT&quot; THEN [SRC2]&#xA;ELSE [SRC1] ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: IF [SRC2] IN (&quot;AND&quot;,&quot;OR&quot;,&quot;RSHIFT&quot;,&quot;LSHIFT&quot;) THEN [SRC2]&#xA;ELSEIF [SRC1]=&quot;NOT&quot; THEN [SRC1]&#xA;ELSEIF IsNull([SRC2]) THEN &quot;=&quot;&#xA;ELSE&#xA;Null()&#xA;ENDIF" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1674" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output19</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="258" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>REGEX_Match([SRC1], "[\-\d]+") AND [Operator]="="</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>REGEX_Match([SRC1], "[\-\d]+") AND [Operator]="="</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from SRC" name="SRC1" size="1073741823" source="Formula: IF [Operator]=&quot;NOT&quot; THEN [SRC2]&#xA;ELSE [SRC1] ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: IF [SRC2] IN (&quot;AND&quot;,&quot;OR&quot;,&quot;RSHIFT&quot;,&quot;LSHIFT&quot;) THEN [SRC2]&#xA;ELSEIF [SRC1]=&quot;NOT&quot; THEN [SRC1]&#xA;ELSEIF IsNull([SRC2]) THEN &quot;=&quot;&#xA;ELSE&#xA;Null()&#xA;ENDIF" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from SRC" name="SRC1" size="1073741823" source="Formula: IF [Operator]=&quot;NOT&quot; THEN [SRC2]&#xA;ELSE [SRC1] ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: IF [SRC2] IN (&quot;AND&quot;,&quot;OR&quot;,&quot;RSHIFT&quot;,&quot;LSHIFT&quot;) THEN [SRC2]&#xA;ELSEIF [SRC1]=&quot;NOT&quot; THEN [SRC1]&#xA;ELSEIF IsNull([SRC2]) THEN &quot;=&quot;&#xA;ELSE&#xA;Null()&#xA;ENDIF" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="354" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>SRC1</FieldFind>
+          <FieldSearch>TGT</FieldSearch>
+          <ReplaceFoundField>SRC1</ReplaceFoundField>
+          <FindMode>FindWhole</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="True" />
+          <ReplaceMode>Replace</ReplaceMode>
+          <ReplaceMultipleFound value="False" />
+          <ReplaceAppendFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from SRC" name="SRC1" size="1073741823" source="Formula: IF [Operator]=&quot;NOT&quot; THEN [SRC2]&#xA;ELSE [SRC1] ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: IF [SRC2] IN (&quot;AND&quot;,&quot;OR&quot;,&quot;RSHIFT&quot;,&quot;LSHIFT&quot;) THEN [SRC2]&#xA;ELSEIF [SRC1]=&quot;NOT&quot; THEN [SRC1]&#xA;ELSEIF IsNull([SRC2]) THEN &quot;=&quot;&#xA;ELSE&#xA;Null()&#xA;ENDIF" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="450" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>SRC3</FieldFind>
+          <FieldSearch>TGT</FieldSearch>
+          <ReplaceFoundField>SRC1</ReplaceFoundField>
+          <FindMode>FindWhole</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="True" />
+          <ReplaceMode>Replace</ReplaceMode>
+          <ReplaceMultipleFound value="False" />
+          <ReplaceAppendFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from SRC" name="SRC1" size="1073741823" source="Formula: IF [Operator]=&quot;NOT&quot; THEN [SRC2]&#xA;ELSE [SRC1] ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: IF [SRC2] IN (&quot;AND&quot;,&quot;OR&quot;,&quot;RSHIFT&quot;,&quot;LSHIFT&quot;) THEN [SRC2]&#xA;ELSEIF [SRC1]=&quot;NOT&quot; THEN [SRC1]&#xA;ELSEIF IsNull([SRC2]) THEN &quot;=&quot;&#xA;ELSE&#xA;Null()&#xA;ENDIF" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="546" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[IF [Operator] != "NOT" THEN 
+REGEX_Match([SRC1], "[\-\d]+") AND REGEX_Match([SRC3], "[\-\d]+")
+ELSE
+REGEX_Match([SRC1], "[\-\d]+")
+ENDIF
+]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF [Operator] != "NOT" THEN 
+REGEX_Match([SRC1], "[\-\d]+") AND REGEX_Match([SRC...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from SRC" name="SRC1" size="1073741823" source="Formula: IF [Operator]=&quot;NOT&quot; THEN [SRC2]&#xA;ELSE [SRC1] ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: IF [SRC2] IN (&quot;AND&quot;,&quot;OR&quot;,&quot;RSHIFT&quot;,&quot;LSHIFT&quot;) THEN [SRC2]&#xA;ELSEIF [SRC1]=&quot;NOT&quot; THEN [SRC1]&#xA;ELSEIF IsNull([SRC2]) THEN &quot;=&quot;&#xA;ELSE&#xA;Null()&#xA;ENDIF" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from SRC" name="SRC1" size="1073741823" source="Formula: IF [Operator]=&quot;NOT&quot; THEN [SRC2]&#xA;ELSE [SRC1] ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: IF [SRC2] IN (&quot;AND&quot;,&quot;OR&quot;,&quot;RSHIFT&quot;,&quot;LSHIFT&quot;) THEN [SRC2]&#xA;ELSEIF [SRC1]=&quot;NOT&quot; THEN [SRC1]&#xA;ELSEIF IsNull([SRC2]) THEN &quot;=&quot;&#xA;ELSE&#xA;Null()&#xA;ENDIF" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="738" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Operator]=&quot;RSHIFT&quot; THEN&#xA; ShiftRight([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;LSHIFT&quot; THEN&#xA; ShiftLeft([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;AND&quot; THEN&#xA; BinaryAnd([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;OR&quot; THEN&#xA; BinaryOr([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;NOT&quot; THEN&#xA; BinaryNot([SRC1])&#xA;ELSE&#xA; Null()&#xA;ENDIF&#xA;" field="result" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>result = IF [Operator]="RSHIFT" THEN
+ ShiftRight([SRC1], [SRC3])
+ELSEIF [Operato...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from SRC" name="SRC1" source="Formula: IF [Operator]=&quot;NOT&quot; THEN [SRC2]&#xA;ELSE [SRC1] ENDIF" type="Int64" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" source="TextToColumns: Parsed from SRC" type="Int64" />
+            <Field name="Operator" size="1073741823" source="Formula: IF [SRC2] IN (&quot;AND&quot;,&quot;OR&quot;,&quot;RSHIFT&quot;,&quot;LSHIFT&quot;) THEN [SRC2]&#xA;ELSEIF [SRC1]=&quot;NOT&quot; THEN [SRC1]&#xA;ELSEIF IsNull([SRC2]) THEN &quot;=&quot;&#xA;ELSE&#xA;Null()&#xA;ENDIF" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field name="result" size="1073741823" source="Formula: IF [Operator]=&quot;RSHIFT&quot; THEN&#xA; ShiftRight([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;LSHIFT&quot; THEN&#xA; ShiftLeft([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;AND&quot; THEN&#xA; BinaryAnd([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;OR&quot; THEN&#xA; BinaryOr([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;NOT&quot; THEN&#xA; BinaryNot([SRC1])&#xA;ELSE&#xA; Null()&#xA;ENDIF&#xA;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="642" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="SRC1" selected="True" type="Int64" size="8" />
+            <SelectField field="SRC3" selected="True" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from SRC" name="SRC1" source="Formula: IF [Operator]=&quot;NOT&quot; THEN [SRC2]&#xA;ELSE [SRC1] ENDIF" type="Int64" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" source="TextToColumns: Parsed from SRC" type="Int64" />
+            <Field name="Operator" size="1073741823" source="Formula: IF [SRC2] IN (&quot;AND&quot;,&quot;OR&quot;,&quot;RSHIFT&quot;,&quot;LSHIFT&quot;) THEN [SRC2]&#xA;ELSEIF [SRC1]=&quot;NOT&quot; THEN [SRC1]&#xA;ELSEIF IsNull([SRC2]) THEN &quot;=&quot;&#xA;ELSE&#xA;Null()&#xA;ENDIF" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="834" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="TGT" selected="True" />
+            <SelectField field="result" selected="True" rename="SRC1" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field name="SRC1" size="1073741823" source="Formula: IF [Operator]=&quot;RSHIFT&quot; THEN&#xA; ShiftRight([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;LSHIFT&quot; THEN&#xA; ShiftLeft([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;AND&quot; THEN&#xA; BinaryAnd([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;OR&quot; THEN&#xA; BinaryOr([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;NOT&quot; THEN&#xA; BinaryNot([SRC1])&#xA;ELSE&#xA; Null()&#xA;ENDIF&#xA;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1026" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SRC1" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="930" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;=&quot;" field="Operator" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Operator = "="
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field name="SRC1" size="1073741823" source="Formula: IF [Operator]=&quot;RSHIFT&quot; THEN&#xA; ShiftRight([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;LSHIFT&quot; THEN&#xA; ShiftLeft([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;AND&quot; THEN&#xA; BinaryAnd([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;OR&quot; THEN&#xA; BinaryOr([SRC1], [SRC3])&#xA;ELSEIF [Operator]=&quot;NOT&quot; THEN&#xA; BinaryNot([SRC1])&#xA;ELSE&#xA; Null()&#xA;ENDIF&#xA;" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: &quot;=&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1122" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[TGT]="a" AND [Operator]="=" AND REGEX_Match([SRC1], "[\-\d]+")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[TGT]="a" AND [Operator]="=" AND REGEX_Match([SRC1], "[\-\d]+")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="SRC1" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="SRC1" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings>
+        <Position x="1206" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1290" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SRC1" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1482" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Operator" selected="True" />
+            <SelectField field="TGT" selected="True" />
+            <SelectField field="SRC1" selected="True" />
+            <SelectField field="SRC3" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SRC1" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1386" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-11-26 21:17:09</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2024-11-26 21:17:09</StartDate>
+              <EndDate>2024-11-26 21:17:09</EndDate>
+              <Operand>0</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] = 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="SRC1" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="SRC1" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1674" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\MyDoc\AYX\AdventOfCode\2015\Day07\temp.yxdb</File>
+          <Passwords />
+          <Disable>True</Disable>
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>temp.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="1578" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SRC1" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output2">
+          <RecordInfo>
+            <Field name="SRC1" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output3">
+          <RecordInfo>
+            <Field name="SRC1" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from SRC" name="SRC3" size="1073741823" source="TextToColumns: Parsed from SRC" type="V_WString" />
+            <Field name="Operator" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field description="RegEx: Parsed from Input" name="TGT" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="False" />
+      <Destination ToolID="30" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="True" />
+      <Destination ToolID="30" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="True" />
+      <Destination ToolID="31" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Targets" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="29" Connection="True" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="32" Connection="False" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="True" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="42" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output9" />
+      <Destination ToolID="42" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="True" />
+      <Destination ToolID="41" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="True" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="False" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output2" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day07_macro</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="460793fa-4056-4673-afcf-3ac708bd2358" />
+      <Telemetry>
+        <PreviousWorkflowId value="aa8752f7-9586-4aa1-a145-cf5e0e6ec769" />
+        <OriginWorkflowId value="aa8752f7-9586-4aa1-a145-cf5e0e6ec769" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (13)</Name>
+          <ToolId value="13" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (12)</Name>
+              <ToolId value="12" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (11)</Name>
+              <ToolId value="11" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (19)</Name>
+              <ToolId value="19" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="1000" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="11" Selected="True" />
+        <Tool ToolId="12" Selected="True" />
+        <Tool ToolId="19" Selected="True" />
+        <Tool ToolId="41" Selected="True" />
+        <Tool ToolId="46" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
