@@ -1,0 +1,4047 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="78" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\MyDoc\AYX\AdventOfCode\2015\Day11\temp.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText>temp.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="78" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="529" />
+          <Fields>
+            <Field name="letter" />
+            <Field name="Source_letter" />
+            <Field name="Lower2letters" />
+          </Fields>
+          <Data>
+            <r>
+              <c>a</c>
+              <c>a</c>
+              <c>aa</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>b</c>
+              <c>ab</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>c</c>
+              <c>ac</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>d</c>
+              <c>ad</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>e</c>
+              <c>ae</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>f</c>
+              <c>af</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>g</c>
+              <c>ag</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>h</c>
+              <c>ah</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>j</c>
+              <c>aj</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>k</c>
+              <c>ak</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>m</c>
+              <c>am</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>n</c>
+              <c>an</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>p</c>
+              <c>ap</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>q</c>
+              <c>aq</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>r</c>
+              <c>ar</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>s</c>
+              <c>as</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>t</c>
+              <c>at</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>u</c>
+              <c>au</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>v</c>
+              <c>av</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>w</c>
+              <c>aw</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>x</c>
+              <c>ax</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>y</c>
+              <c>ay</c>
+            </r>
+            <r>
+              <c>a</c>
+              <c>z</c>
+              <c>az</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>a</c>
+              <c>ba</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>b</c>
+              <c>bb</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>c</c>
+              <c>bc</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>d</c>
+              <c>bd</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>e</c>
+              <c>be</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>f</c>
+              <c>bf</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>g</c>
+              <c>bg</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>h</c>
+              <c>bh</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>j</c>
+              <c>bj</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>k</c>
+              <c>bk</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>m</c>
+              <c>bm</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>n</c>
+              <c>bn</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>p</c>
+              <c>bp</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>q</c>
+              <c>bq</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>r</c>
+              <c>br</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>s</c>
+              <c>bs</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>t</c>
+              <c>bt</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>u</c>
+              <c>bu</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>v</c>
+              <c>bv</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>w</c>
+              <c>bw</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>x</c>
+              <c>bx</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>y</c>
+              <c>by</c>
+            </r>
+            <r>
+              <c>b</c>
+              <c>z</c>
+              <c>bz</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>a</c>
+              <c>ca</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>b</c>
+              <c>cb</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>c</c>
+              <c>cc</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>d</c>
+              <c>cd</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>e</c>
+              <c>ce</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>f</c>
+              <c>cf</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>g</c>
+              <c>cg</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>h</c>
+              <c>ch</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>j</c>
+              <c>cj</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>k</c>
+              <c>ck</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>m</c>
+              <c>cm</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>n</c>
+              <c>cn</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>p</c>
+              <c>cp</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>q</c>
+              <c>cq</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>r</c>
+              <c>cr</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>s</c>
+              <c>cs</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>t</c>
+              <c>ct</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>u</c>
+              <c>cu</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>v</c>
+              <c>cv</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>w</c>
+              <c>cw</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>x</c>
+              <c>cx</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>y</c>
+              <c>cy</c>
+            </r>
+            <r>
+              <c>c</c>
+              <c>z</c>
+              <c>cz</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>a</c>
+              <c>da</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>b</c>
+              <c>db</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>c</c>
+              <c>dc</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>d</c>
+              <c>dd</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>e</c>
+              <c>de</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>f</c>
+              <c>df</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>g</c>
+              <c>dg</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>h</c>
+              <c>dh</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>j</c>
+              <c>dj</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>k</c>
+              <c>dk</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>m</c>
+              <c>dm</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>n</c>
+              <c>dn</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>p</c>
+              <c>dp</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>q</c>
+              <c>dq</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>r</c>
+              <c>dr</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>s</c>
+              <c>ds</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>t</c>
+              <c>dt</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>u</c>
+              <c>du</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>v</c>
+              <c>dv</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>w</c>
+              <c>dw</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>x</c>
+              <c>dx</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>y</c>
+              <c>dy</c>
+            </r>
+            <r>
+              <c>d</c>
+              <c>z</c>
+              <c>dz</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>a</c>
+              <c>ea</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>b</c>
+              <c>eb</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>c</c>
+              <c>ec</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>d</c>
+              <c>ed</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>e</c>
+              <c>ee</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>f</c>
+              <c>ef</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>g</c>
+              <c>eg</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>h</c>
+              <c>eh</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>j</c>
+              <c>ej</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>k</c>
+              <c>ek</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>m</c>
+              <c>em</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>n</c>
+              <c>en</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>p</c>
+              <c>ep</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>q</c>
+              <c>eq</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>r</c>
+              <c>er</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>s</c>
+              <c>es</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>t</c>
+              <c>et</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>u</c>
+              <c>eu</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>v</c>
+              <c>ev</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>w</c>
+              <c>ew</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>x</c>
+              <c>ex</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>y</c>
+              <c>ey</c>
+            </r>
+            <r>
+              <c>e</c>
+              <c>z</c>
+              <c>ez</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>a</c>
+              <c>fa</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>b</c>
+              <c>fb</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>c</c>
+              <c>fc</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>d</c>
+              <c>fd</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>e</c>
+              <c>fe</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>f</c>
+              <c>ff</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>g</c>
+              <c>fg</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>h</c>
+              <c>fh</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>j</c>
+              <c>fj</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>k</c>
+              <c>fk</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>m</c>
+              <c>fm</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>n</c>
+              <c>fn</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>p</c>
+              <c>fp</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>q</c>
+              <c>fq</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>r</c>
+              <c>fr</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>s</c>
+              <c>fs</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>t</c>
+              <c>ft</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>u</c>
+              <c>fu</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>v</c>
+              <c>fv</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>w</c>
+              <c>fw</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>x</c>
+              <c>fx</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>y</c>
+              <c>fy</c>
+            </r>
+            <r>
+              <c>f</c>
+              <c>z</c>
+              <c>fz</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>a</c>
+              <c>ga</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>b</c>
+              <c>gb</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>c</c>
+              <c>gc</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>d</c>
+              <c>gd</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>e</c>
+              <c>ge</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>f</c>
+              <c>gf</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>g</c>
+              <c>gg</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>h</c>
+              <c>gh</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>j</c>
+              <c>gj</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>k</c>
+              <c>gk</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>m</c>
+              <c>gm</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>n</c>
+              <c>gn</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>p</c>
+              <c>gp</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>q</c>
+              <c>gq</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>r</c>
+              <c>gr</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>s</c>
+              <c>gs</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>t</c>
+              <c>gt</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>u</c>
+              <c>gu</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>v</c>
+              <c>gv</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>w</c>
+              <c>gw</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>x</c>
+              <c>gx</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>y</c>
+              <c>gy</c>
+            </r>
+            <r>
+              <c>g</c>
+              <c>z</c>
+              <c>gz</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>a</c>
+              <c>ha</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>b</c>
+              <c>hb</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>c</c>
+              <c>hc</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>d</c>
+              <c>hd</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>e</c>
+              <c>he</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>f</c>
+              <c>hf</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>g</c>
+              <c>hg</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>h</c>
+              <c>hh</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>j</c>
+              <c>hj</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>k</c>
+              <c>hk</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>m</c>
+              <c>hm</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>n</c>
+              <c>hn</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>p</c>
+              <c>hp</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>q</c>
+              <c>hq</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>r</c>
+              <c>hr</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>s</c>
+              <c>hs</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>t</c>
+              <c>ht</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>u</c>
+              <c>hu</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>v</c>
+              <c>hv</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>w</c>
+              <c>hw</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>x</c>
+              <c>hx</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>y</c>
+              <c>hy</c>
+            </r>
+            <r>
+              <c>h</c>
+              <c>z</c>
+              <c>hz</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>a</c>
+              <c>ja</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>b</c>
+              <c>jb</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>c</c>
+              <c>jc</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>d</c>
+              <c>jd</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>e</c>
+              <c>je</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>f</c>
+              <c>jf</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>g</c>
+              <c>jg</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>h</c>
+              <c>jh</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>j</c>
+              <c>jj</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>k</c>
+              <c>jk</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>m</c>
+              <c>jm</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>n</c>
+              <c>jn</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>p</c>
+              <c>jp</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>q</c>
+              <c>jq</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>r</c>
+              <c>jr</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>s</c>
+              <c>js</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>t</c>
+              <c>jt</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>u</c>
+              <c>ju</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>v</c>
+              <c>jv</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>w</c>
+              <c>jw</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>x</c>
+              <c>jx</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>y</c>
+              <c>jy</c>
+            </r>
+            <r>
+              <c>j</c>
+              <c>z</c>
+              <c>jz</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>a</c>
+              <c>ka</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>b</c>
+              <c>kb</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>c</c>
+              <c>kc</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>d</c>
+              <c>kd</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>e</c>
+              <c>ke</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>f</c>
+              <c>kf</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>g</c>
+              <c>kg</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>h</c>
+              <c>kh</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>j</c>
+              <c>kj</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>k</c>
+              <c>kk</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>m</c>
+              <c>km</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>n</c>
+              <c>kn</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>p</c>
+              <c>kp</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>q</c>
+              <c>kq</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>r</c>
+              <c>kr</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>s</c>
+              <c>ks</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>t</c>
+              <c>kt</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>u</c>
+              <c>ku</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>v</c>
+              <c>kv</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>w</c>
+              <c>kw</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>x</c>
+              <c>kx</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>y</c>
+              <c>ky</c>
+            </r>
+            <r>
+              <c>k</c>
+              <c>z</c>
+              <c>kz</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>a</c>
+              <c>ma</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>b</c>
+              <c>mb</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>c</c>
+              <c>mc</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>d</c>
+              <c>md</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>e</c>
+              <c>me</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>f</c>
+              <c>mf</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>g</c>
+              <c>mg</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>h</c>
+              <c>mh</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>j</c>
+              <c>mj</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>k</c>
+              <c>mk</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>m</c>
+              <c>mm</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>n</c>
+              <c>mn</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>p</c>
+              <c>mp</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>q</c>
+              <c>mq</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>r</c>
+              <c>mr</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>s</c>
+              <c>ms</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>t</c>
+              <c>mt</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>u</c>
+              <c>mu</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>v</c>
+              <c>mv</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>w</c>
+              <c>mw</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>x</c>
+              <c>mx</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>y</c>
+              <c>my</c>
+            </r>
+            <r>
+              <c>m</c>
+              <c>z</c>
+              <c>mz</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>a</c>
+              <c>na</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>b</c>
+              <c>nb</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>c</c>
+              <c>nc</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>d</c>
+              <c>nd</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>e</c>
+              <c>ne</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>f</c>
+              <c>nf</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>g</c>
+              <c>ng</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>h</c>
+              <c>nh</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>j</c>
+              <c>nj</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>k</c>
+              <c>nk</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>m</c>
+              <c>nm</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>n</c>
+              <c>nn</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>p</c>
+              <c>np</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>q</c>
+              <c>nq</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>r</c>
+              <c>nr</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>s</c>
+              <c>ns</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>t</c>
+              <c>nt</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>u</c>
+              <c>nu</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>v</c>
+              <c>nv</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>w</c>
+              <c>nw</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>x</c>
+              <c>nx</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>y</c>
+              <c>ny</c>
+            </r>
+            <r>
+              <c>n</c>
+              <c>z</c>
+              <c>nz</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>a</c>
+              <c>pa</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>b</c>
+              <c>pb</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>c</c>
+              <c>pc</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>d</c>
+              <c>pd</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>e</c>
+              <c>pe</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>f</c>
+              <c>pf</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>g</c>
+              <c>pg</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>h</c>
+              <c>ph</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>j</c>
+              <c>pj</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>k</c>
+              <c>pk</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>m</c>
+              <c>pm</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>n</c>
+              <c>pn</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>p</c>
+              <c>pp</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>q</c>
+              <c>pq</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>r</c>
+              <c>pr</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>s</c>
+              <c>ps</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>t</c>
+              <c>pt</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>u</c>
+              <c>pu</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>v</c>
+              <c>pv</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>w</c>
+              <c>pw</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>x</c>
+              <c>px</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>y</c>
+              <c>py</c>
+            </r>
+            <r>
+              <c>p</c>
+              <c>z</c>
+              <c>pz</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>a</c>
+              <c>qa</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>b</c>
+              <c>qb</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>c</c>
+              <c>qc</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>d</c>
+              <c>qd</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>e</c>
+              <c>qe</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>f</c>
+              <c>qf</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>g</c>
+              <c>qg</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>h</c>
+              <c>qh</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>j</c>
+              <c>qj</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>k</c>
+              <c>qk</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>m</c>
+              <c>qm</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>n</c>
+              <c>qn</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>p</c>
+              <c>qp</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>q</c>
+              <c>qq</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>r</c>
+              <c>qr</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>s</c>
+              <c>qs</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>t</c>
+              <c>qt</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>u</c>
+              <c>qu</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>v</c>
+              <c>qv</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>w</c>
+              <c>qw</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>x</c>
+              <c>qx</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>y</c>
+              <c>qy</c>
+            </r>
+            <r>
+              <c>q</c>
+              <c>z</c>
+              <c>qz</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>a</c>
+              <c>ra</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>b</c>
+              <c>rb</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>c</c>
+              <c>rc</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>d</c>
+              <c>rd</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>e</c>
+              <c>re</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>f</c>
+              <c>rf</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>g</c>
+              <c>rg</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>h</c>
+              <c>rh</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>j</c>
+              <c>rj</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>k</c>
+              <c>rk</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>m</c>
+              <c>rm</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>n</c>
+              <c>rn</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>p</c>
+              <c>rp</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>q</c>
+              <c>rq</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>r</c>
+              <c>rr</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>s</c>
+              <c>rs</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>t</c>
+              <c>rt</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>u</c>
+              <c>ru</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>v</c>
+              <c>rv</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>w</c>
+              <c>rw</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>x</c>
+              <c>rx</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>y</c>
+              <c>ry</c>
+            </r>
+            <r>
+              <c>r</c>
+              <c>z</c>
+              <c>rz</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>a</c>
+              <c>sa</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>b</c>
+              <c>sb</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>c</c>
+              <c>sc</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>d</c>
+              <c>sd</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>e</c>
+              <c>se</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>f</c>
+              <c>sf</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>g</c>
+              <c>sg</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>h</c>
+              <c>sh</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>j</c>
+              <c>sj</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>k</c>
+              <c>sk</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>m</c>
+              <c>sm</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>n</c>
+              <c>sn</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>p</c>
+              <c>sp</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>q</c>
+              <c>sq</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>r</c>
+              <c>sr</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>s</c>
+              <c>ss</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>t</c>
+              <c>st</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>u</c>
+              <c>su</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>v</c>
+              <c>sv</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>w</c>
+              <c>sw</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>x</c>
+              <c>sx</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>y</c>
+              <c>sy</c>
+            </r>
+            <r>
+              <c>s</c>
+              <c>z</c>
+              <c>sz</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>a</c>
+              <c>ta</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>b</c>
+              <c>tb</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>c</c>
+              <c>tc</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>d</c>
+              <c>td</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>e</c>
+              <c>te</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>f</c>
+              <c>tf</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>g</c>
+              <c>tg</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>h</c>
+              <c>th</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>j</c>
+              <c>tj</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>k</c>
+              <c>tk</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>m</c>
+              <c>tm</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>n</c>
+              <c>tn</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>p</c>
+              <c>tp</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>q</c>
+              <c>tq</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>r</c>
+              <c>tr</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>s</c>
+              <c>ts</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>t</c>
+              <c>tt</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>u</c>
+              <c>tu</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>v</c>
+              <c>tv</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>w</c>
+              <c>tw</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>x</c>
+              <c>tx</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>y</c>
+              <c>ty</c>
+            </r>
+            <r>
+              <c>t</c>
+              <c>z</c>
+              <c>tz</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>a</c>
+              <c>ua</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>b</c>
+              <c>ub</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>c</c>
+              <c>uc</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>d</c>
+              <c>ud</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>e</c>
+              <c>ue</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>f</c>
+              <c>uf</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>g</c>
+              <c>ug</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>h</c>
+              <c>uh</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>j</c>
+              <c>uj</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>k</c>
+              <c>uk</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>m</c>
+              <c>um</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>n</c>
+              <c>un</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>p</c>
+              <c>up</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>q</c>
+              <c>uq</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>r</c>
+              <c>ur</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>s</c>
+              <c>us</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>t</c>
+              <c>ut</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>u</c>
+              <c>uu</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>v</c>
+              <c>uv</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>w</c>
+              <c>uw</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>x</c>
+              <c>ux</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>y</c>
+              <c>uy</c>
+            </r>
+            <r>
+              <c>u</c>
+              <c>z</c>
+              <c>uz</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>a</c>
+              <c>va</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>b</c>
+              <c>vb</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>c</c>
+              <c>vc</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>d</c>
+              <c>vd</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>e</c>
+              <c>ve</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>f</c>
+              <c>vf</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>g</c>
+              <c>vg</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>h</c>
+              <c>vh</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>j</c>
+              <c>vj</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>k</c>
+              <c>vk</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>m</c>
+              <c>vm</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>n</c>
+              <c>vn</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>p</c>
+              <c>vp</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>q</c>
+              <c>vq</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>r</c>
+              <c>vr</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>s</c>
+              <c>vs</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>t</c>
+              <c>vt</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>u</c>
+              <c>vu</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>v</c>
+              <c>vv</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>w</c>
+              <c>vw</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>x</c>
+              <c>vx</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>y</c>
+              <c>vy</c>
+            </r>
+            <r>
+              <c>v</c>
+              <c>z</c>
+              <c>vz</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>a</c>
+              <c>wa</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>b</c>
+              <c>wb</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>c</c>
+              <c>wc</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>d</c>
+              <c>wd</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>e</c>
+              <c>we</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>f</c>
+              <c>wf</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>g</c>
+              <c>wg</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>h</c>
+              <c>wh</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>j</c>
+              <c>wj</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>k</c>
+              <c>wk</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>m</c>
+              <c>wm</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>n</c>
+              <c>wn</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>p</c>
+              <c>wp</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>q</c>
+              <c>wq</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>r</c>
+              <c>wr</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>s</c>
+              <c>ws</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>t</c>
+              <c>wt</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>u</c>
+              <c>wu</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>v</c>
+              <c>wv</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>w</c>
+              <c>ww</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>x</c>
+              <c>wx</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>y</c>
+              <c>wy</c>
+            </r>
+            <r>
+              <c>w</c>
+              <c>z</c>
+              <c>wz</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>a</c>
+              <c>xa</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>b</c>
+              <c>xb</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>c</c>
+              <c>xc</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>d</c>
+              <c>xd</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>e</c>
+              <c>xe</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>f</c>
+              <c>xf</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>g</c>
+              <c>xg</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>h</c>
+              <c>xh</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>j</c>
+              <c>xj</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>k</c>
+              <c>xk</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>m</c>
+              <c>xm</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>n</c>
+              <c>xn</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>p</c>
+              <c>xp</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>q</c>
+              <c>xq</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>r</c>
+              <c>xr</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>s</c>
+              <c>xs</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>t</c>
+              <c>xt</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>u</c>
+              <c>xu</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>v</c>
+              <c>xv</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>w</c>
+              <c>xw</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>x</c>
+              <c>xx</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>y</c>
+              <c>xy</c>
+            </r>
+            <r>
+              <c>x</c>
+              <c>z</c>
+              <c>xz</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>a</c>
+              <c>ya</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>b</c>
+              <c>yb</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>c</c>
+              <c>yc</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>d</c>
+              <c>yd</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>e</c>
+              <c>ye</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>f</c>
+              <c>yf</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>g</c>
+              <c>yg</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>h</c>
+              <c>yh</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>j</c>
+              <c>yj</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>k</c>
+              <c>yk</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>m</c>
+              <c>ym</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>n</c>
+              <c>yn</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>p</c>
+              <c>yp</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>q</c>
+              <c>yq</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>r</c>
+              <c>yr</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>s</c>
+              <c>ys</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>t</c>
+              <c>yt</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>u</c>
+              <c>yu</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>v</c>
+              <c>yv</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>w</c>
+              <c>yw</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>x</c>
+              <c>yx</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>y</c>
+              <c>yy</c>
+            </r>
+            <r>
+              <c>y</c>
+              <c>z</c>
+              <c>yz</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>a</c>
+              <c>za</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>b</c>
+              <c>zb</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>c</c>
+              <c>zc</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>d</c>
+              <c>zd</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>e</c>
+              <c>ze</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>f</c>
+              <c>zf</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>g</c>
+              <c>zg</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>h</c>
+              <c>zh</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>j</c>
+              <c>zj</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>k</c>
+              <c>zk</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>m</c>
+              <c>zm</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>n</c>
+              <c>zn</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>p</c>
+              <c>zp</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>q</c>
+              <c>zq</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>r</c>
+              <c>zr</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>s</c>
+              <c>zs</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>t</c>
+              <c>zt</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>u</c>
+              <c>zu</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>v</c>
+              <c>zv</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>w</c>
+              <c>zw</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>x</c>
+              <c>zx</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>y</c>
+              <c>zy</c>
+            </r>
+            <r>
+              <c>z</c>
+              <c>z</c>
+              <c>zz</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="letter" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Source_letter" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Lower2letters" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="78" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="23" />
+          <Fields>
+            <Field name="letter" />
+            <Field name="TorF_letter" />
+          </Fields>
+          <Data>
+            <r>
+              <c>abc</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>bcd</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>cde</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>def</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>efg</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>fgh</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>ghi</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>hij</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>jkl</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>klm</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>mno</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>nop</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>pqr</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>qrs</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>rst</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>stu</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>tuv</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>uvw</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>vwx</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>wxy</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>xyz</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>yz{</c>
+              <c>True</c>
+            </r>
+            <r>
+              <c>z{|</c>
+              <c>True</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="letter" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="TorF_letter" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="498" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Input</FieldFind>
+          <FieldSearch>letter</FieldSearch>
+          <ReplaceFoundField>letter</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="TorF_letter" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)+[Lower2letters]" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="TorF_letter" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="594" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF Contains([Input], &quot;i&quot;) or Contains([Input], &quot;i&quot;) or Contains([Input], &quot;l&quot;) THEN&#xA;&quot;False&quot;&#xA;ELSE &quot;True&quot; ENDIF" field="IsContain" size="1" type="Bool" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IsContain = IF Contains([Input], "i") or Contains([Input], "i") or Contains([Inp...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)+[Lower2letters]" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="TorF_letter" source="TextInput:" type="Bool" />
+            <Field name="IsContain" source="Formula: IF Contains([Input], &quot;i&quot;) or Contains([Input], &quot;i&quot;) or Contains([Input], &quot;l&quot;) THEN&#xA;&quot;False&quot;&#xA;ELSE &quot;True&quot; ENDIF" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="198" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Allow</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_Input" selected="True" input="Target_" />
+                <SelectField field="Target_Original" selected="True" input="Target_" />
+                <SelectField field="Source_Lower2letters" selected="True" input="Source_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="Lower2letters" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="294" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Left([Input],6)+[Lower2letters]" field="Input" size="2147483647" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Input = Left([Input],6)+[Lower2letters]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)+[Lower2letters]" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="Lower2letters" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Lower2letters" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)+[Lower2letters]" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings>
+        <Position x="1266" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1374" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1470" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output14</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1470" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-01 23:49:45</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2024-12-01 23:49:45</StartDate>
+              <EndDate>2024-12-01 23:49:45</EndDate>
+              <Operand>0</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] = 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1566" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Count" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="1758" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Input</Field>
+          <RegExExpression value="." />
+          <CaseInsensitve value="True" />
+          <Method>ParseSimple</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="True" />
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+          </ParseComplex>
+          <Match>
+            <Field>Input_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1854" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1950" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="RecordID" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RecordID - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="2046" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>RecordID</UpdateField_Name>
+          <CreateField_Name>update</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>NULL</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF IsNull([Row-1:Input]) AND [Input]="z" THEN 1
+ELSEIF [Row-1:update]=1 AND [Row-1:Input]="z" THEN 1 ELSE 0 ENDIF</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF IsNull([Row-1:Input]) AND [Input]="z" THEN 1
+ELSEIF [Row-1...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="update" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2142" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [RecordID]=6 OR [update]=1 THEN&#xA; IF [Input]=&quot;z&quot; THEN &quot;a&quot;&#xA; ELSE&#xA;  CharFromInt(CharToInt([Input])+1)&#xA; ENDIF&#xA;ELSE&#xA; [Input]&#xA;ENDIF " field="Input" size="2147483647" type="V_String" enabled="true" />
+            <FormulaField expression="IF [Input] IN (&quot;i&quot;,&quot;o&quot;,&quot;l&quot;) THEN CharFromInt(CharToInt([Input])+1)&#xA;ELSE [Input] ENDIF" field="Input" size="2147483647" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input = IF [RecordID]=6 OR [update]=1 THEN
+ IF [Input]="z" THEN "a"
+ ELSE
+  Char...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: IF [Input] IN (&quot;i&quot;,&quot;o&quot;,&quot;l&quot;) THEN CharFromInt(CharToInt([Input])+1)&#xA;ELSE [Input] ENDIF" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="update" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2334" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Input" action="Concat" rename="Input">
+              <Concat_Start />
+              <Separator />
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="Original" action="GroupBy" rename="Original" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Input" size="1073741823" source="Summarize: Concat - Input" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Summarize: GroupBy - Original" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="2238" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="RecordID" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RecordID - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: IF [Input] IN (&quot;i&quot;,&quot;o&quot;,&quot;l&quot;) THEN CharFromInt(CharToInt([Input])+1)&#xA;ELSE [Input] ENDIF" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="update" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2526" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="690" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsTrue</Operator>
+            <Field>TorF_letter</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-01 23:21:14</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2024-12-01 23:21:14</StartDate>
+              <EndDate>2024-12-01 23:21:14</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[TorF_letter] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)+[Lower2letters]" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="TorF_letter" source="TextInput:" type="Bool" />
+            <Field name="IsContain" source="Formula: IF Contains([Input], &quot;i&quot;) or Contains([Input], &quot;i&quot;) or Contains([Input], &quot;l&quot;) THEN&#xA;&quot;False&quot;&#xA;ELSE &quot;True&quot; ENDIF" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)+[Lower2letters]" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="TorF_letter" source="TextInput:" type="Bool" />
+            <Field name="IsContain" source="Formula: IF Contains([Input], &quot;i&quot;) or Contains([Input], &quot;i&quot;) or Contains([Input], &quot;l&quot;) THEN&#xA;&quot;False&quot;&#xA;ELSE &quot;True&quot; ENDIF" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1374" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="TorF_letter" selected="False" />
+            <SelectField field="IsContain" selected="False" />
+            <SelectField field="double" selected="False" />
+            <SelectField field="Input2" selected="False" />
+            <SelectField field="double2" selected="False" />
+            <SelectField field="Input1" selected="False" />
+            <SelectField field="IsDouble" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)+[Lower2letters]" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="78" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="23" />
+          <Fields>
+            <Field name="double" />
+          </Fields>
+          <Data>
+            <r>
+              <c>aa</c>
+            </r>
+            <r>
+              <c>bb</c>
+            </r>
+            <r>
+              <c>cc</c>
+            </r>
+            <r>
+              <c>dd</c>
+            </r>
+            <r>
+              <c>ee</c>
+            </r>
+            <r>
+              <c>ff</c>
+            </r>
+            <r>
+              <c>gg</c>
+            </r>
+            <r>
+              <c>hh</c>
+            </r>
+            <r>
+              <c>jj</c>
+            </r>
+            <r>
+              <c>kk</c>
+            </r>
+            <r>
+              <c>mm</c>
+            </r>
+            <r>
+              <c>nn</c>
+            </r>
+            <r>
+              <c>pp</c>
+            </r>
+            <r>
+              <c>qq</c>
+            </r>
+            <r>
+              <c>rr</c>
+            </r>
+            <r>
+              <c>ss</c>
+            </r>
+            <r>
+              <c>tt</c>
+            </r>
+            <r>
+              <c>uu</c>
+            </r>
+            <r>
+              <c>vv</c>
+            </r>
+            <r>
+              <c>ww</c>
+            </r>
+            <r>
+              <c>xx</c>
+            </r>
+            <r>
+              <c>yy</c>
+            </r>
+            <r>
+              <c>zz</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Double letter</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="double" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="786" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Input</FieldFind>
+          <FieldSearch>double</FieldSearch>
+          <ReplaceFoundField>double</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="double" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)+[Lower2letters]" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="TorF_letter" source="TextInput:" type="Bool" />
+            <Field name="IsContain" source="Formula: IF Contains([Input], &quot;i&quot;) or Contains([Input], &quot;i&quot;) or Contains([Input], &quot;l&quot;) THEN&#xA;&quot;False&quot;&#xA;ELSE &quot;True&quot; ENDIF" type="Bool" />
+            <Field name="double" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="882" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Replace([Input], [double], &quot;__&quot;)" field="Input2" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Input2 = Replace([Input], [double], "__")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)+[Lower2letters]" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="TorF_letter" source="TextInput:" type="Bool" />
+            <Field name="IsContain" source="Formula: IF Contains([Input], &quot;i&quot;) or Contains([Input], &quot;i&quot;) or Contains([Input], &quot;l&quot;) THEN&#xA;&quot;False&quot;&#xA;ELSE &quot;True&quot; ENDIF" type="Bool" />
+            <Field name="double" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Input2" size="1073741823" source="Formula: Replace([Input], [double], &quot;__&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="978" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Input2</FieldFind>
+          <FieldSearch>double</FieldSearch>
+          <ReplaceFoundField>double</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="double" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)+[Lower2letters]" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="TorF_letter" source="TextInput:" type="Bool" />
+            <Field name="IsContain" source="Formula: IF Contains([Input], &quot;i&quot;) or Contains([Input], &quot;i&quot;) or Contains([Input], &quot;l&quot;) THEN&#xA;&quot;False&quot;&#xA;ELSE &quot;True&quot; ENDIF" type="Bool" />
+            <Field name="double" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Input2" size="1073741823" source="Formula: Replace([Input], [double], &quot;__&quot;)" type="V_WString" />
+            <Field name="double2" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1074" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>double2</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-01 23:27:39</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2024-12-01 23:27:39</StartDate>
+              <EndDate>2024-12-01 23:27:39</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([double2])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)+[Lower2letters]" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="TorF_letter" source="TextInput:" type="Bool" />
+            <Field name="IsContain" source="Formula: IF Contains([Input], &quot;i&quot;) or Contains([Input], &quot;i&quot;) or Contains([Input], &quot;l&quot;) THEN&#xA;&quot;False&quot;&#xA;ELSE &quot;True&quot; ENDIF" type="Bool" />
+            <Field name="double" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Input2" size="1073741823" source="Formula: Replace([Input], [double], &quot;__&quot;)" type="V_WString" />
+            <Field name="double2" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)+[Lower2letters]" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="TorF_letter" source="TextInput:" type="Bool" />
+            <Field name="IsContain" source="Formula: IF Contains([Input], &quot;i&quot;) or Contains([Input], &quot;i&quot;) or Contains([Input], &quot;l&quot;) THEN&#xA;&quot;False&quot;&#xA;ELSE &quot;True&quot; ENDIF" type="Bool" />
+            <Field name="double" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Input2" size="1073741823" source="Formula: Replace([Input], [double], &quot;__&quot;)" type="V_WString" />
+            <Field name="double2" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1170" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Input]&gt;[Original]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Input]&gt;[Original]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)+[Lower2letters]" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="TorF_letter" source="TextInput:" type="Bool" />
+            <Field name="IsContain" source="Formula: IF Contains([Input], &quot;i&quot;) or Contains([Input], &quot;i&quot;) or Contains([Input], &quot;l&quot;) THEN&#xA;&quot;False&quot;&#xA;ELSE &quot;True&quot; ENDIF" type="Bool" />
+            <Field name="double" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Input2" size="1073741823" source="Formula: Replace([Input], [double], &quot;__&quot;)" type="V_WString" />
+            <Field name="double2" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)+[Lower2letters]" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+            <Field name="TorF_letter" source="TextInput:" type="Bool" />
+            <Field name="IsContain" source="Formula: IF Contains([Input], &quot;i&quot;) or Contains([Input], &quot;i&quot;) or Contains([Input], &quot;l&quot;) THEN&#xA;&quot;False&quot;&#xA;ELSE &quot;True&quot; ENDIF" type="Bool" />
+            <Field name="double" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Input2" size="1073741823" source="Formula: Replace([Input], [double], &quot;__&quot;)" type="V_WString" />
+            <Field name="double2" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1662" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Left([Input],6)" field="Input" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Input = Left([Input],6)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: Left([Input],6)" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Formula: [Input]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2430" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Input]+&quot;aa&quot;" field="Input" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Input = [Input]+"aa"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Input" size="1073741823" source="Formula: [Input]+&quot;aa&quot;" type="V_WString" />
+            <Field name="Original" size="1073741823" source="Summarize: GroupBy - Original" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2526" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\MyDoc\AYX\AdventOfCode\2015\Day11\temp.yxdb</File>
+          <Passwords />
+          <Disable>True</Disable>
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>temp.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="8" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="8" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="13" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output9" />
+      <Destination ToolID="13" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="5" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="True" />
+      <Destination ToolID="33" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="35" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="True" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="True" />
+      <Destination ToolID="12" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="True" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day11_iterative</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="1648b7a1-3f41-4a06-bcb7-1927707a6b7e" />
+      <Telemetry>
+        <PreviousWorkflowId value="4ee02627-9dab-4377-a0a6-489c26e4c7ac" />
+        <OriginWorkflowId value="4ee02627-9dab-4377-a0a6-489c26e4c7ac" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (24)</Name>
+              <ToolId value="24" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (14)</Name>
+              <ToolId value="14" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="100000" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="12" Selected="True" />
+        <Tool ToolId="14" Selected="True" />
+        <Tool ToolId="24" Selected="True" />
+        <Tool ToolId="40" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
