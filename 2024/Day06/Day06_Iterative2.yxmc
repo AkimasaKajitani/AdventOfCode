@@ -1,0 +1,865 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="x" />
+                <Field name="y" />
+                <Field name="Input" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>5</c>
+                  <c>7</c>
+                  <c>^</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input2</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="49" />
+              <Fields>
+                <Field name="x" />
+                <Field name="y" />
+                <Field name="Input" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>0</c>
+                  <c>1</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>2</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>3</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>4</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>5</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>6</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>7</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>8</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>9</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>10</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>9</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>11</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>7</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>11</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>0</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>4</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>11</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>11</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>0</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>11</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>0</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>11</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>0</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>10</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>11</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>0</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>5</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>11</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>0</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>8</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>11</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>0</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>2</c>
+                  <c>#</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>11</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>1</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>2</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>3</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>4</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>5</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>6</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>7</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>8</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>9</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>10</c>
+                  <c>■</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>6</c>
+                  <c>#</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="282" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="xn" />
+            <Field field="yn" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="x" />
+            <Field field="y" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_x" selected="True" rename="Right_x" input="Right_" />
+                <SelectField field="Right_y" selected="True" rename="Right_y" input="Right_" />
+                <SelectField field="Right_Input" selected="True" rename="Right_Input" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="xn" source="Formula: IF [Input] IN (&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Input]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Input]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null() ENDIF" type="Int64" />
+            <Field name="yn" source="Formula: IF [Input] IN (&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Input]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Input]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null() ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="xn" source="Formula: IF [Input] IN (&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Input]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Input]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null() ENDIF" type="Int64" />
+            <Field name="yn" source="Formula: IF [Input] IN (&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Input]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Input]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null() ENDIF" type="Int64" />
+            <Field name="Right_x" source="TextInput:" type="Int32" />
+            <Field name="Right_y" source="TextInput:" type="Int32" />
+            <Field name="Right_Input" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="174" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Input] IN (&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Input]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Input]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null() ENDIF" field="xn" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="IF [Input] IN (&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Input]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Input]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null() ENDIF" field="yn" size="8" type="Int64" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>xn = IF [Input] IN ("^","v") THEN [x]
+ELSEIF [Input]="&gt;" THEN [x]+1
+ELSEIF [Inpu...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="xn" source="Formula: IF [Input] IN (&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Input]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Input]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null() ENDIF" type="Int64" />
+            <Field name="yn" source="Formula: IF [Input] IN (&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Input]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Input]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null() ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="390" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Right_Input]=&quot;#&quot; THEN &#xA; IF [Input]=&quot;^&quot; THEN &quot;&gt;&quot;&#xA; ELSEIF [Input]=&quot;&gt;&quot; THEN &quot;v&quot;&#xA; ELSEIF [Input]=&quot;v&quot; THEN &quot;&lt;&quot;&#xA; ELSEIF [Input]=&quot;&lt;&quot; THEN &quot;^&quot;&#xA; ELSE Null() ENDIF&#xA;ELSE &#xA; Null()&#xA;ENDIF" field="Input" size="2147483647" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input = IF [Right_Input]="#" THEN 
+ IF [Input]="^" THEN "&gt;"
+ ELSEIF [Input]="&gt;" ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="Formula: IF [Right_Input]=&quot;#&quot; THEN &#xA; IF [Input]=&quot;^&quot; THEN &quot;&gt;&quot;&#xA; ELSEIF [Input]=&quot;&gt;&quot; THEN &quot;v&quot;&#xA; ELSEIF [Input]=&quot;v&quot; THEN &quot;&lt;&quot;&#xA; ELSEIF [Input]=&quot;&lt;&quot; THEN &quot;^&quot;&#xA; ELSE Null() ENDIF&#xA;ELSE &#xA; Null()&#xA;ENDIF" type="V_String" />
+            <Field name="xn" source="Formula: IF [Input] IN (&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Input]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Input]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null() ENDIF" type="Int64" />
+            <Field name="yn" source="Formula: IF [Input] IN (&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Input]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Input]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null() ENDIF" type="Int64" />
+            <Field name="Right_x" source="TextInput:" type="Int32" />
+            <Field name="Right_y" source="TextInput:" type="Int32" />
+            <Field name="Right_Input" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="x" selected="False" />
+            <SelectField field="y" selected="False" />
+            <SelectField field="xn" selected="True" rename="x" />
+            <SelectField field="yn" selected="True" rename="y" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Go</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="x" source="Formula: IF [Input] IN (&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Input]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Input]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null() ENDIF" type="Int64" />
+            <Field name="y" source="Formula: IF [Input] IN (&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Input]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Input]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null() ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="774" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Input" size="2147483647" source="(Multiple Sources)" type="V_String" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="870" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="486" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="xn" selected="False" />
+            <SelectField field="yn" selected="False" />
+            <SelectField field="Right_x" selected="False" />
+            <SelectField field="Right_y" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="Formula: IF [Right_Input]=&quot;#&quot; THEN &#xA; IF [Input]=&quot;^&quot; THEN &quot;&gt;&quot;&#xA; ELSEIF [Input]=&quot;&gt;&quot; THEN &quot;v&quot;&#xA; ELSEIF [Input]=&quot;v&quot; THEN &quot;&lt;&quot;&#xA; ELSEIF [Input]=&quot;&lt;&quot; THEN &quot;^&quot;&#xA; ELSE Null() ENDIF&#xA;ELSE &#xA; Null()&#xA;ENDIF" type="V_String" />
+            <Field name="Right_Input" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="582" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Right_Input</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-06 23:37:59</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>#</Operand>
+              <StartDate>2024-12-06 23:37:59</StartDate>
+              <EndDate>2024-12-06 23:37:59</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Right_Input] = "#"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="Formula: IF [Right_Input]=&quot;#&quot; THEN &#xA; IF [Input]=&quot;^&quot; THEN &quot;&gt;&quot;&#xA; ELSEIF [Input]=&quot;&gt;&quot; THEN &quot;v&quot;&#xA; ELSEIF [Input]=&quot;v&quot; THEN &quot;&lt;&quot;&#xA; ELSEIF [Input]=&quot;&lt;&quot; THEN &quot;^&quot;&#xA; ELSE Null() ENDIF&#xA;ELSE &#xA; Null()&#xA;ENDIF" type="V_String" />
+            <Field name="Right_Input" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="Formula: IF [Right_Input]=&quot;#&quot; THEN &#xA; IF [Input]=&quot;^&quot; THEN &quot;&gt;&quot;&#xA; ELSEIF [Input]=&quot;&gt;&quot; THEN &quot;v&quot;&#xA; ELSEIF [Input]=&quot;v&quot; THEN &quot;&lt;&quot;&#xA; ELSEIF [Input]=&quot;&lt;&quot; THEN &quot;^&quot;&#xA; ELSE Null() ENDIF&#xA;ELSE &#xA; Null()&#xA;ENDIF" type="V_String" />
+            <Field name="Right_Input" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="678" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Right_Input" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="Formula: IF [Right_Input]=&quot;#&quot; THEN &#xA; IF [Input]=&quot;^&quot; THEN &quot;&gt;&quot;&#xA; ELSEIF [Input]=&quot;&gt;&quot; THEN &quot;v&quot;&#xA; ELSEIF [Input]=&quot;v&quot; THEN &quot;&lt;&quot;&#xA; ELSEIF [Input]=&quot;&lt;&quot; THEN &quot;^&quot;&#xA; ELSE Null() ENDIF&#xA;ELSE &#xA; Null()&#xA;ENDIF" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="978" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output13</Name>
+          <Abbrev>A</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="870" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.IterationNumber]" field="Iterative" size="8" type="Int64" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Iterative = [Engine.IterationNumber]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Input" size="2147483647" source="(Multiple Sources)" type="V_String" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="Iterative" source="Formula: [Engine.IterationNumber]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Left" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day06_Iterative2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="faba12f3-497d-4f25-ae94-dc7815350b39" />
+      <Telemetry>
+        <PreviousWorkflowId value="838cd168-8a4d-4432-a914-06db9cc506f0" />
+        <OriginWorkflowId value="838cd168-8a4d-4432-a914-06db9cc506f0" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (3)</Name>
+          <ToolId value="3" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (2)</Name>
+              <ToolId value="2" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (9)</Name>
+              <ToolId value="9" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (13)</Description>
+              <Name>Macro Output (13)</Name>
+              <ToolId value="13" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="100000" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="2" Selected="True" />
+        <Tool ToolId="9" Selected="True" />
+        <Tool ToolId="13" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
