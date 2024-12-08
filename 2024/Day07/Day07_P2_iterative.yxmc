@@ -1,0 +1,884 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="number" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>18446744073709551</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>81</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>17</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>17</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>11</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="number" source="TextInput:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="162" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[IterativeNumber]=[Engine.IterationNumber]+1</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[IterativeNumber]=[Engine.IterationNumber]+1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="Result" source="TextInput:" type="Int32" />
+            <Field name="number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="Result" source="TextInput:" type="Int32" />
+            <Field name="number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="270" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Right_Result" selected="True" rename="Right_Result" input="Right_" />
+                <SelectField field="Right_number" selected="True" rename="Right_number" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="number" source="TextInput:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="number" source="TextInput:" type="Int64" />
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="Right_Result" source="TextInput:" type="Int32" />
+            <Field name="Right_number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="Result" source="TextInput:" type="Int32" />
+            <Field name="number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input7</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="18" />
+              <Fields>
+                <Field name="IterativeNumber" />
+                <Field name="RecordID" />
+                <Field name="Result" />
+                <Field name="number" />
+                <Field name="Count" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>4</c>
+                  <c>156</c>
+                  <c>6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>5</c>
+                  <c>7290</c>
+                  <c>8</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>5</c>
+                  <c>7290</c>
+                  <c>6</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>5</c>
+                  <c>7290</c>
+                  <c>15</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>3267</c>
+                  <c>40</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>3267</c>
+                  <c>27</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>9</c>
+                  <c>292</c>
+                  <c>6</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>9</c>
+                  <c>292</c>
+                  <c>16</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>9</c>
+                  <c>292</c>
+                  <c>20</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>161011</c>
+                  <c>10</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>6</c>
+                  <c>161011</c>
+                  <c>13</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>190</c>
+                  <c>19</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>8</c>
+                  <c>21037</c>
+                  <c>7</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>8</c>
+                  <c>21037</c>
+                  <c>18</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>8</c>
+                  <c>21037</c>
+                  <c>13</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>83</c>
+                  <c>5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>7</c>
+                  <c>192</c>
+                  <c>8</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>7</c>
+                  <c>192</c>
+                  <c>14</c>
+                  <c>2</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="Result" source="TextInput:" type="Int32" />
+            <Field name="number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="366" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[number]*[Right_number]" field="number" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="&quot;*&quot;" field="Operator" size="5" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>* operator</AnnotationText>
+          <DefaultAnnotationText><![CDATA[number = [number]*[Right_number]
+Operator = "*"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="number" source="Formula: [number]*[Right_number]" type="Int64" />
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="Right_Result" source="TextInput:" type="Int32" />
+            <Field name="Right_number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+            <Field name="Operator" size="5" source="Formula: &quot;*&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="762" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[number]=[Right_Result]
+AND [IterativeNumber]=[Count] //Important!!</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[number]=[Right_Result]
+AND [IterativeNumber]=[Count] //Important!!</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="number" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="Right_Result" source="TextInput:" type="Int32" />
+            <Field name="Right_number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+            <Field name="Operator" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="number" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="Right_Result" source="TextInput:" type="Int32" />
+            <Field name="Right_number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+            <Field name="Operator" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="954" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output10</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="858" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="number" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="number" source="Formula: (Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="666" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[number]&lt;=[Right_Result]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[number]&lt;=[Right_Result]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="number" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="Right_Result" source="TextInput:" type="Int32" />
+            <Field name="Right_number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+            <Field name="Operator" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="number" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="Right_Result" source="TextInput:" type="Int32" />
+            <Field name="Right_number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+            <Field name="Operator" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="954" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="366" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[number]+[Right_number]" field="number" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="&quot;+&quot;" field="Operator" size="5" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>+ operator</AnnotationText>
+          <DefaultAnnotationText><![CDATA[number = [number]+[Right_number]
+Operator = "+"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="number" source="Formula: [number]+[Right_number]" type="Int64" />
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="Right_Result" source="TextInput:" type="Int32" />
+            <Field name="Right_number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+            <Field name="Operator" size="5" source="Formula: &quot;+&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="462" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="number" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="Right_Result" source="TextInput:" type="Int32" />
+            <Field name="Right_number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+            <Field name="Operator" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="366" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToNumber(ToString([number])+ToString([Right_number]))" field="number" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="&quot;||&quot;" field="Operator" size="5" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>|| operator</AnnotationText>
+          <DefaultAnnotationText><![CDATA[number = ToNumber(ToString([number])+ToString([Right_number]))
+Operator = "||"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="number" source="Formula: ToNumber(ToString([number])+ToString([Right_number]))" type="Int64" />
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="Right_Result" source="TextInput:" type="Int32" />
+            <Field name="Right_number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+            <Field name="Operator" size="5" source="Formula: &quot;||&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="954" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output17</Name>
+          <Abbrev>G</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="558" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>number</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-07 14:36:43</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2024-12-07 14:36:43</StartDate>
+              <EndDate>2024-12-07 14:36:43</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Remove out of range(maybe unneeded)</AnnotationText>
+          <DefaultAnnotationText>!IsNull([number])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="number" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="Right_Result" source="TextInput:" type="Int32" />
+            <Field name="Right_number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+            <Field name="Operator" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="number" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="IterativeNumber" source="TextInput:" type="Int32" />
+            <Field name="Right_Result" source="TextInput:" type="Int32" />
+            <Field name="Right_number" source="TextInput:" type="Int32" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+            <Field name="Operator" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="False" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="False" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day07_P2_iterative</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a9a058a0-7ca1-4079-9aac-07175e4e7081" />
+      <Telemetry>
+        <PreviousWorkflowId value="046d55d2-0d23-4a10-a003-14864108262c" />
+        <OriginWorkflowId value="35dbfaee-c338-45ee-8a83-6c9ad95e3870" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (7)</Name>
+              <ToolId value="7" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (10)</Name>
+              <ToolId value="10" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (13)</Name>
+              <ToolId value="13" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (17)</Name>
+              <ToolId value="17" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="1000" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="7" Selected="True" />
+        <Tool ToolId="10" Selected="True" />
+        <Tool ToolId="13" Selected="True" />
+        <Tool ToolId="17" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
