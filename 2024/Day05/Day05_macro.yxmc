@@ -1,0 +1,868 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="2024.2">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1074" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="78" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input3</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="23" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="Input" />
+                <Field name="Source_Input" />
+                <Field name="1" />
+                <Field name="2" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>4</c>
+                  <c>75,97,47,61,53</c>
+                  <c>47|53</c>
+                  <c>47</c>
+                  <c>53</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>75,97,47,61,53</c>
+                  <c>97|61</c>
+                  <c>97</c>
+                  <c>61</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>75,97,47,61,53</c>
+                  <c>97|47</c>
+                  <c>97</c>
+                  <c>47</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>75,97,47,61,53</c>
+                  <c>75|53</c>
+                  <c>75</c>
+                  <c>53</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>75,97,47,61,53</c>
+                  <c>61|53</c>
+                  <c>61</c>
+                  <c>53</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>75,97,47,61,53</c>
+                  <c>97|53</c>
+                  <c>97</c>
+                  <c>53</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>75,97,47,61,53</c>
+                  <c>75|47</c>
+                  <c>75</c>
+                  <c>47</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>75,97,47,61,53</c>
+                  <c>97|75</c>
+                  <c>97</c>
+                  <c>75</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>75,97,47,61,53</c>
+                  <c>47|61</c>
+                  <c>47</c>
+                  <c>61</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>75,97,47,61,53</c>
+                  <c>75|61</c>
+                  <c>75</c>
+                  <c>61</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>61,13,29</c>
+                  <c>61|13</c>
+                  <c>61</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>61,13,29</c>
+                  <c>29|13</c>
+                  <c>29</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>61,13,29</c>
+                  <c>61|29</c>
+                  <c>61</c>
+                  <c>29</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>97,13,75,29,47</c>
+                  <c>97|13</c>
+                  <c>97</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>97,13,75,29,47</c>
+                  <c>97|47</c>
+                  <c>97</c>
+                  <c>47</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>97,13,75,29,47</c>
+                  <c>75|29</c>
+                  <c>75</c>
+                  <c>29</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>97,13,75,29,47</c>
+                  <c>29|13</c>
+                  <c>29</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>97,13,75,29,47</c>
+                  <c>97|29</c>
+                  <c>97</c>
+                  <c>29</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>97,13,75,29,47</c>
+                  <c>47|13</c>
+                  <c>47</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>97,13,75,29,47</c>
+                  <c>75|47</c>
+                  <c>75</c>
+                  <c>47</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>97,13,75,29,47</c>
+                  <c>97|75</c>
+                  <c>97</c>
+                  <c>75</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>97,13,75,29,47</c>
+                  <c>47|29</c>
+                  <c>47</c>
+                  <c>29</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>97,13,75,29,47</c>
+                  <c>75|13</c>
+                  <c>75</c>
+                  <c>13</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" size="14" source="TextInput:" type="String" />
+            <Field name="Source_Input" size="5" source="TextInput:" type="String" />
+            <Field name="1" source="TextInput:" type="Byte" />
+            <Field name="2" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="306" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;) THEN &quot;True&quot; ELSE &quot;False&quot; ENDIF" field="IsOK" size="1" type="Bool" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IsOK = IF FindString(","+[Input]+",", ","+[1]+",") &lt;= FindString(","+[Input]+","...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" size="16384" source="TextInput:" type="V_WString" />
+            <Field name="Source_Input" size="5" source="TextInput:" type="String" />
+            <Field name="1" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="2" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="IsOK" source="Formula: IF FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;) THEN &quot;True&quot; ELSE &quot;False&quot; ENDIF" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Input" selected="True" type="V_WString" size="16384" />
+            <SelectField field="1" selected="True" type="V_WString" size="2147483647" />
+            <SelectField field="2" selected="True" type="V_WString" size="2147483647" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Input" size="16384" source="TextInput:" type="V_WString" />
+            <Field name="Source_Input" size="5" source="TextInput:" type="String" />
+            <Field name="1" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="2" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="414" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="True" />
+          <UpdateField_Name>Input</UpdateField_Name>
+          <CreateField_Name>新しいフィールド</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Nearest</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF NOT(FindString(","+[Input]+",", ","+[1]+",") &lt;= FindString(","+[Input]+",", ","+[2]+","))
+THEN
+Trim(
+ Replace(
+ Replace(Replace(","+[Input]+",", [1], "|"),","+[2]+",",","+[1]+","),",|,",","+[2]+",")
+,",")
+ELSE [Row-1:Input]
+ENDIF</Expression>
+          <GroupByFields>
+            <Field field="RecordID" />
+          </GroupByFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF NOT(FindString(","+[Input]+",", ","+[1]+",") &lt;= FindString...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" name="Input" size="16384" source="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" type="V_WString" />
+            <Field name="Source_Input" size="5" source="TextInput:" type="String" />
+            <Field name="1" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="2" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="IsOK" source="Formula: IF FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;) THEN &quot;True&quot; ELSE &quot;False&quot; ENDIF" type="Bool" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="606" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Input" selected="False" />
+            <SelectField field="IsOK" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_Input" size="5" source="TextInput:" type="String" />
+            <Field name="1" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="2" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="522" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Last</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False">
+            <Field name="RecordID" />
+          </GroupFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Last 1 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" name="Input" size="16384" source="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" type="V_WString" />
+            <Field name="Source_Input" size="5" source="TextInput:" type="String" />
+            <Field name="1" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="2" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="IsOK" source="Formula: IF FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;) THEN &quot;True&quot; ELSE &quot;False&quot; ENDIF" type="Bool" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="606" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="Input" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" name="Input" size="16384" source="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="702" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_Input" size="5" source="TextInput:" type="String" />
+            <Field name="1" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="2" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_Input" size="5" source="TextInput:" type="String" />
+            <Field name="1" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="2" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field description="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" name="Input" size="16384" source="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field description="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" name="Input" size="16384" source="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="606" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="GroupBy" rename="RecordID" />
+            <SummarizeField field="IsOK" action="Min" rename="Min_IsOK" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Byte" />
+            <Field name="Min_IsOK" source="Formula: IF FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;) THEN &quot;True&quot; ELSE &quot;False&quot; ENDIF" type="Bool" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="798" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_Input" size="5" source="TextInput:" type="String" />
+            <Field name="1" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="2" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field description="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" name="Input" size="16384" source="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_Input" size="5" source="TextInput:" type="String" />
+            <Field name="1" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="2" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field description="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" name="Input" size="16384" source="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" type="V_WString" />
+            <Field name="Min_IsOK" source="Formula: IF FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;) THEN &quot;True&quot; ELSE &quot;False&quot; ENDIF" type="Bool" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Byte" />
+            <Field name="Min_IsOK" source="Formula: IF FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;) THEN &quot;True&quot; ELSE &quot;False&quot; ENDIF" type="Bool" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="894" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsFalse</Operator>
+            <Field>Min_IsOK</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-05 15:04:07</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2024-12-05 15:04:07</StartDate>
+              <EndDate>2024-12-05 15:04:07</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Min_IsOK] = 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_Input" size="5" source="TextInput:" type="String" />
+            <Field name="1" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="2" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field description="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" name="Input" size="16384" source="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" type="V_WString" />
+            <Field name="Min_IsOK" source="Formula: IF FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;) THEN &quot;True&quot; ELSE &quot;False&quot; ENDIF" type="Bool" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_Input" size="5" source="TextInput:" type="String" />
+            <Field name="1" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="2" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field description="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" name="Input" size="16384" source="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" type="V_WString" />
+            <Field name="Min_IsOK" source="Formula: IF FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;) THEN &quot;True&quot; ELSE &quot;False&quot; ENDIF" type="Bool" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1074" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output15</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="990" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Min_IsOK" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_Input" size="5" source="TextInput:" type="String" />
+            <Field name="1" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="2" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field description="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" name="Input" size="16384" source="Formula: IF NOT(FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[1]+&quot;,&quot;) &lt;= FindString(&quot;,&quot;+[Input]+&quot;,&quot;, &quot;,&quot;+[2]+&quot;,&quot;))&#xA;THEN&#xA;Trim(&#xA; Replace(&#xA; Replace(Replace(&quot;,&quot;+[Input]+&quot;,&quot;, [1], &quot;|&quot;),&quot;,&quot;+[2]+&quot;,&quot;,&quot;,&quot;+[1]+&quot;,&quot;),&quot;,|,&quot;,&quot;,&quot;+[2]+&quot;,&quot;)&#xA;,&quot;,&quot;)&#xA;ELSE [Row-1:Input]&#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="False" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="True" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="932" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day05_macro</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d4155333-1bff-4218-99fe-4a45b215be99" />
+      <Telemetry>
+        <PreviousWorkflowId value="e9e00177-6a6a-4888-b499-527d8b930f46" />
+        <OriginWorkflowId value="e9e00177-6a6a-4888-b499-527d8b930f46" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>質問</Description>
+          <Name>タブ (4)</Name>
+          <ToolId value="4" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>マクロ入力 (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>マクロ出力 (2)</Name>
+              <ToolId value="2" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>マクロ出力 (15)</Name>
+              <ToolId value="15" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input3</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="1000" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools />
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
