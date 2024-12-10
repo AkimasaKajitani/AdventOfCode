@@ -1,0 +1,986 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="678" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="x_n" />
+            <Field field="y_n" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="x" />
+            <Field field="y" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_ID" selected="True" rename="Right_ID" input="Right_" />
+                <SelectField field="Right_x" selected="False" rename="Right_x" input="Right_" />
+                <SelectField field="Right_y" selected="False" rename="Right_y" input="Right_" />
+                <SelectField field="Right_Input" selected="True" rename="Right_Input" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="x_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="y_n" source="(Multiple Sources)" type="Int32" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="x_n" />
+            <Field field="y_n" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="x_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="y_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="Right_ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Right_Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="x_n" order="" />
+            <Field field="y_n" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="x" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="x" />
+            <Field field="y" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="270" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>x</UpdateField_Name>
+          <CreateField_Name>x_n</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>254</CreateField_Size>
+          <Expression_Init>[x]-1</Expression_Init>
+          <Expression_Cond>x_n &lt;= [x]+1</Expression_Cond>
+          <Expression_Loop>x_n + 1</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>x dir</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="x_n" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="270" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>x</UpdateField_Name>
+          <CreateField_Name>y_n</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>254</CreateField_Size>
+          <Expression_Init>[y]-1</Expression_Init>
+          <Expression_Cond>y_n &lt;= [y]+1</Expression_Cond>
+          <Expression_Loop>y_n + 1</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>y dir</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="y_n" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="774" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Input]+1=[Right_Input]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Input]+1=[Right_Input]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="x_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="y_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="Right_ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Right_Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="x_n" order="" />
+            <Field field="y_n" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="x_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="y_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="Right_ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Right_Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="x_n" order="" />
+            <Field field="y_n" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1062" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ID" selected="True" />
+            <SelectField field="Route" selected="True" />
+            <SelectField field="x_n" selected="True" rename="x" />
+            <SelectField field="y_n" selected="True" rename="y" />
+            <SelectField field="Right_ID" selected="True" rename="PrevID" />
+            <SelectField field="Right_Input" selected="True" rename="Input" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int32" />
+            <Field name="y" source="(Multiple Sources)" type="Int32" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="x" order="" />
+            <Field field="y" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">temp1.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText>temp1.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>Input10</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\000350905\OneDrive - 京セラみらいエンビジョン株式会社\ドキュメント\Alteryx\WeeklyChallenge\AdventofCode\2024\Day10\temp2.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText>temp2.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" size="1073741823" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="966" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Right_Input</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-10 14:49:20</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2024-12-10 14:49:20</StartDate>
+              <EndDate>2024-12-10 14:49:20</EndDate>
+              <Operand>9</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Right_Input] != 9</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="x_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="y_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="Right_ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Right_Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="x_n" order="" />
+            <Field field="y_n" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="x_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="y_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="Right_ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Right_Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="x_n" order="" />
+            <Field field="y_n" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1266" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1158" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output14</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="174" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ID" selected="True" type="Int16" size="2" />
+            <SelectField field="x" selected="True" type="Int16" size="2" />
+            <SelectField field="y" selected="True" type="Int16" size="2" />
+            <SelectField field="Input" selected="True" type="Int16" size="2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="x" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="174" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ID" selected="True" type="Int16" size="2" />
+            <SelectField field="x" selected="True" type="Int16" size="2" />
+            <SelectField field="y" selected="True" type="Int16" size="2" />
+            <SelectField field="Input" selected="True" type="Int16" size="2" />
+            <SelectField field="PrevID" selected="True" type="Int16" size="2" />
+            <SelectField field="Route" selected="True" type="V_WString" size="2147483647" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="570" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!([x]=[x_n] AND [y]=[y_n])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>filter self point</AnnotationText>
+          <DefaultAnnotationText>!([x]=[x_n] AND [y]=[y_n])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="x_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="y_n" source="(Multiple Sources)" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="x_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="y_n" source="(Multiple Sources)" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="474" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="x_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="y_n" source="(Multiple Sources)" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="366" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[y]" field="y_n" size="2" type="Int16" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[y_n = [y]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="x_n" type="Int32" />
+            <Field name="y_n" source="Formula: [y]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="366" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[x]" field="x_n" size="2" type="Int16" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[x_n = [x]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="y_n" type="Int32" />
+            <Field name="x_n" source="Formula: [x]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1062" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.IterationNumber]" field="Iterative" size="2" type="Int16" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Iterative = [Engine.IterationNumber]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="x_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="y_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="Right_ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Right_Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="Iterative" source="Formula: [Engine.IterationNumber]" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="x_n" order="" />
+            <Field field="y_n" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1158" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="ID" />
+            <Field field="Route" />
+            <Field field="x" />
+            <Field field="y" />
+            <Field field="PrevID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int32" />
+            <Field name="y" source="(Multiple Sources)" type="Int32" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ID" order="Asc" />
+            <Field field="Route" order="Asc" />
+            <Field field="x" order="Asc" />
+            <Field field="y" order="Asc" />
+            <Field field="PrevID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int32" />
+            <Field name="y" source="(Multiple Sources)" type="Int32" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ID" order="Asc" />
+            <Field field="Route" order="Asc" />
+            <Field field="x" order="Asc" />
+            <Field field="y" order="Asc" />
+            <Field field="PrevID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="870" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Route]+&quot;,&quot;+ToString([Right_ID])" field="Route" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Create Route</AnnotationText>
+          <DefaultAnnotationText><![CDATA[Route = [Route]+","+ToString([Right_ID])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_ID])" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int16" />
+            <Field name="y" source="(Multiple Sources)" type="Int16" />
+            <Field name="PrevID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+            <Field name="x_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="y_n" source="(Multiple Sources)" type="Int32" />
+            <Field name="Right_ID" source="RecordID: Starting Value=1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Input" name="Right_Input" source="Formula: IF [Input]=&quot;&quot; THEN Null() ELSE [Input] ENDIF" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="x_n" order="" />
+            <Field field="y_n" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1278" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">temp1.yxdb</File>
+          <Passwords />
+          <Disable>True</Disable>
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>temp1.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="False" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Unique" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Unique" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="932" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day10_p1_iterative_v1.1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="7a67819d-d60e-4380-a741-992431c9a89a" />
+      <Telemetry>
+        <PreviousWorkflowId value="ea5bf7db-bed8-4639-84e7-8b1900ad9008" />
+        <OriginWorkflowId value="ed1a6ab5-62f2-4aa0-8375-51406bfc55c9" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>質問</Description>
+          <Name>タブ (3)</Name>
+          <ToolId value="3" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>マクロ入力 (9)</Name>
+              <ToolId value="9" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>マクロ入力 (10)</Name>
+              <ToolId value="10" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>マクロ出力 (13)</Name>
+              <ToolId value="13" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>マクロ出力 (14)</Name>
+              <ToolId value="14" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="100000" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="9" Selected="True" />
+        <Tool ToolId="10" Selected="True" />
+        <Tool ToolId="13" Selected="True" />
+        <Tool ToolId="14" Selected="True" />
+        <Tool ToolId="24" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
