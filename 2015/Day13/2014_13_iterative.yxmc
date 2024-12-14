@@ -1,0 +1,722 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="102" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="4" />
+              <Fields>
+                <Field name="From" />
+                <Field name="Happiness" />
+                <Field name="Route" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Bob</c>
+                  <c>0</c>
+                  <c>Bob</c>
+                </r>
+                <r>
+                  <c>David</c>
+                  <c>0</c>
+                  <c>David</c>
+                </r>
+                <r>
+                  <c>Alice</c>
+                  <c>0</c>
+                  <c>Alice</c>
+                </r>
+                <r>
+                  <c>Carol</c>
+                  <c>0</c>
+                  <c>Carol</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Happiness" source="TextInput:" type="Int32" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="102" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input3</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="12" />
+              <Fields>
+                <Field name="From" />
+                <Field name="To" />
+                <Field name="Type" />
+                <Field name="Level" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Alice</c>
+                  <c>Bob</c>
+                  <c>gain</c>
+                  <c>54</c>
+                </r>
+                <r>
+                  <c>Alice</c>
+                  <c>Carol</c>
+                  <c>lose</c>
+                  <c>79</c>
+                </r>
+                <r>
+                  <c>Alice</c>
+                  <c>David</c>
+                  <c>lose</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>Bob</c>
+                  <c>Alice</c>
+                  <c>gain</c>
+                  <c>83</c>
+                </r>
+                <r>
+                  <c>Bob</c>
+                  <c>Carol</c>
+                  <c>lose</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>Bob</c>
+                  <c>David</c>
+                  <c>lose</c>
+                  <c>63</c>
+                </r>
+                <r>
+                  <c>Carol</c>
+                  <c>Alice</c>
+                  <c>lose</c>
+                  <c>62</c>
+                </r>
+                <r>
+                  <c>Carol</c>
+                  <c>Bob</c>
+                  <c>gain</c>
+                  <c>60</c>
+                </r>
+                <r>
+                  <c>Carol</c>
+                  <c>David</c>
+                  <c>gain</c>
+                  <c>55</c>
+                </r>
+                <r>
+                  <c>David</c>
+                  <c>Alice</c>
+                  <c>gain</c>
+                  <c>46</c>
+                </r>
+                <r>
+                  <c>David</c>
+                  <c>Bob</c>
+                  <c>lose</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>David</c>
+                  <c>Carol</c>
+                  <c>gain</c>
+                  <c>41</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="To" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Type" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Level" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="246" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="From" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="From" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_From" selected="False" rename="Right_From" input="Right_" />
+                <SelectField field="Right_To" selected="True" rename="Right_To" input="Right_" />
+                <SelectField field="Right_Type" selected="True" rename="Right_Type" input="Right_" />
+                <SelectField field="Right_Level" selected="True" rename="Right_Level" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Happiness" source="TextInput:" type="Int32" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Happiness" source="TextInput:" type="Int32" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_To" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Type" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="To" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Type" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Level" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="570" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Happiness]+&#xA;IF [Right_Type]=&quot;gain&quot; THEN [Right_Level]&#xA;ELSE [Right_Level]*-1 ENDIF&#xA;+&#xA;IF [Right_Type2]=&quot;gain&quot; THEN [Right_Level2]&#xA;ELSE [Right_Level2]*-1 ENDIF&#xA;" field="Happiness" size="4" type="Int32" enabled="true" />
+            <FormulaField expression="[Route]+&quot;,&quot;+[Right_To]" field="Route" size="2147483647" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Happiness = [Happiness]+
+IF [Right_Type]="gain" THEN [Right_Level]
+ELSE [Right_L...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Happiness" source="Formula: [Happiness]+&#xA;IF [Right_Type]=&quot;gain&quot; THEN [Right_Level]&#xA;ELSE [Right_Level]*-1 ENDIF&#xA;+&#xA;IF [Right_Type2]=&quot;gain&quot; THEN [Right_Level2]&#xA;ELSE [Right_Level2]*-1 ENDIF&#xA;" type="Int32" />
+            <Field name="Route" size="2147483647" source="Formula: [Route]+&quot;,&quot;+[Right_To]" type="V_String" />
+            <Field name="Right_To" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Type" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level" source="TextInput:" type="Int32" />
+            <Field name="Right_Type2" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level2" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="666" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="From" selected="False" />
+            <SelectField field="Right_To" selected="True" rename="From" />
+            <SelectField field="Right_Type" selected="False" />
+            <SelectField field="Right_Level" selected="False" />
+            <SelectField field="Right_Type2" selected="False" />
+            <SelectField field="Right_Level2" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Happiness" source="Formula: [Happiness]+&#xA;IF [Right_Type]=&quot;gain&quot; THEN [Right_Level]&#xA;ELSE [Right_Level]*-1 ENDIF&#xA;+&#xA;IF [Right_Type2]=&quot;gain&quot; THEN [Right_Level2]&#xA;ELSE [Right_Level2]*-1 ENDIF&#xA;" type="Int32" />
+            <Field name="Route" size="2147483647" source="Formula: [Route]+&quot;,&quot;+[Right_To]" type="V_String" />
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="762" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="858" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output9</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="462" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!Contains([Route], [Right_To])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!Contains([Route], [Right_To])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Happiness" source="TextInput:" type="Int32" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_To" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Type" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level" source="TextInput:" type="Int32" />
+            <Field name="Right_Type2" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level2" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Happiness" source="TextInput:" type="Int32" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_To" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Type" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level" source="TextInput:" type="Int32" />
+            <Field name="Right_Type2" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level2" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="570" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>StartsWith([Route], [Right_To])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>StartsWith([Route], [Right_To])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Happiness" source="TextInput:" type="Int32" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_To" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Type" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level" source="TextInput:" type="Int32" />
+            <Field name="Right_Type2" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level2" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Happiness" source="TextInput:" type="Int32" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_To" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Type" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level" source="TextInput:" type="Int32" />
+            <Field name="Right_Type2" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level2" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="762" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.IterationNumber]" field="Iterative" size="8" type="Int64" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Iterative = [Engine.IterationNumber]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Happiness" source="TextInput:" type="Int32" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_To" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Type" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level" source="TextInput:" type="Int32" />
+            <Field name="Right_Type2" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level2" source="TextInput:" type="Int32" />
+            <Field name="Iterative" source="Formula: [Engine.IterationNumber]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="354" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Right_To" />
+            <Field field="From" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="From" />
+            <Field field="To" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_From" selected="False" rename="Right_From" input="Right_" />
+                <SelectField field="Right_To" selected="False" input="Right_" />
+                <SelectField field="Right_Type" selected="True" rename="Right_Type2" input="Right_" />
+                <SelectField field="Right_Level" selected="True" rename="Right_Level2" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Happiness" source="TextInput:" type="Int32" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_To" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Type" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Happiness" source="TextInput:" type="Int32" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_To" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Type" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level" source="TextInput:" type="Int32" />
+            <Field name="Right_Type2" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level2" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="To" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Type" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Level" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="666" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Happiness]+&#xA;IF [Right_Type]=&quot;gain&quot; THEN [Right_Level]&#xA;ELSE [Right_Level]*-1 ENDIF&#xA;+&#xA;IF [Right_Type2]=&quot;gain&quot; THEN [Right_Level2]&#xA;ELSE [Right_Level2]*-1 ENDIF&#xA;" field="Happiness" size="4" type="Int32" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Happiness = [Happiness]+
+IF [Right_Type]="gain" THEN [Right_Level]
+ELSE [Right_L...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Happiness" source="Formula: [Happiness]+&#xA;IF [Right_Type]=&quot;gain&quot; THEN [Right_Level]&#xA;ELSE [Right_Level]*-1 ENDIF&#xA;+&#xA;IF [Right_Type2]=&quot;gain&quot; THEN [Right_Level2]&#xA;ELSE [Right_Level2]*-1 ENDIF&#xA;" type="Int32" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_To" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Type" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level" source="TextInput:" type="Int32" />
+            <Field name="Right_Type2" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Level2" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="14" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="14" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="False" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2014_13_iterative</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ea8ad29d-23d6-466e-85f7-fb2d6c3f1076" />
+      <Telemetry>
+        <PreviousWorkflowId value="ce215541-cea4-4cf6-be40-8dc18cef33c5" />
+        <OriginWorkflowId value="ce215541-cea4-4cf6-be40-8dc18cef33c5" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (8)</Name>
+              <ToolId value="8" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (9)</Name>
+              <ToolId value="9" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="8" Selected="False" />
+        <Tool ToolId="9" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
