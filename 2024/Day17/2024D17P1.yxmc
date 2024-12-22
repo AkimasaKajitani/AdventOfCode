@@ -1,0 +1,847 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="A" />
+                <Field name="B" />
+                <Field name="C" />
+                <Field name="Pos" />
+                <Field name="Stop" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>729</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>5</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="A" source="TextInput:" type="Int32" />
+            <Field name="B" source="TextInput:" type="Int32" />
+            <Field name="C" source="TextInput:" type="Int32" />
+            <Field name="Pos" source="TextInput:" type="Int32" />
+            <Field name="Stop" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input3</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="Order" />
+                <Field name="Input" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int32" />
+            <Field name="Input" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="162" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Order" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Pos" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Order" selected="True" input="Left_" type="Int64" size="8" />
+                <SelectField field="Left_Input" selected="True" input="Left_" type="Int64" size="8" />
+                <SelectField field="Right_A" selected="True" input="Right_" type="Int64" size="8" />
+                <SelectField field="Right_B" selected="True" input="Right_" type="Int64" size="8" />
+                <SelectField field="Right_C" selected="True" input="Right_" type="Int64" size="8" />
+                <SelectField field="Right_Pos" selected="True" input="Right_" type="Int64" size="8" />
+                <SelectField field="Right_Stop" selected="True" input="Right_" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int32" />
+            <Field name="Input" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int64" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="A" source="TextInput:" type="Int64" />
+            <Field name="B" source="TextInput:" type="Int64" />
+            <Field name="C" source="TextInput:" type="Int64" />
+            <Field name="Pos" source="TextInput:" type="Int64" />
+            <Field name="Stop" source="TextInput:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="A" source="TextInput:" type="Int32" />
+            <Field name="B" source="TextInput:" type="Int32" />
+            <Field name="C" source="TextInput:" type="Int32" />
+            <Field name="Pos" source="TextInput:" type="Int32" />
+            <Field name="Stop" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="450" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Input] IN (0,2,5,6,7) THEN&#xA; IF [Operand]&lt;4 THEN&#xA;  [Operand]&#xA; ELSEIF [Operand]=4 THEN [A]&#xA; ELSEIF [Operand]=5 THEN [B]&#xA; ELSEIF [Operand]=6 THEN [C]&#xA; ELSE Null()&#xA; ENDIF&#xA;ELSE&#xA;[Operand]&#xA;ENDIF" field="combo" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="IF [Input]=0 THEN &#xA; &quot;A:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=1 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[Operand]))&#xA;ELSEIF [Input]=2 THEN&#xA; &quot;B:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=3 THEN&#xA; IF [A]=0 THEN &quot;GO&quot; ELSE &quot;Jump&quot; ENDIF&#xA;ELSEIF [Input]=4 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[C]))&#xA;ELSEIF [Input]=5 THEN //Output&#xA; &quot;Output:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=6 THEN&#xA; &quot;B:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=7 THEN&#xA; &quot;C:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSE Null()&#xA;ENDIF" field="temp" size="1073741823" type="V_WString" enabled="true" />
+            <FormulaField expression="[Engine.IterationNumber]" field="Iterative" size="8" type="Int64" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>combo = IF [Input] IN (0,2,5,6,7) THEN
+ IF [Operand]&lt;4 THEN
+  [Operand]
+ ELSEIF ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int64" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="A" source="TextInput:" type="Int64" />
+            <Field name="B" source="TextInput:" type="Int64" />
+            <Field name="C" source="TextInput:" type="Int64" />
+            <Field name="Pos" source="TextInput:" type="Int64" />
+            <Field name="Stop" source="TextInput:" type="Int64" />
+            <Field name="OperandPos" source="Formula: [Pos]+1" type="Int64" />
+            <Field name="Operand" source="TextInput:" type="Int64" />
+            <Field name="combo" source="Formula: IF [Input] IN (0,2,5,6,7) THEN&#xA; IF [Operand]&lt;4 THEN&#xA;  [Operand]&#xA; ELSEIF [Operand]=4 THEN [A]&#xA; ELSEIF [Operand]=5 THEN [B]&#xA; ELSEIF [Operand]=6 THEN [C]&#xA; ELSE Null()&#xA; ENDIF&#xA;ELSE&#xA;[Operand]&#xA;ENDIF" type="Int64" />
+            <Field name="temp" size="1073741823" source="Formula: IF [Input]=0 THEN &#xA; &quot;A:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=1 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[Operand]))&#xA;ELSEIF [Input]=2 THEN&#xA; &quot;B:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=3 THEN&#xA; IF [A]=0 THEN &quot;GO&quot; ELSE &quot;Jump&quot; ENDIF&#xA;ELSEIF [Input]=4 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[C]))&#xA;ELSEIF [Input]=5 THEN //Output&#xA; &quot;Output:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=6 THEN&#xA; &quot;B:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=7 THEN&#xA; &quot;C:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Iterative" source="Formula: [Engine.IterationNumber]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="258" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Pos]+1" field="OperandPos" size="8" type="Int64" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[OperandPos = [Pos]+1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int64" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="A" source="TextInput:" type="Int64" />
+            <Field name="B" source="TextInput:" type="Int64" />
+            <Field name="C" source="TextInput:" type="Int64" />
+            <Field name="Pos" source="TextInput:" type="Int64" />
+            <Field name="Stop" source="TextInput:" type="Int64" />
+            <Field name="OperandPos" source="Formula: [Pos]+1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="642" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>Numeric</FieldType>
+          <Fields orderChanged="False">
+            <Field name="A" />
+            <Field name="B" />
+            <Field name="C" />
+            <Field name="Order" selected="False" />
+            <Field name="Input" selected="False" />
+            <Field name="Pos" selected="False" />
+            <Field name="Stop" selected="False" />
+            <Field name="OperandPos" selected="False" />
+            <Field name="Operand" selected="False" />
+            <Field name="combo" selected="False" />
+            <Field name="Iterative" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <CopyOutput value="False" />
+          <Expression>IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])
+ELSE [_CurrentField_] ENDIF</Expression>
+          <ChangeFieldType value="True" />
+          <OutputFieldType type="Int64" size="8" scale="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])
+ELSE [...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int64" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="A" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="B" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="C" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="Pos" source="TextInput:" type="Int64" />
+            <Field name="Stop" source="TextInput:" type="Int64" />
+            <Field name="OperandPos" source="Formula: [Pos]+1" type="Int64" />
+            <Field name="Operand" source="TextInput:" type="Int64" />
+            <Field name="combo" source="Formula: IF [Input] IN (0,2,5,6,7) THEN&#xA; IF [Operand]&lt;4 THEN&#xA;  [Operand]&#xA; ELSEIF [Operand]=4 THEN [A]&#xA; ELSEIF [Operand]=5 THEN [B]&#xA; ELSEIF [Operand]=6 THEN [C]&#xA; ELSE Null()&#xA; ENDIF&#xA;ELSE&#xA;[Operand]&#xA;ENDIF" type="Int64" />
+            <Field name="temp" size="1073741823" source="Formula: IF [Input]=0 THEN &#xA; &quot;A:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=1 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[Operand]))&#xA;ELSEIF [Input]=2 THEN&#xA; &quot;B:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=3 THEN&#xA; IF [A]=0 THEN &quot;GO&quot; ELSE &quot;Jump&quot; ENDIF&#xA;ELSEIF [Input]=4 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[C]))&#xA;ELSEIF [Input]=5 THEN //Output&#xA; &quot;Output:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=6 THEN&#xA; &quot;B:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=7 THEN&#xA; &quot;C:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Iterative" source="Formula: [Engine.IterationNumber]" type="Int64" />
+            <Field description="TextToColumns: Parsed from temp" name="temp1" size="1073741823" source="TextToColumns: Parsed from temp" type="V_WString" />
+            <Field description="TextToColumns: Parsed from temp" name="temp2" size="1073741823" source="TextToColumns: Parsed from temp" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="546" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>temp</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>temp</RootName>
+          <Delimeters value=":" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int64" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="A" source="TextInput:" type="Int64" />
+            <Field name="B" source="TextInput:" type="Int64" />
+            <Field name="C" source="TextInput:" type="Int64" />
+            <Field name="Pos" source="TextInput:" type="Int64" />
+            <Field name="Stop" source="TextInput:" type="Int64" />
+            <Field name="OperandPos" source="Formula: [Pos]+1" type="Int64" />
+            <Field name="Operand" source="TextInput:" type="Int64" />
+            <Field name="combo" source="Formula: IF [Input] IN (0,2,5,6,7) THEN&#xA; IF [Operand]&lt;4 THEN&#xA;  [Operand]&#xA; ELSEIF [Operand]=4 THEN [A]&#xA; ELSEIF [Operand]=5 THEN [B]&#xA; ELSEIF [Operand]=6 THEN [C]&#xA; ELSE Null()&#xA; ENDIF&#xA;ELSE&#xA;[Operand]&#xA;ENDIF" type="Int64" />
+            <Field name="temp" size="1073741823" source="Formula: IF [Input]=0 THEN &#xA; &quot;A:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=1 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[Operand]))&#xA;ELSEIF [Input]=2 THEN&#xA; &quot;B:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=3 THEN&#xA; IF [A]=0 THEN &quot;GO&quot; ELSE &quot;Jump&quot; ENDIF&#xA;ELSEIF [Input]=4 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[C]))&#xA;ELSEIF [Input]=5 THEN //Output&#xA; &quot;Output:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=6 THEN&#xA; &quot;B:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=7 THEN&#xA; &quot;C:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Iterative" source="Formula: [Engine.IterationNumber]" type="Int64" />
+            <Field description="TextToColumns: Parsed from temp" name="temp1" size="1073741823" source="TextToColumns: Parsed from temp" type="V_WString" />
+            <Field description="TextToColumns: Parsed from temp" name="temp2" size="1073741823" source="TextToColumns: Parsed from temp" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="834" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Order]&lt;=[Stop]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Order]&lt;=[Stop]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int64" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="A" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="B" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="C" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="Pos" source="Formula: IF [Input]=3 AND [temp]=&quot;Jump&quot; THEN [Operand]&#xA;ELSE [Order]+2 ENDIF" type="Int64" />
+            <Field name="Stop" source="TextInput:" type="Int64" />
+            <Field name="OperandPos" source="Formula: [Pos]+1" type="Int64" />
+            <Field name="Operand" source="TextInput:" type="Int64" />
+            <Field name="combo" source="Formula: IF [Input] IN (0,2,5,6,7) THEN&#xA; IF [Operand]&lt;4 THEN&#xA;  [Operand]&#xA; ELSEIF [Operand]=4 THEN [A]&#xA; ELSEIF [Operand]=5 THEN [B]&#xA; ELSEIF [Operand]=6 THEN [C]&#xA; ELSE Null()&#xA; ENDIF&#xA;ELSE&#xA;[Operand]&#xA;ENDIF" type="Int64" />
+            <Field name="temp" size="1073741823" source="Formula: IF [Input]=0 THEN &#xA; &quot;A:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=1 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[Operand]))&#xA;ELSEIF [Input]=2 THEN&#xA; &quot;B:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=3 THEN&#xA; IF [A]=0 THEN &quot;GO&quot; ELSE &quot;Jump&quot; ENDIF&#xA;ELSEIF [Input]=4 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[C]))&#xA;ELSEIF [Input]=5 THEN //Output&#xA; &quot;Output:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=6 THEN&#xA; &quot;B:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=7 THEN&#xA; &quot;C:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Iterative" source="Formula: [Engine.IterationNumber]" type="Int64" />
+            <Field description="TextToColumns: Parsed from temp" name="temp1" size="1073741823" source="TextToColumns: Parsed from temp" type="V_WString" />
+            <Field description="TextToColumns: Parsed from temp" name="temp2" size="1073741823" source="TextToColumns: Parsed from temp" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int64" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="A" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="B" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="C" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="Pos" source="Formula: IF [Input]=3 AND [temp]=&quot;Jump&quot; THEN [Operand]&#xA;ELSE [Order]+2 ENDIF" type="Int64" />
+            <Field name="Stop" source="TextInput:" type="Int64" />
+            <Field name="OperandPos" source="Formula: [Pos]+1" type="Int64" />
+            <Field name="Operand" source="TextInput:" type="Int64" />
+            <Field name="combo" source="Formula: IF [Input] IN (0,2,5,6,7) THEN&#xA; IF [Operand]&lt;4 THEN&#xA;  [Operand]&#xA; ELSEIF [Operand]=4 THEN [A]&#xA; ELSEIF [Operand]=5 THEN [B]&#xA; ELSEIF [Operand]=6 THEN [C]&#xA; ELSE Null()&#xA; ENDIF&#xA;ELSE&#xA;[Operand]&#xA;ENDIF" type="Int64" />
+            <Field name="temp" size="1073741823" source="Formula: IF [Input]=0 THEN &#xA; &quot;A:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=1 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[Operand]))&#xA;ELSEIF [Input]=2 THEN&#xA; &quot;B:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=3 THEN&#xA; IF [A]=0 THEN &quot;GO&quot; ELSE &quot;Jump&quot; ENDIF&#xA;ELSEIF [Input]=4 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[C]))&#xA;ELSEIF [Input]=5 THEN //Output&#xA; &quot;Output:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=6 THEN&#xA; &quot;B:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=7 THEN&#xA; &quot;C:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Iterative" source="Formula: [Engine.IterationNumber]" type="Int64" />
+            <Field description="TextToColumns: Parsed from temp" name="temp1" size="1073741823" source="TextToColumns: Parsed from temp" type="V_WString" />
+            <Field description="TextToColumns: Parsed from temp" name="temp2" size="1073741823" source="TextToColumns: Parsed from temp" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1026" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1026" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output15</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="834" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Input</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-17 22:25:18</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>5</Operand>
+              <StartDate>2024-12-17 22:25:18</StartDate>
+              <EndDate>2024-12-17 22:25:18</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Input] = 5</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int64" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="A" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="B" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="C" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="Pos" source="TextInput:" type="Int64" />
+            <Field name="Stop" source="TextInput:" type="Int64" />
+            <Field name="OperandPos" source="Formula: [Pos]+1" type="Int64" />
+            <Field name="Operand" source="TextInput:" type="Int64" />
+            <Field name="combo" source="Formula: IF [Input] IN (0,2,5,6,7) THEN&#xA; IF [Operand]&lt;4 THEN&#xA;  [Operand]&#xA; ELSEIF [Operand]=4 THEN [A]&#xA; ELSEIF [Operand]=5 THEN [B]&#xA; ELSEIF [Operand]=6 THEN [C]&#xA; ELSE Null()&#xA; ENDIF&#xA;ELSE&#xA;[Operand]&#xA;ENDIF" type="Int64" />
+            <Field name="temp" size="1073741823" source="Formula: IF [Input]=0 THEN &#xA; &quot;A:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=1 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[Operand]))&#xA;ELSEIF [Input]=2 THEN&#xA; &quot;B:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=3 THEN&#xA; IF [A]=0 THEN &quot;GO&quot; ELSE &quot;Jump&quot; ENDIF&#xA;ELSEIF [Input]=4 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[C]))&#xA;ELSEIF [Input]=5 THEN //Output&#xA; &quot;Output:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=6 THEN&#xA; &quot;B:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=7 THEN&#xA; &quot;C:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Iterative" source="Formula: [Engine.IterationNumber]" type="Int64" />
+            <Field description="TextToColumns: Parsed from temp" name="temp1" size="1073741823" source="TextToColumns: Parsed from temp" type="V_WString" />
+            <Field description="TextToColumns: Parsed from temp" name="temp2" size="1073741823" source="TextToColumns: Parsed from temp" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int64" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="A" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="B" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="C" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="Pos" source="TextInput:" type="Int64" />
+            <Field name="Stop" source="TextInput:" type="Int64" />
+            <Field name="OperandPos" source="Formula: [Pos]+1" type="Int64" />
+            <Field name="Operand" source="TextInput:" type="Int64" />
+            <Field name="combo" source="Formula: IF [Input] IN (0,2,5,6,7) THEN&#xA; IF [Operand]&lt;4 THEN&#xA;  [Operand]&#xA; ELSEIF [Operand]=4 THEN [A]&#xA; ELSEIF [Operand]=5 THEN [B]&#xA; ELSEIF [Operand]=6 THEN [C]&#xA; ELSE Null()&#xA; ENDIF&#xA;ELSE&#xA;[Operand]&#xA;ENDIF" type="Int64" />
+            <Field name="temp" size="1073741823" source="Formula: IF [Input]=0 THEN &#xA; &quot;A:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=1 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[Operand]))&#xA;ELSEIF [Input]=2 THEN&#xA; &quot;B:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=3 THEN&#xA; IF [A]=0 THEN &quot;GO&quot; ELSE &quot;Jump&quot; ENDIF&#xA;ELSEIF [Input]=4 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[C]))&#xA;ELSEIF [Input]=5 THEN //Output&#xA; &quot;Output:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=6 THEN&#xA; &quot;B:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=7 THEN&#xA; &quot;C:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Iterative" source="Formula: [Engine.IterationNumber]" type="Int64" />
+            <Field description="TextToColumns: Parsed from temp" name="temp1" size="1073741823" source="TextToColumns: Parsed from temp" type="V_WString" />
+            <Field description="TextToColumns: Parsed from temp" name="temp2" size="1073741823" source="TextToColumns: Parsed from temp" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="738" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Input]=3 AND [temp]=&quot;Jump&quot; THEN [Operand]&#xA;ELSE [Order]+2 ENDIF" field="Pos" size="4" type="Int32" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Pos = IF [Input]=3 AND [temp]="Jump" THEN [Operand]
+ELSE [Order]+2 ENDIF
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int64" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="A" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="B" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="C" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="Pos" source="Formula: IF [Input]=3 AND [temp]=&quot;Jump&quot; THEN [Operand]&#xA;ELSE [Order]+2 ENDIF" type="Int64" />
+            <Field name="Stop" source="TextInput:" type="Int64" />
+            <Field name="OperandPos" source="Formula: [Pos]+1" type="Int64" />
+            <Field name="Operand" source="TextInput:" type="Int64" />
+            <Field name="combo" source="Formula: IF [Input] IN (0,2,5,6,7) THEN&#xA; IF [Operand]&lt;4 THEN&#xA;  [Operand]&#xA; ELSEIF [Operand]=4 THEN [A]&#xA; ELSEIF [Operand]=5 THEN [B]&#xA; ELSEIF [Operand]=6 THEN [C]&#xA; ELSE Null()&#xA; ENDIF&#xA;ELSE&#xA;[Operand]&#xA;ENDIF" type="Int64" />
+            <Field name="temp" size="1073741823" source="Formula: IF [Input]=0 THEN &#xA; &quot;A:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=1 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[Operand]))&#xA;ELSEIF [Input]=2 THEN&#xA; &quot;B:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=3 THEN&#xA; IF [A]=0 THEN &quot;GO&quot; ELSE &quot;Jump&quot; ENDIF&#xA;ELSEIF [Input]=4 THEN&#xA; &quot;B:&quot;+ToString(BinaryXOr([B],[C]))&#xA;ELSEIF [Input]=5 THEN //Output&#xA; &quot;Output:&quot;+ToString(MOD([combo],8))&#xA;ELSEIF [Input]=6 THEN&#xA; &quot;B:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSEIF [Input]=7 THEN&#xA; &quot;C:&quot;+ToString(FLOOR([A]/POW(2,[combo])))&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Iterative" source="Formula: [Engine.IterationNumber]" type="Int64" />
+            <Field description="TextToColumns: Parsed from temp" name="temp1" size="1073741823" source="TextToColumns: Parsed from temp" type="V_WString" />
+            <Field description="TextToColumns: Parsed from temp" name="temp2" size="1073741823" source="TextToColumns: Parsed from temp" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="930" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="A" selected="True" />
+            <SelectField field="B" selected="True" />
+            <SelectField field="C" selected="True" />
+            <SelectField field="Pos" selected="True" />
+            <SelectField field="Stop" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="A" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="B" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="C" source="Formula: IF [_CurrentFieldName_]=[temp1] THEN ToNumber([temp2])&#xA;ELSE [_CurrentField_] ENDIF" type="Int64" />
+            <Field name="Pos" source="Formula: IF [Input]=3 AND [temp]=&quot;Jump&quot; THEN [Operand]&#xA;ELSE [Order]+2 ENDIF" type="Int64" />
+            <Field name="Stop" source="TextInput:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="366" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="OperandPos" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Order" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Input" selected="True" input="Left_" type="Int64" size="8" />
+                <SelectField field="Left_A" selected="True" input="Left_" type="Int64" size="8" />
+                <SelectField field="Right_Order" selected="False" input="Right_" />
+                <SelectField field="Right_Input" selected="True" rename="Operand" input="Right_" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int64" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="A" source="TextInput:" type="Int64" />
+            <Field name="B" source="TextInput:" type="Int64" />
+            <Field name="C" source="TextInput:" type="Int64" />
+            <Field name="Pos" source="TextInput:" type="Int64" />
+            <Field name="Stop" source="TextInput:" type="Int64" />
+            <Field name="OperandPos" source="Formula: [Pos]+1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int64" />
+            <Field name="Input" source="TextInput:" type="Int64" />
+            <Field name="A" source="TextInput:" type="Int64" />
+            <Field name="B" source="TextInput:" type="Int64" />
+            <Field name="C" source="TextInput:" type="Int64" />
+            <Field name="Pos" source="TextInput:" type="Int64" />
+            <Field name="Stop" source="TextInput:" type="Int64" />
+            <Field name="OperandPos" source="Formula: [Pos]+1" type="Int64" />
+            <Field name="Operand" source="TextInput:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Order" source="TextInput:" type="Int32" />
+            <Field name="Input" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="930" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output22</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="19" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="19" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Join" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2024D17P1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="9e38c25f-cafc-4937-9478-2b8938b108ad" />
+      <Telemetry>
+        <PreviousWorkflowId value="f5fdee6b-1557-4d62-bb34-e3f56d7f8e5e" />
+        <OriginWorkflowId value="f5fdee6b-1557-4d62-bb34-e3f56d7f8e5e" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (14)</Name>
+              <ToolId value="14" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (15)</Name>
+              <ToolId value="15" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (22)</Name>
+              <ToolId value="22" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="1000" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="14" Selected="True" />
+        <Tool ToolId="15" Selected="True" />
+        <Tool ToolId="22" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
