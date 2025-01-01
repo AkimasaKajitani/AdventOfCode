@@ -1,0 +1,704 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="330" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;^v&lt;&gt;&quot;" field="Dir" size="5" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Dir = "^v<>"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Dir" size="5" source="Formula: &quot;^v&lt;&gt;&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="426" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Dir</Field>
+          <RegExExpression value="." />
+          <CaseInsensitve value="True" />
+          <Method>ParseSimple</Method>
+          <Replace expression=".">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="True" />
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+          </ParseComplex>
+          <Match>
+            <Field>Field1_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Dir" size="5" source="Formula: &quot;^v&lt;&gt;&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="522" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Dir]IN(&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Dir]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null()&#xA;ENDIF" field="x_n" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="IF [Dir]IN(&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Dir]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Dir]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null()&#xA;ENDIF" field="y_n" size="8" type="Int64" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>x_n = IF [Dir]IN("^","v") THEN [x]
+ELSEIF [Dir]="&gt;" THEN [x]+1
+ELSEIF [Dir]="&lt;" ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Dir" size="5" source="Formula: &quot;^v&lt;&gt;&quot;" type="V_WString" />
+            <Field name="x_n" source="Formula: IF [Dir]IN(&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Dir]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="y_n" source="Formula: IF [Dir]IN(&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Dir]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Dir]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="618" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="x_n" />
+            <Field field="y_n" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="x" />
+            <Field field="y" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_x" selected="True" input="Left_" />
+                <SelectField field="Left_y" selected="True" input="Left_" />
+                <SelectField field="Left_Field1" selected="True" input="Left_" />
+                <SelectField field="Left_Route" selected="True" input="Left_" />
+                <SelectField field="Left_RouteDir" selected="True" input="Left_" />
+                <SelectField field="Left_Dir" selected="True" input="Left_" />
+                <SelectField field="Left_x_n" selected="True" input="Left_" />
+                <SelectField field="Left_y_n" selected="True" input="Left_" />
+                <SelectField field="Right_x" selected="False" rename="Right_x" input="Right_" />
+                <SelectField field="Right_y" selected="False" rename="Right_y" input="Right_" />
+                <SelectField field="Right_Field1" selected="True" rename="Right_Field1" input="Right_" />
+                <SelectField field="Right_Route" selected="False" rename="Right_Route" input="Right_" />
+                <SelectField field="Right_RouteDir" selected="False" rename="Right_RouteDir" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Dir" size="5" source="Formula: &quot;^v&lt;&gt;&quot;" type="V_WString" />
+            <Field name="x_n" source="Formula: IF [Dir]IN(&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Dir]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="y_n" source="Formula: IF [Dir]IN(&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Dir]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Dir]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Dir" size="5" source="Formula: &quot;^v&lt;&gt;&quot;" type="V_WString" />
+            <Field name="x_n" source="Formula: IF [Dir]IN(&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Dir]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="y_n" source="Formula: IF [Dir]IN(&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Dir]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Dir]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="Right_Field1" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="810" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Route]+ToString([Right_Field1])" field="Route" size="2147483647" type="V_String" enabled="true" />
+            <FormulaField expression="[RouteDir]+[Dir]" field="RouteDir" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Route = [Route]+ToString([Right_Field1])
+RouteDir = [RouteDir]+[Dir]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Route" size="2147483647" source="Formula: [Route]+ToString([Right_Field1])" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="Formula: [RouteDir]+[Dir]" type="V_WString" />
+            <Field name="Dir" size="5" source="Formula: &quot;^v&lt;&gt;&quot;" type="V_WString" />
+            <Field name="x_n" source="Formula: IF [Dir]IN(&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Dir]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="y_n" source="Formula: IF [Dir]IN(&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Dir]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Dir]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="Right_Field1" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1002" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="x" selected="False" />
+            <SelectField field="y" selected="False" />
+            <SelectField field="Field1" selected="False" />
+            <SelectField field="Dir" selected="False" />
+            <SelectField field="x_n" selected="True" rename="x" />
+            <SelectField field="y_n" selected="True" rename="y" />
+            <SelectField field="Right_Field1" selected="True" rename="Field1" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Route" size="2147483647" source="Formula: [Route]+&quot;,&quot;+ToString([Right_Field1])" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="Formula: [RouteDir]+&quot;,&quot;+[Dir]" type="V_WString" />
+            <Field name="x" source="Formula: IF [Dir]IN(&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Dir]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="y" source="Formula: IF [Dir]IN(&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Dir]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Dir]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="714" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!Contains([Route], ToString([Right_Field1]))</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!Contains([Route], ToString([Right_Field1]))</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Dir" size="5" source="Formula: &quot;^v&lt;&gt;&quot;" type="V_WString" />
+            <Field name="x_n" source="Formula: IF [Dir]IN(&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Dir]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="y_n" source="Formula: IF [Dir]IN(&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Dir]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Dir]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="Right_Field1" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Dir" size="5" source="Formula: &quot;^v&lt;&gt;&quot;" type="V_WString" />
+            <Field name="x_n" source="Formula: IF [Dir]IN(&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Dir]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="y_n" source="Formula: IF [Dir]IN(&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Dir]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Dir]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="Right_Field1" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="102" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="11" />
+              <Fields>
+                <Field name="x" />
+                <Field name="y" />
+                <Field name="Field1" />
+                <Field name="Route" />
+                <Field name="RouteDir" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>7</c>
+                  <c>7</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>8</c>
+                  <c>8</c>
+                  <c />
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>9</c>
+                  <c>9</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>4</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>5</c>
+                  <c>5</c>
+                  <c />
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>6</c>
+                  <c>6</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>2</c>
+                  <c />
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c />
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>4</c>
+                  <c>A</c>
+                  <c>A</c>
+                  <c />
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1098" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1098" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output13</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="234" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RouteDir" selected="True" type="V_WString" size="2147483647" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="906" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="x" />
+            <Field field="y" />
+            <Field field="Field1" />
+            <Field field="Route" />
+            <Field field="RouteDir" />
+            <Field field="Dir" />
+            <Field field="x_n" />
+            <Field field="y_n" />
+            <Field field="Right_Field1" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Route" size="2147483647" source="Formula: [Route]+&quot;,&quot;+ToString([Right_Field1])" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="Formula: [RouteDir]+&quot;,&quot;+[Dir]" type="V_WString" />
+            <Field name="Dir" size="5" source="Formula: &quot;^v&lt;&gt;&quot;" type="V_WString" />
+            <Field name="x_n" source="Formula: IF [Dir]IN(&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Dir]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="y_n" source="Formula: IF [Dir]IN(&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Dir]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Dir]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="Right_Field1" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Route" size="2147483647" source="Formula: [Route]+&quot;,&quot;+ToString([Right_Field1])" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="Formula: [RouteDir]+&quot;,&quot;+[Dir]" type="V_WString" />
+            <Field name="Dir" size="5" source="Formula: &quot;^v&lt;&gt;&quot;" type="V_WString" />
+            <Field name="x_n" source="Formula: IF [Dir]IN(&quot;^&quot;,&quot;v&quot;) THEN [x]&#xA;ELSEIF [Dir]=&quot;&gt;&quot; THEN [x]+1&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN [x]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="y_n" source="Formula: IF [Dir]IN(&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [y]&#xA;ELSEIF [Dir]=&quot;v&quot; THEN [y]+1&#xA;ELSEIF [Dir]=&quot;^&quot; THEN [y]-1&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="Right_Field1" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Unique" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CreatePushRoute</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ced2a096-bb3e-47f6-a0a4-ce783bef3a3e" />
+      <Telemetry>
+        <PreviousWorkflowId value="53060fae-2336-46bd-b914-bb2700848c1f" />
+        <OriginWorkflowId value="53060fae-2336-46bd-b914-bb2700848c1f" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (11)</Name>
+          <ToolId value="11" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (10)</Name>
+              <ToolId value="10" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (12)</Name>
+              <ToolId value="12" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (13)</Description>
+              <Name>Macro Output (13)</Name>
+              <ToolId value="13" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="12" Selected="False" />
+        <Tool ToolId="13" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
