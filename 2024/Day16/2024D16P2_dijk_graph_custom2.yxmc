@@ -1,0 +1,1722 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="102" y="200" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\MyDoc\AYX\AdventOfCode\2024\Day16\P2_custom1.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText>P2_custom1.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="102" y="367" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>Input3</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\MyDoc\AYX\AdventOfCode\2024\Day16\P2_edgelist.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText>P2_edgelist.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1914" y="223" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="678" y="56" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputFixed</Name>
+          <Abbrev>F</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="294" y="200" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsFalse</Operator>
+            <Field>Fixed</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-25 22:08:13</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2024-12-25 22:08:13</StartDate>
+              <EndDate>2024-12-25 22:08:13</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Fixed] = 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="390" y="200" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>Cost</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-25 22:08:33</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2024-12-25 22:08:33</StartDate>
+              <EndDate>2024-12-25 22:08:33</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Cost])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="486" y="200" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Cost" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Cost - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="582" y="200" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="582" y="272" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Skip</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Skip 1st 1 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="978" y="200" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Node_e" />
+            <Field field="OutputDir" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="NodeID" />
+            <Field field="Dir" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Right_Goal" selected="True" rename="Left_Right_Goal" input="Left_" />
+                <SelectField field="Right_NodeID" selected="True" rename="Right_NodeID" input="Right_" />
+                <SelectField field="Right_Dir" selected="True" rename="Right_Dir" input="Right_" />
+                <SelectField field="Right_Fixed" selected="True" rename="Right_Fixed" input="Right_" />
+                <SelectField field="Right_history" selected="True" rename="Right_history" input="Right_" />
+                <SelectField field="Right_Goar_dir" selected="True" rename="Right_Goar_dir" input="Right_" />
+                <SelectField field="Right_Goal" selected="True" rename="Right_Goal" input="Right_" />
+                <SelectField field="Right_DiffCost" selected="True" rename="Right_DiffCost" input="Right_" />
+                <SelectField field="Right_Cost" selected="True" rename="Right_Cost" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Find Neighbor Point</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+            <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;&gt;&quot; THEN &quot;&gt;^v&quot;&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN &quot;&lt;^v&quot;&#xA;ELSEIF [Dir]=&quot;^&quot; THEN &quot;^&lt;&gt;&quot;&#xA;ELSEIF [Dir]=&quot;v&quot; THEN &quot;v&lt;&gt;&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Right_Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+            <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;&gt;&quot; THEN &quot;&gt;^v&quot;&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN &quot;&lt;^v&quot;&#xA;ELSEIF [Dir]=&quot;^&quot; THEN &quot;^&lt;&gt;&quot;&#xA;ELSEIF [Dir]=&quot;v&quot; THEN &quot;v&lt;&gt;&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Left_Right_Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Right_Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Right_Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="Right_history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Right_Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Right_Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Right_DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Right_Cost" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1074" y="200" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Dir]=[NewDir] THEN 0 &#xA;Else 1000&#xA;ENDIF" field="AdditionalCost" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="[Steps]+[AdditionalCost]+[Cost]" field="NewCost" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="IF IsNull([Right_Cost]) THEN &quot;True&quot;&#xA;ELSE [Right_Cost]&gt;[NewCost] ENDIF" field="IsUpdate" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="IF [IsUpdate] THEN [NewCost]&#xA;ELSE [Right_Cost]&#xA;ENDIF" field="Right_Cost" size="8" type="Int64" />
+            <FormulaField expression="IF [IsUpdate] THEN [history]+&quot;,&quot;+ToString([NodeID])+&quot;-&quot;+[Dir]&#xA;&#xA;ELSE [Right_history]&#xA;ENDIF" field="Right_history" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Calculate Cost</AnnotationText>
+          <DefaultAnnotationText>AdditionalCost = IF [Dir]=[NewDir] THEN 0 
+Else 1000
+ENDIF
+NewCost = [Steps]+[Ad...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+            <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;&gt;&quot; THEN &quot;&gt;^v&quot;&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN &quot;&lt;^v&quot;&#xA;ELSEIF [Dir]=&quot;^&quot; THEN &quot;^&lt;&gt;&quot;&#xA;ELSEIF [Dir]=&quot;v&quot; THEN &quot;v&lt;&gt;&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Left_Right_Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Right_Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Right_Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="Right_history" size="1073741823" source="Formula: IF [IsUpdate] THEN [history]+&quot;,&quot;+ToString([NodeID])+&quot;-&quot;+[Dir]&#xA;&#xA;ELSE [Right_history]&#xA;ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Right_Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Right_Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Right_DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Right_Cost" source="Formula: IF [IsUpdate] THEN [NewCost]&#xA;ELSE [Right_Cost]&#xA;ENDIF" type="Int64" />
+            <Field name="AdditionalCost" source="Formula: IF [Dir]=[NewDir] THEN 0 &#xA;Else 1000&#xA;ENDIF" type="Int64" />
+            <Field name="NewCost" source="Formula: [Steps]+[AdditionalCost]+[Cost]" type="Int64" />
+            <Field name="IsUpdate" source="Formula: IF IsNull([Right_Cost]) THEN &quot;True&quot;&#xA;ELSE [Right_Cost]&gt;[NewCost] ENDIF" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="870" y="308" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1170" y="200" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Goar_dir" selected="True" />
+            <SelectField field="Goal" selected="True" />
+            <SelectField field="DiffCost" selected="True" />
+            <SelectField field="Right_NodeID" selected="True" rename="NodeID" />
+            <SelectField field="Right_Dir" selected="True" rename="Dir" />
+            <SelectField field="Right_Fixed" selected="True" rename="Fixed" />
+            <SelectField field="Right_history" selected="True" rename="history" />
+            <SelectField field="Right_Cost" selected="True" rename="Cost" />
+            <SelectField field="x_n" selected="False" rename="x" />
+            <SelectField field="y_n" selected="False" rename="y" />
+            <SelectField field="Right_Input" selected="False" rename="input" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: IF [IsUpdate] THEN [history]+&quot;,&quot;+ToString([NodeID])+&quot;-&quot;+[Dir]&#xA;&#xA;ELSE [Right_history]&#xA;ENDIF" type="V_WString" />
+            <Field name="Cost" source="Formula: IF [IsUpdate] THEN [NewCost]&#xA;ELSE [Right_Cost]&#xA;ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1278" y="224" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="858" y="56" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Goal]=[NodeID] OR
+[Cost]&gt;[DiffCost]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Goal]=[NodeID] OR
+[Cost]&gt;[DiffCost]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="870" y="200" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="NodeID" />
+            <Field field="NewDir" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Node_s" />
+            <Field field="InputDir" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Goal" selected="True" rename="Right_Goal" input="Right_" />
+                <SelectField field="Right_Dir" selected="True" rename="Right_Dir" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+            <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;&gt;&quot; THEN &quot;&gt;^v&quot;&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN &quot;&lt;^v&quot;&#xA;ELSEIF [Dir]=&quot;^&quot; THEN &quot;^&lt;&gt;&quot;&#xA;ELSEIF [Dir]=&quot;v&quot; THEN &quot;v&lt;&gt;&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+            <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;&gt;&quot; THEN &quot;&gt;^v&quot;&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN &quot;&lt;^v&quot;&#xA;ELSEIF [Dir]=&quot;^&quot; THEN &quot;^&lt;&gt;&quot;&#xA;ELSEIF [Dir]=&quot;v&quot; THEN &quot;v&lt;&gt;&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Right_Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="200" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="history" selected="True" size="2147483647" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+            <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+            <Field name="Cost" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1940" y="297" width="150" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 44</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1950" y="331" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Goar_dir" selected="True" />
+                <SelectField field="Goal" selected="True" />
+                <SelectField field="DiffCost" selected="True" />
+                <SelectField field="NodeID" selected="True" />
+                <SelectField field="Dir" selected="True" />
+                <SelectField field="Fixed" selected="True" />
+                <SelectField field="history" selected="True" />
+                <SelectField field="Cost" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+                <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+                <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+                <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+                <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="2238" y="331" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">C:\MyDoc\AYX\AdventOfCode\2024\Day16\P2_custom1.yxdb</File>
+              <Passwords />
+              <Disable>True</Disable>
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+                <WriteCompatibleVersion>False</WriteCompatibleVersion>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>P2_custom1.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="2046" y="331" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;2024D16P1_dijk_&quot;+ToString([Engine.IterationNumber])+&quot;.yxdb&quot;" field="FilePath" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[FilePath = "2024D16P1_dijk_"+ToString([Engine.IterationNumber])+".yxdb"
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+                <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+                <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+                <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+                <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="FilePath" size="1073741823" source="Formula: &quot;2024D16P1_dijk_&quot;+ToString([Engine.IterationNumber])+&quot;.yxdb&quot;" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2142" y="331" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Goar_dir" selected="True" />
+                <SelectField field="Goal" selected="True" />
+                <SelectField field="DiffCost" selected="True" />
+                <SelectField field="NodeID" selected="True" />
+                <SelectField field="Dir" selected="True" />
+                <SelectField field="Fixed" selected="True" />
+                <SelectField field="history" selected="True" />
+                <SelectField field="Cost" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+                <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+                <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+                <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+                <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1937" y="54" width="156" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 143</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="23">
+          <GuiSettings>
+            <Position x="2058" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Input.Input4"><![CDATA[x=x
+y=y
+Input=Cost
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="AoC\CheckOnMap.yxmc" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1962" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Cost" selected="True" type="V_WString" size="2147483647" />
+                <SelectField field="history1" selected="False" rename="x" type="Int16" size="2" />
+                <SelectField field="history2" selected="False" rename="y" type="Int16" size="2" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="NodeID" source="Summarize: GroupBy - RecordID" type="Int32" />
+                <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+                <Field name="Cost" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="2154" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>
+              </TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1349" y="173" width="529" height="217" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>End condition</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>End condition</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="1458" y="221" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+                <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+                <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+                <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+                <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings>
+            <Position x="1374" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output9">
+              <RecordInfo>
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="CountRecords.yxmc" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1542" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Count</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2024-12-25 22:24:11</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>0</Operand>
+                  <StartDate>2024-12-25 22:24:11</StartDate>
+                  <EndDate>2024-12-25 22:24:11</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Count] = 0</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+                <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+                <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+                <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+                <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+                <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+                <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+                <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+                <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1374" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+                <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+                <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+                <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+                <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1794" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Goar_dir" selected="True" />
+                <SelectField field="Goal" selected="True" />
+                <SelectField field="DiffCost" selected="True" />
+                <SelectField field="NodeID" selected="True" />
+                <SelectField field="Dir" selected="True" />
+                <SelectField field="Fixed" selected="True" />
+                <SelectField field="history" selected="True" />
+                <SelectField field="Cost" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+                <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+                <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+                <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+                <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings>
+            <Position x="1542" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output9">
+              <RecordInfo>
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="CountRecords.yxmc" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="1626" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Allow</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Source_Count" selected="True" rename="Source_Count" input="Source_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+                <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+                <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+                <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+                <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+                <Field name="Source_Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1710" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>!=</Operator>
+                <Field>Source_Count</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2024-12-28 01:32:18</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>0</Operand>
+                  <StartDate>2024-12-28 01:32:17</StartDate>
+                  <EndDate>2024-12-28 01:32:17</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Source_Count] != 0</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+                <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+                <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+                <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+                <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+                <Field name="Source_Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+                <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+                <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+                <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+                <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+                <Field name="Source_Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="668" y="166" width="175" height="119" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Create DIrection</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Create DIrection</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="678" y="200" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Dir]=&quot;&gt;&quot; THEN &quot;&gt;^v&quot;&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN &quot;&lt;^v&quot;&#xA;ELSEIF [Dir]=&quot;^&quot; THEN &quot;^&lt;&gt;&quot;&#xA;ELSEIF [Dir]=&quot;v&quot; THEN &quot;v&lt;&gt;&quot;&#xA;ELSE Null() ENDIF&#xA;" field="NewDir" size="4" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>New Dir</AnnotationText>
+              <DefaultAnnotationText>NewDir = IF [Dir]="&gt;" THEN "&gt;^v"
+ELSEIF [Dir]="&lt;" THEN "&lt;^v"
+ELSEIF [Dir]="^" TH...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+                <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+                <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+                <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+                <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+                <Field name="Cost" source="Formula: 0" type="Int64" />
+                <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;&gt;&quot; THEN &quot;&gt;^v&quot;&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN &quot;&lt;^v&quot;&#xA;ELSEIF [Dir]=&quot;^&quot; THEN &quot;^&lt;&gt;&quot;&#xA;ELSEIF [Dir]=&quot;v&quot; THEN &quot;v&lt;&gt;&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="774" y="200" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>NewDir</Field>
+              <RegExExpression value="." />
+              <CaseInsensitve value="True" />
+              <Method>ParseSimple</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="True" />
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+              </ParseComplex>
+              <Match>
+                <Field>Dir_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="NodeID" source="Summarize: GroupBy - Value" type="Int64" />
+                <Field name="Dir" size="3" source="Formula: IF [DirNum]=1 THEN &quot;^&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;v&quot;&#xA;ELSEIF [DirNum]=4 THEN &quot;&lt;&quot;&#xA;ELSE Null()&#xA;ENDIF" type="V_WString" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+                <Field description="TextToColumns: Parsed from history" name="Goar_dir" size="1073741823" source="Formula: IF IsNull([Dir]) THEN &quot;R&quot; ELSE [Dir] ENDIF" type="V_WString" />
+                <Field name="Goal" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+                <Field name="DiffCost" source="Formula: [Source_NewCost]-[NewCost]" type="Int64" />
+                <Field name="Cost" source="Formula: 0" type="Int64" />
+                <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;&gt;&quot; THEN &quot;&gt;^v&quot;&#xA;ELSEIF [Dir]=&quot;&lt;&quot; THEN &quot;&lt;^v&quot;&#xA;ELSEIF [Dir]=&quot;^&quot; THEN &quot;^&lt;&gt;&quot;&#xA;ELSEIF [Dir]=&quot;v&quot; THEN &quot;v&lt;&gt;&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="39" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="39" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="13" Connection="False" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="41" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="17" Connection="Right" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Join" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="True" />
+      <Destination ToolID="28" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output1" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="23" Connection="Input4" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output9" />
+      <Destination ToolID="27" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="27" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="True" />
+      <Destination ToolID="42" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output9" />
+      <Destination ToolID="42" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="True" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2024D16P2_dijk_graph_custom2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="52b6846a-ceea-4719-a645-4aa938129920" />
+      <Telemetry>
+        <PreviousWorkflowId value="30abcaa8-4f8a-47ef-8e90-5deade7ffbf8" />
+        <OriginWorkflowId value="55f94cfe-fbed-4f4c-baf5-91061c57504a" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (4)</Name>
+          <ToolId value="4" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (2)</Name>
+              <ToolId value="2" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (5)</Name>
+              <ToolId value="5" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (37)</Description>
+              <Name>Macro Output (7)</Name>
+              <ToolId value="7" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="100000" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="2" Selected="True" />
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="5" Selected="True" />
+        <Tool ToolId="7" Selected="True" />
+        <Tool ToolId="9" Selected="True" />
+        <Tool ToolId="23" Selected="True" />
+        <Tool ToolId="25" Selected="False" />
+        <Tool ToolId="28" Selected="True" />
+        <Tool ToolId="41" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

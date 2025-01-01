@@ -1,0 +1,1104 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="66" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\MyDoc\AYX\AdventOfCode\2024\Day16\routecomp.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText>routecomp.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="246" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Node_e" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Node_s" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_EdgeID" selected="True" rename="Right_EdgeID" input="Right_" />
+                <SelectField field="Right_Node_s" selected="True" rename="Right_Node_s" input="Right_" />
+                <SelectField field="Right_Node_e" selected="True" rename="Right_Node_e" input="Right_" />
+                <SelectField field="Right_Route" selected="True" rename="Right_Route" input="Right_" />
+                <SelectField field="Right_Steps" selected="True" rename="Right_Steps" input="Right_" />
+                <SelectField field="Right_x_s" selected="True" rename="Right_x_s" input="Right_" />
+                <SelectField field="Right_y_s" selected="True" rename="Right_y_s" input="Right_" />
+                <SelectField field="Right_x_e" selected="True" rename="Right_x_e" input="Right_" />
+                <SelectField field="Right_y_e" selected="True" rename="Right_y_e" input="Right_" />
+                <SelectField field="Right_InputDir" selected="True" rename="Right_InputDir" input="Right_" />
+                <SelectField field="Right_OutputDir" selected="True" rename="Right_OutputDir" input="Right_" />
+                <SelectField field="Right_ConnectableCount_s" selected="True" rename="Right_ConnectableCount_s" input="Right_" />
+                <SelectField field="Right_ConnectableCount_e" selected="True" rename="Right_ConnectableCount_e" input="Right_" />
+                <SelectField field="Right_Goal" selected="True" rename="Right_Goal" input="Right_" />
+                <SelectField field="Right_Start" selected="True" rename="Right_Start" input="Right_" />
+                <SelectField field="Right_Dir" selected="False" rename="Right_Dir" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Right_Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Right_Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Right_Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="Right_x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Right_y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Right_y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="Right_OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="Right_ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Right_ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Right_Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="462" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="EdgeID" action="GroupBy" rename="EdgeID" />
+            <SummarizeField field="EdgeID" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EdgeID" source="Summarize: GroupBy - EdgeID" type="Int32" />
+            <Field name="Count" source="Summarize: Count - EdgeID" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="354" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Node_s]!=[Right_Node_e]
+AND 
+!Contains(","+[Route]+",", ","+ToString([Right_Node_e])+",")
+AND !([Node_e]=[Goal] AND [Right_Node_s]=[Goal])
+AND !([Node_e]=[Start] AND [Right_Node_s]=[Start])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Node_s]!=[Right_Node_e]
+AND 
+!Contains(","+[Route]+",", ","+ToString([Right_Nod...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Right_Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Right_Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Right_Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="Right_x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Right_y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Right_y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="Right_OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="Right_ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Right_ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Right_Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Right_Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Right_Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Right_Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="Right_x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Right_y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Right_y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="Right_OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="Right_ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Right_ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Right_Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="558" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-26 23:25:31</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2024-12-26 23:25:31</StartDate>
+              <EndDate>2024-12-26 23:25:31</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="EdgeID" source="Summarize: GroupBy - EdgeID" type="Int32" />
+            <Field name="Count" source="Summarize: Count - EdgeID" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="EdgeID" source="Summarize: GroupBy - EdgeID" type="Int32" />
+            <Field name="Count" source="Summarize: Count - EdgeID" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="654" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="EdgeID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="EdgeID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Right_EdgeID" selected="True" rename="Left_Right_EdgeID" input="Left_" />
+                <SelectField field="Right_EdgeID" selected="False" rename="Right_EdgeID" input="Right_" />
+                <SelectField field="Right_Count" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Right_Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Right_Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Right_Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="Right_x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Right_y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Right_y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="Right_OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="Right_ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Right_ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Right_Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Left_Right_EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Right_Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Right_Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Right_Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="Right_x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Right_y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Right_y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="Right_OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="Right_ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Right_ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Right_Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="EdgeID" source="Summarize: GroupBy - EdgeID" type="Int32" />
+            <Field name="Count" source="Summarize: Count - EdgeID" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="846" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="EdgeID" selected="True" />
+            <SelectField field="Node_s" selected="True" />
+            <SelectField field="Right_Node_e" selected="True" rename="Node_e" />
+            <SelectField field="NewRoute" selected="True" rename="Route" />
+            <SelectField field="NewStep" selected="True" rename="Steps" />
+            <SelectField field="Node_e" selected="False" />
+            <SelectField field="Route" selected="False" />
+            <SelectField field="Steps" selected="False" />
+            <SelectField field="x_s" selected="True" />
+            <SelectField field="y_s" selected="True" />
+            <SelectField field="Right_x_e" selected="True" rename="x_e" />
+            <SelectField field="Right_y_e" selected="True" rename="y_e" />
+            <SelectField field="x_e" selected="False" />
+            <SelectField field="y_e" selected="False" />
+            <SelectField field="InputDir" selected="True" />
+            <SelectField field="OutputDir" selected="False" />
+            <SelectField field="Left_Right_EdgeID" selected="False" />
+            <SelectField field="Right_Node_s" selected="False" />
+            <SelectField field="Right_Route" selected="False" />
+            <SelectField field="Right_Steps" selected="False" />
+            <SelectField field="Right_x_s" selected="False" />
+            <SelectField field="Right_y_s" selected="False" />
+            <SelectField field="Right_Dir" selected="False" rename="OutputDir" />
+            <SelectField field="Dir" selected="False" rename="InputDir" />
+            <SelectField field="Right_InputDir" selected="False" />
+            <SelectField field="Right_OutputDir" selected="True" rename="OutputDir" />
+            <SelectField field="ConnectableCount_s" selected="True" />
+            <SelectField field="ConnectableCount_e" selected="False" />
+            <SelectField field="Right_ConnectableCount_s" selected="False" />
+            <SelectField field="Right_ConnectableCount_e" selected="True" rename="ConnectableCount_e" />
+            <SelectField field="Right_Goal" selected="False" />
+            <SelectField field="Goal" selected="True" />
+            <SelectField field="Start" selected="True" />
+            <SelectField field="Right_Start" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+GetRight([Right_Route],&quot;,&quot;)" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+[Right_Steps]+&#xA;IF [OutputDir]=[Right_InputDir] THEN 0 ELSE 1000 ENDIF" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="750" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Steps]+[Right_Steps]+&#xA;IF [OutputDir]=[Right_InputDir] THEN 0 ELSE 1000 ENDIF" field="NewStep" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="[Route]+&quot;,&quot;+GetRight([Right_Route],&quot;,&quot;)" field="NewRoute" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>NewStep = [Steps]+[Right_Steps]+
+IF [OutputDir]=[Right_InputDir] THEN 0 ELSE 100...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Left_Right_EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Right_Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Right_Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Right_Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="Right_x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Right_y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Right_y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="Right_OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="Right_ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Right_ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Right_Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Start" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="NewStep" source="Formula: [Steps]+[Right_Steps]+&#xA;IF [OutputDir]=[Right_InputDir] THEN 0 ELSE 1000 ENDIF" type="Int64" />
+            <Field name="NewRoute" size="1073741823" source="Formula: [Route]+&quot;,&quot;+GetRight([Right_Route],&quot;,&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1050" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>Input2</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\MyDoc\AYX\AdventOfCode\2024\Day16\routecomp2.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText>routecomp2.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="846" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\MyDoc\AYX\AdventOfCode\2024\Day16\routecomp.yxdb</File>
+          <Passwords />
+          <Disable>True</Disable>
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>routecomp.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="930" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>ConnectableCount_e</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-27 20:15:02</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2</Operand>
+              <StartDate>2024-12-27 20:15:02</StartDate>
+              <EndDate>2024-12-27 20:15:02</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[ConnectableCount_e] = 2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+GetRight([Right_Route],&quot;,&quot;)" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+[Right_Steps]+&#xA;IF [OutputDir]=[Right_InputDir] THEN 0 ELSE 1000 ENDIF" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+GetRight([Right_Route],&quot;,&quot;)" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+[Right_Steps]+&#xA;IF [OutputDir]=[Right_InputDir] THEN 0 ELSE 1000 ENDIF" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="750" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="EdgeID" selected="True" />
+            <SelectField field="Node_s" selected="True" />
+            <SelectField field="Node_e" selected="True" />
+            <SelectField field="Route" selected="True" />
+            <SelectField field="Steps" selected="True" />
+            <SelectField field="x_s" selected="True" />
+            <SelectField field="y_s" selected="True" />
+            <SelectField field="x_e" selected="True" />
+            <SelectField field="y_e" selected="True" />
+            <SelectField field="InputDir" selected="True" />
+            <SelectField field="OutputDir" selected="True" />
+            <SelectField field="ConnectableCount_s" selected="True" />
+            <SelectField field="ConnectableCount_e" selected="True" />
+            <SelectField field="Goal" selected="True" />
+            <SelectField field="Start" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="846" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="EdgeID" />
+            <Field field="Node_s" />
+            <Field field="Node_e" />
+            <Field field="Route" />
+            <Field field="Steps" />
+            <Field field="x_s" />
+            <Field field="y_s" />
+            <Field field="x_e" />
+            <Field field="y_e" />
+            <Field field="InputDir" />
+            <Field field="OutputDir" />
+            <Field field="ConnectableCount_s" />
+            <Field field="ConnectableCount_e" />
+            <Field field="Goal" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: [Route]+&quot;,&quot;+ToString([Right_RecordID])" type="V_WString" />
+            <Field name="Steps" source="Formula: [Steps]+1" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1050" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EdgeID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Node_s" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Node_e" source="Formula: ToNumber(REGEX_Replace([Route], &quot;.*,(\d+)&quot;, &quot;$1&quot;))" type="Int64" />
+            <Field name="Route" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Steps" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x_s" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_s" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="x_e" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y_e" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="InputDir" size="3" source="Summarize: GroupBy - Dir" type="V_WString" />
+            <Field name="OutputDir" size="3" source="Formula: [InputDir]" type="V_WString" />
+            <Field name="ConnectableCount_s" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="ConnectableCount_e" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="Goal" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Start" source="RecordID: Starting Value=1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1146" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output20</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="2" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Join" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Left" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="16" Connection="False" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="18" Connection="Unique" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (20)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2024D16P2_RouteCompress</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="c12a3d8c-13f2-4816-bde9-45b07c6e4eb4" />
+      <Telemetry>
+        <PreviousWorkflowId value="60164948-8396-473e-bc44-bc9098d73352" />
+        <OriginWorkflowId value="60164948-8396-473e-bc44-bc9098d73352" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (9)</Name>
+          <ToolId value="9" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (10)</Name>
+              <ToolId value="10" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (13)</Name>
+              <ToolId value="13" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (20)</Description>
+              <Name>Macro Output (20)</Name>
+              <ToolId value="20" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="10" Selected="True" />
+        <Tool ToolId="13" Selected="True" />
+        <Tool ToolId="15" Selected="True" />
+        <Tool ToolId="20" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

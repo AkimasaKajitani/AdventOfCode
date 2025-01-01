@@ -1,0 +1,1869 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1962" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="199" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\MyDoc\AYX\AdventOfCode\2024\Day16\2024D16P2_input.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText>2024D16P2_input.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="582" y="55" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputFixed</Name>
+          <Abbrev>F</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1962" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Max_x" selected="True" />
+            <SelectField field="Max_y" selected="True" />
+            <SelectField field="x" selected="True" />
+            <SelectField field="y" selected="True" />
+            <SelectField field="Dir" selected="True" />
+            <SelectField field="Input" selected="True" />
+            <SelectField field="Cost" selected="True" />
+            <SelectField field="Fixed" selected="True" />
+            <SelectField field="history" selected="True" />
+            <SelectField field="CostRange" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+            <Field name="x" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2250" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\MyDoc\AYX\AdventOfCode\2024\Day16\2024D16P1_dijk.yxdb</File>
+          <Passwords />
+          <Disable>True</Disable>
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2024D16P1_dijk.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2058" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;2024D16P1_dijk_&quot;+ToString([Engine.IterationNumber])+&quot;.yxdb&quot;" field="FilePath" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[FilePath = "2024D16P1_dijk_"+ToString([Engine.IterationNumber])+".yxdb"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+            <Field name="x" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="FilePath" size="1073741823" source="Formula: &quot;2024D16P1_dijk_&quot;+ToString([Engine.IterationNumber])+&quot;.yxdb&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="159">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2154" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Max_x" selected="True" />
+            <SelectField field="Max_y" selected="True" />
+            <SelectField field="x" selected="True" />
+            <SelectField field="y" selected="True" />
+            <SelectField field="Dir" selected="True" />
+            <SelectField field="Input" selected="True" />
+            <SelectField field="Cost" selected="True" />
+            <SelectField field="Fixed" selected="True" />
+            <SelectField field="history" selected="True" />
+            <SelectField field="CostRange" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+            <Field name="x" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="162">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="150" y="199" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsFalse</Operator>
+            <Field>Fixed</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-25 22:08:13</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2024-12-25 22:08:13</StartDate>
+              <EndDate>2024-12-25 22:08:13</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Fixed] = 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="163">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="246" y="199" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>Cost</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-25 22:08:33</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2024-12-25 22:08:33</StartDate>
+              <EndDate>2024-12-25 22:08:33</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Cost])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="164">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="342" y="199" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Cost" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Cost - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="165">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="438" y="199" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="166">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="438" y="271" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Skip</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Skip 1st 1 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="172">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="990" y="211" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="x_n" />
+            <Field field="y_n" />
+            <Field field="NewDir" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="x" />
+            <Field field="y" />
+            <Field field="Dir" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_x" selected="True" rename="Right_x" input="Right_" />
+                <SelectField field="Right_y" selected="True" rename="Right_y" input="Right_" />
+                <SelectField field="Right_Dir" selected="True" rename="Right_Dir" input="Right_" />
+                <SelectField field="Right_Input" selected="True" rename="Right_Input" input="Right_" />
+                <SelectField field="Right_Cost" selected="True" rename="Right_Cost" input="Right_" />
+                <SelectField field="Right_Fixed" selected="True" rename="Right_Fixed" input="Right_" />
+                <SelectField field="Right_history" selected="True" rename="Right_history" input="Right_" />
+                <SelectField field="Right_Max_x" selected="True" rename="Right_Max_x" input="Right_" />
+                <SelectField field="Right_Max_y" selected="True" rename="Right_Max_y" input="Right_" />
+                <SelectField field="Right_CostRange" selected="True" rename="Right_CostRange" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Find Neighbor Point</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+            <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;R&quot; THEN &quot;UDR&quot;&#xA;ELSEIF [Dir]=&quot;L&quot; THEN &quot;UDL&quot;&#xA;ELSEIF [Dir]=&quot;U&quot; THEN &quot;ULR&quot;&#xA;ELSEIF [Dir]=&quot;D&quot; THEN &quot;DLR&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+            <Field name="x_n" source="Formula: IF [NewDir]=&quot;L&quot; THEN [x]-1&#xA;ELSEIF [NewDir]=&quot;R&quot; THEN [x]+1&#xA;ELSE [x] ENDIF&#xA;" type="Int64" />
+            <Field name="y_n" source="Formula: IF [NewDir]=&quot;U&quot; THEN [y]-1&#xA;ELSEIF [NewDir]=&quot;D&quot; THEN [y]+1&#xA;ELSE [y] ENDIF&#xA;" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+            <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;R&quot; THEN &quot;UDR&quot;&#xA;ELSEIF [Dir]=&quot;L&quot; THEN &quot;UDL&quot;&#xA;ELSEIF [Dir]=&quot;U&quot; THEN &quot;ULR&quot;&#xA;ELSEIF [Dir]=&quot;D&quot; THEN &quot;DLR&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+            <Field name="x_n" source="Formula: IF [NewDir]=&quot;L&quot; THEN [x]-1&#xA;ELSEIF [NewDir]=&quot;R&quot; THEN [x]+1&#xA;ELSE [x] ENDIF&#xA;" type="Int64" />
+            <Field name="y_n" source="Formula: IF [NewDir]=&quot;U&quot; THEN [y]-1&#xA;ELSEIF [NewDir]=&quot;D&quot; THEN [y]+1&#xA;ELSE [y] ENDIF&#xA;" type="Int64" />
+            <Field name="Right_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Right_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Right_Input" source="Formula: 1" type="Int64" />
+            <Field name="Right_Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Right_Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="Right_history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Right_Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Right_Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="Right_CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="176">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1086" y="211" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Dir]=[NewDir] THEN 0 &#xA;ELSEIF [Dir]=&quot;U&quot; AND [NewDir]IN(&quot;R&quot;,&quot;L&quot;) THEN 1000&#xA;ELSEIF [Dir]=&quot;U&quot; AND [NewDir]IN(&quot;D&quot;) THEN 2000&#xA;ELSEIF [Dir]=&quot;D&quot; AND [NewDir]IN(&quot;R&quot;,&quot;L&quot;) THEN 1000&#xA;ELSEIF [Dir]=&quot;D&quot; AND [NewDir]IN(&quot;U&quot;) THEN 2000&#xA;ELSEIF [Dir]=&quot;L&quot; AND [NewDir]IN(&quot;U&quot;,&quot;D&quot;) THEN 1000&#xA;ELSEIF [Dir]=&quot;L&quot; AND [NewDir]IN(&quot;R&quot;) THEN 2000&#xA;ELSEIF [Dir]=&quot;R&quot; AND [NewDir]IN(&quot;U&quot;,&quot;D&quot;) THEN 1000&#xA;ELSEIF [Dir]=&quot;R&quot; AND [NewDir]IN(&quot;L&quot;) THEN 2000&#xA;Else Null()&#xA;ENDIF" field="AdditionalCost" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="[Input]+[AdditionalCost]+[Cost]" field="NewCost" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="IF IsNull([Right_Cost]) THEN &quot;True&quot;&#xA;ELSE [Right_Cost]&gt;[NewCost] ENDIF" field="IsUpdate" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="IF [IsUpdate] THEN [NewCost]&#xA;ELSE [Right_Cost]&#xA;ENDIF" field="Right_Cost" size="8" type="Int64" />
+            <FormulaField expression="IF [IsUpdate] THEN [history]+&quot;,&quot;+ToString([x])+&quot;-&quot;+ToString([y])&#xA;ELSE [Right_history]&#xA;ENDIF" field="Right_history" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Calculate Cost</AnnotationText>
+          <DefaultAnnotationText>AdditionalCost = IF [Dir]=[NewDir] THEN 0 
+ELSEIF [Dir]="U" AND [NewDir]IN("R","...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+            <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;R&quot; THEN &quot;UDR&quot;&#xA;ELSEIF [Dir]=&quot;L&quot; THEN &quot;UDL&quot;&#xA;ELSEIF [Dir]=&quot;U&quot; THEN &quot;ULR&quot;&#xA;ELSEIF [Dir]=&quot;D&quot; THEN &quot;DLR&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+            <Field name="x_n" source="Formula: IF [NewDir]=&quot;L&quot; THEN [x]-1&#xA;ELSEIF [NewDir]=&quot;R&quot; THEN [x]+1&#xA;ELSE [x] ENDIF&#xA;" type="Int64" />
+            <Field name="y_n" source="Formula: IF [NewDir]=&quot;U&quot; THEN [y]-1&#xA;ELSEIF [NewDir]=&quot;D&quot; THEN [y]+1&#xA;ELSE [y] ENDIF&#xA;" type="Int64" />
+            <Field name="Right_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Right_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Right_Input" source="Formula: 1" type="Int64" />
+            <Field name="Right_Cost" source="Formula: IF [IsUpdate] THEN [NewCost]&#xA;ELSE [Right_Cost]&#xA;ENDIF" type="Int64" />
+            <Field name="Right_Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="Right_history" size="1073741823" source="Formula: IF [IsUpdate] THEN [history]+&quot;,&quot;+ToString([x])+&quot;-&quot;+ToString([y])&#xA;ELSE [Right_history]&#xA;ENDIF" type="V_WString" />
+            <Field name="Right_Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Right_Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="Right_CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+            <Field name="AdditionalCost" source="Formula: IF [Dir]=[NewDir] THEN 0 &#xA;ELSEIF [Dir]=&quot;U&quot; AND [NewDir]IN(&quot;R&quot;,&quot;L&quot;) THEN 1000&#xA;ELSEIF [Dir]=&quot;U&quot; AND [NewDir]IN(&quot;D&quot;) THEN 2000&#xA;ELSEIF [Dir]=&quot;D&quot; AND [NewDir]IN(&quot;R&quot;,&quot;L&quot;) THEN 1000&#xA;ELSEIF [Dir]=&quot;D&quot; AND [NewDir]IN(&quot;U&quot;) THEN 2000&#xA;ELSEIF [Dir]=&quot;L&quot; AND [NewDir]IN(&quot;U&quot;,&quot;D&quot;) THEN 1000&#xA;ELSEIF [Dir]=&quot;L&quot; AND [NewDir]IN(&quot;R&quot;) THEN 2000&#xA;ELSEIF [Dir]=&quot;R&quot; AND [NewDir]IN(&quot;U&quot;,&quot;D&quot;) THEN 1000&#xA;ELSEIF [Dir]=&quot;R&quot; AND [NewDir]IN(&quot;L&quot;) THEN 2000&#xA;Else Null()&#xA;ENDIF" type="Int64" />
+            <Field name="NewCost" source="Formula: [Input]+[AdditionalCost]+[Cost]" type="Int64" />
+            <Field name="IsUpdate" source="Formula: IF IsNull([Right_Cost]) THEN &quot;True&quot;&#xA;ELSE [Right_Cost]&gt;[NewCost] ENDIF" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="181">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="894" y="295" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="182">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1182" y="211" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Max_x" selected="True" />
+            <SelectField field="Max_y" selected="True" />
+            <SelectField field="CostRange" selected="True" />
+            <SelectField field="x_n" selected="True" rename="x" />
+            <SelectField field="y_n" selected="True" rename="y" />
+            <SelectField field="Right_Dir" selected="True" rename="Dir" />
+            <SelectField field="Right_Input" selected="True" rename="input" />
+            <SelectField field="Right_Cost" selected="True" rename="Cost" />
+            <SelectField field="Right_Fixed" selected="True" rename="Fixed" />
+            <SelectField field="Right_history" selected="True" rename="history" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+            <Field name="x" source="Formula: IF [NewDir]=&quot;L&quot; THEN [x]-1&#xA;ELSEIF [NewDir]=&quot;R&quot; THEN [x]+1&#xA;ELSE [x] ENDIF&#xA;" type="Int64" />
+            <Field name="y" source="Formula: IF [NewDir]=&quot;U&quot; THEN [y]-1&#xA;ELSEIF [NewDir]=&quot;D&quot; THEN [y]+1&#xA;ELSE [y] ENDIF&#xA;" type="Int64" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: IF [IsUpdate] THEN [NewCost]&#xA;ELSE [Right_Cost]&#xA;ENDIF" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: IF [IsUpdate] THEN [history]+&quot;,&quot;+ToString([x])+&quot;-&quot;+ToString([y])&#xA;ELSE [Right_history]&#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="183">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1290" y="235" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+            <Field name="x" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="186">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="786" y="67" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[x]=[Max_x] AND [y]=[Max_y]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[x]=[Max_x] AND [y]=[Max_y]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="Input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="188">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1302" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Cost]&gt;[CostRange]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Cost]&gt;[CostRange]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+            <Field name="x" source="Formula: IF [NewDir]=&quot;L&quot; THEN [x]-1&#xA;ELSEIF [NewDir]=&quot;R&quot; THEN [x]+1&#xA;ELSE [x] ENDIF&#xA;" type="Int64" />
+            <Field name="y" source="Formula: IF [NewDir]=&quot;U&quot; THEN [y]-1&#xA;ELSEIF [NewDir]=&quot;D&quot; THEN [y]+1&#xA;ELSE [y] ENDIF&#xA;" type="Int64" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: IF [IsUpdate] THEN [NewCost]&#xA;ELSE [Right_Cost]&#xA;ENDIF" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: IF [IsUpdate] THEN [history]+&quot;,&quot;+ToString([x])+&quot;-&quot;+ToString([y])&#xA;ELSE [Right_history]&#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+            <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+            <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+            <Field name="x" source="Formula: IF [NewDir]=&quot;L&quot; THEN [x]-1&#xA;ELSEIF [NewDir]=&quot;R&quot; THEN [x]+1&#xA;ELSE [x] ENDIF&#xA;" type="Int64" />
+            <Field name="y" source="Formula: IF [NewDir]=&quot;U&quot; THEN [y]-1&#xA;ELSEIF [NewDir]=&quot;D&quot; THEN [y]+1&#xA;ELSE [y] ENDIF&#xA;" type="Int64" />
+            <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+            <Field name="input" source="Formula: 1" type="Int64" />
+            <Field name="Cost" source="Formula: IF [IsUpdate] THEN [NewCost]&#xA;ELSE [Right_Cost]&#xA;ENDIF" type="Int64" />
+            <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+            <Field name="history" size="1073741823" source="Formula: IF [IsUpdate] THEN [history]+&quot;,&quot;+ToString([x])+&quot;-&quot;+ToString([y])&#xA;ELSE [Right_history]&#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="189">
+      <GuiSettings>
+        <Position x="1410" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="143">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1937" y="53" width="301" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 143</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="99">
+          <GuiSettings>
+            <Position x="2058" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Input.Input4"><![CDATA[x=x
+y=y
+Input=Cost
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output1">
+              <RecordInfo>
+                <Field name="y" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="2" size="2048" source="CrossTab:Header:x:2:Concat:" type="V_WString" />
+                <Field name="3" size="2048" source="CrossTab:Header:x:3:Concat:" type="V_WString" />
+                <Field name="4" size="2048" source="CrossTab:Header:x:4:Concat:" type="V_WString" />
+                <Field name="5" size="2048" source="CrossTab:Header:x:5:Concat:" type="V_WString" />
+                <Field name="6" size="2048" source="CrossTab:Header:x:6:Concat:" type="V_WString" />
+                <Field name="7" size="2048" source="CrossTab:Header:x:7:Concat:" type="V_WString" />
+                <Field name="8" size="2048" source="CrossTab:Header:x:8:Concat:" type="V_WString" />
+                <Field name="9" size="2048" source="CrossTab:Header:x:9:Concat:" type="V_WString" />
+                <Field name="10" size="2048" source="CrossTab:Header:x:10:Concat:" type="V_WString" />
+                <Field name="11" size="2048" source="CrossTab:Header:x:11:Concat:" type="V_WString" />
+                <Field name="12" size="2048" source="CrossTab:Header:x:12:Concat:" type="V_WString" />
+                <Field name="13" size="2048" source="CrossTab:Header:x:13:Concat:" type="V_WString" />
+                <Field name="14" size="2048" source="CrossTab:Header:x:14:Concat:" type="V_WString" />
+                <Field name="15" size="2048" source="CrossTab:Header:x:15:Concat:" type="V_WString" />
+                <Field name="16" size="2048" source="CrossTab:Header:x:16:Concat:" type="V_WString" />
+                <Field name="17" size="2048" source="CrossTab:Header:x:17:Concat:" type="V_WString" />
+                <Field name="18" size="2048" source="CrossTab:Header:x:18:Concat:" type="V_WString" />
+                <Field name="19" size="2048" source="CrossTab:Header:x:19:Concat:" type="V_WString" />
+                <Field name="20" size="2048" source="CrossTab:Header:x:20:Concat:" type="V_WString" />
+                <Field name="21" size="2048" source="CrossTab:Header:x:21:Concat:" type="V_WString" />
+                <Field name="22" size="2048" source="CrossTab:Header:x:22:Concat:" type="V_WString" />
+                <Field name="23" size="2048" source="CrossTab:Header:x:23:Concat:" type="V_WString" />
+                <Field name="24" size="2048" source="CrossTab:Header:x:24:Concat:" type="V_WString" />
+                <Field name="25" size="2048" source="CrossTab:Header:x:25:Concat:" type="V_WString" />
+                <Field name="26" size="2048" source="CrossTab:Header:x:26:Concat:" type="V_WString" />
+                <Field name="27" size="2048" source="CrossTab:Header:x:27:Concat:" type="V_WString" />
+                <Field name="28" size="2048" source="CrossTab:Header:x:28:Concat:" type="V_WString" />
+                <Field name="29" size="2048" source="CrossTab:Header:x:29:Concat:" type="V_WString" />
+                <Field name="30" size="2048" source="CrossTab:Header:x:30:Concat:" type="V_WString" />
+                <Field name="31" size="2048" source="CrossTab:Header:x:31:Concat:" type="V_WString" />
+                <Field name="32" size="2048" source="CrossTab:Header:x:32:Concat:" type="V_WString" />
+                <Field name="33" size="2048" source="CrossTab:Header:x:33:Concat:" type="V_WString" />
+                <Field name="34" size="2048" source="CrossTab:Header:x:34:Concat:" type="V_WString" />
+                <Field name="35" size="2048" source="CrossTab:Header:x:35:Concat:" type="V_WString" />
+                <Field name="36" size="2048" source="CrossTab:Header:x:36:Concat:" type="V_WString" />
+                <Field name="37" size="2048" source="CrossTab:Header:x:37:Concat:" type="V_WString" />
+                <Field name="38" size="2048" source="CrossTab:Header:x:38:Concat:" type="V_WString" />
+                <Field name="39" size="2048" source="CrossTab:Header:x:39:Concat:" type="V_WString" />
+                <Field name="40" size="2048" source="CrossTab:Header:x:40:Concat:" type="V_WString" />
+                <Field name="41" size="2048" source="CrossTab:Header:x:41:Concat:" type="V_WString" />
+                <Field name="42" size="2048" source="CrossTab:Header:x:42:Concat:" type="V_WString" />
+                <Field name="43" size="2048" source="CrossTab:Header:x:43:Concat:" type="V_WString" />
+                <Field name="44" size="2048" source="CrossTab:Header:x:44:Concat:" type="V_WString" />
+                <Field name="45" size="2048" source="CrossTab:Header:x:45:Concat:" type="V_WString" />
+                <Field name="46" size="2048" source="CrossTab:Header:x:46:Concat:" type="V_WString" />
+                <Field name="47" size="2048" source="CrossTab:Header:x:47:Concat:" type="V_WString" />
+                <Field name="48" size="2048" source="CrossTab:Header:x:48:Concat:" type="V_WString" />
+                <Field name="49" size="2048" source="CrossTab:Header:x:49:Concat:" type="V_WString" />
+                <Field name="50" size="2048" source="CrossTab:Header:x:50:Concat:" type="V_WString" />
+                <Field name="51" size="2048" source="CrossTab:Header:x:51:Concat:" type="V_WString" />
+                <Field name="52" size="2048" source="CrossTab:Header:x:52:Concat:" type="V_WString" />
+                <Field name="53" size="2048" source="CrossTab:Header:x:53:Concat:" type="V_WString" />
+                <Field name="54" size="2048" source="CrossTab:Header:x:54:Concat:" type="V_WString" />
+                <Field name="55" size="2048" source="CrossTab:Header:x:55:Concat:" type="V_WString" />
+                <Field name="56" size="2048" source="CrossTab:Header:x:56:Concat:" type="V_WString" />
+                <Field name="57" size="2048" source="CrossTab:Header:x:57:Concat:" type="V_WString" />
+                <Field name="58" size="2048" source="CrossTab:Header:x:58:Concat:" type="V_WString" />
+                <Field name="59" size="2048" source="CrossTab:Header:x:59:Concat:" type="V_WString" />
+                <Field name="60" size="2048" source="CrossTab:Header:x:60:Concat:" type="V_WString" />
+                <Field name="61" size="2048" source="CrossTab:Header:x:61:Concat:" type="V_WString" />
+                <Field name="62" size="2048" source="CrossTab:Header:x:62:Concat:" type="V_WString" />
+                <Field name="63" size="2048" source="CrossTab:Header:x:63:Concat:" type="V_WString" />
+                <Field name="64" size="2048" source="CrossTab:Header:x:64:Concat:" type="V_WString" />
+                <Field name="65" size="2048" source="CrossTab:Header:x:65:Concat:" type="V_WString" />
+                <Field name="66" size="2048" source="CrossTab:Header:x:66:Concat:" type="V_WString" />
+                <Field name="67" size="2048" source="CrossTab:Header:x:67:Concat:" type="V_WString" />
+                <Field name="68" size="2048" source="CrossTab:Header:x:68:Concat:" type="V_WString" />
+                <Field name="69" size="2048" source="CrossTab:Header:x:69:Concat:" type="V_WString" />
+                <Field name="70" size="2048" source="CrossTab:Header:x:70:Concat:" type="V_WString" />
+                <Field name="71" size="2048" source="CrossTab:Header:x:71:Concat:" type="V_WString" />
+                <Field name="72" size="2048" source="CrossTab:Header:x:72:Concat:" type="V_WString" />
+                <Field name="73" size="2048" source="CrossTab:Header:x:73:Concat:" type="V_WString" />
+                <Field name="74" size="2048" source="CrossTab:Header:x:74:Concat:" type="V_WString" />
+                <Field name="75" size="2048" source="CrossTab:Header:x:75:Concat:" type="V_WString" />
+                <Field name="76" size="2048" source="CrossTab:Header:x:76:Concat:" type="V_WString" />
+                <Field name="77" size="2048" source="CrossTab:Header:x:77:Concat:" type="V_WString" />
+                <Field name="78" size="2048" source="CrossTab:Header:x:78:Concat:" type="V_WString" />
+                <Field name="79" size="2048" source="CrossTab:Header:x:79:Concat:" type="V_WString" />
+                <Field name="80" size="2048" source="CrossTab:Header:x:80:Concat:" type="V_WString" />
+                <Field name="81" size="2048" source="CrossTab:Header:x:81:Concat:" type="V_WString" />
+                <Field name="82" size="2048" source="CrossTab:Header:x:82:Concat:" type="V_WString" />
+                <Field name="83" size="2048" source="CrossTab:Header:x:83:Concat:" type="V_WString" />
+                <Field name="84" size="2048" source="CrossTab:Header:x:84:Concat:" type="V_WString" />
+                <Field name="85" size="2048" source="CrossTab:Header:x:85:Concat:" type="V_WString" />
+                <Field name="86" size="2048" source="CrossTab:Header:x:86:Concat:" type="V_WString" />
+                <Field name="87" size="2048" source="CrossTab:Header:x:87:Concat:" type="V_WString" />
+                <Field name="88" size="2048" source="CrossTab:Header:x:88:Concat:" type="V_WString" />
+                <Field name="89" size="2048" source="CrossTab:Header:x:89:Concat:" type="V_WString" />
+                <Field name="90" size="2048" source="CrossTab:Header:x:90:Concat:" type="V_WString" />
+                <Field name="91" size="2048" source="CrossTab:Header:x:91:Concat:" type="V_WString" />
+                <Field name="92" size="2048" source="CrossTab:Header:x:92:Concat:" type="V_WString" />
+                <Field name="93" size="2048" source="CrossTab:Header:x:93:Concat:" type="V_WString" />
+                <Field name="94" size="2048" source="CrossTab:Header:x:94:Concat:" type="V_WString" />
+                <Field name="95" size="2048" source="CrossTab:Header:x:95:Concat:" type="V_WString" />
+                <Field name="96" size="2048" source="CrossTab:Header:x:96:Concat:" type="V_WString" />
+                <Field name="97" size="2048" source="CrossTab:Header:x:97:Concat:" type="V_WString" />
+                <Field name="98" size="2048" source="CrossTab:Header:x:98:Concat:" type="V_WString" />
+                <Field name="99" size="2048" source="CrossTab:Header:x:99:Concat:" type="V_WString" />
+                <Field name="100" size="2048" source="CrossTab:Header:x:100:Concat:" type="V_WString" />
+                <Field name="101" size="2048" source="CrossTab:Header:x:101:Concat:" type="V_WString" />
+                <Field name="102" size="2048" source="CrossTab:Header:x:102:Concat:" type="V_WString" />
+                <Field name="103" size="2048" source="CrossTab:Header:x:103:Concat:" type="V_WString" />
+                <Field name="104" size="2048" source="CrossTab:Header:x:104:Concat:" type="V_WString" />
+                <Field name="105" size="2048" source="CrossTab:Header:x:105:Concat:" type="V_WString" />
+                <Field name="106" size="2048" source="CrossTab:Header:x:106:Concat:" type="V_WString" />
+                <Field name="107" size="2048" source="CrossTab:Header:x:107:Concat:" type="V_WString" />
+                <Field name="108" size="2048" source="CrossTab:Header:x:108:Concat:" type="V_WString" />
+                <Field name="109" size="2048" source="CrossTab:Header:x:109:Concat:" type="V_WString" />
+                <Field name="110" size="2048" source="CrossTab:Header:x:110:Concat:" type="V_WString" />
+                <Field name="111" size="2048" source="CrossTab:Header:x:111:Concat:" type="V_WString" />
+                <Field name="112" size="2048" source="CrossTab:Header:x:112:Concat:" type="V_WString" />
+                <Field name="113" size="2048" source="CrossTab:Header:x:113:Concat:" type="V_WString" />
+                <Field name="114" size="2048" source="CrossTab:Header:x:114:Concat:" type="V_WString" />
+                <Field name="115" size="2048" source="CrossTab:Header:x:115:Concat:" type="V_WString" />
+                <Field name="116" size="2048" source="CrossTab:Header:x:116:Concat:" type="V_WString" />
+                <Field name="117" size="2048" source="CrossTab:Header:x:117:Concat:" type="V_WString" />
+                <Field name="118" size="2048" source="CrossTab:Header:x:118:Concat:" type="V_WString" />
+                <Field name="119" size="2048" source="CrossTab:Header:x:119:Concat:" type="V_WString" />
+                <Field name="120" size="2048" source="CrossTab:Header:x:120:Concat:" type="V_WString" />
+                <Field name="121" size="2048" source="CrossTab:Header:x:121:Concat:" type="V_WString" />
+                <Field name="122" size="2048" source="CrossTab:Header:x:122:Concat:" type="V_WString" />
+                <Field name="123" size="2048" source="CrossTab:Header:x:123:Concat:" type="V_WString" />
+                <Field name="124" size="2048" source="CrossTab:Header:x:124:Concat:" type="V_WString" />
+                <Field name="125" size="2048" source="CrossTab:Header:x:125:Concat:" type="V_WString" />
+                <Field name="126" size="2048" source="CrossTab:Header:x:126:Concat:" type="V_WString" />
+                <Field name="127" size="2048" source="CrossTab:Header:x:127:Concat:" type="V_WString" />
+                <Field name="128" size="2048" source="CrossTab:Header:x:128:Concat:" type="V_WString" />
+                <Field name="129" size="2048" source="CrossTab:Header:x:129:Concat:" type="V_WString" />
+                <Field name="130" size="2048" source="CrossTab:Header:x:130:Concat:" type="V_WString" />
+                <Field name="131" size="2048" source="CrossTab:Header:x:131:Concat:" type="V_WString" />
+                <Field name="132" size="2048" source="CrossTab:Header:x:132:Concat:" type="V_WString" />
+                <Field name="133" size="2048" source="CrossTab:Header:x:133:Concat:" type="V_WString" />
+                <Field name="134" size="2048" source="CrossTab:Header:x:134:Concat:" type="V_WString" />
+                <Field name="135" size="2048" source="CrossTab:Header:x:135:Concat:" type="V_WString" />
+                <Field name="136" size="2048" source="CrossTab:Header:x:136:Concat:" type="V_WString" />
+                <Field name="137" size="2048" source="CrossTab:Header:x:137:Concat:" type="V_WString" />
+                <Field name="138" size="2048" source="CrossTab:Header:x:138:Concat:" type="V_WString" />
+                <Field name="139" size="2048" source="CrossTab:Header:x:139:Concat:" type="V_WString" />
+                <Field name="140" size="2048" source="CrossTab:Header:x:140:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="AoC\CheckOnMap.yxmc" />
+        </Node>
+        <Node ToolID="100">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1962" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Cost" selected="True" type="V_WString" size="2147483647" />
+                <SelectField field="history1" selected="False" rename="x" type="Int16" size="2" />
+                <SelectField field="history2" selected="False" rename="y" type="Int16" size="2" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Max_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+                <Field name="Max_y" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+                <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+                <Field name="Input" source="Formula: 1" type="Int64" />
+                <Field name="Cost" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Fixed" source="Formula: (Multiple Sources)" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="101">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="2154" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4264_f6adf0a71ba24d6b81b4cd01b49789c4_\Engine_4264_9b96ee3c133a4739ae9086d6efc5bfbf~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="138">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1373" y="173" width="577" height="217" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>End condition</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>End condition</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="134">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="1482" y="235" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+                <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+                <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+                <Field name="x" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="y" source="(Multiple Sources)" type="Int64" />
+                <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+                <Field name="input" source="Formula: 1" type="Int64" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="135">
+          <GuiSettings>
+            <Position x="1398" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output9">
+              <RecordInfo>
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="CountRecords.yxmc" />
+        </Node>
+        <Node ToolID="136">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1578" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Count</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2024-12-25 22:24:11</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>0</Operand>
+                  <StartDate>2024-12-25 22:24:11</StartDate>
+                  <EndDate>2024-12-25 22:24:11</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Count] = 0</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+                <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+                <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+                <Field name="x" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="y" source="(Multiple Sources)" type="Int64" />
+                <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+                <Field name="input" source="Formula: 1" type="Int64" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+                <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+                <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+                <Field name="x" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="y" source="(Multiple Sources)" type="Int64" />
+                <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+                <Field name="input" source="Formula: 1" type="Int64" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="137">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1398" y="235" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+                <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+                <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+                <Field name="x" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="y" source="(Multiple Sources)" type="Int64" />
+                <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+                <Field name="input" source="Formula: 1" type="Int64" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="139">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1866" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Max_x" selected="True" />
+                <SelectField field="Max_y" selected="True" />
+                <SelectField field="CostRange" selected="True" />
+                <SelectField field="x" selected="True" />
+                <SelectField field="y" selected="True" />
+                <SelectField field="Dir" selected="True" />
+                <SelectField field="Input" selected="True" />
+                <SelectField field="Cost" selected="True" />
+                <SelectField field="Fixed" selected="True" />
+                <SelectField field="history" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+                <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+                <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+                <Field name="x" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="y" source="(Multiple Sources)" type="Int64" />
+                <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+                <Field name="input" source="Formula: 1" type="Int64" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="187">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1770" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Source_Count</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2024-12-26 00:22:32</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2024-12-26 00:22:32</StartDate>
+                  <EndDate>2024-12-26 00:22:32</EndDate>
+                  <Operand>0</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Source_Count] = 0</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+                <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+                <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+                <Field name="x" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="y" source="(Multiple Sources)" type="Int64" />
+                <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+                <Field name="input" source="Formula: 1" type="Int64" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+                <Field name="Source_Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+                <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+                <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+                <Field name="x" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="y" source="(Multiple Sources)" type="Int64" />
+                <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+                <Field name="input" source="Formula: 1" type="Int64" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+                <Field name="Source_Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="190">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="1674" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Allow</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Source_Count" selected="True" rename="Source_Count" input="Source_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+                <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+                <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+                <Field name="x" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="y" source="(Multiple Sources)" type="Int64" />
+                <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+                <Field name="input" source="Formula: 1" type="Int64" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+                <Field name="Source_Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="171">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="572" y="165" width="324" height="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Create Neighbor nodes</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Create Neighbor nodes</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="167">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="582" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Dir]=&quot;R&quot; THEN &quot;UDR&quot;&#xA;ELSEIF [Dir]=&quot;L&quot; THEN &quot;UDL&quot;&#xA;ELSEIF [Dir]=&quot;U&quot; THEN &quot;ULR&quot;&#xA;ELSEIF [Dir]=&quot;D&quot; THEN &quot;DLR&quot;&#xA;ELSE Null() ENDIF&#xA;" field="NewDir" size="4" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>NewDir = IF [Dir]="R" THEN "UDR"
+ELSEIF [Dir]="L" THEN "UDL"
+ELSEIF [Dir]="U" TH...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+                <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+                <Field name="Input" source="Formula: 1" type="Int64" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+                <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+                <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+                <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+                <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;R&quot; THEN &quot;UDR&quot;&#xA;ELSEIF [Dir]=&quot;L&quot; THEN &quot;UDL&quot;&#xA;ELSEIF [Dir]=&quot;U&quot; THEN &quot;ULR&quot;&#xA;ELSEIF [Dir]=&quot;D&quot; THEN &quot;DLR&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="168">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="654" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>NewDir</Field>
+              <RegExExpression value="." />
+              <CaseInsensitve value="True" />
+              <Method>ParseSimple</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="True" />
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+              </ParseComplex>
+              <Match>
+                <Field>Dir_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+                <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+                <Field name="Input" source="Formula: 1" type="Int64" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+                <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+                <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+                <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+                <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;R&quot; THEN &quot;UDR&quot;&#xA;ELSEIF [Dir]=&quot;L&quot; THEN &quot;UDL&quot;&#xA;ELSEIF [Dir]=&quot;U&quot; THEN &quot;ULR&quot;&#xA;ELSEIF [Dir]=&quot;D&quot; THEN &quot;DLR&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+        <Node ToolID="169">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="726" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [NewDir]=&quot;L&quot; THEN [x]-1&#xA;ELSEIF [NewDir]=&quot;R&quot; THEN [x]+1&#xA;ELSE [x] ENDIF&#xA;" field="x_n" size="8" type="Int64" />
+                <FormulaField expression="IF [NewDir]=&quot;U&quot; THEN [y]-1&#xA;ELSEIF [NewDir]=&quot;D&quot; THEN [y]+1&#xA;ELSE [y] ENDIF&#xA;" field="y_n" size="8" type="Int64" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Create Neighbor Point</AnnotationText>
+              <DefaultAnnotationText>x_n = IF [NewDir]="L" THEN [x]-1
+ELSEIF [NewDir]="R" THEN [x]+1
+ELSE [x] ENDIF
+
+...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+                <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+                <Field name="Input" source="Formula: 1" type="Int64" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+                <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+                <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+                <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+                <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;R&quot; THEN &quot;UDR&quot;&#xA;ELSEIF [Dir]=&quot;L&quot; THEN &quot;UDL&quot;&#xA;ELSEIF [Dir]=&quot;U&quot; THEN &quot;ULR&quot;&#xA;ELSEIF [Dir]=&quot;D&quot; THEN &quot;DLR&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+                <Field name="x_n" source="Formula: IF [NewDir]=&quot;L&quot; THEN [x]-1&#xA;ELSEIF [NewDir]=&quot;R&quot; THEN [x]+1&#xA;ELSE [x] ENDIF&#xA;" type="Int64" />
+                <Field name="y_n" source="Formula: IF [NewDir]=&quot;U&quot; THEN [y]-1&#xA;ELSEIF [NewDir]=&quot;D&quot; THEN [y]+1&#xA;ELSE [y] ENDIF&#xA;" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="170">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="822" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!Contains(","+[history]+",", ","+ToString([x_n])+"-"+ToString([y_n])+",")</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>not return</AnnotationText>
+              <DefaultAnnotationText>!Contains(","+[history]+",", ","+ToString([x_n])+"-"+ToString([y_n])+",")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+                <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+                <Field name="Input" source="Formula: 1" type="Int64" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+                <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+                <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+                <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+                <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;R&quot; THEN &quot;UDR&quot;&#xA;ELSEIF [Dir]=&quot;L&quot; THEN &quot;UDL&quot;&#xA;ELSEIF [Dir]=&quot;U&quot; THEN &quot;ULR&quot;&#xA;ELSEIF [Dir]=&quot;D&quot; THEN &quot;DLR&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+                <Field name="x_n" source="Formula: IF [NewDir]=&quot;L&quot; THEN [x]-1&#xA;ELSEIF [NewDir]=&quot;R&quot; THEN [x]+1&#xA;ELSE [x] ENDIF&#xA;" type="Int64" />
+                <Field name="y_n" source="Formula: IF [NewDir]=&quot;U&quot; THEN [y]-1&#xA;ELSEIF [NewDir]=&quot;D&quot; THEN [y]+1&#xA;ELSE [y] ENDIF&#xA;" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+                <Field name="y" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Dir" size="5" source="Formula: IF [DirNum]=1 THEN &quot;U&quot;&#xA;ELSEIF [DirNum]=2 THEN &quot;R&quot;&#xA;ELSEIF [DirNum]=3 THEN &quot;D&quot;&#xA;ELSE &quot;L&quot; ENDIF" type="V_WString" />
+                <Field name="Input" source="Formula: 1" type="Int64" />
+                <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+                <Field name="Fixed" source="Formula: &quot;False&quot;" type="Bool" />
+                <Field name="history" size="1073741823" source="Formula: Null()" type="V_WString" />
+                <Field name="Max_x" source="(Multiple Sources)" type="Int64" />
+                <Field name="Max_y" source="(Multiple Sources)" type="Int64" />
+                <Field name="CostRange" source="Formula: [Cost]-[Source_Cost]" type="Int64" />
+                <Field name="NewDir" size="4" source="Formula: IF [Dir]=&quot;R&quot; THEN &quot;UDR&quot;&#xA;ELSEIF [Dir]=&quot;L&quot; THEN &quot;UDL&quot;&#xA;ELSEIF [Dir]=&quot;U&quot; THEN &quot;ULR&quot;&#xA;ELSEIF [Dir]=&quot;D&quot; THEN &quot;DLR&quot;&#xA;ELSE Null() ENDIF&#xA;" type="V_WString" />
+                <Field name="x_n" source="Formula: IF [NewDir]=&quot;L&quot; THEN [x]-1&#xA;ELSEIF [NewDir]=&quot;R&quot; THEN [x]+1&#xA;ELSE [x] ENDIF&#xA;" type="Int64" />
+                <Field name="y_n" source="Formula: IF [NewDir]=&quot;U&quot; THEN [y]-1&#xA;ELSEIF [NewDir]=&quot;D&quot; THEN [y]+1&#xA;ELSE [y] ENDIF&#xA;" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="162" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="98" Connection="Output" />
+      <Destination ToolID="159" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="159" Connection="Output" />
+      <Destination ToolID="97" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="162" Connection="True" />
+      <Destination ToolID="163" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="163" Connection="True" />
+      <Destination ToolID="164" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="163" Connection="False" />
+      <Destination ToolID="181" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="166" Connection="Output" />
+      <Destination ToolID="181" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="164" Connection="Output" />
+      <Destination ToolID="165" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="164" Connection="Output" />
+      <Destination ToolID="166" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="165" Connection="Output" />
+      <Destination ToolID="167" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="165" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="165" Connection="Output" />
+      <Destination ToolID="186" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="172" Connection="Join" />
+      <Destination ToolID="176" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="172" Connection="Right" />
+      <Destination ToolID="183" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="182" Connection="Output" />
+      <Destination ToolID="183" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="176" Connection="Output" />
+      <Destination ToolID="182" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="181" Connection="Output" />
+      <Destination ToolID="172" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="170" Connection="True" />
+      <Destination ToolID="172" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="182" Connection="Output" />
+      <Destination ToolID="188" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="183" Connection="Output" />
+      <Destination ToolID="137" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="186" Connection="True" />
+      <Destination ToolID="135" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="188" Connection="True" />
+      <Destination ToolID="189" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="189" Connection="Output9" />
+      <Destination ToolID="190" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="136" Connection="True" />
+      <Destination ToolID="190" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output1" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output" />
+      <Destination ToolID="99" Connection="Input4" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="134" Connection="Output" />
+      <Destination ToolID="136" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="135" Connection="Output9" />
+      <Destination ToolID="134" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="137" Connection="Output" />
+      <Destination ToolID="134" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="139" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="139" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="139" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="187" Connection="True" />
+      <Destination ToolID="139" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="190" Connection="Output" />
+      <Destination ToolID="187" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="167" Connection="Output" />
+      <Destination ToolID="168" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="168" Connection="Output" />
+      <Destination ToolID="169" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="169" Connection="Output" />
+      <Destination ToolID="170" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2024D16P2_dijk_custom</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d832345e-1045-49aa-b062-a234a11a6c6b" />
+      <Telemetry>
+        <PreviousWorkflowId value="9818ccce-f2a6-4c56-92af-c05297fba85a" />
+        <OriginWorkflowId value="fde8e914-0f48-4022-a0b5-3195a29f27be" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (19)</Name>
+          <ToolId value="19" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (18)</Name>
+              <ToolId value="18" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (17)</Name>
+              <ToolId value="17" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (37)</Description>
+              <Name>Macro Output (37)</Name>
+              <ToolId value="37" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="500000" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="17" Selected="True" />
+        <Tool ToolId="18" Selected="True" />
+        <Tool ToolId="37" Selected="True" />
+        <Tool ToolId="97" Selected="True" />
+        <Tool ToolId="99" Selected="True" />
+        <Tool ToolId="101" Selected="False" />
+        <Tool ToolId="135" Selected="True" />
+        <Tool ToolId="189" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

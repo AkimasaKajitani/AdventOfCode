@@ -1,0 +1,2049 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="72" />
+              <Fields>
+                <Field name="RowID" />
+                <Field name="Input" />
+                <Field name="RouteDir" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>3</c>
+                  <c>A&lt;AAv&lt;A&gt;&gt;^Av&lt;&lt;A&gt;&gt;^AvA&lt;AA^&gt;AvA^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>Av&lt;&lt;A&gt;^AA&gt;Av&lt;&lt;A&gt;&gt;^AvA&lt;AA^&gt;AvA^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>A&lt;AAv&lt;A&gt;&gt;^Av&lt;&lt;A&gt;&gt;^AvA&lt;AA&gt;^AvA^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>Av&lt;&lt;A&gt;^AA&gt;Av&lt;&lt;A&gt;&gt;^AvA&lt;AA&gt;^AvA^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>A&lt;Av&lt;A&gt;&gt;^A&lt;AAv&lt;A&gt;&gt;^AvAA^A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>Av&lt;&lt;A&gt;^A&gt;A&lt;AAv&lt;A&gt;&gt;^AvAA^A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>A&lt;Av&lt;A&gt;&gt;^Av&lt;&lt;A&gt;^AA&gt;AvAA^A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>Av&lt;&lt;A&gt;^A&gt;Av&lt;&lt;A&gt;^AA&gt;AvAA^A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>A&lt;AAAv&lt;AA&gt;&gt;^AvA^AvA^A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^A&lt;Av&gt;AA^A&lt;A&gt;A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^A&lt;A&gt;vAA^A&lt;A&gt;A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^A&lt;vA&gt;A^A&lt;A&gt;A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;A&lt;vA&gt;A^A&lt;A&gt;A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^Av&lt;A&gt;A^A&lt;A&gt;A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;Av&lt;A&gt;A^A&lt;A&gt;A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^AvAA&lt;^A&gt;A&lt;A&gt;A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^AvAA^&lt;A&gt;A&lt;A&gt;A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^AvA&lt;A^&gt;A&lt;A&gt;A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;AvA&lt;A^&gt;A&lt;A&gt;A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^AvA&lt;A&gt;^A&lt;A&gt;A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;AvA&lt;A&gt;^A&lt;A&gt;A&lt;vAAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>A&lt;Av&lt;A&gt;&gt;^A&lt;AAv&lt;A&gt;&gt;^AvAA^Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>Av&lt;&lt;A&gt;^A&gt;A&lt;AAv&lt;A&gt;&gt;^AvAA^Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>A&lt;Av&lt;A&gt;&gt;^Av&lt;&lt;A&gt;^AA&gt;AvAA^Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>Av&lt;&lt;A&gt;^A&gt;Av&lt;&lt;A&gt;^AA&gt;AvAA^Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>A&lt;AAAv&lt;AA&gt;&gt;^AvA^AvA^Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^A&lt;Av&gt;AA^A&lt;A&gt;Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^A&lt;A&gt;vAA^A&lt;A&gt;Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^A&lt;vA&gt;A^A&lt;A&gt;Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;A&lt;vA&gt;A^A&lt;A&gt;Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^Av&lt;A&gt;A^A&lt;A&gt;Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;Av&lt;A&gt;A^A&lt;A&gt;Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^AvAA&lt;^A&gt;A&lt;A&gt;Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^AvAA^&lt;A&gt;A&lt;A&gt;Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^AvA&lt;A^&gt;A&lt;A&gt;Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;AvA&lt;A^&gt;A&lt;A&gt;Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^AvA&lt;A&gt;^A&lt;A&gt;Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;AvA&lt;A&gt;^A&lt;A&gt;Av&lt;AAA^&gt;A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>A&lt;Av&lt;A&gt;&gt;^A&lt;AAv&lt;A&gt;&gt;^AvAA^A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>Av&lt;&lt;A&gt;^A&gt;A&lt;AAv&lt;A&gt;&gt;^AvAA^A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>A&lt;Av&lt;A&gt;&gt;^Av&lt;&lt;A&gt;^AA&gt;AvAA^A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>Av&lt;&lt;A&gt;^A&gt;Av&lt;&lt;A&gt;^AA&gt;AvAA^A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>A&lt;AAAv&lt;AA&gt;&gt;^AvA^AvA^A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^A&lt;Av&gt;AA^A&lt;A&gt;A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^A&lt;A&gt;vAA^A&lt;A&gt;A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^A&lt;vA&gt;A^A&lt;A&gt;A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;A&lt;vA&gt;A^A&lt;A&gt;A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^Av&lt;A&gt;A^A&lt;A&gt;A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;Av&lt;A&gt;A^A&lt;A&gt;A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^AvAA&lt;^A&gt;A&lt;A&gt;A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^AvAA^&lt;A&gt;A&lt;A&gt;A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^AvA&lt;A^&gt;A&lt;A&gt;A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;AvA&lt;A^&gt;A&lt;A&gt;A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^AvA&lt;A&gt;^A&lt;A&gt;A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;AvA&lt;A&gt;^A&lt;A&gt;A&lt;vAAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>A&lt;Av&lt;A&gt;&gt;^A&lt;AAv&lt;A&gt;&gt;^AvAA^Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>Av&lt;&lt;A&gt;^A&gt;A&lt;AAv&lt;A&gt;&gt;^AvAA^Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>A&lt;Av&lt;A&gt;&gt;^Av&lt;&lt;A&gt;^AA&gt;AvAA^Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>Av&lt;&lt;A&gt;^A&gt;Av&lt;&lt;A&gt;^AA&gt;AvAA^Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>A&lt;AAAv&lt;AA&gt;&gt;^AvA^AvA^Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^A&lt;Av&gt;AA^A&lt;A&gt;Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^A&lt;A&gt;vAA^A&lt;A&gt;Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^A&lt;vA&gt;A^A&lt;A&gt;Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;A&lt;vA&gt;A^A&lt;A&gt;Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^Av&lt;A&gt;A^A&lt;A&gt;Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;Av&lt;A&gt;A^A&lt;A&gt;Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^AvAA&lt;^A&gt;A&lt;A&gt;Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>A&lt;Av&lt;AA&gt;&gt;^AvAA^&lt;A&gt;A&lt;A&gt;Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^AvA&lt;A^&gt;A&lt;A&gt;Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;AvA&lt;A^&gt;A&lt;A&gt;Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>A&lt;AAAv&lt;A&gt;&gt;^AvA&lt;A&gt;^A&lt;A&gt;Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Av&lt;&lt;A&gt;^AAA&gt;AvA&lt;A&gt;^A&lt;A&gt;Av&lt;AAA&gt;^A</c>
+                  <c />
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input3</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="232" />
+              <Fields>
+                <Field name="Route" />
+                <Field name="RouteDir" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>&lt;&gt;</c>
+                  <c>&gt;&gt;A</c>
+                </r>
+                <r>
+                  <c>&lt;A</c>
+                  <c>&gt;&gt;^A</c>
+                </r>
+                <r>
+                  <c>&lt;^</c>
+                  <c>&gt;^A</c>
+                </r>
+                <r>
+                  <c>&lt;v</c>
+                  <c>&gt;A</c>
+                </r>
+                <r>
+                  <c>&gt;&lt;</c>
+                  <c>&lt;&lt;A</c>
+                </r>
+                <r>
+                  <c>&gt;A</c>
+                  <c>^A</c>
+                </r>
+                <r>
+                  <c>&gt;^</c>
+                  <c>&lt;^A</c>
+                </r>
+                <r>
+                  <c>&gt;^</c>
+                  <c>^&lt;A</c>
+                </r>
+                <r>
+                  <c>&gt;v</c>
+                  <c>&lt;A</c>
+                </r>
+                <r>
+                  <c>A&lt;</c>
+                  <c>v&lt;&lt;A</c>
+                </r>
+                <r>
+                  <c>A&gt;</c>
+                  <c>vA</c>
+                </r>
+                <r>
+                  <c>A^</c>
+                  <c>&lt;A</c>
+                </r>
+                <r>
+                  <c>Av</c>
+                  <c>&lt;vA</c>
+                </r>
+                <r>
+                  <c>Av</c>
+                  <c>v&lt;A</c>
+                </r>
+                <r>
+                  <c>^&lt;</c>
+                  <c>v&lt;A</c>
+                </r>
+                <r>
+                  <c>^&gt;</c>
+                  <c>v&gt;A</c>
+                </r>
+                <r>
+                  <c>^&gt;</c>
+                  <c>&gt;vA</c>
+                </r>
+                <r>
+                  <c>^A</c>
+                  <c>&gt;A</c>
+                </r>
+                <r>
+                  <c>^v</c>
+                  <c>vA</c>
+                </r>
+                <r>
+                  <c>v&lt;</c>
+                  <c>&lt;A</c>
+                </r>
+                <r>
+                  <c>v&gt;</c>
+                  <c>&gt;A</c>
+                </r>
+                <r>
+                  <c>vA</c>
+                  <c>^&gt;A</c>
+                </r>
+                <r>
+                  <c>vA</c>
+                  <c>&gt;^A</c>
+                </r>
+                <r>
+                  <c>v^</c>
+                  <c>^A</c>
+                </r>
+                <r>
+                  <c>^^</c>
+                  <c>A</c>
+                </r>
+                <r>
+                  <c>AA</c>
+                  <c>A</c>
+                </r>
+                <r>
+                  <c>&lt;&lt;</c>
+                  <c>A</c>
+                </r>
+                <r>
+                  <c>vv</c>
+                  <c>A</c>
+                </r>
+                <r>
+                  <c>&gt;&gt;</c>
+                  <c>A</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>^&gt;^</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>&gt;^^&gt;</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>^&gt;^&gt;</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>^^&gt;&gt;</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>&gt;&gt;^^</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>&gt;^&gt;^</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>^&gt;&gt;^</c>
+                </r>
+                <r>
+                  <c>1A</c>
+                  <c>&gt;v&gt;</c>
+                </r>
+                <r>
+                  <c>1A</c>
+                  <c>&gt;&gt;v</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>v</c>
+                </r>
+                <r>
+                  <c>21</c>
+                  <c>&lt;</c>
+                </r>
+                <r>
+                  <c>23</c>
+                  <c>&gt;</c>
+                </r>
+                <r>
+                  <c>24</c>
+                  <c>&lt;^</c>
+                </r>
+                <r>
+                  <c>24</c>
+                  <c>^&lt;</c>
+                </r>
+                <r>
+                  <c>25</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>26</c>
+                  <c>^&gt;</c>
+                </r>
+                <r>
+                  <c>26</c>
+                  <c>&gt;^</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>&lt;^^</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>^&lt;^</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>^^&lt;</c>
+                </r>
+                <r>
+                  <c>28</c>
+                  <c>^^</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>^^&gt;</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>&gt;^^</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>^&gt;^</c>
+                </r>
+                <r>
+                  <c>2A</c>
+                  <c>v&gt;</c>
+                </r>
+                <r>
+                  <c>2A</c>
+                  <c>&gt;v</c>
+                </r>
+                <r>
+                  <c>30</c>
+                  <c>&lt;v</c>
+                </r>
+                <r>
+                  <c>30</c>
+                  <c>v&lt;</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>&lt;&lt;</c>
+                </r>
+                <r>
+                  <c>32</c>
+                  <c>&lt;</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>&lt;&lt;^</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>&lt;^&lt;</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>^&lt;&lt;</c>
+                </r>
+                <r>
+                  <c>35</c>
+                  <c>&lt;^</c>
+                </r>
+                <r>
+                  <c>35</c>
+                  <c>^&lt;</c>
+                </r>
+                <r>
+                  <c>36</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>&lt;&lt;^^</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>&lt;^&lt;^</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>^&lt;&lt;^</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>&lt;^^&lt;</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>^&lt;^&lt;</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>^^&lt;&lt;</c>
+                </r>
+                <r>
+                  <c>38</c>
+                  <c>&lt;^^</c>
+                </r>
+                <r>
+                  <c>38</c>
+                  <c>^&lt;^</c>
+                </r>
+                <r>
+                  <c>38</c>
+                  <c>^^&lt;</c>
+                </r>
+                <r>
+                  <c>39</c>
+                  <c>^^</c>
+                </r>
+                <r>
+                  <c>3A</c>
+                  <c>v</c>
+                </r>
+                <r>
+                  <c>40</c>
+                  <c>v&gt;v</c>
+                </r>
+                <r>
+                  <c>40</c>
+                  <c>&gt;vv</c>
+                </r>
+                <r>
+                  <c>41</c>
+                  <c>v</c>
+                </r>
+                <r>
+                  <c>42</c>
+                  <c>v&gt;</c>
+                </r>
+                <r>
+                  <c>42</c>
+                  <c>&gt;v</c>
+                </r>
+                <r>
+                  <c>43</c>
+                  <c>v&gt;&gt;</c>
+                </r>
+                <r>
+                  <c>43</c>
+                  <c>&gt;v&gt;</c>
+                </r>
+                <r>
+                  <c>43</c>
+                  <c>&gt;&gt;v</c>
+                </r>
+                <r>
+                  <c>45</c>
+                  <c>&gt;</c>
+                </r>
+                <r>
+                  <c>46</c>
+                  <c>&gt;&gt;</c>
+                </r>
+                <r>
+                  <c>47</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>48</c>
+                  <c>^&gt;</c>
+                </r>
+                <r>
+                  <c>48</c>
+                  <c>&gt;^</c>
+                </r>
+                <r>
+                  <c>49</c>
+                  <c>&gt;^&gt;</c>
+                </r>
+                <r>
+                  <c>49</c>
+                  <c>^&gt;&gt;</c>
+                </r>
+                <r>
+                  <c>49</c>
+                  <c>&gt;&gt;^</c>
+                </r>
+                <r>
+                  <c>4A</c>
+                  <c>v&gt;v&gt;</c>
+                </r>
+                <r>
+                  <c>4A</c>
+                  <c>&gt;vv&gt;</c>
+                </r>
+                <r>
+                  <c>4A</c>
+                  <c>v&gt;&gt;v</c>
+                </r>
+                <r>
+                  <c>4A</c>
+                  <c>&gt;v&gt;v</c>
+                </r>
+                <r>
+                  <c>4A</c>
+                  <c>&gt;&gt;vv</c>
+                </r>
+                <r>
+                  <c>50</c>
+                  <c>vv</c>
+                </r>
+                <r>
+                  <c>51</c>
+                  <c>&lt;v</c>
+                </r>
+                <r>
+                  <c>51</c>
+                  <c>v&lt;</c>
+                </r>
+                <r>
+                  <c>52</c>
+                  <c>v</c>
+                </r>
+                <r>
+                  <c>53</c>
+                  <c>v&gt;</c>
+                </r>
+                <r>
+                  <c>53</c>
+                  <c>&gt;v</c>
+                </r>
+                <r>
+                  <c>54</c>
+                  <c>&lt;</c>
+                </r>
+                <r>
+                  <c>56</c>
+                  <c>&gt;</c>
+                </r>
+                <r>
+                  <c>57</c>
+                  <c>&lt;^</c>
+                </r>
+                <r>
+                  <c>57</c>
+                  <c>^&lt;</c>
+                </r>
+                <r>
+                  <c>58</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>59</c>
+                  <c>^&gt;</c>
+                </r>
+                <r>
+                  <c>59</c>
+                  <c>&gt;^</c>
+                </r>
+                <r>
+                  <c>5A</c>
+                  <c>vv&gt;</c>
+                </r>
+                <r>
+                  <c>5A</c>
+                  <c>v&gt;v</c>
+                </r>
+                <r>
+                  <c>5A</c>
+                  <c>&gt;vv</c>
+                </r>
+                <r>
+                  <c>60</c>
+                  <c>v&lt;v</c>
+                </r>
+                <r>
+                  <c>60</c>
+                  <c>&lt;vv</c>
+                </r>
+                <r>
+                  <c>60</c>
+                  <c>vv&lt;</c>
+                </r>
+                <r>
+                  <c>61</c>
+                  <c>&lt;&lt;v</c>
+                </r>
+                <r>
+                  <c>61</c>
+                  <c>v&lt;&lt;</c>
+                </r>
+                <r>
+                  <c>61</c>
+                  <c>&lt;v&lt;</c>
+                </r>
+                <r>
+                  <c>62</c>
+                  <c>&lt;v</c>
+                </r>
+                <r>
+                  <c>62</c>
+                  <c>v&lt;</c>
+                </r>
+                <r>
+                  <c>63</c>
+                  <c>v</c>
+                </r>
+                <r>
+                  <c>64</c>
+                  <c>&lt;&lt;</c>
+                </r>
+                <r>
+                  <c>65</c>
+                  <c>&lt;</c>
+                </r>
+                <r>
+                  <c>67</c>
+                  <c>&lt;&lt;^</c>
+                </r>
+                <r>
+                  <c>67</c>
+                  <c>&lt;^&lt;</c>
+                </r>
+                <r>
+                  <c>67</c>
+                  <c>^&lt;&lt;</c>
+                </r>
+                <r>
+                  <c>68</c>
+                  <c>&lt;^</c>
+                </r>
+                <r>
+                  <c>68</c>
+                  <c>^&lt;</c>
+                </r>
+                <r>
+                  <c>69</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>6A</c>
+                  <c>vv</c>
+                </r>
+                <r>
+                  <c>70</c>
+                  <c>vv&gt;v</c>
+                </r>
+                <r>
+                  <c>70</c>
+                  <c>v&gt;vv</c>
+                </r>
+                <r>
+                  <c>70</c>
+                  <c>&gt;vvv</c>
+                </r>
+                <r>
+                  <c>71</c>
+                  <c>vv</c>
+                </r>
+                <r>
+                  <c>72</c>
+                  <c>vv&gt;</c>
+                </r>
+                <r>
+                  <c>72</c>
+                  <c>v&gt;v</c>
+                </r>
+                <r>
+                  <c>72</c>
+                  <c>&gt;vv</c>
+                </r>
+                <r>
+                  <c>73</c>
+                  <c>vv&gt;&gt;</c>
+                </r>
+                <r>
+                  <c>73</c>
+                  <c>v&gt;v&gt;</c>
+                </r>
+                <r>
+                  <c>73</c>
+                  <c>&gt;vv&gt;</c>
+                </r>
+                <r>
+                  <c>73</c>
+                  <c>v&gt;&gt;v</c>
+                </r>
+                <r>
+                  <c>73</c>
+                  <c>&gt;v&gt;v</c>
+                </r>
+                <r>
+                  <c>73</c>
+                  <c>&gt;&gt;vv</c>
+                </r>
+                <r>
+                  <c>74</c>
+                  <c>v</c>
+                </r>
+                <r>
+                  <c>75</c>
+                  <c>v&gt;</c>
+                </r>
+                <r>
+                  <c>75</c>
+                  <c>&gt;v</c>
+                </r>
+                <r>
+                  <c>76</c>
+                  <c>v&gt;&gt;</c>
+                </r>
+                <r>
+                  <c>76</c>
+                  <c>&gt;v&gt;</c>
+                </r>
+                <r>
+                  <c>76</c>
+                  <c>&gt;&gt;v</c>
+                </r>
+                <r>
+                  <c>78</c>
+                  <c>&gt;</c>
+                </r>
+                <r>
+                  <c>79</c>
+                  <c>&gt;&gt;</c>
+                </r>
+                <r>
+                  <c>7A</c>
+                  <c>vv&gt;v&gt;</c>
+                </r>
+                <r>
+                  <c>7A</c>
+                  <c>v&gt;vv&gt;</c>
+                </r>
+                <r>
+                  <c>7A</c>
+                  <c>&gt;vvv&gt;</c>
+                </r>
+                <r>
+                  <c>7A</c>
+                  <c>vv&gt;&gt;v</c>
+                </r>
+                <r>
+                  <c>7A</c>
+                  <c>v&gt;v&gt;v</c>
+                </r>
+                <r>
+                  <c>7A</c>
+                  <c>v&gt;&gt;vv</c>
+                </r>
+                <r>
+                  <c>7A</c>
+                  <c>&gt;vv&gt;v</c>
+                </r>
+                <r>
+                  <c>7A</c>
+                  <c>&gt;v&gt;vv</c>
+                </r>
+                <r>
+                  <c>7A</c>
+                  <c>&gt;&gt;vvv</c>
+                </r>
+                <r>
+                  <c>80</c>
+                  <c>vvv</c>
+                </r>
+                <r>
+                  <c>81</c>
+                  <c>v&lt;v</c>
+                </r>
+                <r>
+                  <c>81</c>
+                  <c>&lt;vv</c>
+                </r>
+                <r>
+                  <c>81</c>
+                  <c>vv&lt;</c>
+                </r>
+                <r>
+                  <c>82</c>
+                  <c>vv</c>
+                </r>
+                <r>
+                  <c>83</c>
+                  <c>vv&gt;</c>
+                </r>
+                <r>
+                  <c>83</c>
+                  <c>v&gt;v</c>
+                </r>
+                <r>
+                  <c>83</c>
+                  <c>&gt;vv</c>
+                </r>
+                <r>
+                  <c>84</c>
+                  <c>&lt;v</c>
+                </r>
+                <r>
+                  <c>84</c>
+                  <c>v&lt;</c>
+                </r>
+                <r>
+                  <c>85</c>
+                  <c>v</c>
+                </r>
+                <r>
+                  <c>86</c>
+                  <c>v&gt;</c>
+                </r>
+                <r>
+                  <c>86</c>
+                  <c>&gt;v</c>
+                </r>
+                <r>
+                  <c>87</c>
+                  <c>&lt;</c>
+                </r>
+                <r>
+                  <c>89</c>
+                  <c>&gt;</c>
+                </r>
+                <r>
+                  <c>8A</c>
+                  <c>vvv&gt;</c>
+                </r>
+                <r>
+                  <c>8A</c>
+                  <c>vv&gt;v</c>
+                </r>
+                <r>
+                  <c>8A</c>
+                  <c>v&gt;vv</c>
+                </r>
+                <r>
+                  <c>8A</c>
+                  <c>&gt;vvv</c>
+                </r>
+                <r>
+                  <c>90</c>
+                  <c>vv&lt;v</c>
+                </r>
+                <r>
+                  <c>90</c>
+                  <c>v&lt;vv</c>
+                </r>
+                <r>
+                  <c>90</c>
+                  <c>&lt;vvv</c>
+                </r>
+                <r>
+                  <c>90</c>
+                  <c>vvv&lt;</c>
+                </r>
+                <r>
+                  <c>91</c>
+                  <c>v&lt;&lt;v</c>
+                </r>
+                <r>
+                  <c>91</c>
+                  <c>&lt;v&lt;v</c>
+                </r>
+                <r>
+                  <c>91</c>
+                  <c>&lt;&lt;vv</c>
+                </r>
+                <r>
+                  <c>91</c>
+                  <c>vv&lt;&lt;</c>
+                </r>
+                <r>
+                  <c>91</c>
+                  <c>v&lt;v&lt;</c>
+                </r>
+                <r>
+                  <c>91</c>
+                  <c>&lt;vv&lt;</c>
+                </r>
+                <r>
+                  <c>92</c>
+                  <c>v&lt;v</c>
+                </r>
+                <r>
+                  <c>92</c>
+                  <c>&lt;vv</c>
+                </r>
+                <r>
+                  <c>92</c>
+                  <c>vv&lt;</c>
+                </r>
+                <r>
+                  <c>93</c>
+                  <c>vv</c>
+                </r>
+                <r>
+                  <c>94</c>
+                  <c>&lt;&lt;v</c>
+                </r>
+                <r>
+                  <c>94</c>
+                  <c>v&lt;&lt;</c>
+                </r>
+                <r>
+                  <c>94</c>
+                  <c>&lt;v&lt;</c>
+                </r>
+                <r>
+                  <c>95</c>
+                  <c>&lt;v</c>
+                </r>
+                <r>
+                  <c>95</c>
+                  <c>v&lt;</c>
+                </r>
+                <r>
+                  <c>96</c>
+                  <c>v</c>
+                </r>
+                <r>
+                  <c>97</c>
+                  <c>&lt;&lt;</c>
+                </r>
+                <r>
+                  <c>98</c>
+                  <c>&lt;</c>
+                </r>
+                <r>
+                  <c>9A</c>
+                  <c>vvv</c>
+                </r>
+                <r>
+                  <c>A0</c>
+                  <c>&lt;</c>
+                </r>
+                <r>
+                  <c>A1</c>
+                  <c>&lt;^&lt;</c>
+                </r>
+                <r>
+                  <c>A1</c>
+                  <c>^&lt;&lt;</c>
+                </r>
+                <r>
+                  <c>A2</c>
+                  <c>&lt;^</c>
+                </r>
+                <r>
+                  <c>A2</c>
+                  <c>^&lt;</c>
+                </r>
+                <r>
+                  <c>A3</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>A4</c>
+                  <c>&lt;^&lt;^</c>
+                </r>
+                <r>
+                  <c>A4</c>
+                  <c>^&lt;&lt;^</c>
+                </r>
+                <r>
+                  <c>A4</c>
+                  <c>&lt;^^&lt;</c>
+                </r>
+                <r>
+                  <c>A4</c>
+                  <c>^&lt;^&lt;</c>
+                </r>
+                <r>
+                  <c>A4</c>
+                  <c>^^&lt;&lt;</c>
+                </r>
+                <r>
+                  <c>A5</c>
+                  <c>&lt;^^</c>
+                </r>
+                <r>
+                  <c>A5</c>
+                  <c>^&lt;^</c>
+                </r>
+                <r>
+                  <c>A5</c>
+                  <c>^^&lt;</c>
+                </r>
+                <r>
+                  <c>A6</c>
+                  <c>^^</c>
+                </r>
+                <r>
+                  <c>A7</c>
+                  <c>&lt;^&lt;^^</c>
+                </r>
+                <r>
+                  <c>A7</c>
+                  <c>&lt;^^&lt;^</c>
+                </r>
+                <r>
+                  <c>A7</c>
+                  <c>^&lt;&lt;^^</c>
+                </r>
+                <r>
+                  <c>A7</c>
+                  <c>^&lt;^&lt;^</c>
+                </r>
+                <r>
+                  <c>A7</c>
+                  <c>^^&lt;&lt;^</c>
+                </r>
+                <r>
+                  <c>A7</c>
+                  <c>&lt;^^^&lt;</c>
+                </r>
+                <r>
+                  <c>A7</c>
+                  <c>^&lt;^^&lt;</c>
+                </r>
+                <r>
+                  <c>A7</c>
+                  <c>^^&lt;^&lt;</c>
+                </r>
+                <r>
+                  <c>A7</c>
+                  <c>^^^&lt;&lt;</c>
+                </r>
+                <r>
+                  <c>A8</c>
+                  <c>&lt;^^^</c>
+                </r>
+                <r>
+                  <c>A8</c>
+                  <c>^&lt;^^</c>
+                </r>
+                <r>
+                  <c>A8</c>
+                  <c>^^&lt;^</c>
+                </r>
+                <r>
+                  <c>A8</c>
+                  <c>^^^&lt;</c>
+                </r>
+                <r>
+                  <c>A9</c>
+                  <c>^^^</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="246" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Substring([Input],[Engine.IterationNumber],2)" field="Route" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Route = Substring([Input],[Engine.IterationNumber],2)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Route" size="1073741823" source="Formula: Substring([Input],[Engine.IterationNumber],2)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="438" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Route" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Route" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Route" selected="False" input="Left_" />
+                <SelectField field="Right_Route" selected="False" rename="Right_Route" input="Right_" />
+                <SelectField field="Right_RouteDir" selected="True" rename="Right_RouteDir" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Route" size="1073741823" source="Formula: Substring([Input],[Engine.IterationNumber],2)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Right_RouteDir" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Route" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RouteDir" selected="True" type="V_WString" size="2147483647" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1038" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[RouteDir]+[Right_RouteDir]" field="RouteDir" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[RouteDir = [RouteDir]+[Right_RouteDir]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="Formula: [RouteDir]+[Right_RouteDir]" type="V_WString" />
+            <Field name="Right_RouteDir" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="length" source="Formula: Length([RouteDir]+[Right_RouteDir])" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1134" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RowID" selected="True" />
+            <SelectField field="Input" selected="True" />
+            <SelectField field="RouteDir" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="Formula: [RouteDir]+[Right_RouteDir]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1230" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Engine.IterationNumber]&lt;Length([Input])-2</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Engine.IterationNumber]&lt;Length([Input])-2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="Formula: [RouteDir]+[Right_RouteDir]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="Formula: [RouteDir]+[Right_RouteDir]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1350" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1350" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output11</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="534" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="RecordID" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RecordID - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Right_RouteDir" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="630" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Length([RouteDir]+[Right_RouteDir])" field="length" size="8" type="Int64" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[length = Length([RouteDir]+[Right_RouteDir])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Right_RouteDir" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="length" source="Formula: Length([RouteDir]+[Right_RouteDir])" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="726" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>(Right([RouteDir],1)+Left([Right_RouteDir],1))!="A&lt;"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>(Right([RouteDir],1)+Left([Right_RouteDir],1))!="A&lt;"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Right_RouteDir" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="length" source="Formula: Length([RouteDir]+[Right_RouteDir])" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Right_RouteDir" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="length" source="Formula: Length([RouteDir]+[Right_RouteDir])" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="342" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Route" size="1073741823" source="Formula: Substring([Input],[Engine.IterationNumber],2)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="834" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+            <Field field="length" />
+            <Field field="RowID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+            <Field field="length" />
+            <Field field="RowID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Right_RowID" selected="False" rename="Right_RowID" input="Right_" />
+                <SelectField field="Right_Input" selected="False" rename="Right_Input" input="Right_" />
+                <SelectField field="Right_RouteDir" selected="False" rename="Right_RouteDir" input="Right_" />
+                <SelectField field="Right_Right_RouteDir" selected="False" rename="Right_Right_RouteDir" input="Right_" />
+                <SelectField field="Right_length" selected="False" rename="Right_length" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Right_RouteDir" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="length" source="Formula: Length([RouteDir]+[Right_RouteDir])" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Right_RouteDir" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="length" source="Formula: Length([RouteDir]+[Right_RouteDir])" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Right_RouteDir" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="length" source="Formula: Length([RouteDir]+[Right_RouteDir])" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="942" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RowID" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="RouteDir" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Right_RouteDir" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="length" source="Formula: Length([RouteDir]+[Right_RouteDir])" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="762" y="42" width="100" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Greedy法を使うと、このパターン（Aのあとの<）が出てこなくなるので不要
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="False" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="18" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="False" />
+      <Destination ToolID="18" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="18" Connection="Join" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="18" Connection="Left" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="18" Connection="Right" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CreateRouteArrow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="43c63613-9326-46e3-9f96-fece92a634fa" />
+      <Telemetry>
+        <PreviousWorkflowId value="ee8f4639-8882-4882-a89d-d30c371c6689" />
+        <OriginWorkflowId value="cd71836b-343e-4acd-8d28-2c208ee586d8" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (10)</Name>
+              <ToolId value="10" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (11)</Name>
+              <ToolId value="11" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="10" Selected="True" />
+        <Tool ToolId="11" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

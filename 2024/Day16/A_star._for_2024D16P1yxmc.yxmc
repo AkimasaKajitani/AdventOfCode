@@ -1,0 +1,1648 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="78" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\MyDoc\AYX\AdventOfCode\2024\Day16\temp.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText>temp.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings>
+        <Position x="558" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.Input69"><![CDATA[x=x
+y=y
+value=Status
+]]></Value>
+          <Value name="Radio Button (77)">True</Value>
+          <Value name="Radio Button (79)">False</Value>
+          <Value name="Radio Button (84)">False</Value>
+          <Value name="Check Box (75)">False</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Create Surrounding point</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output72">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value2" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x_1" source="(Multiple Sources)" type="Int64" />
+            <Field name="y_1" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="AoC\CreatePoints.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="750" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="x_1" />
+            <Field field="y_1" />
+            <Field field="z_1" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="x" />
+            <Field field="y" />
+            <Field field="z" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Cost" selected="True" input="Left_" />
+                <SelectField field="Left_ParentNode" selected="True" input="Left_" />
+                <SelectField field="Left_Goal_x" selected="True" input="Left_" />
+                <SelectField field="Left_Goal_y" selected="True" input="Left_" />
+                <SelectField field="Left_EstimateCost" selected="True" input="Left_" />
+                <SelectField field="Left_Score" selected="True" input="Left_" />
+                <SelectField field="Left_x" selected="True" input="Left_" />
+                <SelectField field="Left_y" selected="True" input="Left_" />
+                <SelectField field="Left_z" selected="True" input="Left_" />
+                <SelectField field="Left_value" selected="True" input="Left_" />
+                <SelectField field="Left_x_1" selected="True" input="Left_" />
+                <SelectField field="Left_y_1" selected="True" input="Left_" />
+                <SelectField field="Left_z_1" selected="True" input="Left_" />
+                <SelectField field="Right_x" selected="False" rename="Right_x" input="Right_" />
+                <SelectField field="Right_y" selected="False" rename="Right_y" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Identify Movable points</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value2" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x_1" source="(Multiple Sources)" type="Int64" />
+            <Field name="y_1" source="(Multiple Sources)" type="Int64" />
+            <Field name="Dir" source="Formula: IF [x]=[x_1] AND [y]-1=[y_1] THEN 1&#xA;ELSEIF [x]=[x_1] AND [y]+1=[y_1] THEN 3&#xA;ELSEIF [x]+1=[x_1] AND [y]=[y_1] THEN 2&#xA;ELSEIF [x]-1=[x_1] AND [y]=[y_1] THEN 4&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="z_1" size="5" source="Formula: IF [Dir]=1 THEN &quot;^&quot;&#xA;ELSEIF [Dir]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [Dir]=3 THEN &quot;v&quot;&#xA;ELSE &quot;&lt;&quot; ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x_1" source="(Multiple Sources)" type="Int64" />
+            <Field name="y_1" source="(Multiple Sources)" type="Int64" />
+            <Field name="z_1" size="5" source="Formula: IF [Dir]=1 THEN &quot;^&quot;&#xA;ELSEIF [Dir]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [Dir]=3 THEN &quot;v&quot;&#xA;ELSE &quot;&lt;&quot; ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="942" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="x" selected="False" />
+            <SelectField field="y" selected="False" />
+            <SelectField field="z" selected="False" />
+            <SelectField field="x_1" selected="True" rename="x" />
+            <SelectField field="y_1" selected="True" rename="y" />
+            <SelectField field="z_1" selected="True" rename="z" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: IF [z]=[z_1] THEN&#xA;[Cost]+1&#xA;ELSE&#xA; IF [z]=&quot;&gt;&quot; AND [z_1] IN (&quot;^&quot;,&quot;v&quot;) THEN [Cost]+1001&#xA; ELSEIF [z]=&quot;&gt;&quot; AND [z_1] IN (&quot;&lt;&quot;) THEN [Cost]+2001&#xA; ELSEIF [z]=&quot;v&quot; AND [z_1] IN (&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [Cost]+1001&#xA; ELSEIF [z]=&quot;v&quot; AND [z_1] IN (&quot;^&quot;) THEN [Cost]+2001&#xA; ELSEIF [z]=&quot;&lt;&quot; AND [z_1] IN (&quot;^&quot;,&quot;v&quot;) THEN [Cost]+1001&#xA; ELSEIF [z]=&quot;&lt;&quot; AND [z_1] IN (&quot;&gt;&quot;) THEN [Cost]+2001&#xA; ELSEIF [z]=&quot;^&quot; AND [z_1] IN (&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [Cost]+1001&#xA; ELSEIF [z]=&quot;^&quot; AND [z_1] IN (&quot;v&quot;) THEN [Cost]+2001&#xA; ELSE Null() ENDIF&#xA;ENDIF&#xA;" type="Int64" />
+            <Field name="ParentNode" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])+&quot;-&quot;+[z]" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: [Goal_x]-[x]+[Goal_y]-[y]" type="Int64" />
+            <Field name="Score" source="Formula: [Cost]+[EstimateCost]" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: IF [Dir]=1 THEN &quot;^&quot;&#xA;ELSEIF [Dir]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [Dir]=3 THEN &quot;v&quot;&#xA;ELSE &quot;&lt;&quot; ENDIF" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="846" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [z]=[z_1] THEN&#xA;[Cost]+1&#xA;ELSE&#xA; IF [z]=&quot;&gt;&quot; AND [z_1] IN (&quot;^&quot;,&quot;v&quot;) THEN [Cost]+1001&#xA; ELSEIF [z]=&quot;&gt;&quot; AND [z_1] IN (&quot;&lt;&quot;) THEN [Cost]+2001&#xA; ELSEIF [z]=&quot;v&quot; AND [z_1] IN (&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [Cost]+1001&#xA; ELSEIF [z]=&quot;v&quot; AND [z_1] IN (&quot;^&quot;) THEN [Cost]+2001&#xA; ELSEIF [z]=&quot;&lt;&quot; AND [z_1] IN (&quot;^&quot;,&quot;v&quot;) THEN [Cost]+1001&#xA; ELSEIF [z]=&quot;&lt;&quot; AND [z_1] IN (&quot;&gt;&quot;) THEN [Cost]+2001&#xA; ELSEIF [z]=&quot;^&quot; AND [z_1] IN (&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [Cost]+1001&#xA; ELSEIF [z]=&quot;^&quot; AND [z_1] IN (&quot;v&quot;) THEN [Cost]+2001&#xA; ELSE Null() ENDIF&#xA;ENDIF&#xA;" field="Cost" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="[Goal_x]-[x]+[Goal_y]-[y]" field="EstimateCost" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="&quot;Open&quot;" field="Status" size="1073741823" type="V_WString" enabled="true" />
+            <FormulaField expression="[Cost]+[EstimateCost]" field="Score" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="ToString([x])+&quot;-&quot;+ToString([y])+&quot;-&quot;+[z]" field="ParentNode" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Open</AnnotationText>
+          <DefaultAnnotationText>Cost = IF [z]=[z_1] THEN
+[Cost]+1
+ELSE
+ IF [z]="&gt;" AND [z_1] IN ("^","v") THEN [...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: IF [z]=[z_1] THEN&#xA;[Cost]+1&#xA;ELSE&#xA; IF [z]=&quot;&gt;&quot; AND [z_1] IN (&quot;^&quot;,&quot;v&quot;) THEN [Cost]+1001&#xA; ELSEIF [z]=&quot;&gt;&quot; AND [z_1] IN (&quot;&lt;&quot;) THEN [Cost]+2001&#xA; ELSEIF [z]=&quot;v&quot; AND [z_1] IN (&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [Cost]+1001&#xA; ELSEIF [z]=&quot;v&quot; AND [z_1] IN (&quot;^&quot;) THEN [Cost]+2001&#xA; ELSEIF [z]=&quot;&lt;&quot; AND [z_1] IN (&quot;^&quot;,&quot;v&quot;) THEN [Cost]+1001&#xA; ELSEIF [z]=&quot;&lt;&quot; AND [z_1] IN (&quot;&gt;&quot;) THEN [Cost]+2001&#xA; ELSEIF [z]=&quot;^&quot; AND [z_1] IN (&quot;&lt;&quot;,&quot;&gt;&quot;) THEN [Cost]+1001&#xA; ELSEIF [z]=&quot;^&quot; AND [z_1] IN (&quot;v&quot;) THEN [Cost]+2001&#xA; ELSE Null() ENDIF&#xA;ENDIF&#xA;" type="Int64" />
+            <Field name="ParentNode" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])+&quot;-&quot;+[z]" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: [Goal_x]-[x]+[Goal_y]-[y]" type="Int64" />
+            <Field name="Score" source="Formula: [Cost]+[EstimateCost]" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x_1" source="(Multiple Sources)" type="Int64" />
+            <Field name="y_1" source="(Multiple Sources)" type="Int64" />
+            <Field name="z_1" size="5" source="Formula: IF [Dir]=1 THEN &quot;^&quot;&#xA;ELSEIF [Dir]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [Dir]=3 THEN &quot;v&quot;&#xA;ELSE &quot;&lt;&quot; ENDIF" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="174" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Status</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-18 14:28:53</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Open</Operand>
+              <StartDate>2024-12-18 14:28:53</StartDate>
+              <EndDate>2024-12-18 14:28:53</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Status] = "Open"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="942" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Close&quot;" field="Status" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Status = "Close"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Close&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="366" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="x" selected="True" />
+            <SelectField field="y" selected="True" />
+            <SelectField field="z" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="462" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="270" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNull</Operator>
+            <Field>Status</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-21 09:20:35</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2024-12-21 09:20:35</StartDate>
+              <EndDate>2024-12-21 09:20:35</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IsNull([Status])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="270" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Score" order="Ascending" />
+            <Field field="Cost" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Score - Ascending
+Cost - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="366" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1230" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output14</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1734" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Repeat</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1146" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="366" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Skip</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Skip 1st 1 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1254" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\MyDoc\AYX\AdventOfCode\2024\Day16\temp.yxdb</File>
+          <Passwords />
+          <Disable>True</Disable>
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>temp.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1350" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Count]=0</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count]=0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1038" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[x]=[Goal_x] AND [y]=[Goal_y]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[x]=[Goal_x] AND [y]=[Goal_y]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Close&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Close&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings>
+        <Position x="1134" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Check achieve goal</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1254" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1638" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Cost" selected="True" />
+            <SelectField field="value" selected="True" />
+            <SelectField field="ParentNode" selected="True" />
+            <SelectField field="Goal_x" selected="True" />
+            <SelectField field="Goal_y" selected="True" />
+            <SelectField field="EstimateCost" selected="True" />
+            <SelectField field="Score" selected="True" />
+            <SelectField field="x" selected="True" />
+            <SelectField field="y" selected="True" />
+            <SelectField field="z" selected="True" />
+            <SelectField field="Status" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings>
+        <Position x="366" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Check No Open</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1446" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_Count" selected="False" input="Target_" />
+                <SelectField field="Source_Count" selected="True" rename="Source_Count" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="Source_Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1542" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Source_Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-12-21 17:39:06</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2024-12-21 17:39:06</StartDate>
+              <EndDate>2024-12-21 17:39:06</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Source_Count] != 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="Source_Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="Source_Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1446" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Goal&quot;" field="Reason" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Reason = "Goal"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+            <Field name="Reason" size="1073741823" source="Formula: &quot;Goal&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1638" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Open Node is zero&quot;" field="Reason" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Reason = "Open Node is zero"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="Source_Count" source="(Multiple Sources)" type="Int64" />
+            <Field name="Reason" size="1073741823" source="Formula: &quot;Open Node is zero&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1734" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Status" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="Source_Count" source="(Multiple Sources)" type="Int64" />
+            <Field name="Reason" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1842" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output33</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="264" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>A* algorithm</Text>
+          <Font name="Arial" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="102" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>ver 1.1</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="654" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [x]=[x_1] AND [y]-1=[y_1] THEN 1&#xA;ELSEIF [x]=[x_1] AND [y]+1=[y_1] THEN 3&#xA;ELSEIF [x]+1=[x_1] AND [y]=[y_1] THEN 2&#xA;ELSEIF [x]-1=[x_1] AND [y]=[y_1] THEN 4&#xA;ELSE Null()&#xA;ENDIF" field="Dir" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="IF [Dir]=1 THEN &quot;^&quot;&#xA;ELSEIF [Dir]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [Dir]=3 THEN &quot;v&quot;&#xA;ELSE &quot;&lt;&quot; ENDIF" field="z_1" size="5" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Dir = IF [x]=[x_1] AND [y]-1=[y_1] THEN 1
+ELSEIF [x]=[x_1] AND [y]+1=[y_1] THEN ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="value2" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="ParentNode" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Goal_x" source="Formula: [Tile_SequenceNum]-1+1" type="Int32" />
+            <Field name="Goal_y" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="EstimateCost" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Score" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="x" source="(Multiple Sources)" type="Int64" />
+            <Field name="y" source="(Multiple Sources)" type="Int64" />
+            <Field name="z" size="5" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="value" size="1073741823" source="Formula: &quot;Open&quot;" type="V_WString" />
+            <Field name="x_1" source="(Multiple Sources)" type="Int64" />
+            <Field name="y_1" source="(Multiple Sources)" type="Int64" />
+            <Field name="Dir" source="Formula: IF [x]=[x_1] AND [y]-1=[y_1] THEN 1&#xA;ELSEIF [x]=[x_1] AND [y]+1=[y_1] THEN 3&#xA;ELSEIF [x]+1=[x_1] AND [y]=[y_1] THEN 2&#xA;ELSEIF [x]-1=[x_1] AND [y]=[y_1] THEN 4&#xA;ELSE Null()&#xA;ENDIF" type="Int64" />
+            <Field name="z_1" size="5" source="Formula: IF [Dir]=1 THEN &quot;^&quot;&#xA;ELSEIF [Dir]=2 THEN &quot;&gt;&quot;&#xA;ELSEIF [Dir]=3 THEN &quot;v&quot;&#xA;ELSE &quot;&lt;&quot; ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1722" y="114" width="112" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Check</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Check</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="24">
+          <GuiSettings>
+            <Position x="1746" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Input.Input4"><![CDATA[x=x
+y=y
+Input=Status
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output1">
+              <RecordInfo>
+                <Field name="y" source="CrossTab:Group:Concat:" type="Int64" />
+                <Field name="0" size="2048" source="CrossTab:Header:x:0:Concat:" type="V_WString" />
+                <Field name="1" size="2048" source="CrossTab:Header:x:1:Concat:" type="V_WString" />
+                <Field name="2" size="2048" source="CrossTab:Header:x:2:Concat:" type="V_WString" />
+                <Field name="3" size="2048" source="CrossTab:Header:x:3:Concat:" type="V_WString" />
+                <Field name="4" size="2048" source="CrossTab:Header:x:4:Concat:" type="V_WString" />
+                <Field name="5" size="2048" source="CrossTab:Header:x:5:Concat:" type="V_WString" />
+                <Field name="6" size="2048" source="CrossTab:Header:x:6:Concat:" type="V_WString" />
+                <Field name="7" size="2048" source="CrossTab:Header:x:7:Concat:" type="V_WString" />
+                <Field name="8" size="2048" source="CrossTab:Header:x:8:Concat:" type="V_WString" />
+                <Field name="9" size="2048" source="CrossTab:Header:x:9:Concat:" type="V_WString" />
+                <Field name="10" size="2048" source="CrossTab:Header:x:10:Concat:" type="V_WString" />
+                <Field name="11" size="2048" source="CrossTab:Header:x:11:Concat:" type="V_WString" />
+                <Field name="12" size="2048" source="CrossTab:Header:x:12:Concat:" type="V_WString" />
+                <Field name="13" size="2048" source="CrossTab:Header:x:13:Concat:" type="V_WString" />
+                <Field name="14" size="2048" source="CrossTab:Header:x:14:Concat:" type="V_WString" />
+                <Field name="15" size="2048" source="CrossTab:Header:x:15:Concat:" type="V_WString" />
+                <Field name="16" size="2048" source="CrossTab:Header:x:16:Concat:" type="V_WString" />
+                <Field name="17" size="2048" source="CrossTab:Header:x:17:Concat:" type="V_WString" />
+                <Field name="18" size="2048" source="CrossTab:Header:x:18:Concat:" type="V_WString" />
+                <Field name="19" size="2048" source="CrossTab:Header:x:19:Concat:" type="V_WString" />
+                <Field name="20" size="2048" source="CrossTab:Header:x:20:Concat:" type="V_WString" />
+                <Field name="21" size="2048" source="CrossTab:Header:x:21:Concat:" type="V_WString" />
+                <Field name="22" size="2048" source="CrossTab:Header:x:22:Concat:" type="V_WString" />
+                <Field name="23" size="2048" source="CrossTab:Header:x:23:Concat:" type="V_WString" />
+                <Field name="24" size="2048" source="CrossTab:Header:x:24:Concat:" type="V_WString" />
+                <Field name="25" size="2048" source="CrossTab:Header:x:25:Concat:" type="V_WString" />
+                <Field name="26" size="2048" source="CrossTab:Header:x:26:Concat:" type="V_WString" />
+                <Field name="27" size="2048" source="CrossTab:Header:x:27:Concat:" type="V_WString" />
+                <Field name="28" size="2048" source="CrossTab:Header:x:28:Concat:" type="V_WString" />
+                <Field name="29" size="2048" source="CrossTab:Header:x:29:Concat:" type="V_WString" />
+                <Field name="30" size="2048" source="CrossTab:Header:x:30:Concat:" type="V_WString" />
+                <Field name="31" size="2048" source="CrossTab:Header:x:31:Concat:" type="V_WString" />
+                <Field name="32" size="2048" source="CrossTab:Header:x:32:Concat:" type="V_WString" />
+                <Field name="33" size="2048" source="CrossTab:Header:x:33:Concat:" type="V_WString" />
+                <Field name="34" size="2048" source="CrossTab:Header:x:34:Concat:" type="V_WString" />
+                <Field name="35" size="2048" source="CrossTab:Header:x:35:Concat:" type="V_WString" />
+                <Field name="36" size="2048" source="CrossTab:Header:x:36:Concat:" type="V_WString" />
+                <Field name="37" size="2048" source="CrossTab:Header:x:37:Concat:" type="V_WString" />
+                <Field name="38" size="2048" source="CrossTab:Header:x:38:Concat:" type="V_WString" />
+                <Field name="39" size="2048" source="CrossTab:Header:x:39:Concat:" type="V_WString" />
+                <Field name="40" size="2048" source="CrossTab:Header:x:40:Concat:" type="V_WString" />
+                <Field name="41" size="2048" source="CrossTab:Header:x:41:Concat:" type="V_WString" />
+                <Field name="42" size="2048" source="CrossTab:Header:x:42:Concat:" type="V_WString" />
+                <Field name="43" size="2048" source="CrossTab:Header:x:43:Concat:" type="V_WString" />
+                <Field name="44" size="2048" source="CrossTab:Header:x:44:Concat:" type="V_WString" />
+                <Field name="45" size="2048" source="CrossTab:Header:x:45:Concat:" type="V_WString" />
+                <Field name="46" size="2048" source="CrossTab:Header:x:46:Concat:" type="V_WString" />
+                <Field name="47" size="2048" source="CrossTab:Header:x:47:Concat:" type="V_WString" />
+                <Field name="48" size="2048" source="CrossTab:Header:x:48:Concat:" type="V_WString" />
+                <Field name="49" size="2048" source="CrossTab:Header:x:49:Concat:" type="V_WString" />
+                <Field name="50" size="2048" source="CrossTab:Header:x:50:Concat:" type="V_WString" />
+                <Field name="51" size="2048" source="CrossTab:Header:x:51:Concat:" type="V_WString" />
+                <Field name="52" size="2048" source="CrossTab:Header:x:52:Concat:" type="V_WString" />
+                <Field name="53" size="2048" source="CrossTab:Header:x:53:Concat:" type="V_WString" />
+                <Field name="54" size="2048" source="CrossTab:Header:x:54:Concat:" type="V_WString" />
+                <Field name="55" size="2048" source="CrossTab:Header:x:55:Concat:" type="V_WString" />
+                <Field name="56" size="2048" source="CrossTab:Header:x:56:Concat:" type="V_WString" />
+                <Field name="57" size="2048" source="CrossTab:Header:x:57:Concat:" type="V_WString" />
+                <Field name="58" size="2048" source="CrossTab:Header:x:58:Concat:" type="V_WString" />
+                <Field name="59" size="2048" source="CrossTab:Header:x:59:Concat:" type="V_WString" />
+                <Field name="60" size="2048" source="CrossTab:Header:x:60:Concat:" type="V_WString" />
+                <Field name="61" size="2048" source="CrossTab:Header:x:61:Concat:" type="V_WString" />
+                <Field name="62" size="2048" source="CrossTab:Header:x:62:Concat:" type="V_WString" />
+                <Field name="63" size="2048" source="CrossTab:Header:x:63:Concat:" type="V_WString" />
+                <Field name="64" size="2048" source="CrossTab:Header:x:64:Concat:" type="V_WString" />
+                <Field name="65" size="2048" source="CrossTab:Header:x:65:Concat:" type="V_WString" />
+                <Field name="66" size="2048" source="CrossTab:Header:x:66:Concat:" type="V_WString" />
+                <Field name="67" size="2048" source="CrossTab:Header:x:67:Concat:" type="V_WString" />
+                <Field name="68" size="2048" source="CrossTab:Header:x:68:Concat:" type="V_WString" />
+                <Field name="69" size="2048" source="CrossTab:Header:x:69:Concat:" type="V_WString" />
+                <Field name="70" size="2048" source="CrossTab:Header:x:70:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="AoC\CheckOnMap.yxmc" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1842" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_7276_3c82408d65624588933d5d142e940862_\Engine_7276_7b453c3e183ced4692cef2bce5d91cc6~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output72" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="4" Connection="Right" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="False" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="3" Connection="Input69" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="26" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="22" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output9" />
+      <Destination ToolID="22" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="27" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output9" />
+      <Destination ToolID="27" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="False" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="True" />
+      <Destination ToolID="21" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input4" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="True" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="False" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output1" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>A_star._for_2024D16P1yxmc</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="48b18e20-5197-4b03-98b6-47437e1e1fb5" />
+      <Telemetry>
+        <PreviousWorkflowId value="58f7d9a7-f30d-4b07-8546-f9907b759411" />
+        <OriginWorkflowId value="20bd5b50-a949-4164-b1ef-55cfa437e835" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (14)</Name>
+              <ToolId value="14" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (15)</Name>
+              <ToolId value="15" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (33)</Name>
+              <ToolId value="33" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="100000" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="14" Selected="True" />
+        <Tool ToolId="15" Selected="True" />
+        <Tool ToolId="18" Selected="True" />
+        <Tool ToolId="21" Selected="True" />
+        <Tool ToolId="26" Selected="True" />
+        <Tool ToolId="33" Selected="True" />
+        <Tool ToolId="24" Selected="True" />
+        <Tool ToolId="25" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
