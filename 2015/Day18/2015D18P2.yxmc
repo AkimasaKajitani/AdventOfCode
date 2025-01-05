@@ -1,0 +1,949 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="162" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="36" />
+              <Fields>
+                <Field name="x" />
+                <Field name="y" />
+                <Field name="Input" />
+                <Field name="Min_x" />
+                <Field name="Min_y" />
+                <Field name="Max_x" />
+                <Field name="Max_y" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>1</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>1</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>2</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>2</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>2</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>3</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>3</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>3</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>4</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>4</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>4</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>4</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>4</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>5</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>5</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>5</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>5</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>5</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>5</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>6</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>6</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>6</c>
+                  <c>#</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>6</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>6</c>
+                  <c>.</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Min_x" source="TextInput:" type="Int32" />
+            <Field name="Min_y" source="TextInput:" type="Int32" />
+            <Field name="Max_x" source="TextInput:" type="Int32" />
+            <Field name="Max_y" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings>
+        <Position x="294" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.Input69"><![CDATA[x=x
+y=y
+value=Input
+]]></Value>
+          <Value name="Radio Button (77)">False</Value>
+          <Value name="Radio Button (79)">True</Value>
+          <Value name="Radio Button (84)">False</Value>
+          <Value name="Check Box (75)">False</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output72">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="value" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Min_x" source="TextInput:" type="Int32" />
+            <Field name="Min_y" source="TextInput:" type="Int32" />
+            <Field name="Max_x" source="TextInput:" type="Int32" />
+            <Field name="Max_y" source="TextInput:" type="Int32" />
+            <Field name="x_1" source="GenerateRows" type="Int32" />
+            <Field name="y_1" source="GenerateRows" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="AoC\CreatePoints.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="390" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="x_1" />
+            <Field field="y_1" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="x" />
+            <Field field="y" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_x" selected="False" rename="Right_x" input="Right_" />
+                <SelectField field="Right_y" selected="False" rename="Right_y" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="value" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Min_x" source="TextInput:" type="Int32" />
+            <Field name="Min_y" source="TextInput:" type="Int32" />
+            <Field name="Max_x" source="TextInput:" type="Int32" />
+            <Field name="Max_y" source="TextInput:" type="Int32" />
+            <Field name="x_1" source="GenerateRows" type="Int32" />
+            <Field name="y_1" source="GenerateRows" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="value" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Min_x" source="TextInput:" type="Int32" />
+            <Field name="Min_y" source="TextInput:" type="Int32" />
+            <Field name="Max_x" source="TextInput:" type="Int32" />
+            <Field name="Max_y" source="TextInput:" type="Int32" />
+            <Field name="x_1" source="GenerateRows" type="Int32" />
+            <Field name="y_1" source="GenerateRows" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Min_x" source="TextInput:" type="Int32" />
+            <Field name="Right_Min_y" source="TextInput:" type="Int32" />
+            <Field name="Right_Max_x" source="TextInput:" type="Int32" />
+            <Field name="Right_Max_y" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Min_x" source="TextInput:" type="Int32" />
+            <Field name="Min_y" source="TextInput:" type="Int32" />
+            <Field name="Max_x" source="TextInput:" type="Int32" />
+            <Field name="Max_y" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="582" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="x" />
+            <Field field="y" />
+            <Field field="value" />
+            <Field field="Min_x" />
+            <Field field="Min_y" />
+            <Field field="Max_x" />
+            <Field field="Max_y" />
+          </GroupFields>
+          <HeaderField field="Input" />
+          <DataField field="number" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+          <RetainSpecChars value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="y" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="value" size="2147483647" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="Min_x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Min_y" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Max_x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Max_y" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="#" source="CrossTab:Header:Input:#:Sum:" type="Int64" />
+            <Field name="." source="CrossTab:Header:Input:.:Sum:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="486" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="1" field="number" size="8" type="Int64" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[number = 1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="value" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Min_x" source="TextInput:" type="Int32" />
+            <Field name="Min_y" source="TextInput:" type="Int32" />
+            <Field name="Max_x" source="TextInput:" type="Int32" />
+            <Field name="Max_y" source="TextInput:" type="Int32" />
+            <Field name="x_1" source="GenerateRows" type="Int32" />
+            <Field name="y_1" source="GenerateRows" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Right_Min_x" source="TextInput:" type="Int32" />
+            <Field name="Right_Min_y" source="TextInput:" type="Int32" />
+            <Field name="Right_Max_x" source="TextInput:" type="Int32" />
+            <Field name="Right_Max_y" source="TextInput:" type="Int32" />
+            <Field name="number" source="Formula: 1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="678" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF ([x]=[Min_x] AND [y]=[Min_y]) OR&#xA;   ([x]=[Min_x] AND [y]=[Max_y]) OR&#xA;   ([x]=[Max_x] AND [y]=[Min_y]) OR&#xA;   ([x]=[Max_x] AND [y]=[Max_y]) THEN &quot;#&quot;&#xA;ELSE&#xA; IF [value]=&quot;#&quot; THEN &#xA;  IF [#] IN (2,3) THEN &quot;#&quot; ELSE &quot;.&quot; ENDIF&#xA; ELSE&#xA;  IF [#] = 3 THEN &quot;#&quot; ELSE &quot;.&quot; ENDIF&#xA; ENDIF&#xA;ENDIF" field="value" size="2147483647" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>value = IF ([x]=[Min_x] AND [y]=[Min_y]) OR
+   ([x]=[Min_x] AND [y]=[Max_y]) OR
+...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="y" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="value" size="2147483647" source="Formula: IF ([x]=[Min_x] AND [y]=[Min_y]) OR&#xA;   ([x]=[Min_x] AND [y]=[Max_y]) OR&#xA;   ([x]=[Max_x] AND [y]=[Min_y]) OR&#xA;   ([x]=[Max_x] AND [y]=[Max_y]) THEN &quot;#&quot;&#xA;ELSE&#xA; IF [value]=&quot;#&quot; THEN &#xA;  IF [#] IN (2,3) THEN &quot;#&quot; ELSE &quot;.&quot; ENDIF&#xA; ELSE&#xA;  IF [#] = 3 THEN &quot;#&quot; ELSE &quot;.&quot; ENDIF&#xA; ENDIF&#xA;ENDIF" type="V_String" />
+            <Field name="Min_x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Min_y" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Max_x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Max_y" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="#" source="CrossTab:Header:Input:#:Sum:" type="Int64" />
+            <Field name="." source="CrossTab:Header:Input:.:Sum:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="966" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="774" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Engine.IterationNumber]&lt;4-1</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Engine.IterationNumber]&lt;4-1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="y" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="value" size="2147483647" source="Formula: IF [value]=&quot;#&quot; THEN &#xA; IF [#] IN (2,3) THEN &quot;#&quot; ELSE &quot;.&quot; ENDIF&#xA;ELSE&#xA; IF [#] = 3 THEN &quot;#&quot; ELSE &quot;.&quot; ENDIF&#xA;ENDIF" type="V_String" />
+            <Field name="Min_x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Min_y" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Max_x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Max_y" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="#" source="CrossTab:Header:Input:#:Sum:" type="Int64" />
+            <Field name="." source="CrossTab:Header:Input:.:Sum:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="y" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="value" size="2147483647" source="Formula: IF [value]=&quot;#&quot; THEN &#xA; IF [#] IN (2,3) THEN &quot;#&quot; ELSE &quot;.&quot; ENDIF&#xA;ELSE&#xA; IF [#] = 3 THEN &quot;#&quot; ELSE &quot;.&quot; ENDIF&#xA;ENDIF" type="V_String" />
+            <Field name="Min_x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Min_y" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Max_x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Max_y" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="#" source="CrossTab:Header:Input:#:Sum:" type="Int64" />
+            <Field name="." source="CrossTab:Header:Input:.:Sum:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="966" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output10</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+        <Position x="774" y="30" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Numeric Up Down (11)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="774" y="126" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="870" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="x" selected="True" />
+            <SelectField field="y" selected="True" />
+            <SelectField field="value" selected="True" rename="Input" />
+            <SelectField field="Min_x" selected="True" />
+            <SelectField field="Min_y" selected="True" />
+            <SelectField field="Max_x" selected="True" />
+            <SelectField field="Max_y" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="y" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Input" size="2147483647" source="Formula: IF [value]=&quot;#&quot; THEN &#xA; IF [#] IN (2,3) THEN &quot;#&quot; ELSE &quot;.&quot; ENDIF&#xA;ELSE&#xA; IF [#] = 3 THEN &quot;#&quot; ELSE &quot;.&quot; ENDIF&#xA;ENDIF" type="V_String" />
+            <Field name="Min_x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Min_y" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Max_x" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="Max_y" source="CrossTab:Group:Sum:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input69" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output72" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="12" Connection="Action" />
+      <Destination ToolID="9" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="False" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="11" Connection="Question" />
+      <Destination ToolID="12" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Numeric Up Down (11)</Name>
+        <Value />
+        <IsNumeric value="True" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2015D18P2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="8bee5f6a-e156-4094-8293-1aa37982bc51" />
+      <Telemetry>
+        <PreviousWorkflowId value="7ff64451-6dac-4397-bc7d-7456925cab58" />
+        <OriginWorkflowId value="3f5afc59-e99b-48db-9ab0-9a56559bbbab" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="12" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>4</ReplaceText>
+              <Destination>9/Expression</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (8)</Name>
+              <ToolId value="8" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (10)</Description>
+              <Name>Macro Output (10)</Name>
+              <ToolId value="10" />
+            </Question>
+            <Question>
+              <Type>NumericUpDown</Type>
+              <Description>Iterative Number</Description>
+              <Name>Numeric Up Down (11)</Name>
+              <ToolId value="11" />
+              <Minimum value="0" />
+              <Maximum value="100" />
+              <Increment value="1" />
+              <Default value="4" />
+              <Decimals value="0" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Ignore</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="8" Selected="False" />
+        <Tool ToolId="10" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
