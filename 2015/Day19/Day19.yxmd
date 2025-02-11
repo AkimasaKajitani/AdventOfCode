@@ -10,8 +10,8 @@
           <Value name="数値増減 (12)">2015</Value>
           <Value name="数値増減 (8)">19</Value>
           <Value name="テキストボックス (17)">43BB6D43C9F959853CBDB0506E27A55D05AEFD85E7D65684FB37B9F2B5CFAD22A780DEF5AB447C8C329A009AF2935E335437AEE9C6DCFEB59AAF2D10C94AFC1E9CC274F5BDE1BD5EA065AFAA4F84DB93F1B60BF6CA75AED053DF3137053A9C1207F459CC6445DFC17C8744360C678484528D7C29749A5A0C1F76214AF87D35BD79087F608C1424FF955D8814FF6723A69643FA00E5414FF28EF1B5A5CC8AC31FB749961B1B28F6288E57CF1909B590BFCCFB24F20BC0D55C0F1198D2453590E851D8D83C4DB99F59D54674452CBFC13DE1B38A2095979C3AD0B216843C32B294B11470354F56B8027AF43C9FBFB670A5E8B40AB3F101B3E351C8B615D80560AA5E3B57E5DC9D3827B737CA1DA125D27F491EE71D49D9F0619B6D44C9B7882CFDF76650A79E9198737689BCDCD0906137FB8E55591D6C614B02A06A3271CCFD2F70F2473029A2C487342114C900451F9824B4948AB2D14D4CB272600EB9264D1BA045D74644BACCBEDCD8EDEE130F20E325A3D843C81069B9A9D58B48244B591A818E66C75FD68715EFA3FD278DFFD7C58BB6210D52EA9CCE06078D4EA32DD656B05CBDB1D6BB08106416C6D716C3BBC2548AAFDCCE4897A8AF82EB8469761B93D5ED6645065D1DD6957EF9A63EBD6CCAEA2AC06D7934EC2245E0096199BA4894BB81179CB461D391FE0A4A8CBAD5BD06FD36C98EADCB25C227EFD7732087C39E1EE85C4BD692A406D0290DCAB1E3D585756B1B3B1110D04894847B37B5C648B61DA490D4BA7AE562AD668FD2030693E68FA9A89F1EB1173D482CBE3040B00DAF77082F7E19A77175356BDB74D72214D5A2D5C630B3DA4A93FF2B62189121AFAFD4134731B6065D0F2831DA8BE7924CEB8C0F8CD161E6E0F0B8E985833CE218C0796EEBC0375D3E4E5EEF642AE80A02E35545D832D042CF45033DBFF76864D1C21BF21AD426C14DC8D3F597C3A3F4A359B0DE6EC888C23285F0805D2FEE0169A94CA5507253D370C521225AEE12534850D6980D96237FD908E2BE97C7117D7393C3FC43083C37A089D52A7550D897F847CBC507F36A243B2DC13E16A0CFEB1A48E85B7815194CD5A5D97DB1715E133C381F07BB89421D5DB5400A9895487F5B4DB3EE47BE89E3648E87450BEFCEE8D24F9369C7572431FAF5D3A8338345F3D69D7E73DA1889F7AD7A95810C13B027FAAD0FA652800BF33DA85590ECC792EDBAFBE6A5B967FB3CDCD0E229621ACFADA0F3FA68E9551414D63EECF28DCCAA9779BF66A103596F6DC2DFA42DED5B276FA9CEB42CA0D418F57A7A1F7E18BD9C3EB2B9A00491DDC03651FCD8254EDF5C7B40C35637E6999E54A442C1EE6566FFA12086DF3B1DE27ED8060364EF84D8BE8E9BED039892482A007CAADDD587A5230225184FE387C047F748A982D1D7FEB712CD7D32952719362EED1368E0B70F649783209BA52F95C965F4AC9C0B7937546AAE7FFCB3D42F5460A</Value>
-          <Value name="Radio Button (47)">True</Value>
-          <Value name="Radio Button (46)">False</Value>
+          <Value name="Radio Button (47)">False</Value>
+          <Value name="Radio Button (46)">True</Value>
           <Value name="チェックボックス (22)">False</Value>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -19,6 +19,9 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings Macro=".\AdventOfCodeInput.yxmc" />
     </Node>
@@ -365,6 +368,9 @@
           <DefaultAnnotationText>P1temp.yxdb</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
@@ -441,6 +447,9 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings Macro="2015D19P2_Find_e.yxmc" />
     </Node>
@@ -516,6 +525,9 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output16">
           <RecordInfo>
             <Field name="RowCount" source="Summarize: GroupBy - RowCount (BatchMacro)" type="Int32" />
@@ -583,6 +595,9 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings Macro="CountRecords.yxmc" />
     </Node>
@@ -639,18 +654,48 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="C:\MyDoc\AYX\AdventOfCode\2015\Day19\P1temp.yxdb" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
       </Properties>
       <EngineSettings Macro="2015D19P1_divider.yxmc" />
+    </Node>
+    <Node ToolID="279">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\MyDoc\AYX\AdventOfCode\2015\Day19\2015_19_input.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2015_19_input.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NotUseCache" source="File: C:\MyDoc\AYX\AdventOfCode\2015\Day19\2015_19_input.yxdb" type="Bool" />
+            <Field name="CachePath" size="1073741823" source="File: C:\MyDoc\AYX\AdventOfCode\2015\Day19\2015_19_input.yxdb" type="V_WString" />
+            <Field name="IsCache" source="File: C:\MyDoc\AYX\AdventOfCode\2015\Day19\2015_19_input.yxdb" type="Bool" />
+            <Field name="Input" size="1073741823" source="File: C:\MyDoc\AYX\AdventOfCode\2015\Day19\2015_19_input.yxdb" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
     </Node>
   </Nodes>
   <Connections>
     <Connection>
       <Origin ToolID="188" Connection="Output15" />
       <Destination ToolID="190" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="189" Connection="Output" />
-      <Destination ToolID="188" Connection="Input30" />
     </Connection>
     <Connection>
       <Origin ToolID="190" Connection="Output" />
@@ -759,6 +804,10 @@
     <Connection>
       <Origin ToolID="255" Connection="True" />
       <Destination ToolID="251" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="279" Connection="Output" />
+      <Destination ToolID="188" Connection="Input30" />
     </Connection>
   </Connections>
   <Properties>
