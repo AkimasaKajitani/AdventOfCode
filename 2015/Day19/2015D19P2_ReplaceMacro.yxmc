@@ -1,0 +1,759 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Input" />
+                <Field name="Count" />
+                <Field name="ReplaceNumber" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>CRnCaCaCaSiRnBPTiMgArSiRnSiRnMgArSiRnCaFArTiTiBSiThFYCaFArCaCaSiThCaPBSiThSiThCaCaPTiRnPBSiThRnFArArCaCaSiThCaSiThSiRnMgArCaPTiBPRnFArSiThCaSiRnFArBCaSiRnCaPRnFArPMgYCaFArCaPTiTiTiBPBSiThCaPTiBPBSiRnFArBPBSiRnCaFArBPRnSiRnFArRnSiRnBFArCaFArCaCaCaSiThSiT...</c>
+                  <c>0</c>
+                  <c>43</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+            <Field name="ReplaceNumber" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input3</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="43" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="Source" />
+                <Field name="Target" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>Al</c>
+                  <c>ThF</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>Al</c>
+                  <c>ThRnFAr</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>B</c>
+                  <c>BCa</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>B</c>
+                  <c>TiB</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>B</c>
+                  <c>TiRnFAr</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>Ca</c>
+                  <c>CaCa</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>Ca</c>
+                  <c>PB</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>Ca</c>
+                  <c>PRnFAr</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>Ca</c>
+                  <c>SiRnFYFAr</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>Ca</c>
+                  <c>SiRnMgAr</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>Ca</c>
+                  <c>SiTh</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>F</c>
+                  <c>CaF</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>F</c>
+                  <c>PMg</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>F</c>
+                  <c>SiAl</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>H</c>
+                  <c>CRnAlAr</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>H</c>
+                  <c>CRnFYFYFAr</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>H</c>
+                  <c>CRnFYMgAr</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>H</c>
+                  <c>CRnMgYFAr</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>H</c>
+                  <c>HCa</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>H</c>
+                  <c>NRnFYFAr</c>
+                </r>
+                <r>
+                  <c>21</c>
+                  <c>H</c>
+                  <c>NRnMgAr</c>
+                </r>
+                <r>
+                  <c>22</c>
+                  <c>H</c>
+                  <c>NTh</c>
+                </r>
+                <r>
+                  <c>23</c>
+                  <c>H</c>
+                  <c>OB</c>
+                </r>
+                <r>
+                  <c>24</c>
+                  <c>H</c>
+                  <c>ORnFAr</c>
+                </r>
+                <r>
+                  <c>25</c>
+                  <c>Mg</c>
+                  <c>BF</c>
+                </r>
+                <r>
+                  <c>26</c>
+                  <c>Mg</c>
+                  <c>TiMg</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>N</c>
+                  <c>CRnFAr</c>
+                </r>
+                <r>
+                  <c>28</c>
+                  <c>N</c>
+                  <c>HSi</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>O</c>
+                  <c>CRnFYFAr</c>
+                </r>
+                <r>
+                  <c>30</c>
+                  <c>O</c>
+                  <c>CRnMgAr</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>O</c>
+                  <c>HP</c>
+                </r>
+                <r>
+                  <c>32</c>
+                  <c>O</c>
+                  <c>NRnFAr</c>
+                </r>
+                <r>
+                  <c>33</c>
+                  <c>O</c>
+                  <c>OTi</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>P</c>
+                  <c>CaP</c>
+                </r>
+                <r>
+                  <c>35</c>
+                  <c>P</c>
+                  <c>PTi</c>
+                </r>
+                <r>
+                  <c>36</c>
+                  <c>P</c>
+                  <c>SiRnFAr</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>Si</c>
+                  <c>CaSi</c>
+                </r>
+                <r>
+                  <c>38</c>
+                  <c>Th</c>
+                  <c>ThCa</c>
+                </r>
+                <r>
+                  <c>39</c>
+                  <c>Ti</c>
+                  <c>BP</c>
+                </r>
+                <r>
+                  <c>40</c>
+                  <c>Ti</c>
+                  <c>TiTi</c>
+                </r>
+                <r>
+                  <c>41</c>
+                  <c>e</c>
+                  <c>HF</c>
+                </r>
+                <r>
+                  <c>42</c>
+                  <c>e</c>
+                  <c>NAl</c>
+                </r>
+                <r>
+                  <c>43</c>
+                  <c>e</c>
+                  <c>OMg</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="Source" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Target" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="282" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Count" source="TextInput:" type="Int32" />
+            <Field name="ReplaceNumber" source="TextInput:" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="Source" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Target" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="174" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[RecordID] = [Engine.IterationNumber]+1</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RecordID] = [Engine.IterationNumber]+1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="Source" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Target" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="Source" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Target" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="378" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Contains([Input], [Target],0)" field="IsContain" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="IF [IsContain] THEN [Count]+1&#xA;ELSE [Count] ENDIF" field="Count" size="4" type="Int32" enabled="true" />
+            <FormulaField expression="IF [IsContain] THEN ReplaceFirst([Input], [Target], [Source])&#xA;ELSE [Input] ENDIF" field="Input" size="2147483647" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IsContain = Contains([Input], [Target],0)
+Count = IF [IsContain] THEN [Count]+1
+...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Input" size="2147483647" source="Formula: IF [IsContain] THEN ReplaceFirst([Input], [Target], [Source])&#xA;ELSE [Input] ENDIF" type="V_String" />
+            <Field name="Count" source="Formula: IF [IsContain] THEN [Count]+1&#xA;ELSE [Count] ENDIF" type="Int32" />
+            <Field name="ReplaceNumber" source="TextInput:" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="Source" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Target" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="IsContain" source="Formula: Contains([Input], [Target],0)" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="666" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="474" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Input" selected="True" />
+            <SelectField field="Count" selected="True" />
+            <SelectField field="ReplaceNumber" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Input" size="2147483647" source="Formula: IF [IsContain] THEN ReplaceFirst([Input], [Target], [Source])&#xA;ELSE [Input] ENDIF" type="V_String" />
+            <Field name="Count" source="Formula: IF [IsContain] THEN [Count]+1&#xA;ELSE [Count] ENDIF" type="Int32" />
+            <Field name="ReplaceNumber" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="570" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!([Input] = "e" OR [Engine.IterationNumber]=43)</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!([Input] = "e" OR [Engine.IterationNumber]=43)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Input" size="2147483647" source="Formula: IF [IsContain] THEN ReplaceFirst([Input], [Target], [Source])&#xA;ELSE [Input] ENDIF" type="V_String" />
+            <Field name="Count" source="Formula: IF [IsContain] THEN [Count]+1&#xA;ELSE [Count] ENDIF" type="Int32" />
+            <Field name="ReplaceNumber" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Input" size="2147483647" source="Formula: IF [IsContain] THEN ReplaceFirst([Input], [Target], [Source])&#xA;ELSE [Input] ENDIF" type="V_String" />
+            <Field name="Count" source="Formula: IF [IsContain] THEN [Count]+1&#xA;ELSE [Count] ENDIF" type="Int32" />
+            <Field name="ReplaceNumber" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="474" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsTrue</Operator>
+            <Field>IsContain</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2025-02-11 17:39:51</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2025-02-11 17:39:51</StartDate>
+              <EndDate>2025-02-11 17:39:51</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[IsContain] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Input" size="2147483647" source="Formula: IF [IsContain] THEN ReplaceFirst([Input], [Target], [Source])&#xA;ELSE [Input] ENDIF" type="V_String" />
+            <Field name="Count" source="Formula: IF [IsContain] THEN [Count]+1&#xA;ELSE [Count] ENDIF" type="Int32" />
+            <Field name="ReplaceNumber" source="TextInput:" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="Source" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Target" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="IsContain" source="Formula: Contains([Input], [Target],0)" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Input" size="2147483647" source="Formula: IF [IsContain] THEN ReplaceFirst([Input], [Target], [Source])&#xA;ELSE [Input] ENDIF" type="V_String" />
+            <Field name="Count" source="Formula: IF [IsContain] THEN [Count]+1&#xA;ELSE [Count] ENDIF" type="Int32" />
+            <Field name="ReplaceNumber" source="TextInput:" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="Source" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Target" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="IsContain" source="Formula: Contains([Input], [Target],0)" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="570" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output11</Name>
+          <Abbrev>A</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="666" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputLoop</Name>
+          <Abbrev>L</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="4" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="False" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (11)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (12)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2015D19P2_ReplaceMacro</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="1ae89131-0892-4735-84f2-9637572f7979" />
+      <Telemetry>
+        <PreviousWorkflowId value="36f5367b-68ce-46c6-a40e-bf7f450ce01b" />
+        <OriginWorkflowId value="36f5367b-68ce-46c6-a40e-bf7f450ce01b" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (7)</Name>
+              <ToolId value="7" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (11)</Description>
+              <Name>Macro Output (11)</Name>
+              <ToolId value="11" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (12)</Description>
+              <Name>Macro Output (12)</Name>
+              <ToolId value="12" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="1000" />
+        <LimitBehavior>Ignore</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="7" Selected="True" />
+        <Tool ToolId="11" Selected="True" />
+        <Tool ToolId="12" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
