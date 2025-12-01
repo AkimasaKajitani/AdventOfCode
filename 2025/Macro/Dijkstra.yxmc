@@ -1,0 +1,2863 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="786" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Result</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+            <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+            <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="150" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>InputN</Name>
+          <Abbrev>N</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\MyDoc\AYX\AdventOfCode\2021\2021_16_temp.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2021_16_temp.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+            <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+            <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1662" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="19">C:\MyDoc\AYX\AdventOfCode\2021\2021_16_temp.yxdb</File>
+          <Passwords />
+          <Disable>True</Disable>
+          <FormatSpecificOptions>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <SuppressBlankFile>False</SuppressBlankFile>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2021_16_temp.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="150" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input16</Name>
+          <Abbrev>E</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="360" />
+              <Fields>
+                <Field name="From" />
+                <Field name="To" />
+                <Field name="value" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>2-1</c>
+                  <c>1-1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1-2</c>
+                  <c>1-1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1-1</c>
+                  <c>1-2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2-2</c>
+                  <c>1-2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1-3</c>
+                  <c>1-2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1-2</c>
+                  <c>1-3</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2-3</c>
+                  <c>1-3</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1-4</c>
+                  <c>1-3</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1-3</c>
+                  <c>1-4</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2-4</c>
+                  <c>1-4</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1-5</c>
+                  <c>1-4</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1-4</c>
+                  <c>1-5</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>2-5</c>
+                  <c>1-5</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>1-6</c>
+                  <c>1-5</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>1-5</c>
+                  <c>1-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2-6</c>
+                  <c>1-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1-7</c>
+                  <c>1-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1-6</c>
+                  <c>1-7</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2-7</c>
+                  <c>1-7</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1-8</c>
+                  <c>1-7</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1-7</c>
+                  <c>1-8</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2-8</c>
+                  <c>1-8</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1-9</c>
+                  <c>1-8</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1-8</c>
+                  <c>1-9</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2-9</c>
+                  <c>1-9</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1-10</c>
+                  <c>1-9</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1-9</c>
+                  <c>1-10</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2-10</c>
+                  <c>1-10</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1-1</c>
+                  <c>2-1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3-1</c>
+                  <c>2-1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2-2</c>
+                  <c>2-1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2-1</c>
+                  <c>2-2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1-2</c>
+                  <c>2-2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3-2</c>
+                  <c>2-2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2-3</c>
+                  <c>2-2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2-2</c>
+                  <c>2-3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1-3</c>
+                  <c>2-3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3-3</c>
+                  <c>2-3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2-4</c>
+                  <c>2-3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2-3</c>
+                  <c>2-4</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>1-4</c>
+                  <c>2-4</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3-4</c>
+                  <c>2-4</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>2-5</c>
+                  <c>2-4</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>2-4</c>
+                  <c>2-5</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>1-5</c>
+                  <c>2-5</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>3-5</c>
+                  <c>2-5</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>2-6</c>
+                  <c>2-5</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>2-5</c>
+                  <c>2-6</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1-6</c>
+                  <c>2-6</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3-6</c>
+                  <c>2-6</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2-7</c>
+                  <c>2-6</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2-6</c>
+                  <c>2-7</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1-7</c>
+                  <c>2-7</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3-7</c>
+                  <c>2-7</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2-8</c>
+                  <c>2-7</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2-7</c>
+                  <c>2-8</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1-8</c>
+                  <c>2-8</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3-8</c>
+                  <c>2-8</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2-9</c>
+                  <c>2-8</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2-8</c>
+                  <c>2-9</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1-9</c>
+                  <c>2-9</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>3-9</c>
+                  <c>2-9</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2-10</c>
+                  <c>2-9</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2-9</c>
+                  <c>2-10</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1-10</c>
+                  <c>2-10</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3-10</c>
+                  <c>2-10</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2-1</c>
+                  <c>3-1</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4-1</c>
+                  <c>3-1</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3-2</c>
+                  <c>3-1</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3-1</c>
+                  <c>3-2</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>2-2</c>
+                  <c>3-2</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>4-2</c>
+                  <c>3-2</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>3-3</c>
+                  <c>3-2</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>3-2</c>
+                  <c>3-3</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2-3</c>
+                  <c>3-3</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>4-3</c>
+                  <c>3-3</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3-4</c>
+                  <c>3-3</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3-3</c>
+                  <c>3-4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>2-4</c>
+                  <c>3-4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>4-4</c>
+                  <c>3-4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>3-5</c>
+                  <c>3-4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>3-4</c>
+                  <c>3-5</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>2-5</c>
+                  <c>3-5</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4-5</c>
+                  <c>3-5</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3-6</c>
+                  <c>3-5</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3-5</c>
+                  <c>3-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2-6</c>
+                  <c>3-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>4-6</c>
+                  <c>3-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3-7</c>
+                  <c>3-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3-6</c>
+                  <c>3-7</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>2-7</c>
+                  <c>3-7</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>4-7</c>
+                  <c>3-7</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>3-8</c>
+                  <c>3-7</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>3-7</c>
+                  <c>3-8</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2-8</c>
+                  <c>3-8</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>4-8</c>
+                  <c>3-8</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>3-9</c>
+                  <c>3-8</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>3-8</c>
+                  <c>3-9</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>2-9</c>
+                  <c>3-9</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>4-9</c>
+                  <c>3-9</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>3-10</c>
+                  <c>3-9</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>3-9</c>
+                  <c>3-10</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2-10</c>
+                  <c>3-10</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>4-10</c>
+                  <c>3-10</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3-1</c>
+                  <c>4-1</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>5-1</c>
+                  <c>4-1</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>4-2</c>
+                  <c>4-1</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>4-1</c>
+                  <c>4-2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3-2</c>
+                  <c>4-2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>5-2</c>
+                  <c>4-2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>4-3</c>
+                  <c>4-2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>4-2</c>
+                  <c>4-3</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3-3</c>
+                  <c>4-3</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>5-3</c>
+                  <c>4-3</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4-4</c>
+                  <c>4-3</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4-3</c>
+                  <c>4-4</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>3-4</c>
+                  <c>4-4</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>5-4</c>
+                  <c>4-4</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>4-5</c>
+                  <c>4-4</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>4-4</c>
+                  <c>4-5</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3-5</c>
+                  <c>4-5</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>5-5</c>
+                  <c>4-5</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>4-6</c>
+                  <c>4-5</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>4-5</c>
+                  <c>4-6</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>3-6</c>
+                  <c>4-6</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>5-6</c>
+                  <c>4-6</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>4-7</c>
+                  <c>4-6</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>4-6</c>
+                  <c>4-7</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>3-7</c>
+                  <c>4-7</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>5-7</c>
+                  <c>4-7</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>4-8</c>
+                  <c>4-7</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>4-7</c>
+                  <c>4-8</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>3-8</c>
+                  <c>4-8</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>5-8</c>
+                  <c>4-8</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>4-9</c>
+                  <c>4-8</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>4-8</c>
+                  <c>4-9</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3-9</c>
+                  <c>4-9</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>5-9</c>
+                  <c>4-9</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>4-10</c>
+                  <c>4-9</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>4-9</c>
+                  <c>4-10</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3-10</c>
+                  <c>4-10</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>5-10</c>
+                  <c>4-10</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>4-1</c>
+                  <c>5-1</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>6-1</c>
+                  <c>5-1</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>5-2</c>
+                  <c>5-1</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>5-1</c>
+                  <c>5-2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>4-2</c>
+                  <c>5-2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>6-2</c>
+                  <c>5-2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>5-3</c>
+                  <c>5-2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>5-2</c>
+                  <c>5-3</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>4-3</c>
+                  <c>5-3</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>6-3</c>
+                  <c>5-3</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>5-4</c>
+                  <c>5-3</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>5-3</c>
+                  <c>5-4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>4-4</c>
+                  <c>5-4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>6-4</c>
+                  <c>5-4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>5-5</c>
+                  <c>5-4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>5-4</c>
+                  <c>5-5</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>4-5</c>
+                  <c>5-5</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>6-5</c>
+                  <c>5-5</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>5-6</c>
+                  <c>5-5</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>5-5</c>
+                  <c>5-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>4-6</c>
+                  <c>5-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>6-6</c>
+                  <c>5-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>5-7</c>
+                  <c>5-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>5-6</c>
+                  <c>5-7</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>4-7</c>
+                  <c>5-7</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>6-7</c>
+                  <c>5-7</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>5-8</c>
+                  <c>5-7</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>5-7</c>
+                  <c>5-8</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>4-8</c>
+                  <c>5-8</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>6-8</c>
+                  <c>5-8</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>5-9</c>
+                  <c>5-8</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>5-8</c>
+                  <c>5-9</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>4-9</c>
+                  <c>5-9</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>6-9</c>
+                  <c>5-9</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>5-10</c>
+                  <c>5-9</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>5-9</c>
+                  <c>5-10</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>4-10</c>
+                  <c>5-10</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>6-10</c>
+                  <c>5-10</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>5-1</c>
+                  <c>6-1</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>7-1</c>
+                  <c>6-1</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>6-2</c>
+                  <c>6-1</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>6-1</c>
+                  <c>6-2</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>5-2</c>
+                  <c>6-2</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>7-2</c>
+                  <c>6-2</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>6-3</c>
+                  <c>6-2</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>6-2</c>
+                  <c>6-3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>5-3</c>
+                  <c>6-3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7-3</c>
+                  <c>6-3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>6-4</c>
+                  <c>6-3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>6-3</c>
+                  <c>6-4</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>5-4</c>
+                  <c>6-4</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>7-4</c>
+                  <c>6-4</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>6-5</c>
+                  <c>6-4</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>6-4</c>
+                  <c>6-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>5-5</c>
+                  <c>6-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7-5</c>
+                  <c>6-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>6-6</c>
+                  <c>6-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>6-5</c>
+                  <c>6-6</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>5-6</c>
+                  <c>6-6</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>7-6</c>
+                  <c>6-6</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>6-7</c>
+                  <c>6-6</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>6-6</c>
+                  <c>6-7</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>5-7</c>
+                  <c>6-7</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7-7</c>
+                  <c>6-7</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>6-8</c>
+                  <c>6-7</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>6-7</c>
+                  <c>6-8</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>5-8</c>
+                  <c>6-8</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>7-8</c>
+                  <c>6-8</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>6-9</c>
+                  <c>6-8</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>6-8</c>
+                  <c>6-9</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>5-9</c>
+                  <c>6-9</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>7-9</c>
+                  <c>6-9</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>6-10</c>
+                  <c>6-9</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>6-9</c>
+                  <c>6-10</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>5-10</c>
+                  <c>6-10</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>7-10</c>
+                  <c>6-10</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>6-1</c>
+                  <c>7-1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>8-1</c>
+                  <c>7-1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7-2</c>
+                  <c>7-1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7-1</c>
+                  <c>7-2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>6-2</c>
+                  <c>7-2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>8-2</c>
+                  <c>7-2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>7-3</c>
+                  <c>7-2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>7-2</c>
+                  <c>7-3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>6-3</c>
+                  <c>7-3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>8-3</c>
+                  <c>7-3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7-4</c>
+                  <c>7-3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7-3</c>
+                  <c>7-4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>6-4</c>
+                  <c>7-4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>8-4</c>
+                  <c>7-4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7-5</c>
+                  <c>7-4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7-4</c>
+                  <c>7-5</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>6-5</c>
+                  <c>7-5</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>8-5</c>
+                  <c>7-5</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>7-6</c>
+                  <c>7-5</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>7-5</c>
+                  <c>7-6</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>6-6</c>
+                  <c>7-6</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>8-6</c>
+                  <c>7-6</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>7-7</c>
+                  <c>7-6</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>7-6</c>
+                  <c>7-7</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>6-7</c>
+                  <c>7-7</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>8-7</c>
+                  <c>7-7</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>7-8</c>
+                  <c>7-7</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>7-7</c>
+                  <c>7-8</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>6-8</c>
+                  <c>7-8</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>8-8</c>
+                  <c>7-8</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7-9</c>
+                  <c>7-8</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7-8</c>
+                  <c>7-9</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>6-9</c>
+                  <c>7-9</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>8-9</c>
+                  <c>7-9</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>7-10</c>
+                  <c>7-9</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>7-9</c>
+                  <c>7-10</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>6-10</c>
+                  <c>7-10</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>8-10</c>
+                  <c>7-10</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>7-1</c>
+                  <c>8-1</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>9-1</c>
+                  <c>8-1</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>8-2</c>
+                  <c>8-1</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>8-1</c>
+                  <c>8-2</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>7-2</c>
+                  <c>8-2</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>9-2</c>
+                  <c>8-2</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>8-3</c>
+                  <c>8-2</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>8-2</c>
+                  <c>8-3</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>7-3</c>
+                  <c>8-3</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>9-3</c>
+                  <c>8-3</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>8-4</c>
+                  <c>8-3</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>8-3</c>
+                  <c>8-4</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>7-4</c>
+                  <c>8-4</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>9-4</c>
+                  <c>8-4</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>8-5</c>
+                  <c>8-4</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>8-4</c>
+                  <c>8-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7-5</c>
+                  <c>8-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>9-5</c>
+                  <c>8-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>8-6</c>
+                  <c>8-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>8-5</c>
+                  <c>8-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7-6</c>
+                  <c>8-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>9-6</c>
+                  <c>8-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>8-7</c>
+                  <c>8-6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>8-6</c>
+                  <c>8-7</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>7-7</c>
+                  <c>8-7</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>9-7</c>
+                  <c>8-7</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>8-8</c>
+                  <c>8-7</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>8-7</c>
+                  <c>8-8</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>7-8</c>
+                  <c>8-8</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>9-8</c>
+                  <c>8-8</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>8-9</c>
+                  <c>8-8</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>8-8</c>
+                  <c>8-9</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>7-9</c>
+                  <c>8-9</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>9-9</c>
+                  <c>8-9</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>8-10</c>
+                  <c>8-9</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>8-9</c>
+                  <c>8-10</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>7-10</c>
+                  <c>8-10</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>9-10</c>
+                  <c>8-10</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>8-1</c>
+                  <c>9-1</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>10-1</c>
+                  <c>9-1</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>9-2</c>
+                  <c>9-1</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>9-1</c>
+                  <c>9-2</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>8-2</c>
+                  <c>9-2</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>10-2</c>
+                  <c>9-2</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>9-3</c>
+                  <c>9-2</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>9-2</c>
+                  <c>9-3</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>8-3</c>
+                  <c>9-3</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>10-3</c>
+                  <c>9-3</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>9-4</c>
+                  <c>9-3</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>9-3</c>
+                  <c>9-4</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>8-4</c>
+                  <c>9-4</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>10-4</c>
+                  <c>9-4</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>9-5</c>
+                  <c>9-4</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>9-4</c>
+                  <c>9-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>8-5</c>
+                  <c>9-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>10-5</c>
+                  <c>9-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>9-6</c>
+                  <c>9-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>9-5</c>
+                  <c>9-6</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>8-6</c>
+                  <c>9-6</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>10-6</c>
+                  <c>9-6</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>9-7</c>
+                  <c>9-6</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>9-6</c>
+                  <c>9-7</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>8-7</c>
+                  <c>9-7</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>10-7</c>
+                  <c>9-7</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>9-8</c>
+                  <c>9-7</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>9-7</c>
+                  <c>9-8</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>8-8</c>
+                  <c>9-8</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>10-8</c>
+                  <c>9-8</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>9-9</c>
+                  <c>9-8</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>9-8</c>
+                  <c>9-9</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>8-9</c>
+                  <c>9-9</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>10-9</c>
+                  <c>9-9</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>9-10</c>
+                  <c>9-9</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>9-9</c>
+                  <c>9-10</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>8-10</c>
+                  <c>9-10</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>10-10</c>
+                  <c>9-10</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>9-1</c>
+                  <c>10-1</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>10-2</c>
+                  <c>10-1</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>10-1</c>
+                  <c>10-2</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>9-2</c>
+                  <c>10-2</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>10-3</c>
+                  <c>10-2</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>10-2</c>
+                  <c>10-3</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>9-3</c>
+                  <c>10-3</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>10-4</c>
+                  <c>10-3</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>10-3</c>
+                  <c>10-4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>9-4</c>
+                  <c>10-4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>10-5</c>
+                  <c>10-4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>10-4</c>
+                  <c>10-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>9-5</c>
+                  <c>10-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>10-6</c>
+                  <c>10-5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>10-5</c>
+                  <c>10-6</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>9-6</c>
+                  <c>10-6</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>10-7</c>
+                  <c>10-6</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>10-6</c>
+                  <c>10-7</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>9-7</c>
+                  <c>10-7</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>10-8</c>
+                  <c>10-7</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>10-7</c>
+                  <c>10-8</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>9-8</c>
+                  <c>10-8</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>10-9</c>
+                  <c>10-8</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>10-8</c>
+                  <c>10-9</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>9-9</c>
+                  <c>10-9</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>10-10</c>
+                  <c>10-9</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>10-9</c>
+                  <c>10-10</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>9-10</c>
+                  <c>10-10</c>
+                  <c>1</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="To" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="value" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1662" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="894" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output20</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="272" y="272" width="463" height="155" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Confirm the min distance point</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Confirm the min distance point</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="378" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="distance" action="Min" rename="Min_distance" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Min distance</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Min_distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="474" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="distance" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Min_distance" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_NodeID" selected="True" input="Left_" />
+                    <SelectField field="Left_prev" selected="True" input="Left_" />
+                    <SelectField field="Left_fixed" selected="True" input="Left_" />
+                    <SelectField field="Left_distance" selected="True" input="Left_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="Min_distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="282" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="570" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="distance" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>distance - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="654" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>1</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="872" y="260" width="739" height="240" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Update distance</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update distance</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="882" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="NodeID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="From" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_NodeID" selected="False" input="Left_" />
+                    <SelectField field="Right_To" selected="True" rename="NodeID" input="Right_" />
+                    <SelectField field="Left_distance" selected="True" input="Left_" />
+                    <SelectField field="Right_From" selected="True" input="Right_" />
+                    <SelectField field="Right_value" selected="True" input="Right_" />
+                    <SelectField field="Left_prev" selected="True" input="Left_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Choose the Nodes from determined point</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="NodeID" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="value" source="TextInput:" type="Int32" />
+                <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="To" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="value" source="TextInput:" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="990" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="NodeID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="NodeID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_NodeID" selected="False" rename="Right_NodeID" input="Right_" />
+                    <SelectField field="Right_distance" selected="True" rename="Right_distance" input="Right_" />
+                    <SelectField field="Right_prev" selected="True" rename="Right_prev" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Join undetermined Nodes</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+                <Field name="Right_distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="value" source="TextInput:" type="Int32" />
+                <Field name="Right_prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="NodeID" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="value" source="TextInput:" type="Int32" />
+                <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1542" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                <Field name="prev" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="distance" source="Formula: (Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1073" y="340" width="438" height="149" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Update Minimum distance for each nodes from determined point</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Update Minimum distance for each nodes from determined point</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="8">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1098" y="389" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="[Right_distance]+[value]" field="alt" size="2" type="Int16" enabled="true" />
+                    <FormulaField expression="IF IsNull([distance]) THEN [alt] &#xA;ELSEIF [distance]&gt;[alt] THEN [alt]&#xA;ELSE [distance] ENDIF" field="new_distance" size="8" type="Int64" enabled="true" />
+                    <FormulaField expression="IF IsNull([distance]) THEN [From]&#xA;ELSEIF [distance]&gt;[alt] THEN [From]&#xA;ELSE [prev] ENDIF" field="prev" size="1073741823" type="V_WString" enabled="true" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <AnnotationText>update value</AnnotationText>
+                  <DefaultAnnotationText>alt = [Right_distance]+[value]
+new_distance = IF IsNull([distance]) THEN [alt] 
+...</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                    <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                    <Field name="prev" size="1073741823" source="Formula: IF IsNull([distance]) THEN [From]&#xA;ELSEIF [distance]&gt;[alt] THEN [From]&#xA;ELSE [prev] ENDIF" type="V_WString" />
+                    <Field name="Right_distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                    <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+                    <Field name="value" source="TextInput:" type="Int32" />
+                    <Field name="Right_prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+                    <Field name="alt" source="Formula: [Right_distance]+[value]" type="Int16" />
+                    <Field name="new_distance" source="Formula: IF IsNull([distance]) THEN [alt] &#xA;ELSEIF [distance]&gt;[alt] THEN [alt]&#xA;ELSE [distance] ENDIF" type="Int64" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="11">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="1422" y="390" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="NodeID" selected="True" />
+                    <SelectField field="prev" selected="True" />
+                    <SelectField field="new_distance" selected="True" rename="distance" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                    <Field name="prev" size="1073741823" source="Formula: IF IsNull([distance]) THEN [From]&#xA;ELSEIF [distance]&gt;[alt] THEN [From]&#xA;ELSE [prev] ENDIF" type="V_WString" />
+                    <Field name="distance" source="Formula: IF IsNull([distance]) THEN [alt] &#xA;ELSEIF [distance]&gt;[alt] THEN [alt]&#xA;ELSE [distance] ENDIF" type="Int64" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="27">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+                <Position x="1206" y="390" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SortInfo locale="0">
+                    <Field field="NodeID" order="Ascending" />
+                    <Field field="alt" order="Ascending" />
+                  </SortInfo>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <AnnotationText>Sort</AnnotationText>
+                  <DefaultAnnotationText>NodeID - Ascending
+alt - Ascending</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                    <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                    <Field name="prev" size="1073741823" source="Formula: IF IsNull([distance]) THEN [From]&#xA;ELSEIF [distance]&gt;[alt] THEN [From]&#xA;ELSE [prev] ENDIF" type="V_WString" />
+                    <Field name="Right_distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                    <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+                    <Field name="value" source="TextInput:" type="Int32" />
+                    <Field name="Right_prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+                    <Field name="alt" source="Formula: [distance]+[value]" type="Int16" />
+                    <Field name="new_distance" source="Formula: IF IsNull([distance]) THEN [alt] &#xA;ELSEIF [distance]&gt;[alt] THEN [alt]&#xA;ELSE [distance] ENDIF" type="Int64" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+            </Node>
+            <Node ToolID="28">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+                <Position x="1314" y="390" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>First</Mode>
+                  <N>1</N>
+                  <GroupFields orderChanged="False">
+                    <Field name="NodeID" />
+                  </GroupFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                    <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                    <Field name="prev" size="1073741823" source="Formula: IF IsNull([distance]) THEN [From]&#xA;ELSEIF [distance]&gt;[alt] THEN [From]&#xA;ELSE [prev] ENDIF" type="V_WString" />
+                    <Field name="Right_distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                    <Field name="From" size="2147483647" source="TextInput:" type="V_String" />
+                    <Field name="value" source="TextInput:" type="Int32" />
+                    <Field name="Right_prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+                    <Field name="alt" source="Formula: [distance]+[value]" type="Int16" />
+                    <Field name="new_distance" source="Formula: IF IsNull([distance]) THEN [alt] &#xA;ELSEIF [distance]&gt;[alt] THEN [alt]&#xA;ELSE [distance] ENDIF" type="Int64" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="162" y="558" width="264" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Edge List:
+
+Column
+From To Value
+
+From : Node identifier
+To : Node identifier
+Value : Node distance(moving cost)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="162" y="126" width="264" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Node List:
+
+Column :
+NodeID distance prev
+
+NodeID : Node identifier
+distance : start node should be set to 0. Others should be set to Null
+prev : all Null
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="42" width="432" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Dijkstra</Text>
+          <Font name="Arial" size="36" style="1" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="644" y="524" width="307" height="119" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Undetermined Points</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Undetermined Points</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="882" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Repeat</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="654" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Skip</Mode>
+              <N>1</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Skip 1st 1 rows</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="774" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="NodeID" size="1073741823" source="Formula: ToString([x])+&quot;-&quot;+ToString([y])" type="V_WString" />
+                <Field name="distance" source="Formula: IF [NodeID]=&quot;1-1&quot; THEN 0 ELSE Null() ENDIF" type="Int16" />
+                <Field name="prev" size="1073741823" source="Formula: Null()" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="1" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="1" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Left" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Join" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="7" Connection="Left" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Dijkstra</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="67ac4cf7-bec5-4125-9034-c7980b100c6b" />
+      <Telemetry>
+        <PreviousWorkflowId value="3eccc833-1f9f-4090-8df9-f97a085f281c" />
+        <OriginWorkflowId value="3eccc833-1f9f-4090-8df9-f97a085f281c" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (17)</Name>
+          <ToolId value="17" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (16)</Name>
+              <ToolId value="16" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (10)</Name>
+              <ToolId value="10" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (19)</Description>
+              <Name>Macro Output (19)</Name>
+              <ToolId value="19" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (20)</Name>
+              <ToolId value="20" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputN</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="10000000" />
+        <LimitBehavior>Ignore</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="10" Selected="True" />
+        <Tool ToolId="13" Selected="True" />
+        <Tool ToolId="16" Selected="True" />
+        <Tool ToolId="19" Selected="True" />
+        <Tool ToolId="20" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
