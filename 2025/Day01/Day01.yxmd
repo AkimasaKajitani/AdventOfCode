@@ -84,7 +84,7 @@
     </Node>
     <Node ToolID="48">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="54" y="270" />
+        <Position x="54" y="462" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -135,7 +135,7 @@
     </Node>
     <Node ToolID="51">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-        <Position x="342" y="270" />
+        <Position x="450" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -171,7 +171,7 @@
     </Node>
     <Node ToolID="52">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="438" y="270" />
+        <Position x="546" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -217,16 +217,30 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="53">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="630" y="270" />
+        <Position x="738" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Expression><![CDATA[[dial] = 0 or [dial] = 100 ]]></Expression>
-          <Mode>Custom</Mode>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>dial</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2025-12-01 21:27:10</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2025-12-01 21:27:10</StartDate>
+              <EndDate>2025-12-01 21:27:10</EndDate>
+            </Operands>
+          </Simple>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText><![CDATA[[dial] = 0 or [dial] = 100 ]]></DefaultAnnotationText>
+          <DefaultAnnotationText>[dial] = 0</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -234,7 +248,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="54">
       <GuiSettings>
-        <Position x="726" y="270" />
+        <Position x="834" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration />
@@ -248,7 +262,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="63">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="246" y="270" />
+        <Position x="354" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -269,7 +283,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="68">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="630" y="366" />
+        <Position x="738" y="390" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -282,16 +296,9 @@ ENDIF</Expression>
           <NumRows value="1" />
           <Expression>IF [Dir]="L" THEN
  IF IsNull([Row-1:RecordID]) THEN 
-  FLOOR((MOD(100-50,100)+[num])/100)
+  FLOOR((50+[num])/100)
  ELSE
   FLOOR((MOD(100-[Row-1:dial],100)+[num])/100)
-//  IF [row-1:dial]-[Num]&lt;=0 AND [row-1:dial]!=0 THEN
-//   CEIL(([row-1:dial]-[Num])*-1/100)
-//  ELSEIF [row-1:dial]-[Num]&lt;=0 AND [row-1:dial]=0 THEN
-//   FLOOR(([row-1:dial]-[Num])*-1/100)
-//  ELSE
-//   0
-//  ENDIF
  ENDIF
 ELSE
  IF IsNull([Row-1:RecordID]) THEN 
@@ -314,7 +321,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="69">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="534" y="270" />
+        <Position x="642" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -333,7 +340,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="70">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="726" y="366" />
+        <Position x="834" y="390" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -351,17 +358,17 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="71">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="822" y="270" />
+        <Position x="930" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_24944_fde31731add2405b863312c516a4742e_\Engine_24944_dae4d5035f96428a987ab1de160f52d4~.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_24796_862aac105723469183b5676344f08d71_\Engine_24796_c48448fcf054457296fb1b70f50a13b8~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
             <ViewSize value="100" />
             <View1>
-              <DefaultTab>プロファイル</DefaultTab>
+              <DefaultTab>Profile</DefaultTab>
               <Hints>
                 <Table />
               </Hints>
@@ -380,17 +387,17 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="72">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="822" y="366" />
+        <Position x="930" y="390" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_24944_fde31731add2405b863312c516a4742e_\Engine_24944_df5b7c21cde946eba0610933b2050f89~.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_24796_862aac105723469183b5676344f08d71_\Engine_24796_cf21c132a6184a4da901494155e8c65f~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
             <ViewSize value="100" />
             <View1>
-              <DefaultTab>プロファイル</DefaultTab>
+              <DefaultTab>Profile</DefaultTab>
               <Hints>
                 <Table />
               </Hints>
@@ -407,34 +414,95 @@ ENDIF</Expression>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
-    <Node ToolID="75">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="138" y="270" />
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="29" y="245" width="301" height="165" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Passwords />
-          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\MyDoc\AYX\AdventOfCode\2025\Day01\2025_01_input.yxdb</File>
-          <FormatSpecificOptions />
+          <Caption>Input</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>2025_01_input.yxdb</DefaultAnnotationText>
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="NotUseCache" source="File: C:\MyDoc\AYX\AdventOfCode\2025\Day01\2025_01_input.yxdb" type="Bool" />
-            <Field name="CachePath" size="1073741823" source="File: C:\MyDoc\AYX\AdventOfCode\2025\Day01\2025_01_input.yxdb" type="V_WString" />
-            <Field name="IsCache" source="File: C:\MyDoc\AYX\AdventOfCode\2025\Day01\2025_01_input.yxdb" type="Bool" />
-            <Field name="Input" size="1073741823" source="File: C:\MyDoc\AYX\AdventOfCode\2025\Day01\2025_01_input.yxdb" type="V_WString" />
-          </RecordInfo>
-        </MetaInfo>
       </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+      <ChildNodes>
+        <Node ToolID="75">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="54" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\MyDoc\AYX\AdventOfCode\2025\Day01\2025_01_input.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2025_01_input.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="NotUseCache" source="File: C:\MyDoc\AYX\AdventOfCode\2025\Day01\2025_01_input.yxdb" type="Bool" />
+                <Field name="CachePath" size="1073741823" source="File: C:\MyDoc\AYX\AdventOfCode\2025\Day01\2025_01_input.yxdb" type="V_WString" />
+                <Field name="IsCache" source="File: C:\MyDoc\AYX\AdventOfCode\2025\Day01\2025_01_input.yxdb" type="Bool" />
+                <Field name="Input" size="1073741823" source="File: C:\MyDoc\AYX\AdventOfCode\2025\Day01\2025_01_input.yxdb" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="150" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Input</Field>
+              <Delimeters value="\n" />
+              <NumFields value="1" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="246" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Input" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
     </Node>
   </Nodes>
   <Connections>
@@ -464,11 +532,11 @@ ENDIF</Expression>
     </Connection>
     <Connection>
       <Origin ToolID="69" Connection="Output" />
-      <Destination ToolID="53" Connection="Input" />
+      <Destination ToolID="68" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="69" Connection="Output" />
-      <Destination ToolID="68" Connection="Input" />
+      <Destination ToolID="53" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="70" Connection="Output" />
@@ -476,6 +544,14 @@ ENDIF</Expression>
     </Connection>
     <Connection>
       <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
       <Destination ToolID="63" Connection="Input" />
     </Connection>
   </Connections>
