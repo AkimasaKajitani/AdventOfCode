@@ -1,0 +1,670 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="762" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Min([1],[2],[Source_1],[Source_2])" field="N1" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="Max([1],[2],[Source_1],[Source_2])" field="N2" size="8" type="Int64" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[N1 = Min([1],[2],[Source_1],[Source_2])
+N2 = Max([1],[2],[Source_1],[Source_2])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="1" source="TextInput:" type="Byte" />
+            <Field name="2" source="TextInput:" type="Byte" />
+            <Field name="Source_RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_1" source="TextInput:" type="Byte" />
+            <Field name="Source_2" source="TextInput:" type="Byte" />
+            <Field name="Pattern" source="Formula: IF [2]&lt;[Source_1] OR [Source_2]&lt;[1] THEN &quot;False&quot; &#xA;ELSE&#xA;&quot;True&quot;&#xA;ENDIF&#xA;" type="Bool" />
+            <Field name="N1" source="Formula: Min([1],[2],[Source_1],[Source_2])" type="Int64" />
+            <Field name="N2" source="Formula: Max([1],[2],[Source_1],[Source_2])" type="Int64" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="1" />
+            <Field field="2" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="858" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="N1" selected="True" rename="1" />
+            <SelectField field="N2" selected="True" rename="2" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="1" source="Formula: Min([1],[2],[Source_1],[Source_2])" type="Int64" />
+            <Field name="2" source="Formula: Max([1],[2],[Source_1],[Source_2])" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="954" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="1" />
+            <Field field="2" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="1" source="Formula: Min([1],[2],[Source_1],[Source_2])" type="Int64" />
+            <Field name="2" source="Formula: Max([1],[2],[Source_1],[Source_2])" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="1" order="Asc" />
+            <Field field="2" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="1" source="Formula: Min([1],[2],[Source_1],[Source_2])" type="Int64" />
+            <Field name="2" source="Formula: Max([1],[2],[Source_1],[Source_2])" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="1" order="Asc" />
+            <Field field="2" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="270" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [2]&lt;[Source_1] OR [Source_2]&lt;[1] THEN &quot;False&quot; &#xA;ELSE&#xA;&quot;True&quot;&#xA;ENDIF&#xA;" field="Pattern" size="1" type="Bool" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Simple compare</AnnotationText>
+          <DefaultAnnotationText><![CDATA[Pattern = IF [2]<[Source_1] OR [Source_2]<[1] THEN "False" 
+ELSE
+"True"
+ENDIF
+
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="1" source="TextInput:" type="Byte" />
+            <Field name="2" source="TextInput:" type="Byte" />
+            <Field name="Source_RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_1" source="TextInput:" type="Byte" />
+            <Field name="Source_2" source="TextInput:" type="Byte" />
+            <Field name="Pattern" source="Formula: IF [2]&lt;[Source_1] OR [Source_2]&lt;[1] THEN &quot;False&quot; &#xA;ELSE&#xA;&quot;True&quot;&#xA;ENDIF&#xA;" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="474" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Count_True] = 1
+OR
+IsEmpty([Count_True])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count_True] = 1
+OR
+IsEmpty([Count_True])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="1" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="2" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="Count_False" source="CrossTab:Header:Pattern:False:CountNonNulls:" type="Double" />
+            <Field name="Count_True" source="CrossTab:Header:Pattern:True:CountNonNulls:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+            <Field field="1" order="Asc" />
+            <Field field="2" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="1" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="2" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="Count_False" source="CrossTab:Header:Pattern:False:CountNonNulls:" type="Double" />
+            <Field name="Count_True" source="CrossTab:Header:Pattern:True:CountNonNulls:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+            <Field field="1" order="Asc" />
+            <Field field="2" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="666" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output7</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="570" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="1" />
+            <Field field="2" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="1" />
+            <Field field="2" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_RecordID" selected="True" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Right_1" selected="True" rename="Right_1" input="Right_" />
+                <SelectField field="Right_2" selected="True" rename="Right_2" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="1" source="TextInput:" type="Byte" />
+            <Field name="2" source="TextInput:" type="Byte" />
+            <Field name="Source_RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_1" source="TextInput:" type="Byte" />
+            <Field name="Source_2" source="TextInput:" type="Byte" />
+            <Field name="Pattern" source="Formula: IF [2]&lt;[Source_1] OR [Source_2]&lt;[1] THEN &quot;False&quot; &#xA;ELSE&#xA;&quot;True&quot;&#xA;ENDIF&#xA;" type="Bool" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="1" />
+            <Field field="2" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="1" source="TextInput:" type="Byte" />
+            <Field name="2" source="TextInput:" type="Byte" />
+            <Field name="Source_RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_1" source="TextInput:" type="Byte" />
+            <Field name="Source_2" source="TextInput:" type="Byte" />
+            <Field name="Pattern" source="Formula: IF [2]&lt;[Source_1] OR [Source_2]&lt;[1] THEN &quot;False&quot; &#xA;ELSE&#xA;&quot;True&quot;&#xA;ENDIF&#xA;" type="Bool" />
+            <Field name="Right_RecordID" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="Right_1" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="Right_2" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="Count_False" source="CrossTab:Header:Pattern:False:CountNonNulls:" type="Double" />
+            <Field name="Count_True" source="CrossTab:Header:Pattern:True:CountNonNulls:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="1" order="" />
+            <Field field="2" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="RecordID" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="1" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="2" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="Count_False" source="CrossTab:Header:Pattern:False:CountNonNulls:" type="Double" />
+            <Field name="Count_True" source="CrossTab:Header:Pattern:True:CountNonNulls:" type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="1" />
+            <Field field="2" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="666" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Pattern] = 1 AND !([1]=[Source_1] AND [2]=[Source_2])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Pattern] = 1 AND !([1]=[Source_1] AND [2]=[Source_2])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="1" source="TextInput:" type="Byte" />
+            <Field name="2" source="TextInput:" type="Byte" />
+            <Field name="Source_RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_1" source="TextInput:" type="Byte" />
+            <Field name="Source_2" source="TextInput:" type="Byte" />
+            <Field name="Pattern" source="Formula: IF [2]&lt;[Source_1] OR [Source_2]&lt;[1] THEN &quot;False&quot; &#xA;ELSE&#xA;&quot;True&quot;&#xA;ENDIF&#xA;" type="Bool" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="1" />
+            <Field field="2" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="1" source="TextInput:" type="Byte" />
+            <Field name="2" source="TextInput:" type="Byte" />
+            <Field name="Source_RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_1" source="TextInput:" type="Byte" />
+            <Field name="Source_2" source="TextInput:" type="Byte" />
+            <Field name="Pattern" source="Formula: IF [2]&lt;[Source_1] OR [Source_2]&lt;[1] THEN &quot;False&quot; &#xA;ELSE&#xA;&quot;True&quot;&#xA;ENDIF&#xA;" type="Bool" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="1" />
+            <Field field="2" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="174" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Allow</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_RecordID" selected="True" rename="Source_RecordID" input="Source_" />
+                <SelectField field="Source_1" selected="True" rename="Source_1" input="Source_" />
+                <SelectField field="Source_2" selected="True" rename="Source_2" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="1" source="TextInput:" type="Byte" />
+            <Field name="2" source="TextInput:" type="Byte" />
+            <Field name="Source_RecordID" source="TextInput:" type="Byte" />
+            <Field name="Source_1" source="TextInput:" type="Byte" />
+            <Field name="Source_2" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input12</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="4" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="1" />
+                <Field name="2" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>10</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>16</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>12</c>
+                  <c>18</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="1" source="TextInput:" type="Byte" />
+            <Field name="2" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1050" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="378" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="RecordID" />
+            <Field field="1" />
+            <Field field="2" />
+          </GroupFields>
+          <HeaderField field="Pattern" />
+          <DataField field="RecordID" />
+          <Methods>
+            <Method method="Count" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="1" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="2" source="CrossTab:Group:Count:" type="Byte" />
+            <Field name="Count_False" source="CrossTab:Header:Pattern:False:CountNonNulls:" type="Double" />
+            <Field name="Count_True" source="CrossTab:Header:Pattern:True:CountNonNulls:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+            <Field field="1" order="Asc" />
+            <Field field="2" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Unique" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="8" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="8" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Left" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="11" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="11" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>aof202505_ite3</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="117efed0-3a11-4f49-bfa4-2766bc151bb7" />
+      <Telemetry>
+        <PreviousWorkflowId value="b1c8cfa2-c788-4d10-a280-c5f4a977c7f5" />
+        <OriginWorkflowId value="6b6101cc-3d1c-4236-9d1f-ba2cab4c6fe8" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (13)</Name>
+          <ToolId value="13" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (12)</Name>
+              <ToolId value="12" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (7)</Name>
+              <ToolId value="7" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (14)</Description>
+              <Name>Macro Output (14)</Name>
+              <ToolId value="14" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input12</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Ignore</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="7" Selected="True" />
+        <Tool ToolId="12" Selected="True" />
+        <Tool ToolId="14" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
