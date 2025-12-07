@@ -1,0 +1,2377 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="210" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[y]&gt;=[Engine.IterationNumber]+2</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[y]&gt;=[Engine.IterationNumber]+2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="102" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="x" />
+                <Field name="y" />
+                <Field name="Input" />
+                <Field name="count" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>8</c>
+                  <c>8</c>
+                  <c>1</c>
+                  <c>S</c>
+                  <c>1</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="count" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="210" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Input] IN ("S","|")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Input] IN ("S","|")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="count" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="count" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="630" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>NewX</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>[x]-1</Expression_Init>
+          <Expression_Cond>NewX &lt;= [x]+1</Expression_Cond>
+          <Expression_Loop>NewX + 1</Expression_Loop>
+          <Expression>[x]-1NewX &lt;= [x]+1NewX + 1</Expression>
+          <RecordCount value="3" />
+          <RecordCount value="6" />
+          <RecordCount value="9" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Create divided tachyon beama</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="count" source="TextInput:" type="Int32" />
+            <Field name="NextY" source="Formula: [y]+1" type="Int64" />
+            <Field name="Right_RecordID" source="TextInput:" type="Int32" />
+            <Field name="Right_x" source="TextInput:" type="Int32" />
+            <Field name="Right_y" source="TextInput:" type="Int32" />
+            <Field name="Right_Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="NewX" source="GenerateRows" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="426" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="x" />
+            <Field field="NextY" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="x" />
+            <Field field="y" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_RecordID" selected="True" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Right_x" selected="True" rename="Right_x" input="Right_" />
+                <SelectField field="Right_y" selected="True" rename="Right_y" input="Right_" />
+                <SelectField field="Right_Input" selected="True" rename="Right_Input" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="count" source="TextInput:" type="Int32" />
+            <Field name="NextY" source="Formula: [y]+1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="count" source="TextInput:" type="Int32" />
+            <Field name="NextY" source="Formula: [y]+1" type="Int64" />
+            <Field name="Right_RecordID" source="TextInput:" type="Int32" />
+            <Field name="Right_x" source="TextInput:" type="Int32" />
+            <Field name="Right_y" source="TextInput:" type="Int32" />
+            <Field name="Right_Input" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="318" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[y]+1" field="NextY" size="8" type="Int64" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[NextY = [y]+1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="count" source="TextInput:" type="Int32" />
+            <Field name="NextY" source="Formula: [y]+1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="534" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Right_Input</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2025-12-07 14:11:07</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>^</Operand>
+              <StartDate>2025-12-07 14:11:07</StartDate>
+              <EndDate>2025-12-07 14:11:07</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Right_Input] = "^"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="count" source="TextInput:" type="Int32" />
+            <Field name="NextY" source="Formula: [y]+1" type="Int64" />
+            <Field name="Right_RecordID" source="TextInput:" type="Int32" />
+            <Field name="Right_x" source="TextInput:" type="Int32" />
+            <Field name="Right_y" source="TextInput:" type="Int32" />
+            <Field name="Right_Input" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="count" source="TextInput:" type="Int32" />
+            <Field name="NextY" source="Formula: [y]+1" type="Int64" />
+            <Field name="Right_RecordID" source="TextInput:" type="Int32" />
+            <Field name="Right_x" source="TextInput:" type="Int32" />
+            <Field name="Right_y" source="TextInput:" type="Int32" />
+            <Field name="Right_Input" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="630" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;|&quot;" field="Right_Input" size="2147483647" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Right_Input = "|"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="count" source="TextInput:" type="Int32" />
+            <Field name="NextY" source="Formula: [y]+1" type="Int64" />
+            <Field name="Right_RecordID" source="TextInput:" type="Int32" />
+            <Field name="Right_x" source="TextInput:" type="Int32" />
+            <Field name="Right_y" source="TextInput:" type="Int32" />
+            <Field name="Right_Input" size="2147483647" source="Formula: &quot;|&quot;" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="726" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="x" selected="False" />
+            <SelectField field="y" selected="False" />
+            <SelectField field="Input" selected="False" />
+            <SelectField field="NextY" selected="False" />
+            <SelectField field="Right_x" selected="True" rename="x" />
+            <SelectField field="Right_y" selected="True" rename="y" />
+            <SelectField field="Right_Input" selected="True" rename="Input" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="count" source="TextInput:" type="Int32" />
+            <Field name="Right_RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="Formula: &quot;|&quot;" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="918" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="x" selected="False" />
+            <SelectField field="y" selected="False" />
+            <SelectField field="Input" selected="False" />
+            <SelectField field="NextY" selected="False" />
+            <SelectField field="Right_x" selected="False" />
+            <SelectField field="Right_y" selected="True" rename="y" />
+            <SelectField field="Right_Input" selected="False" />
+            <SelectField field="NewX" selected="True" rename="x" />
+            <SelectField field="NewInput" selected="True" rename="Input" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="count" source="TextInput:" type="Int32" />
+            <Field name="Right_RecordID" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="x" source="GenerateRows" type="Int32" />
+            <Field name="Input" size="1073741823" source="Formula: &quot;|&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="726" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;|&quot;" field="NewInput" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[NewInput = "|"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="count" source="TextInput:" type="Int32" />
+            <Field name="NextY" source="Formula: [y]+1" type="Int64" />
+            <Field name="Right_RecordID" source="TextInput:" type="Int32" />
+            <Field name="Right_x" source="TextInput:" type="Int32" />
+            <Field name="Right_y" source="TextInput:" type="Int32" />
+            <Field name="Right_Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="NewX" source="GenerateRows" type="Int32" />
+            <Field name="NewInput" size="1073741823" source="Formula: &quot;|&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="102" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input1</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="240" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="x" />
+                <Field name="y" />
+                <Field name="Input" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>4</c>
+                  <c>1</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>6</c>
+                  <c>1</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>7</c>
+                  <c>1</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>8</c>
+                  <c>1</c>
+                  <c>S</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>9</c>
+                  <c>1</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>10</c>
+                  <c>1</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>11</c>
+                  <c>1</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>12</c>
+                  <c>1</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>13</c>
+                  <c>1</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>14</c>
+                  <c>1</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>15</c>
+                  <c>1</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>4</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>5</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>21</c>
+                  <c>6</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>22</c>
+                  <c>7</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>23</c>
+                  <c>8</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>24</c>
+                  <c>9</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>25</c>
+                  <c>10</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>26</c>
+                  <c>11</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>12</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>28</c>
+                  <c>13</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>14</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>30</c>
+                  <c>15</c>
+                  <c>2</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>32</c>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>33</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>4</c>
+                  <c>3</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>35</c>
+                  <c>5</c>
+                  <c>3</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>36</c>
+                  <c>6</c>
+                  <c>3</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>7</c>
+                  <c>3</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>38</c>
+                  <c>8</c>
+                  <c>3</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>39</c>
+                  <c>9</c>
+                  <c>3</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>40</c>
+                  <c>10</c>
+                  <c>3</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>41</c>
+                  <c>11</c>
+                  <c>3</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>42</c>
+                  <c>12</c>
+                  <c>3</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>43</c>
+                  <c>13</c>
+                  <c>3</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>44</c>
+                  <c>14</c>
+                  <c>3</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>45</c>
+                  <c>15</c>
+                  <c>3</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>46</c>
+                  <c>1</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>47</c>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>48</c>
+                  <c>3</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>49</c>
+                  <c>4</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>50</c>
+                  <c>5</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>51</c>
+                  <c>6</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>52</c>
+                  <c>7</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>53</c>
+                  <c>8</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>54</c>
+                  <c>9</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>55</c>
+                  <c>10</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>56</c>
+                  <c>11</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>57</c>
+                  <c>12</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>58</c>
+                  <c>13</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>59</c>
+                  <c>14</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>60</c>
+                  <c>15</c>
+                  <c>4</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>61</c>
+                  <c>1</c>
+                  <c>5</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>62</c>
+                  <c>2</c>
+                  <c>5</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>63</c>
+                  <c>3</c>
+                  <c>5</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>64</c>
+                  <c>4</c>
+                  <c>5</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>65</c>
+                  <c>5</c>
+                  <c>5</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>66</c>
+                  <c>6</c>
+                  <c>5</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>67</c>
+                  <c>7</c>
+                  <c>5</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>68</c>
+                  <c>8</c>
+                  <c>5</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>69</c>
+                  <c>9</c>
+                  <c>5</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>70</c>
+                  <c>10</c>
+                  <c>5</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>71</c>
+                  <c>11</c>
+                  <c>5</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>72</c>
+                  <c>12</c>
+                  <c>5</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>73</c>
+                  <c>13</c>
+                  <c>5</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>74</c>
+                  <c>14</c>
+                  <c>5</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>75</c>
+                  <c>15</c>
+                  <c>5</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>76</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>77</c>
+                  <c>2</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>78</c>
+                  <c>3</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>79</c>
+                  <c>4</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>80</c>
+                  <c>5</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>81</c>
+                  <c>6</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>82</c>
+                  <c>7</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>83</c>
+                  <c>8</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>84</c>
+                  <c>9</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>85</c>
+                  <c>10</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>86</c>
+                  <c>11</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>87</c>
+                  <c>12</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>88</c>
+                  <c>13</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>89</c>
+                  <c>14</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>90</c>
+                  <c>15</c>
+                  <c>6</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>91</c>
+                  <c>1</c>
+                  <c>7</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>92</c>
+                  <c>2</c>
+                  <c>7</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>93</c>
+                  <c>3</c>
+                  <c>7</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>94</c>
+                  <c>4</c>
+                  <c>7</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>95</c>
+                  <c>5</c>
+                  <c>7</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>96</c>
+                  <c>6</c>
+                  <c>7</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>97</c>
+                  <c>7</c>
+                  <c>7</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>98</c>
+                  <c>8</c>
+                  <c>7</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>99</c>
+                  <c>9</c>
+                  <c>7</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>100</c>
+                  <c>10</c>
+                  <c>7</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>101</c>
+                  <c>11</c>
+                  <c>7</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>102</c>
+                  <c>12</c>
+                  <c>7</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>103</c>
+                  <c>13</c>
+                  <c>7</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>104</c>
+                  <c>14</c>
+                  <c>7</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>105</c>
+                  <c>15</c>
+                  <c>7</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>106</c>
+                  <c>1</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>107</c>
+                  <c>2</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>108</c>
+                  <c>3</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>109</c>
+                  <c>4</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>110</c>
+                  <c>5</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>111</c>
+                  <c>6</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>112</c>
+                  <c>7</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>113</c>
+                  <c>8</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>114</c>
+                  <c>9</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>115</c>
+                  <c>10</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>116</c>
+                  <c>11</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>117</c>
+                  <c>12</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>118</c>
+                  <c>13</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>119</c>
+                  <c>14</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>120</c>
+                  <c>15</c>
+                  <c>8</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>121</c>
+                  <c>1</c>
+                  <c>9</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>122</c>
+                  <c>2</c>
+                  <c>9</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>123</c>
+                  <c>3</c>
+                  <c>9</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>124</c>
+                  <c>4</c>
+                  <c>9</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>125</c>
+                  <c>5</c>
+                  <c>9</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>126</c>
+                  <c>6</c>
+                  <c>9</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>127</c>
+                  <c>7</c>
+                  <c>9</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>128</c>
+                  <c>8</c>
+                  <c>9</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>129</c>
+                  <c>9</c>
+                  <c>9</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>130</c>
+                  <c>10</c>
+                  <c>9</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>131</c>
+                  <c>11</c>
+                  <c>9</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>132</c>
+                  <c>12</c>
+                  <c>9</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>133</c>
+                  <c>13</c>
+                  <c>9</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>134</c>
+                  <c>14</c>
+                  <c>9</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>135</c>
+                  <c>15</c>
+                  <c>9</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>136</c>
+                  <c>1</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>137</c>
+                  <c>2</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>138</c>
+                  <c>3</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>139</c>
+                  <c>4</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>140</c>
+                  <c>5</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>141</c>
+                  <c>6</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>142</c>
+                  <c>7</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>143</c>
+                  <c>8</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>144</c>
+                  <c>9</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>145</c>
+                  <c>10</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>146</c>
+                  <c>11</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>147</c>
+                  <c>12</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>148</c>
+                  <c>13</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>149</c>
+                  <c>14</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>150</c>
+                  <c>15</c>
+                  <c>10</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>151</c>
+                  <c>1</c>
+                  <c>11</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>152</c>
+                  <c>2</c>
+                  <c>11</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>153</c>
+                  <c>3</c>
+                  <c>11</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>154</c>
+                  <c>4</c>
+                  <c>11</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>155</c>
+                  <c>5</c>
+                  <c>11</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>156</c>
+                  <c>6</c>
+                  <c>11</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>157</c>
+                  <c>7</c>
+                  <c>11</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>158</c>
+                  <c>8</c>
+                  <c>11</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>159</c>
+                  <c>9</c>
+                  <c>11</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>160</c>
+                  <c>10</c>
+                  <c>11</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>161</c>
+                  <c>11</c>
+                  <c>11</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>162</c>
+                  <c>12</c>
+                  <c>11</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>163</c>
+                  <c>13</c>
+                  <c>11</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>164</c>
+                  <c>14</c>
+                  <c>11</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>165</c>
+                  <c>15</c>
+                  <c>11</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>166</c>
+                  <c>1</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>167</c>
+                  <c>2</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>168</c>
+                  <c>3</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>169</c>
+                  <c>4</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>170</c>
+                  <c>5</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>171</c>
+                  <c>6</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>172</c>
+                  <c>7</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>173</c>
+                  <c>8</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>174</c>
+                  <c>9</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>175</c>
+                  <c>10</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>176</c>
+                  <c>11</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>177</c>
+                  <c>12</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>178</c>
+                  <c>13</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>179</c>
+                  <c>14</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>180</c>
+                  <c>15</c>
+                  <c>12</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>181</c>
+                  <c>1</c>
+                  <c>13</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>182</c>
+                  <c>2</c>
+                  <c>13</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>183</c>
+                  <c>3</c>
+                  <c>13</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>184</c>
+                  <c>4</c>
+                  <c>13</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>185</c>
+                  <c>5</c>
+                  <c>13</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>186</c>
+                  <c>6</c>
+                  <c>13</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>187</c>
+                  <c>7</c>
+                  <c>13</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>188</c>
+                  <c>8</c>
+                  <c>13</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>189</c>
+                  <c>9</c>
+                  <c>13</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>190</c>
+                  <c>10</c>
+                  <c>13</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>191</c>
+                  <c>11</c>
+                  <c>13</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>192</c>
+                  <c>12</c>
+                  <c>13</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>193</c>
+                  <c>13</c>
+                  <c>13</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>194</c>
+                  <c>14</c>
+                  <c>13</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>195</c>
+                  <c>15</c>
+                  <c>13</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>196</c>
+                  <c>1</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>197</c>
+                  <c>2</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>198</c>
+                  <c>3</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>199</c>
+                  <c>4</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>200</c>
+                  <c>5</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>201</c>
+                  <c>6</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>202</c>
+                  <c>7</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>203</c>
+                  <c>8</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>204</c>
+                  <c>9</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>205</c>
+                  <c>10</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>206</c>
+                  <c>11</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>207</c>
+                  <c>12</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>208</c>
+                  <c>13</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>209</c>
+                  <c>14</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>210</c>
+                  <c>15</c>
+                  <c>14</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>211</c>
+                  <c>1</c>
+                  <c>15</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>212</c>
+                  <c>2</c>
+                  <c>15</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>213</c>
+                  <c>3</c>
+                  <c>15</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>214</c>
+                  <c>4</c>
+                  <c>15</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>215</c>
+                  <c>5</c>
+                  <c>15</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>216</c>
+                  <c>6</c>
+                  <c>15</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>217</c>
+                  <c>7</c>
+                  <c>15</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>218</c>
+                  <c>8</c>
+                  <c>15</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>219</c>
+                  <c>9</c>
+                  <c>15</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>220</c>
+                  <c>10</c>
+                  <c>15</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>221</c>
+                  <c>11</c>
+                  <c>15</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>222</c>
+                  <c>12</c>
+                  <c>15</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>223</c>
+                  <c>13</c>
+                  <c>15</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>224</c>
+                  <c>14</c>
+                  <c>15</c>
+                  <c>^</c>
+                </r>
+                <r>
+                  <c>225</c>
+                  <c>15</c>
+                  <c>15</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>226</c>
+                  <c>1</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>227</c>
+                  <c>2</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>228</c>
+                  <c>3</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>229</c>
+                  <c>4</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>230</c>
+                  <c>5</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>231</c>
+                  <c>6</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>232</c>
+                  <c>7</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>233</c>
+                  <c>8</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>234</c>
+                  <c>9</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>235</c>
+                  <c>10</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>236</c>
+                  <c>11</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>237</c>
+                  <c>12</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>238</c>
+                  <c>13</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>239</c>
+                  <c>14</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+                <r>
+                  <c>240</c>
+                  <c>15</c>
+                  <c>16</c>
+                  <c>.</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1302" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1014" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="count" source="TextInput:" type="Int32" />
+            <Field name="Right_RecordID" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="x" source="(Multiple Sources)" type="Int32" />
+            <Field name="Input" size="1073741823" source="Formula: &quot;|&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1206" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Right_RecordID" selected="True" rename="RecordID" />
+            <SelectField field="x" selected="True" />
+            <SelectField field="y" selected="True" />
+            <SelectField field="Input" selected="True" />
+            <SelectField field="count" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="Summarize: GroupBy - x" type="Int32" />
+            <Field name="y" source="Summarize: GroupBy - y" type="Int32" />
+            <Field name="Input" size="1073741823" source="Summarize: GroupBy - Input" type="V_WString" />
+            <Field name="count" source="Summarize: Sum - count" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="822" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[x]!=[NewX]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[x]!=[NewX]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="count" source="TextInput:" type="Int32" />
+            <Field name="NextY" source="Formula: [y]+1" type="Int64" />
+            <Field name="Right_RecordID" source="TextInput:" type="Int32" />
+            <Field name="Right_x" source="TextInput:" type="Int32" />
+            <Field name="Right_y" source="TextInput:" type="Int32" />
+            <Field name="Right_Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="NewX" source="GenerateRows" type="Int32" />
+            <Field name="NewInput" size="1073741823" source="Formula: &quot;|&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="TextInput:" type="Int32" />
+            <Field name="y" source="TextInput:" type="Int32" />
+            <Field name="Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="count" source="TextInput:" type="Int32" />
+            <Field name="NextY" source="Formula: [y]+1" type="Int64" />
+            <Field name="Right_RecordID" source="TextInput:" type="Int32" />
+            <Field name="Right_x" source="TextInput:" type="Int32" />
+            <Field name="Right_y" source="TextInput:" type="Int32" />
+            <Field name="Right_Input" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="NewX" source="GenerateRows" type="Int32" />
+            <Field name="NewInput" size="1073741823" source="Formula: &quot;|&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1110" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="Min" rename="RecordID" />
+            <SummarizeField field="Right_RecordID" action="Min" rename="Right_RecordID" />
+            <SummarizeField field="x" action="GroupBy" rename="x" />
+            <SummarizeField field="y" action="GroupBy" rename="y" />
+            <SummarizeField field="Input" action="GroupBy" rename="Input" />
+            <SummarizeField field="count" action="Sum" rename="count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="Right_RecordID" source="TextInput:" type="Int32" />
+            <Field name="x" source="Summarize: GroupBy - x" type="Int32" />
+            <Field name="y" source="Summarize: GroupBy - y" type="Int32" />
+            <Field name="Input" size="1073741823" source="Summarize: GroupBy - Input" type="V_WString" />
+            <Field name="count" source="Summarize: Sum - count" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="918" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputH</Name>
+          <Abbrev>H</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1302" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output17</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="False" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="False" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="932" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (14)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (17)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (21)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>aoc202507_iteP2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="5f6b464d-dec5-4ed4-96eb-ab776eeacba9" />
+      <Telemetry>
+        <PreviousWorkflowId value="169a991d-d433-4749-aba5-2ee7b0e5179f" />
+        <OriginWorkflowId value="6f724d78-f694-4828-9240-12c31f212cf9" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>質問</Description>
+          <Name>タブ (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>マクロ入力 (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>マクロ入力 (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (14)</Description>
+              <Name>Macro Output (14)</Name>
+              <ToolId value="14" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (17)</Description>
+              <Name>Macro Output (17)</Name>
+              <ToolId value="17" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (21)</Description>
+              <Name>Macro Output (21)</Name>
+              <ToolId value="21" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="1000" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="14" Selected="True" />
+        <Tool ToolId="17" Selected="True" />
+        <Tool ToolId="21" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
