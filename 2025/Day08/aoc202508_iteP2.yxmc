@@ -1,0 +1,2440 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="90" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Group" />
+                <Field name="friends" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1,20</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" source="TextInput:" type="Int32" />
+            <Field name="friends" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="282" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Combination] = [Engine.IterationNumber]+2//+8</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Combination] = [Engine.IterationNumber]+2//+8</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Combination" source="TextInput:" type="Int32" />
+            <Field name="RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Source_RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Distance" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Combination" source="TextInput:" type="Int32" />
+            <Field name="RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Source_RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Distance" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="90" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input5</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="189" />
+              <Fields>
+                <Field name="Combination" />
+                <Field name="RecordID" />
+                <Field name="Source_RecordID" />
+                <Field name="Distance" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>8</c>
+                  <c>321.560258738545</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>14</c>
+                  <c>322.36935338211</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>8</c>
+                  <c>20</c>
+                  <c>328.118880895324</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>18</c>
+                  <c>19</c>
+                  <c>333.655510969023</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>10</c>
+                  <c>13</c>
+                  <c>338.33858780813</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>12</c>
+                  <c>17</c>
+                  <c>344.389314584527</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>3</c>
+                  <c>9</c>
+                  <c>347.598906787694</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>15</c>
+                  <c>20</c>
+                  <c>350.786259708102</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>3</c>
+                  <c>19</c>
+                  <c>352.936254867646</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>4</c>
+                  <c>20</c>
+                  <c>367.982336532611</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>5</c>
+                  <c>7</c>
+                  <c>371.705528611023</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>5</c>
+                  <c>13</c>
+                  <c>372.022848760664</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>5</c>
+                  <c>6</c>
+                  <c>373.411301382269</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>7</c>
+                  <c>18</c>
+                  <c>379.242666376029</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>4</c>
+                  <c>8</c>
+                  <c>384.630991991025</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>9</c>
+                  <c>20</c>
+                  <c>387.201497930987</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>1</c>
+                  <c>10</c>
+                  <c>391.465196409591</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>12</c>
+                  <c>16</c>
+                  <c>407.535274546879</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>14</c>
+                  <c>19</c>
+                  <c>411.94417097466</c>
+                </r>
+                <r>
+                  <c>21</c>
+                  <c>6</c>
+                  <c>9</c>
+                  <c>411.967231706601</c>
+                </r>
+                <r>
+                  <c>22</c>
+                  <c>1</c>
+                  <c>15</c>
+                  <c>413.516626026089</c>
+                </r>
+                <r>
+                  <c>23</c>
+                  <c>9</c>
+                  <c>17</c>
+                  <c>417.527244620037</c>
+                </r>
+                <r>
+                  <c>24</c>
+                  <c>2</c>
+                  <c>6</c>
+                  <c>424.242854978136</c>
+                </r>
+                <r>
+                  <c>25</c>
+                  <c>10</c>
+                  <c>20</c>
+                  <c>433.555071473048</c>
+                </r>
+                <r>
+                  <c>26</c>
+                  <c>6</c>
+                  <c>15</c>
+                  <c>433.849052090701</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>9</c>
+                  <c>16</c>
+                  <c>444.375966946909</c>
+                </r>
+                <r>
+                  <c>28</c>
+                  <c>16</c>
+                  <c>17</c>
+                  <c>455.224120626313</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>11</c>
+                  <c>13</c>
+                  <c>458.360120429341</c>
+                </r>
+                <r>
+                  <c>30</c>
+                  <c>7</c>
+                  <c>19</c>
+                  <c>459.344097600045</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>2</c>
+                  <c>5</c>
+                  <c>471.433982652927</c>
+                </r>
+                <r>
+                  <c>32</c>
+                  <c>10</c>
+                  <c>11</c>
+                  <c>476.815477936696</c>
+                </r>
+                <r>
+                  <c>33</c>
+                  <c>5</c>
+                  <c>10</c>
+                  <c>491.739768576836</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>4</c>
+                  <c>14</c>
+                  <c>492.628663396681</c>
+                </r>
+                <r>
+                  <c>35</c>
+                  <c>9</c>
+                  <c>15</c>
+                  <c>493.811705005056</c>
+                </r>
+                <r>
+                  <c>36</c>
+                  <c>6</c>
+                  <c>12</c>
+                  <c>495.953626864448</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>4</c>
+                  <c>11</c>
+                  <c>503.620889161679</c>
+                </r>
+                <r>
+                  <c>38</c>
+                  <c>3</c>
+                  <c>4</c>
+                  <c>507.106497690574</c>
+                </r>
+                <r>
+                  <c>39</c>
+                  <c>6</c>
+                  <c>16</c>
+                  <c>511.590656677778</c>
+                </r>
+                <r>
+                  <c>40</c>
+                  <c>5</c>
+                  <c>9</c>
+                  <c>521.717356429705</c>
+                </r>
+                <r>
+                  <c>41</c>
+                  <c>4</c>
+                  <c>9</c>
+                  <c>524.905705817721</c>
+                </r>
+                <r>
+                  <c>42</c>
+                  <c>5</c>
+                  <c>20</c>
+                  <c>527.023718631334</c>
+                </r>
+                <r>
+                  <c>43</c>
+                  <c>6</c>
+                  <c>20</c>
+                  <c>533.03470806318</c>
+                </r>
+                <r>
+                  <c>44</c>
+                  <c>7</c>
+                  <c>13</c>
+                  <c>535.146708856553</c>
+                </r>
+                <r>
+                  <c>45</c>
+                  <c>3</c>
+                  <c>16</c>
+                  <c>540.282333599758</c>
+                </r>
+                <r>
+                  <c>46</c>
+                  <c>8</c>
+                  <c>15</c>
+                  <c>543.217267766775</c>
+                </r>
+                <r>
+                  <c>47</c>
+                  <c>7</c>
+                  <c>14</c>
+                  <c>550.544276148613</c>
+                </r>
+                <r>
+                  <c>48</c>
+                  <c>1</c>
+                  <c>4</c>
+                  <c>561.718790855353</c>
+                </r>
+                <r>
+                  <c>49</c>
+                  <c>9</c>
+                  <c>12</c>
+                  <c>566.279966094511</c>
+                </r>
+                <r>
+                  <c>50</c>
+                  <c>16</c>
+                  <c>18</c>
+                  <c>566.911809719995</c>
+                </r>
+                <r>
+                  <c>51</c>
+                  <c>16</c>
+                  <c>19</c>
+                  <c>582.461157503228</c>
+                </r>
+                <r>
+                  <c>52</c>
+                  <c>3</c>
+                  <c>7</c>
+                  <c>589.0950687283</c>
+                </r>
+                <r>
+                  <c>53</c>
+                  <c>10</c>
+                  <c>15</c>
+                  <c>597.227762248206</c>
+                </r>
+                <r>
+                  <c>54</c>
+                  <c>3</c>
+                  <c>20</c>
+                  <c>597.412755136681</c>
+                </r>
+                <r>
+                  <c>55</c>
+                  <c>2</c>
+                  <c>15</c>
+                  <c>600.302423783213</c>
+                </r>
+                <r>
+                  <c>56</c>
+                  <c>6</c>
+                  <c>17</c>
+                  <c>603.633995066547</c>
+                </r>
+                <r>
+                  <c>57</c>
+                  <c>4</c>
+                  <c>10</c>
+                  <c>604.702406147024</c>
+                </r>
+                <r>
+                  <c>58</c>
+                  <c>3</c>
+                  <c>18</c>
+                  <c>605.773885208004</c>
+                </r>
+                <r>
+                  <c>59</c>
+                  <c>15</c>
+                  <c>17</c>
+                  <c>609.784388124196</c>
+                </r>
+                <r>
+                  <c>60</c>
+                  <c>8</c>
+                  <c>10</c>
+                  <c>609.972130510895</c>
+                </r>
+                <r>
+                  <c>61</c>
+                  <c>9</c>
+                  <c>14</c>
+                  <c>610.960718868243</c>
+                </r>
+                <r>
+                  <c>62</c>
+                  <c>3</c>
+                  <c>5</c>
+                  <c>612.241782304998</c>
+                </r>
+                <r>
+                  <c>63</c>
+                  <c>9</c>
+                  <c>19</c>
+                  <c>621.508648371042</c>
+                </r>
+                <r>
+                  <c>64</c>
+                  <c>13</c>
+                  <c>20</c>
+                  <c>626.601149057357</c>
+                </r>
+                <r>
+                  <c>65</c>
+                  <c>2</c>
+                  <c>10</c>
+                  <c>628.689112359996</c>
+                </r>
+                <r>
+                  <c>66</c>
+                  <c>5</c>
+                  <c>15</c>
+                  <c>629.317884697392</c>
+                </r>
+                <r>
+                  <c>67</c>
+                  <c>8</c>
+                  <c>9</c>
+                  <c>630.851012521974</c>
+                </r>
+                <r>
+                  <c>68</c>
+                  <c>5</c>
+                  <c>18</c>
+                  <c>639.754640467734</c>
+                </r>
+                <r>
+                  <c>69</c>
+                  <c>11</c>
+                  <c>14</c>
+                  <c>646.579461473994</c>
+                </r>
+                <r>
+                  <c>70</c>
+                  <c>6</c>
+                  <c>7</c>
+                  <c>648.213699330707</c>
+                </r>
+                <r>
+                  <c>71</c>
+                  <c>11</c>
+                  <c>20</c>
+                  <c>650.046921383372</c>
+                </r>
+                <r>
+                  <c>72</c>
+                  <c>12</c>
+                  <c>15</c>
+                  <c>652.592522175975</c>
+                </r>
+                <r>
+                  <c>73</c>
+                  <c>2</c>
+                  <c>13</c>
+                  <c>655.613453187166</c>
+                </r>
+                <r>
+                  <c>74</c>
+                  <c>5</c>
+                  <c>14</c>
+                  <c>661.777908365034</c>
+                </r>
+                <r>
+                  <c>75</c>
+                  <c>3</c>
+                  <c>6</c>
+                  <c>670.871075542835</c>
+                </r>
+                <r>
+                  <c>76</c>
+                  <c>3</c>
+                  <c>17</c>
+                  <c>671.054394218531</c>
+                </r>
+                <r>
+                  <c>77</c>
+                  <c>5</c>
+                  <c>19</c>
+                  <c>681.072683345911</c>
+                </r>
+                <r>
+                  <c>78</c>
+                  <c>14</c>
+                  <c>18</c>
+                  <c>683.281786673697</c>
+                </r>
+                <r>
+                  <c>79</c>
+                  <c>6</c>
+                  <c>10</c>
+                  <c>686.075797561756</c>
+                </r>
+                <r>
+                  <c>80</c>
+                  <c>7</c>
+                  <c>9</c>
+                  <c>690.905203338345</c>
+                </r>
+                <r>
+                  <c>81</c>
+                  <c>17</c>
+                  <c>20</c>
+                  <c>692.723610107235</c>
+                </r>
+                <r>
+                  <c>82</c>
+                  <c>1</c>
+                  <c>11</c>
+                  <c>693.095952953125</c>
+                </r>
+                <r>
+                  <c>83</c>
+                  <c>1</c>
+                  <c>9</c>
+                  <c>693.205597207639</c>
+                </r>
+                <r>
+                  <c>84</c>
+                  <c>4</c>
+                  <c>5</c>
+                  <c>697.114768169489</c>
+                </r>
+                <r>
+                  <c>85</c>
+                  <c>4</c>
+                  <c>13</c>
+                  <c>700.31849897029</c>
+                </r>
+                <r>
+                  <c>86</c>
+                  <c>14</c>
+                  <c>20</c>
+                  <c>705.628797598284</c>
+                </r>
+                <r>
+                  <c>87</c>
+                  <c>5</c>
+                  <c>16</c>
+                  <c>708.093920324133</c>
+                </r>
+                <r>
+                  <c>88</c>
+                  <c>1</c>
+                  <c>13</c>
+                  <c>709.048658414922</c>
+                </r>
+                <r>
+                  <c>89</c>
+                  <c>4</c>
+                  <c>15</c>
+                  <c>711.401433791077</c>
+                </r>
+                <r>
+                  <c>90</c>
+                  <c>8</c>
+                  <c>11</c>
+                  <c>712.311027571524</c>
+                </r>
+                <r>
+                  <c>91</c>
+                  <c>6</c>
+                  <c>13</c>
+                  <c>714.272357017966</c>
+                </r>
+                <r>
+                  <c>92</c>
+                  <c>13</c>
+                  <c>14</c>
+                  <c>716.067734226309</c>
+                </r>
+                <r>
+                  <c>93</c>
+                  <c>5</c>
+                  <c>11</c>
+                  <c>717.802897737255</c>
+                </r>
+                <r>
+                  <c>94</c>
+                  <c>1</c>
+                  <c>5</c>
+                  <c>723.787952372793</c>
+                </r>
+                <r>
+                  <c>95</c>
+                  <c>2</c>
+                  <c>20</c>
+                  <c>734.868695754555</c>
+                </r>
+                <r>
+                  <c>96</c>
+                  <c>6</c>
+                  <c>18</c>
+                  <c>735.114956996523</c>
+                </r>
+                <r>
+                  <c>97</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>736.432617419951</c>
+                </r>
+                <r>
+                  <c>98</c>
+                  <c>9</c>
+                  <c>10</c>
+                  <c>738.358314099598</c>
+                </r>
+                <r>
+                  <c>99</c>
+                  <c>9</c>
+                  <c>18</c>
+                  <c>740.142553836759</c>
+                </r>
+                <r>
+                  <c>100</c>
+                  <c>7</c>
+                  <c>16</c>
+                  <c>740.597056434874</c>
+                </r>
+                <r>
+                  <c>101</c>
+                  <c>2</c>
+                  <c>7</c>
+                  <c>783.700835778551</c>
+                </r>
+                <r>
+                  <c>102</c>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>787.814064357828</c>
+                </r>
+                <r>
+                  <c>103</c>
+                  <c>7</c>
+                  <c>10</c>
+                  <c>788.165591738183</c>
+                </r>
+                <r>
+                  <c>104</c>
+                  <c>9</c>
+                  <c>13</c>
+                  <c>789.496041788684</c>
+                </r>
+                <r>
+                  <c>105</c>
+                  <c>3</c>
+                  <c>8</c>
+                  <c>790.590918237745</c>
+                </r>
+                <r>
+                  <c>106</c>
+                  <c>2</c>
+                  <c>9</c>
+                  <c>795.882529020458</c>
+                </r>
+                <r>
+                  <c>107</c>
+                  <c>6</c>
+                  <c>19</c>
+                  <c>796.678103125723</c>
+                </r>
+                <r>
+                  <c>108</c>
+                  <c>15</c>
+                  <c>16</c>
+                  <c>802.381455418805</c>
+                </r>
+                <r>
+                  <c>109</c>
+                  <c>7</c>
+                  <c>20</c>
+                  <c>809.826524633517</c>
+                </r>
+                <r>
+                  <c>110</c>
+                  <c>4</c>
+                  <c>19</c>
+                  <c>811.571931500837</c>
+                </r>
+                <r>
+                  <c>111</c>
+                  <c>3</c>
+                  <c>13</c>
+                  <c>812.579226906521</c>
+                </r>
+                <r>
+                  <c>112</c>
+                  <c>4</c>
+                  <c>6</c>
+                  <c>814.322417719173</c>
+                </r>
+                <r>
+                  <c>113</c>
+                  <c>16</c>
+                  <c>20</c>
+                  <c>814.770519839789</c>
+                </r>
+                <r>
+                  <c>114</c>
+                  <c>13</c>
+                  <c>15</c>
+                  <c>816.393287576521</c>
+                </r>
+                <r>
+                  <c>115</c>
+                  <c>7</c>
+                  <c>11</c>
+                  <c>817.952321348867</c>
+                </r>
+                <r>
+                  <c>116</c>
+                  <c>3</c>
+                  <c>15</c>
+                  <c>818.142408141761</c>
+                </r>
+                <r>
+                  <c>117</c>
+                  <c>14</c>
+                  <c>16</c>
+                  <c>830.490818733115</c>
+                </r>
+                <r>
+                  <c>118</c>
+                  <c>12</c>
+                  <c>20</c>
+                  <c>832.878142347366</c>
+                </r>
+                <r>
+                  <c>119</c>
+                  <c>3</c>
+                  <c>12</c>
+                  <c>833.343866600097</c>
+                </r>
+                <r>
+                  <c>120</c>
+                  <c>3</c>
+                  <c>11</c>
+                  <c>834.137278869611</c>
+                </r>
+                <r>
+                  <c>121</c>
+                  <c>4</c>
+                  <c>7</c>
+                  <c>837.028075992675</c>
+                </r>
+                <r>
+                  <c>122</c>
+                  <c>8</c>
+                  <c>17</c>
+                  <c>841.56283187888</c>
+                </r>
+                <r>
+                  <c>123</c>
+                  <c>10</c>
+                  <c>14</c>
+                  <c>842.077193611132</c>
+                </r>
+                <r>
+                  <c>124</c>
+                  <c>5</c>
+                  <c>8</c>
+                  <c>844.318660222549</c>
+                </r>
+                <r>
+                  <c>125</c>
+                  <c>5</c>
+                  <c>12</c>
+                  <c>844.770974880174</c>
+                </r>
+                <r>
+                  <c>126</c>
+                  <c>6</c>
+                  <c>8</c>
+                  <c>845.44307910113</c>
+                </r>
+                <r>
+                  <c>127</c>
+                  <c>2</c>
+                  <c>12</c>
+                  <c>847.541149443495</c>
+                </r>
+                <r>
+                  <c>128</c>
+                  <c>8</c>
+                  <c>13</c>
+                  <c>860.237757832101</c>
+                </r>
+                <r>
+                  <c>129</c>
+                  <c>8</c>
+                  <c>14</c>
+                  <c>863.623760673593</c>
+                </r>
+                <r>
+                  <c>130</c>
+                  <c>4</c>
+                  <c>17</c>
+                  <c>863.711178577654</c>
+                </r>
+                <r>
+                  <c>131</c>
+                  <c>6</c>
+                  <c>14</c>
+                  <c>867.383421561653</c>
+                </r>
+                <r>
+                  <c>132</c>
+                  <c>3</c>
+                  <c>10</c>
+                  <c>867.801820694103</c>
+                </r>
+                <r>
+                  <c>133</c>
+                  <c>5</c>
+                  <c>17</c>
+                  <c>878.818525066467</c>
+                </r>
+                <r>
+                  <c>134</c>
+                  <c>9</c>
+                  <c>11</c>
+                  <c>888.068691036904</c>
+                </r>
+                <r>
+                  <c>135</c>
+                  <c>19</c>
+                  <c>20</c>
+                  <c>888.318636526331</c>
+                </r>
+                <r>
+                  <c>136</c>
+                  <c>13</c>
+                  <c>19</c>
+                  <c>889.978089617941</c>
+                </r>
+                <r>
+                  <c>137</c>
+                  <c>13</c>
+                  <c>18</c>
+                  <c>900.832392845639</c>
+                </r>
+                <r>
+                  <c>138</c>
+                  <c>17</c>
+                  <c>19</c>
+                  <c>902.034367416231</c>
+                </r>
+                <r>
+                  <c>139</c>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>908.784352858257</c>
+                </r>
+                <r>
+                  <c>140</c>
+                  <c>2</c>
+                  <c>16</c>
+                  <c>913.531061321945</c>
+                </r>
+                <r>
+                  <c>141</c>
+                  <c>12</c>
+                  <c>18</c>
+                  <c>927.153708939354</c>
+                </r>
+                <r>
+                  <c>142</c>
+                  <c>1</c>
+                  <c>17</c>
+                  <c>927.685830440457</c>
+                </r>
+                <r>
+                  <c>143</c>
+                  <c>4</c>
+                  <c>16</c>
+                  <c>941.95753619789</c>
+                </r>
+                <r>
+                  <c>144</c>
+                  <c>11</c>
+                  <c>15</c>
+                  <c>960.640411392317</c>
+                </r>
+                <r>
+                  <c>145</c>
+                  <c>12</c>
+                  <c>19</c>
+                  <c>966.708849654331</c>
+                </r>
+                <r>
+                  <c>146</c>
+                  <c>7</c>
+                  <c>15</c>
+                  <c>968.35737204815</c>
+                </r>
+                <r>
+                  <c>147</c>
+                  <c>1</c>
+                  <c>14</c>
+                  <c>970.926876752312</c>
+                </r>
+                <r>
+                  <c>148</c>
+                  <c>2</c>
+                  <c>18</c>
+                  <c>979.161886513155</c>
+                </r>
+                <r>
+                  <c>149</c>
+                  <c>14</c>
+                  <c>17</c>
+                  <c>981.697509419271</c>
+                </r>
+                <r>
+                  <c>150</c>
+                  <c>17</c>
+                  <c>18</c>
+                  <c>983.814006812263</c>
+                </r>
+                <r>
+                  <c>151</c>
+                  <c>11</c>
+                  <c>19</c>
+                  <c>996.709084939031</c>
+                </r>
+                <r>
+                  <c>152</c>
+                  <c>14</c>
+                  <c>15</c>
+                  <c>1000.14548941641</c>
+                </r>
+                <r>
+                  <c>153</c>
+                  <c>2</c>
+                  <c>17</c>
+                  <c>1001.08441202528</c>
+                </r>
+                <r>
+                  <c>154</c>
+                  <c>6</c>
+                  <c>11</c>
+                  <c>1002.86838618036</c>
+                </r>
+                <r>
+                  <c>155</c>
+                  <c>18</c>
+                  <c>20</c>
+                  <c>1007.13752784811</c>
+                </r>
+                <r>
+                  <c>156</c>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>1019.98725482233</c>
+                </r>
+                <r>
+                  <c>157</c>
+                  <c>7</c>
+                  <c>12</c>
+                  <c>1020.79233931295</c>
+                </r>
+                <r>
+                  <c>158</c>
+                  <c>2</c>
+                  <c>8</c>
+                  <c>1024.44423957578</c>
+                </r>
+                <r>
+                  <c>159</c>
+                  <c>4</c>
+                  <c>18</c>
+                  <c>1032.78700611501</c>
+                </r>
+                <r>
+                  <c>160</c>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>1041.74613030239</c>
+                </r>
+                <r>
+                  <c>161</c>
+                  <c>1</c>
+                  <c>12</c>
+                  <c>1044.50227381275</c>
+                </r>
+                <r>
+                  <c>162</c>
+                  <c>2</c>
+                  <c>11</c>
+                  <c>1046.16681270245</c>
+                </r>
+                <r>
+                  <c>163</c>
+                  <c>1</c>
+                  <c>7</c>
+                  <c>1047.43496218142</c>
+                </r>
+                <r>
+                  <c>164</c>
+                  <c>7</c>
+                  <c>17</c>
+                  <c>1048.48128261786</c>
+                </r>
+                <r>
+                  <c>165</c>
+                  <c>10</c>
+                  <c>19</c>
+                  <c>1056.63806480743</c>
+                </r>
+                <r>
+                  <c>166</c>
+                  <c>8</c>
+                  <c>12</c>
+                  <c>1057.20764280249</c>
+                </r>
+                <r>
+                  <c>167</c>
+                  <c>13</c>
+                  <c>16</c>
+                  <c>1059.61408069165</c>
+                </r>
+                <r>
+                  <c>168</c>
+                  <c>8</c>
+                  <c>16</c>
+                  <c>1069.86961822458</c>
+                </r>
+                <r>
+                  <c>169</c>
+                  <c>15</c>
+                  <c>19</c>
+                  <c>1075.34971055931</c>
+                </r>
+                <r>
+                  <c>170</c>
+                  <c>4</c>
+                  <c>12</c>
+                  <c>1076.88300200161</c>
+                </r>
+                <r>
+                  <c>171</c>
+                  <c>10</c>
+                  <c>17</c>
+                  <c>1082.32804638889</c>
+                </r>
+                <r>
+                  <c>172</c>
+                  <c>10</c>
+                  <c>16</c>
+                  <c>1095.51312178358</c>
+                </r>
+                <r>
+                  <c>173</c>
+                  <c>7</c>
+                  <c>8</c>
+                  <c>1100.65480510467</c>
+                </r>
+                <r>
+                  <c>174</c>
+                  <c>1</c>
+                  <c>16</c>
+                  <c>1103.55969480586</c>
+                </r>
+                <r>
+                  <c>175</c>
+                  <c>2</c>
+                  <c>19</c>
+                  <c>1103.79980068851</c>
+                </r>
+                <r>
+                  <c>176</c>
+                  <c>10</c>
+                  <c>18</c>
+                  <c>1106.37697011462</c>
+                </r>
+                <r>
+                  <c>177</c>
+                  <c>15</c>
+                  <c>18</c>
+                  <c>1113.80474051783</c>
+                </r>
+                <r>
+                  <c>178</c>
+                  <c>8</c>
+                  <c>19</c>
+                  <c>1121.53198795219</c>
+                </r>
+                <r>
+                  <c>179</c>
+                  <c>2</c>
+                  <c>14</c>
+                  <c>1124.700849115</c>
+                </r>
+                <r>
+                  <c>180</c>
+                  <c>10</c>
+                  <c>12</c>
+                  <c>1130.52111877665</c>
+                </r>
+                <r>
+                  <c>181</c>
+                  <c>12</c>
+                  <c>14</c>
+                  <c>1131.32046741849</c>
+                </r>
+                <r>
+                  <c>182</c>
+                  <c>11</c>
+                  <c>18</c>
+                  <c>1145.38421501259</c>
+                </r>
+                <r>
+                  <c>183</c>
+                  <c>13</c>
+                  <c>17</c>
+                  <c>1181.3979007938</c>
+                </r>
+                <r>
+                  <c>184</c>
+                  <c>1</c>
+                  <c>19</c>
+                  <c>1191.77724428687</c>
+                </r>
+                <r>
+                  <c>185</c>
+                  <c>12</c>
+                  <c>13</c>
+                  <c>1194.03056912292</c>
+                </r>
+                <r>
+                  <c>186</c>
+                  <c>11</c>
+                  <c>16</c>
+                  <c>1256.50228809979</c>
+                </r>
+                <r>
+                  <c>187</c>
+                  <c>11</c>
+                  <c>17</c>
+                  <c>1284.05724171471</c>
+                </r>
+                <r>
+                  <c>188</c>
+                  <c>1</c>
+                  <c>18</c>
+                  <c>1290.45147138511</c>
+                </r>
+                <r>
+                  <c>189</c>
+                  <c>8</c>
+                  <c>18</c>
+                  <c>1295.24746670279</c>
+                </r>
+                <r>
+                  <c>190</c>
+                  <c>11</c>
+                  <c>12</c>
+                  <c>1410.87596903484</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Combination" source="TextInput:" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Int32" />
+            <Field name="Source_RecordID" source="TextInput:" type="Int32" />
+            <Field name="Distance" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="366" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="friends" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Combination" source="TextInput:" type="Int32" />
+            <Field name="RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Source_RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Distance" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="450" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[Contains(","+[friends]+",",","+[RecordID]+",")
+OR
+Contains(","+[friends]+",",","+[Source_RecordID]+",")
+]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>contain or not</AnnotationText>
+          <DefaultAnnotationText>Contains(","+[friends]+",",","+[RecordID]+",")
+OR
+Contains(","+[friends]+",",","...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="friends" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Combination" source="TextInput:" type="Int32" />
+            <Field name="RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Source_RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Distance" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="friends" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Combination" source="TextInput:" type="Int32" />
+            <Field name="RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Source_RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Distance" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="186" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" type="V_WString" size="2147483647" />
+            <SelectField field="Source_RecordID" selected="True" type="V_WString" size="2147483647" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Combination" source="TextInput:" type="Int32" />
+            <Field name="RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Source_RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Distance" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="546" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF Contains(&quot;,&quot;+[friends]+&quot;,&quot;, &quot;,&quot;+[RecordID]+&quot;,&quot;) THEN [friends] ELSE&#xA;[friends]+&quot;,&quot;+[RecordID]&#xA;ENDIF&#xA;" field="friends" size="1073741823" type="V_WString" enabled="true" />
+            <FormulaField expression="IF Contains(&quot;,&quot;+[friends]+&quot;,&quot;, &quot;,&quot;+[Source_RecordID]+&quot;,&quot;) THEN [friends] ELSE&#xA;[friends]+&quot;,&quot;+[Source_RecordID]&#xA;ENDIF&#xA;" field="friends" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>update friends</AnnotationText>
+          <DefaultAnnotationText>friends = IF Contains(","+[friends]+",", ","+[RecordID]+",") THEN [friends] ELSE...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="friends" size="1073741823" source="Formula: IF Contains(&quot;,&quot;+[friends]+&quot;,&quot;, &quot;,&quot;+[Source_RecordID]+&quot;,&quot;) THEN [friends] ELSE&#xA;[friends]+&quot;,&quot;+[Source_RecordID]&#xA;ENDIF&#xA;" type="V_WString" />
+            <Field name="Combination" source="TextInput:" type="Int32" />
+            <Field name="RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Source_RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Distance" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="642" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Group" selected="True" />
+            <SelectField field="friends" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="friends" size="1073741823" source="Formula: IF Contains(&quot;,&quot;+[friends]+&quot;,&quot;, &quot;,&quot;+[Source_RecordID]+&quot;,&quot;) THEN [friends] ELSE&#xA;[friends]+&quot;,&quot;+[Source_RecordID]&#xA;ENDIF&#xA;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="186" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Group" selected="True" type="V_WString" size="2147483647" />
+            <SelectField field="friends" selected="True" type="V_WString" size="2147483647" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="friends" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1662" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="930" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="friends" selected="True" />
+            <SelectField field="Combination" selected="True" rename="Group" type="V_WString" size="2147483647" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="friends" size="1073741823" source="Formula: [RecordID]+&quot;,&quot;+[Source_RecordID]" type="V_WString" />
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="834" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[RecordID]+&quot;,&quot;+[Source_RecordID]" field="friends" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>new combination</AnnotationText>
+          <DefaultAnnotationText><![CDATA[friends = [RecordID]+","+[Source_RecordID]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="friends" size="1073741823" source="Formula: [RecordID]+&quot;,&quot;+[Source_RecordID]" type="V_WString" />
+            <Field name="Combination" source="TextInput:" type="Int32" />
+            <Field name="RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Source_RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Distance" source="TextInput:" type="Double" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1110" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="friends" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="834" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Group" selected="True" />
+            <SelectField field="friends" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>existence combination</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="friends" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings>
+        <Position x="546" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="642" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="friends" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Combination" source="TextInput:" type="Int32" />
+            <Field name="RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Source_RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Distance" source="TextInput:" type="Double" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="738" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2025-12-08 16:22:24</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2025-12-08 16:22:24</StartDate>
+              <EndDate>2025-12-08 16:22:24</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] = 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="friends" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Combination" source="TextInput:" type="Int32" />
+            <Field name="RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Source_RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Distance" source="TextInput:" type="Double" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="friends" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Combination" source="TextInput:" type="Int32" />
+            <Field name="RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Source_RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Distance" source="TextInput:" type="Double" />
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="834" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Group" selected="True" />
+            <SelectField field="friends" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>existence combination</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="friends" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1662" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output24</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1026" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="friends" />
+            <Field field="Group" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="friends" size="1073741823" source="Formula: [RecordID]+&quot;,&quot;+[Source_RecordID]" type="V_WString" />
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="friends" order="Asc" />
+            <Field field="Group" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="friends" size="1073741823" source="Formula: [RecordID]+&quot;,&quot;+[Source_RecordID]" type="V_WString" />
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="friends" order="Asc" />
+            <Field field="Group" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="834" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Group" action="ConcatDistinct" rename="Group">
+              <ConcatDistinct_Start />
+              <Separator>,</Separator>
+              <ConcatDistinct_End />
+            </SummarizeField>
+            <SummarizeField field="friends" action="ConcatDistinct" rename="friends">
+              <ConcatDistinct_Start />
+              <Separator>,</Separator>
+              <ConcatDistinct_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>merge rows</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="Summarize: ConcatDistinct - Group" type="V_WString" />
+            <Field name="friends" size="1073741823" source="Summarize: ConcatDistinct - friends" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="738" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>friends</Field>
+          <Delimeters value="," />
+          <NumFields value="1" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from friends" name="friends" size="1073741823" source="TextToColumns: Parsed from friends" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings>
+        <Position x="1278" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>junction box count</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="1194" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>friends</Field>
+          <Delimeters value="," />
+          <NumFields value="2" />
+          <Mode value="Rows" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from friends" name="friends" size="1073741823" source="TextToColumns: Parsed from friends" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1278" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Count" selected="True" rename="Count1" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="friends" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="Count1" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1446" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!([Count1] = 1 AND [Count2] = 20)</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!([Count1] = 1 AND [Count2] = 20)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="friends" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="Count1" source="(Multiple Sources)" type="Int64" />
+            <Field name="Count2" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="friends" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="Count1" source="(Multiple Sources)" type="Int64" />
+            <Field name="Count2" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+        <Position x="1446" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Numeric Up Down (40)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="1446" y="156" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1554" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Group" selected="True" />
+            <SelectField field="friends" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="friends" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1554" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="friends" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="Count1" source="(Multiple Sources)" type="Int64" />
+            <Field name="Count2" source="(Multiple Sources)" type="Int64" />
+            <Field name="Combination" source="TextInput:" type="Int32" />
+            <Field name="RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Source_RecordID" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Distance" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings>
+        <Position x="1194" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>circuit count</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1362" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Count" selected="True" rename="Count2" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Group" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="friends" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="Count1" source="(Multiple Sources)" type="Int64" />
+            <Field name="Count2" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+        <Position x="1362" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <When>First</When>
+          <Filter />
+          <Type>Message</Type>
+          <Priority>High</Priority>
+          <Transient>False</Transient>
+          <MessageExpression>[Count]</MessageExpression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="6" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="6" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="43" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="False" />
+      <Destination ToolID="43" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="19" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="False" />
+      <Destination ToolID="20" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output9" />
+      <Destination ToolID="20" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="38" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output9" />
+      <Destination ToolID="38" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="44" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="26" Connection="Unique" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="True" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="True" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="False" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output9" />
+      <Destination ToolID="45" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="45" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output9" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="36" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="True" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="40" Connection="Question" />
+      <Destination ToolID="41" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="41" Connection="Action" />
+      <Destination ToolID="39" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="932" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Numeric Up Down (40)</Name>
+        <Value />
+        <IsNumeric value="True" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>aoc202508_iteP2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="9514fd75-e736-4d3c-a429-f748ce123648" />
+      <Telemetry>
+        <PreviousWorkflowId value="ea1d2005-49c2-44ba-bd86-c4320587a73a" />
+        <OriginWorkflowId value="4306e9dd-5e40-43e6-b31d-ce540154e792" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="41" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>20</ReplaceText>
+              <Destination>39/Expression</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Question</Description>
+          <Name>タブ (3)</Name>
+          <ToolId value="3" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>マクロ入力 (2)</Name>
+              <ToolId value="2" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>マクロ出力 (12)</Name>
+              <ToolId value="12" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>マクロ出力 (24)</Description>
+              <Name>マクロ出力 (24)</Name>
+              <ToolId value="24" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>マクロ入力 (5)</Name>
+              <ToolId value="5" />
+            </Question>
+            <Question>
+              <Type>NumericUpDown</Type>
+              <Description>Circuit Num</Description>
+              <Name>Numeric Up Down (40)</Name>
+              <ToolId value="40" />
+              <Minimum value="0" />
+              <Maximum value="100000" />
+              <Increment value="1" />
+              <Default value="50" />
+              <Decimals value="0" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="10000" />
+        <LimitBehavior>Ignore</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="2" Selected="True" />
+        <Tool ToolId="5" Selected="True" />
+        <Tool ToolId="12" Selected="True" />
+        <Tool ToolId="19" Selected="True" />
+        <Tool ToolId="24" Selected="True" />
+        <Tool ToolId="36" Selected="True" />
+        <Tool ToolId="44" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
