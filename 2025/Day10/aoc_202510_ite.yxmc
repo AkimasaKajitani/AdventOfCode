@@ -1,0 +1,1680 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="78" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>InputR</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="3" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="Concat_lightID" />
+                <Field name="lightcount" />
+                <Field name="Current" />
+                <Field name="Max_buttonID" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>5</c>
+                  <c />
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>1,2</c>
+                  <c>4</c>
+                  <c />
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1,2,3,5</c>
+                  <c>6</c>
+                  <c />
+                  <c>4</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Current" source="TextInput:" type="Bool" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Current" selected="True" type="V_WString" size="2147483647" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Current" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="78" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input6</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="40" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="buttonID" />
+                <Field name="buttons" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>5</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>5</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>5</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>4</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>4</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>5</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>5</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>4</c>
+                  <c>2</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="buttonID" source="TextInput:" type="Byte" />
+            <Field name="buttons" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="294" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="buttons" selected="True" rename="current" type="V_WString" size="2147483647" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="buttonID" source="TextInput:" type="Byte" />
+            <Field name="current" size="1073741823" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1158" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+            <Field field="SubID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+            <Field field="SubID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Current" selected="False" input="Left_" />
+                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Right_SubID" selected="True" rename="Right_SubID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="SubID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Current" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+            <Field field="SubID" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="SubID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+            <Field name="Right_SubID" source="Summarize: GroupBy - SubID" type="Int32" />
+            <Field name="buttonID" source="Summarize: GroupBy - buttonID" type="Int32" />
+            <Field name="Current" size="1073741823" source="Summarize: Concat - Current" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+            <Field field="SubID" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Byte" />
+            <Field name="SubID" source="Summarize: GroupBy - SubID" type="Int32" />
+            <Field name="buttonID" source="Summarize: GroupBy - buttonID" type="Int32" />
+            <Field name="Current" size="1073741823" source="Summarize: Concat - Current" type="V_WString" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+            <Field field="SubID" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1254" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Concat_lightID]=[Current]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Concat_lightID]=[Current]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="SubID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+            <Field name="Right_SubID" source="Summarize: GroupBy - SubID" type="Int32" />
+            <Field name="buttonID" source="Summarize: GroupBy - buttonID" type="Int32" />
+            <Field name="Current" size="1073741823" source="Summarize: Concat - Current" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+            <Field field="SubID" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="SubID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+            <Field name="Right_SubID" source="Summarize: GroupBy - SubID" type="Int32" />
+            <Field name="buttonID" source="Summarize: GroupBy - buttonID" type="Int32" />
+            <Field name="Current" size="1073741823" source="Summarize: Concat - Current" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+            <Field field="SubID" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1542" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output19</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1734" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1446" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RecordID" selected="True" input="Left_" />
+                <SelectField field="Left_Concat_lightID" selected="True" input="Left_" />
+                <SelectField field="Left_lightcount" selected="True" input="Left_" />
+                <SelectField field="Left_Max_buttonID" selected="True" input="Left_" />
+                <SelectField field="Left_buttonID" selected="True" input="Left_" />
+                <SelectField field="Left_Current" selected="True" input="Left_" />
+                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Right_Concat_lightID" selected="False" rename="Right_Concat_lightID" input="Right_" />
+                <SelectField field="Right_lightcount" selected="False" rename="Right_lightcount" input="Right_" />
+                <SelectField field="Right_Max_buttonID" selected="False" rename="Right_Max_buttonID" input="Right_" />
+                <SelectField field="Right_buttonID" selected="False" rename="Right_buttonID" input="Right_" />
+                <SelectField field="Right_Current" selected="False" rename="Right_Current" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>remove item which matched the pattern</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="SubID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+            <Field name="Right_SubID" source="Summarize: GroupBy - SubID" type="Int32" />
+            <Field name="buttonID" source="Summarize: GroupBy - buttonID" type="Int32" />
+            <Field name="Current" size="1073741823" source="Summarize: Concat - Current" type="V_WString" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+            <Field name="buttonID" source="Summarize: GroupBy - buttonID" type="Int32" />
+            <Field name="Current" size="1073741823" source="Summarize: Concat - Current" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1350" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.IterationNumber]+1" field="ItarativeCount" size="8" type="Int64" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ItarativeCount = [Engine.IterationNumber]+1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SubID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+            <Field name="Right_SubID" source="Summarize: GroupBy - SubID" type="Int32" />
+            <Field name="buttonID" source="Summarize: GroupBy - buttonID" type="Int32" />
+            <Field name="Current" size="1073741823" source="Summarize: Concat - Current" type="V_WString" />
+            <Field name="ItarativeCount" source="Formula: [Engine.IterationNumber]+1" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+            <Field field="SubID" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1542" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="Concat_lightID" selected="True" />
+            <SelectField field="lightcount" selected="True" />
+            <SelectField field="Max_buttonID" selected="True" />
+            <SelectField field="Current" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+            <Field name="Current" size="1073741823" source="Summarize: Concat - Current" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="15" />
+          <Fields>
+            <Field name="RecordID" />
+            <Field name="Concat_lightID" />
+            <Field name="lightcount" />
+            <Field name="Max_buttonID" />
+            <Field name="Current" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>1,2</c>
+              <c>4</c>
+              <c>6</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>1,2</c>
+              <c>4</c>
+              <c>6</c>
+              <c>1,3</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>1,2</c>
+              <c>4</c>
+              <c>6</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>1,2</c>
+              <c>4</c>
+              <c>6</c>
+              <c>2,3</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>1,2</c>
+              <c>4</c>
+              <c>6</c>
+              <c>0,2</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>1,2</c>
+              <c>4</c>
+              <c>6</c>
+              <c>0,1</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>3</c>
+              <c>5</c>
+              <c>5</c>
+              <c>0,2,3,4</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>3</c>
+              <c>5</c>
+              <c>5</c>
+              <c>2,3</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>3</c>
+              <c>5</c>
+              <c>5</c>
+              <c>0,4</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>3</c>
+              <c>5</c>
+              <c>5</c>
+              <c>0,1,2</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>3</c>
+              <c>5</c>
+              <c>5</c>
+              <c>1,2,3,4</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>1,2,3,5</c>
+              <c>6</c>
+              <c>4</c>
+              <c>0,1,2,3,4</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>1,2,3,5</c>
+              <c>6</c>
+              <c>4</c>
+              <c>0,3,4</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>1,2,3,5</c>
+              <c>6</c>
+              <c>4</c>
+              <c>0,1,2,4,5</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>1,2,3,5</c>
+              <c>6</c>
+              <c>4</c>
+              <c>1,2</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+            <Field name="Current" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1350" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="GroupBy" rename="RecordID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1446" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="RecordID" />
+            <Field field="Concat_lightID" />
+            <Field field="lightcount" />
+            <Field field="Max_buttonID" />
+            <Field field="buttonID" />
+            <Field field="Current" />
+            <Field field="ItarativeCount" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="SubID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+            <Field name="Right_SubID" source="Summarize: GroupBy - SubID" type="Int32" />
+            <Field name="buttonID" source="Summarize: GroupBy - buttonID" type="Int32" />
+            <Field name="Current" size="1073741823" source="Summarize: Concat - Current" type="V_WString" />
+            <Field name="ItarativeCount" source="Formula: [Engine.IterationNumber]+1" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+            <Field field="Concat_lightID" order="Asc" />
+            <Field field="lightcount" order="Asc" />
+            <Field field="Max_buttonID" order="Asc" />
+            <Field field="buttonID" order="Asc" />
+            <Field field="Current" order="Asc" />
+            <Field field="ItarativeCount" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="SubID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+            <Field name="Right_SubID" source="Summarize: GroupBy - SubID" type="Int32" />
+            <Field name="buttonID" source="Summarize: GroupBy - buttonID" type="Int32" />
+            <Field name="Current" size="1073741823" source="Summarize: Concat - Current" type="V_WString" />
+            <Field name="ItarativeCount" source="Formula: [Engine.IterationNumber]+1" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+            <Field field="Concat_lightID" order="Asc" />
+            <Field field="lightcount" order="Asc" />
+            <Field field="Max_buttonID" order="Asc" />
+            <Field field="buttonID" order="Asc" />
+            <Field field="Current" order="Asc" />
+            <Field field="ItarativeCount" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="294" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>SubID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SubID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Current" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="SubID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1638" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="RecordID" />
+            <Field field="Concat_lightID" />
+            <Field field="lightcount" />
+            <Field field="Max_buttonID" />
+            <Field field="Current" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+            <Field name="Current" size="1073741823" source="Summarize: Concat - Current" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+            <Field field="Concat_lightID" order="Asc" />
+            <Field field="lightcount" order="Asc" />
+            <Field field="Max_buttonID" order="Asc" />
+            <Field field="Current" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+            <Field name="lightcount" source="TextInput:" type="Byte" />
+            <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+            <Field name="Current" size="1073741823" source="Summarize: Concat - Current" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+            <Field field="Concat_lightID" order="Asc" />
+            <Field field="lightcount" order="Asc" />
+            <Field field="Max_buttonID" order="Asc" />
+            <Field field="Current" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="380" y="115" width="751" height="327" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Push all button</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Push all button</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="678" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="SubID" source="(Multiple Sources)" type="Int32" />
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+                <Field name="lightcount" source="TextInput:" type="Byte" />
+                <Field name="Current" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+                <Field name="buttonID" source="(Multiple Sources)" type="Int32" />
+                <Field name="Max_SubID" source="RecordID: Starting Value=1" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="774" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="RecordID" action="GroupBy" rename="RecordID" />
+                <SummarizeField field="SubID" action="GroupBy" rename="SubID" />
+                <SummarizeField field="buttonID" action="GroupBy" rename="buttonID" />
+                <SummarizeField field="Current" action="GroupBy" rename="Current" />
+                <SummarizeField field="Current" action="Count" rename="Count" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Byte" />
+                <Field name="SubID" source="Summarize: GroupBy - SubID" type="Int32" />
+                <Field name="buttonID" source="Summarize: GroupBy - buttonID" type="Int32" />
+                <Field name="Current" size="1073741823" source="Summarize: GroupBy - Current" type="V_WString" />
+                <Field name="Count" source="Summarize: Count - Current" type="Int64" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc" />
+                <Field field="SubID" order="Asc" />
+                <Field field="buttonID" order="Asc" />
+                <Field field="Current" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="390" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Current</Field>
+              <Delimeters value="," />
+              <NumFields value="2" />
+              <Mode value="Rows" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="SubID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+                <Field name="lightcount" source="TextInput:" type="Byte" />
+                <Field description="TextToColumns: Parsed from Current" name="Current" size="1073741823" source="TextToColumns: Parsed from Current" type="V_WString" />
+                <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="SubID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="582" y="149" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="SubID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+                <Field name="lightcount" source="TextInput:" type="Byte" />
+                <Field description="TextToColumns: Parsed from Current" name="Current" size="1073741823" source="TextToColumns: Parsed from Current" type="V_WString" />
+                <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+                <Field name="buttonID" type="Int32" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="SubID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+            <Position x="486" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>RecordID</UpdateField_Name>
+              <CreateField_Name>buttonID</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <Expression_Init>1</Expression_Init>
+              <Expression_Cond>buttonID &lt;= [Max_buttonID]</Expression_Cond>
+              <Expression_Loop>buttonID + 1</Expression_Loop>
+              <Expression>1buttonID &lt;= [Max_buttonID]buttonID + 1</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="SubID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="Concat_lightID" size="7" source="TextInput:" type="String" />
+                <Field name="lightcount" source="TextInput:" type="Byte" />
+                <Field description="TextToColumns: Parsed from Current" name="Current" size="1073741823" source="TextToColumns: Parsed from Current" type="V_WString" />
+                <Field name="Max_buttonID" source="TextInput:" type="Byte" />
+                <Field name="buttonID" type="Int32" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="SubID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="870" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>Mod([Count], 2)=1 
+AND !IsEmpty([Current])</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Mod([Count], 2)=1 
+AND !IsEmpty([Current])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Byte" />
+                <Field name="SubID" source="Summarize: GroupBy - SubID" type="Int32" />
+                <Field name="buttonID" source="Summarize: GroupBy - buttonID" type="Int32" />
+                <Field name="Current" size="1073741823" source="Summarize: GroupBy - Current" type="V_WString" />
+                <Field name="Count" source="Summarize: Count - Current" type="Int64" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc" />
+                <Field field="SubID" order="Asc" />
+                <Field field="buttonID" order="Asc" />
+                <Field field="Current" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Byte" />
+                <Field name="SubID" source="Summarize: GroupBy - SubID" type="Int32" />
+                <Field name="buttonID" source="Summarize: GroupBy - buttonID" type="Int32" />
+                <Field name="Current" size="1073741823" source="Summarize: GroupBy - Current" type="V_WString" />
+                <Field name="Count" source="Summarize: Count - Current" type="Int64" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc" />
+                <Field field="SubID" order="Asc" />
+                <Field field="buttonID" order="Asc" />
+                <Field field="Current" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1062" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="RecordID" action="GroupBy" rename="RecordID" />
+                <SummarizeField field="SubID" action="GroupBy" rename="SubID" />
+                <SummarizeField field="buttonID" action="GroupBy" rename="buttonID" />
+                <SummarizeField field="Current" action="Concat" rename="Current">
+                  <Concat_Start />
+                  <Separator>,</Separator>
+                  <Concat_End />
+                </SummarizeField>
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Byte" />
+                <Field name="SubID" source="Summarize: GroupBy - SubID" type="Int32" />
+                <Field name="buttonID" source="Summarize: GroupBy - buttonID" type="Int32" />
+                <Field name="Current" size="1073741823" source="Summarize: Concat - Current" type="V_WString" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc" />
+                <Field field="SubID" order="Asc" />
+                <Field field="buttonID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="966" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="RecordID" order="Ascending" />
+                <Field field="Current" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>RecordID - Ascending
+Current - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Byte" />
+                <Field name="SubID" source="Summarize: GroupBy - SubID" type="Int32" />
+                <Field name="buttonID" source="Summarize: GroupBy - buttonID" type="Int32" />
+                <Field name="Current" size="1073741823" source="Summarize: GroupBy - Current" type="V_WString" />
+                <Field name="Count" source="Summarize: Count - Current" type="Int64" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="RecordID" order="Ascending" />
+                <Field field="Current" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+            <Position x="582" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>RecordID</UpdateField_Name>
+              <CreateField_Name>SubID</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <Expression_Init>1</Expression_Init>
+              <Expression_Cond>SubID &lt;= [Max_SubID]</Expression_Cond>
+              <Expression_Loop>SubID + 1</Expression_Loop>
+              <Expression>1SubID &lt;= [Max_SubID]SubID + 1</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>create record for each pattern</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="buttonID" source="TextInput:" type="Byte" />
+                <Field name="current" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Max_SubID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="SubID" type="Int32" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="390" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="RecordID" action="GroupBy" rename="RecordID" />
+                <SummarizeField field="SubID" action="Max" rename="Max_SubID" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>pattern num for each machine</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Byte" />
+                <Field name="Max_SubID" source="RecordID: Starting Value=1" type="Int32" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="486" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="RecordID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="RecordID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="buttonID" source="TextInput:" type="Byte" />
+                <Field name="current" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="RecordID" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="RecordID" source="TextInput:" type="Byte" />
+                <Field name="buttonID" source="TextInput:" type="Byte" />
+                <Field name="current" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="Max_SubID" source="RecordID: Starting Value=1" type="Int32" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Byte" />
+                <Field name="Max_SubID" source="RecordID: Starting Value=1" type="Int32" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="RecordID" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="33" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="33" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="True" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="False" />
+      <Destination ToolID="21" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="21" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="True" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Left" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Unique" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Unique" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="True" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Join" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>aoc_202510_ite</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="dd8a3f12-0e64-4f0b-9714-dabcb771a3f7" />
+      <Telemetry>
+        <PreviousWorkflowId value="5a380bc4-dcfb-4510-b9ae-33437fdc63ba" />
+        <OriginWorkflowId value="5a380bc4-dcfb-4510-b9ae-33437fdc63ba" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (6)</Name>
+              <ToolId value="6" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (19)</Name>
+              <ToolId value="19" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (20)</Name>
+              <ToolId value="20" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>InputR</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="10000" />
+        <LimitBehavior>Ignore</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="6" Selected="True" />
+        <Tool ToolId="19" Selected="True" />
+        <Tool ToolId="20" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
