@@ -1,0 +1,3557 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="114" width="96" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="メイリオ" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="150" y="114" width="300" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>2025　Day12</Text>
+          <Font name="Arial" size="15.75" style="1" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="150" y="150" width="300" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>AkimasaKajitani</Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="372" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Advent of Code</Text>
+          <Font name="Arial Black" size="26.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="258" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Input</UpdateField_Name>
+          <CreateField_Name>group</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF IsEmpty([Input]) THEN [Row-1:group]+1 ELSE [Row-1:group] ENDIF</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF IsEmpty([Input]) THEN [Row-1:group]+1 ELSE [Row-1:group] E...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="354" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[group] &gt; 5 AND !IsNull([Input])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[group] &gt; 5 AND !IsNull([Input])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="462" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Input</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>
+          </RootName>
+          <Delimeters value=":" />
+          <NumFields value="2" />
+          <Mode value="Columns" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="654" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>2</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>2</RootName>
+          <Delimeters value="\s" />
+          <NumFields value="6" />
+          <Mode value="Columns" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="846" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Input" selected="False" />
+            <SelectField field="group" selected="False" />
+            <SelectField field="1" selected="False" rename="size" />
+            <SelectField field="11" selected="True" rename="x" type="Int64" size="8" />
+            <SelectField field="12" selected="True" rename="y" type="Int64" size="8" />
+            <SelectField field="2" selected="False" />
+            <SelectField field="21" selected="True" rename="0" type="Int64" size="8" />
+            <SelectField field="22" selected="True" rename="1" type="Int64" size="8" />
+            <SelectField field="23" selected="True" rename="2" type="Int64" size="8" />
+            <SelectField field="24" selected="True" rename="3" type="Int64" size="8" />
+            <SelectField field="25" selected="True" rename="4" type="Int64" size="8" />
+            <SelectField field="26" selected="True" rename="5" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="89">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="558" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Trim([2])" field="2" size="2147483647" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[2 = Trim([2])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="90">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="750" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>1</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>1</RootName>
+          <Delimeters value="x" />
+          <NumFields value="2" />
+          <Mode value="Columns" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="942" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[0]+[1]+[2]+[3]+[4]+[5]" field="total" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="[x]*[y]" field="area" size="8" type="Int64" enabled="true" />
+            <FormulaField expression="[total]*9" field="a" size="8" type="Int64" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[total = [0]+[1]+[2]+[3]+[4]+[5]
+area = [x]*[y]
+a = [total]*9
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1038" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[area]&gt;=[a]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[area]&gt;=[a]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings>
+        <Position x="1134" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1230" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_29208_fd91304c81a14002853c78e0f2738e38_\Engine_29208_e67a86ac107f47b59df432f488f41035~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>★</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="162" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Input</Field>
+          <Delimeters value="\n" />
+          <NumFields value="3" />
+          <Mode value="Rows" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="95">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="66" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1030" />
+          <Fields>
+            <Field name="Input" />
+          </Fields>
+          <Data>
+            <r>
+              <c>0:</c>
+            </r>
+            <r>
+              <c>##.</c>
+            </r>
+            <r>
+              <c>###</c>
+            </r>
+            <r>
+              <c>#.#</c>
+            </r>
+            <r>
+              <c />
+            </r>
+            <r>
+              <c>1:</c>
+            </r>
+            <r>
+              <c>###</c>
+            </r>
+            <r>
+              <c>#.#</c>
+            </r>
+            <r>
+              <c>#.#</c>
+            </r>
+            <r>
+              <c />
+            </r>
+            <r>
+              <c>2:</c>
+            </r>
+            <r>
+              <c>#..</c>
+            </r>
+            <r>
+              <c>##.</c>
+            </r>
+            <r>
+              <c>###</c>
+            </r>
+            <r>
+              <c />
+            </r>
+            <r>
+              <c>3:</c>
+            </r>
+            <r>
+              <c>###</c>
+            </r>
+            <r>
+              <c>.#.</c>
+            </r>
+            <r>
+              <c>###</c>
+            </r>
+            <r>
+              <c />
+            </r>
+            <r>
+              <c>4:</c>
+            </r>
+            <r>
+              <c>..#</c>
+            </r>
+            <r>
+              <c>.##</c>
+            </r>
+            <r>
+              <c>##.</c>
+            </r>
+            <r>
+              <c />
+            </r>
+            <r>
+              <c>5:</c>
+            </r>
+            <r>
+              <c>###</c>
+            </r>
+            <r>
+              <c>###</c>
+            </r>
+            <r>
+              <c>..#</c>
+            </r>
+            <r>
+              <c />
+            </r>
+            <r>
+              <c>40x41: 44 53 34 42 33 43</c>
+            </r>
+            <r>
+              <c>44x43: 31 27 44 35 36 23</c>
+            </r>
+            <r>
+              <c>39x48: 55 39 45 51 42 54</c>
+            </r>
+            <r>
+              <c>50x36: 51 48 50 42 50 38</c>
+            </r>
+            <r>
+              <c>41x37: 20 31 26 27 32 19</c>
+            </r>
+            <r>
+              <c>35x39: 25 24 22 25 19 28</c>
+            </r>
+            <r>
+              <c>43x39: 27 35 26 43 32 19</c>
+            </r>
+            <r>
+              <c>50x40: 45 55 57 52 42 55</c>
+            </r>
+            <r>
+              <c>35x42: 37 44 35 45 37 28</c>
+            </r>
+            <r>
+              <c>35x50: 34 31 34 25 27 24</c>
+            </r>
+            <r>
+              <c>35x47: 32 24 30 20 30 28</c>
+            </r>
+            <r>
+              <c>36x45: 50 33 44 30 49 46</c>
+            </r>
+            <r>
+              <c>38x46: 26 28 36 31 32 27</c>
+            </r>
+            <r>
+              <c>43x49: 31 49 38 41 30 34</c>
+            </r>
+            <r>
+              <c>44x50: 41 63 59 53 52 70</c>
+            </r>
+            <r>
+              <c>35x41: 25 22 17 24 27 28</c>
+            </r>
+            <r>
+              <c>42x42: 39 45 22 30 30 30</c>
+            </r>
+            <r>
+              <c>39x47: 34 29 42 28 26 35</c>
+            </r>
+            <r>
+              <c>42x37: 46 34 47 34 35 43</c>
+            </r>
+            <r>
+              <c>44x41: 21 30 30 30 33 37</c>
+            </r>
+            <r>
+              <c>42x49: 41 29 37 32 45 40</c>
+            </r>
+            <r>
+              <c>43x43: 31 37 34 23 35 35</c>
+            </r>
+            <r>
+              <c>37x37: 35 33 39 39 27 36</c>
+            </r>
+            <r>
+              <c>49x47: 67 59 60 49 67 55</c>
+            </r>
+            <r>
+              <c>43x43: 25 37 45 39 28 21</c>
+            </r>
+            <r>
+              <c>44x36: 32 29 25 28 32 22</c>
+            </r>
+            <r>
+              <c>46x47: 43 41 28 46 36 31</c>
+            </r>
+            <r>
+              <c>44x44: 43 26 29 33 28 36</c>
+            </r>
+            <r>
+              <c>42x37: 23 35 26 21 33 29</c>
+            </r>
+            <r>
+              <c>41x48: 47 44 43 61 47 59</c>
+            </r>
+            <r>
+              <c>38x41: 41 49 34 43 36 35</c>
+            </r>
+            <r>
+              <c>48x41: 50 52 47 57 55 43</c>
+            </r>
+            <r>
+              <c>45x41: 39 41 44 58 59 46</c>
+            </r>
+            <r>
+              <c>40x42: 47 40 40 44 45 43</c>
+            </r>
+            <r>
+              <c>48x44: 42 38 35 34 32 42</c>
+            </r>
+            <r>
+              <c>48x40: 34 35 37 36 33 32</c>
+            </r>
+            <r>
+              <c>39x37: 25 18 23 29 34 27</c>
+            </r>
+            <r>
+              <c>50x36: 37 52 44 45 43 55</c>
+            </r>
+            <r>
+              <c>48x35: 31 32 29 23 25 36</c>
+            </r>
+            <r>
+              <c>49x47: 61 53 66 61 57 57</c>
+            </r>
+            <r>
+              <c>35x44: 40 41 39 40 46 33</c>
+            </r>
+            <r>
+              <c>49x49: 65 53 80 65 57 51</c>
+            </r>
+            <r>
+              <c>38x38: 33 45 37 34 56 23</c>
+            </r>
+            <r>
+              <c>38x44: 40 55 47 43 39 33</c>
+            </r>
+            <r>
+              <c>44x49: 43 63 54 65 66 44</c>
+            </r>
+            <r>
+              <c>37x43: 44 37 31 46 42 44</c>
+            </r>
+            <r>
+              <c>44x47: 44 55 55 51 57 58</c>
+            </r>
+            <r>
+              <c>49x42: 31 38 26 33 41 55</c>
+            </r>
+            <r>
+              <c>47x45: 38 46 42 41 26 31</c>
+            </r>
+            <r>
+              <c>42x45: 34 26 41 32 35 41</c>
+            </r>
+            <r>
+              <c>46x40: 34 35 37 27 24 37</c>
+            </r>
+            <r>
+              <c>42x50: 41 47 55 54 66 64</c>
+            </r>
+            <r>
+              <c>49x45: 31 37 53 32 36 50</c>
+            </r>
+            <r>
+              <c>44x48: 43 36 35 39 34 37</c>
+            </r>
+            <r>
+              <c>46x46: 37 48 30 32 44 33</c>
+            </r>
+            <r>
+              <c>45x42: 40 31 32 35 36 36</c>
+            </r>
+            <r>
+              <c>47x39: 27 32 30 40 23 42</c>
+            </r>
+            <r>
+              <c>38x35: 28 39 36 28 37 38</c>
+            </r>
+            <r>
+              <c>36x40: 41 37 36 35 34 38</c>
+            </r>
+            <r>
+              <c>49x41: 55 43 47 46 53 65</c>
+            </r>
+            <r>
+              <c>44x45: 33 34 37 42 28 36</c>
+            </r>
+            <r>
+              <c>48x45: 59 56 54 44 64 58</c>
+            </r>
+            <r>
+              <c>38x47: 51 46 59 43 35 40</c>
+            </r>
+            <r>
+              <c>35x44: 15 19 34 24 25 36</c>
+            </r>
+            <r>
+              <c>45x47: 48 57 55 58 62 48</c>
+            </r>
+            <r>
+              <c>44x37: 27 30 26 30 27 28</c>
+            </r>
+            <r>
+              <c>46x50: 61 68 71 44 60 52</c>
+            </r>
+            <r>
+              <c>44x48: 41 37 34 52 31 28</c>
+            </r>
+            <r>
+              <c>48x44: 36 41 40 29 33 45</c>
+            </r>
+            <r>
+              <c>42x50: 62 56 62 43 41 57</c>
+            </r>
+            <r>
+              <c>36x44: 42 39 39 40 35 47</c>
+            </r>
+            <r>
+              <c>48x50: 71 52 74 62 60 52</c>
+            </r>
+            <r>
+              <c>38x43: 28 27 25 30 27 31</c>
+            </r>
+            <r>
+              <c>44x36: 36 32 24 16 25 34</c>
+            </r>
+            <r>
+              <c>37x50: 54 52 44 48 36 47</c>
+            </r>
+            <r>
+              <c>42x43: 28 29 37 45 38 18</c>
+            </r>
+            <r>
+              <c>44x47: 34 51 38 27 26 33</c>
+            </r>
+            <r>
+              <c>37x37: 30 30 43 34 39 37</c>
+            </r>
+            <r>
+              <c>36x36: 29 32 42 26 41 33</c>
+            </r>
+            <r>
+              <c>49x35: 28 25 24 32 31 36</c>
+            </r>
+            <r>
+              <c>35x47: 44 33 35 53 41 46</c>
+            </r>
+            <r>
+              <c>38x49: 41 42 56 55 44 49</c>
+            </r>
+            <r>
+              <c>47x48: 37 43 43 45 44 28</c>
+            </r>
+            <r>
+              <c>48x46: 71 53 52 53 56 54</c>
+            </r>
+            <r>
+              <c>39x39: 26 26 25 38 30 24</c>
+            </r>
+            <r>
+              <c>44x44: 36 37 27 23 39 33</c>
+            </r>
+            <r>
+              <c>45x40: 33 33 22 37 41 29</c>
+            </r>
+            <r>
+              <c>36x43: 32 39 42 48 41 37</c>
+            </r>
+            <r>
+              <c>38x46: 44 47 38 39 37 61</c>
+            </r>
+            <r>
+              <c>47x35: 19 33 22 31 29 31</c>
+            </r>
+            <r>
+              <c>36x35: 24 25 22 18 25 17</c>
+            </r>
+            <r>
+              <c>35x48: 29 35 23 31 28 29</c>
+            </r>
+            <r>
+              <c>44x48: 36 26 40 44 39 38</c>
+            </r>
+            <r>
+              <c>46x41: 34 29 25 46 29 32</c>
+            </r>
+            <r>
+              <c>50x43: 38 31 48 34 32 41</c>
+            </r>
+            <r>
+              <c>44x42: 57 36 38 41 47 64</c>
+            </r>
+            <r>
+              <c>36x47: 25 24 37 35 30 29</c>
+            </r>
+            <r>
+              <c>46x46: 35 39 27 36 39 48</c>
+            </r>
+            <r>
+              <c>42x40: 42 50 42 31 48 47</c>
+            </r>
+            <r>
+              <c>45x38: 32 47 49 46 37 51</c>
+            </r>
+            <r>
+              <c>40x44: 40 50 41 47 51 43</c>
+            </r>
+            <r>
+              <c>36x37: 31 38 36 30 25 43</c>
+            </r>
+            <r>
+              <c>50x42: 37 35 39 42 31 40</c>
+            </r>
+            <r>
+              <c>42x37: 28 32 22 42 27 17</c>
+            </r>
+            <r>
+              <c>43x39: 42 30 19 27 28 35</c>
+            </r>
+            <r>
+              <c>38x41: 41 42 40 36 43 39</c>
+            </r>
+            <r>
+              <c>43x45: 46 30 36 30 37 30</c>
+            </r>
+            <r>
+              <c>43x49: 48 30 39 37 34 35</c>
+            </r>
+            <r>
+              <c>38x41: 33 43 42 50 29 40</c>
+            </r>
+            <r>
+              <c>41x43: 21 26 39 35 26 34</c>
+            </r>
+            <r>
+              <c>35x39: 24 29 23 29 17 21</c>
+            </r>
+            <r>
+              <c>37x44: 27 38 27 21 36 19</c>
+            </r>
+            <r>
+              <c>37x44: 24 28 26 29 35 26</c>
+            </r>
+            <r>
+              <c>35x45: 31 23 31 18 26 36</c>
+            </r>
+            <r>
+              <c>36x43: 43 45 34 40 37 38</c>
+            </r>
+            <r>
+              <c>43x41: 21 29 30 35 31 36</c>
+            </r>
+            <r>
+              <c>42x48: 39 38 38 37 31 40</c>
+            </r>
+            <r>
+              <c>43x41: 27 34 30 36 29 26</c>
+            </r>
+            <r>
+              <c>36x48: 49 52 32 41 50 42</c>
+            </r>
+            <r>
+              <c>39x40: 38 40 48 32 56 32</c>
+            </r>
+            <r>
+              <c>36x42: 28 43 44 46 33 38</c>
+            </r>
+            <r>
+              <c>43x39: 28 25 34 38 31 26</c>
+            </r>
+            <r>
+              <c>36x42: 41 29 42 33 48 43</c>
+            </r>
+            <r>
+              <c>46x38: 26 26 32 29 38 28</c>
+            </r>
+            <r>
+              <c>35x41: 50 40 32 32 39 28</c>
+            </r>
+            <r>
+              <c>45x48: 51 46 65 65 59 49</c>
+            </r>
+            <r>
+              <c>40x43: 27 30 36 36 30 23</c>
+            </r>
+            <r>
+              <c>40x48: 65 45 47 47 44 46</c>
+            </r>
+            <r>
+              <c>36x36: 29 40 29 32 37 33</c>
+            </r>
+            <r>
+              <c>45x36: 37 52 37 43 35 43</c>
+            </r>
+            <r>
+              <c>41x42: 46 46 34 49 41 47</c>
+            </r>
+            <r>
+              <c>47x37: 43 48 51 40 49 39</c>
+            </r>
+            <r>
+              <c>43x37: 41 42 46 46 35 34</c>
+            </r>
+            <r>
+              <c>40x35: 33 30 35 41 37 40</c>
+            </r>
+            <r>
+              <c>50x40: 34 34 39 34 36 31</c>
+            </r>
+            <r>
+              <c>47x47: 69 59 42 67 49 50</c>
+            </r>
+            <r>
+              <c>37x38: 30 24 21 20 16 33</c>
+            </r>
+            <r>
+              <c>41x41: 34 29 30 22 25 28</c>
+            </r>
+            <r>
+              <c>48x50: 50 35 42 39 41 49</c>
+            </r>
+            <r>
+              <c>37x39: 41 27 31 49 35 38</c>
+            </r>
+            <r>
+              <c>39x43: 49 40 40 45 43 41</c>
+            </r>
+            <r>
+              <c>38x41: 36 41 42 32 53 40</c>
+            </r>
+            <r>
+              <c>48x46: 36 38 44 42 36 44</c>
+            </r>
+            <r>
+              <c>37x50: 31 32 38 32 31 28</c>
+            </r>
+            <r>
+              <c>37x44: 43 41 47 40 50 33</c>
+            </r>
+            <r>
+              <c>37x47: 30 23 29 37 32 28</c>
+            </r>
+            <r>
+              <c>36x46: 33 32 27 32 32 23</c>
+            </r>
+            <r>
+              <c>36x35: 13 30 22 20 25 22</c>
+            </r>
+            <r>
+              <c>44x46: 30 37 45 39 22 37</c>
+            </r>
+            <r>
+              <c>40x45: 48 44 45 41 49 51</c>
+            </r>
+            <r>
+              <c>46x46: 50 55 59 56 49 56</c>
+            </r>
+            <r>
+              <c>45x41: 33 30 39 27 38 27</c>
+            </r>
+            <r>
+              <c>43x40: 35 29 29 29 30 30</c>
+            </r>
+            <r>
+              <c>40x43: 33 38 31 31 28 20</c>
+            </r>
+            <r>
+              <c>41x35: 25 12 20 33 29 23</c>
+            </r>
+            <r>
+              <c>38x37: 25 22 20 20 26 31</c>
+            </r>
+            <r>
+              <c>47x47: 42 35 32 29 42 45</c>
+            </r>
+            <r>
+              <c>49x45: 47 64 59 65 50 53</c>
+            </r>
+            <r>
+              <c>35x48: 18 34 21 26 31 45</c>
+            </r>
+            <r>
+              <c>46x38: 36 52 38 41 54 50</c>
+            </r>
+            <r>
+              <c>41x37: 32 41 40 34 36 50</c>
+            </r>
+            <r>
+              <c>35x42: 42 33 39 43 36 33</c>
+            </r>
+            <r>
+              <c>43x48: 48 47 49 51 63 62</c>
+            </r>
+            <r>
+              <c>41x47: 42 70 49 50 33 48</c>
+            </r>
+            <r>
+              <c>44x45: 38 30 41 35 33 33</c>
+            </r>
+            <r>
+              <c>37x44: 29 30 32 29 24 24</c>
+            </r>
+            <r>
+              <c>41x44: 29 34 29 28 32 29</c>
+            </r>
+            <r>
+              <c>40x36: 24 32 29 23 21 26</c>
+            </r>
+            <r>
+              <c>41x37: 37 37 45 41 33 40</c>
+            </r>
+            <r>
+              <c>44x49: 41 30 37 35 35 45</c>
+            </r>
+            <r>
+              <c>37x48: 28 36 27 43 32 26</c>
+            </r>
+            <r>
+              <c>44x38: 32 29 27 28 33 18</c>
+            </r>
+            <r>
+              <c>37x44: 23 29 34 20 37 25</c>
+            </r>
+            <r>
+              <c>42x49: 54 48 57 55 48 54</c>
+            </r>
+            <r>
+              <c>40x45: 45 41 42 53 48 48</c>
+            </r>
+            <r>
+              <c>39x48: 33 32 32 34 34 43</c>
+            </r>
+            <r>
+              <c>37x36: 26 30 45 33 35 38</c>
+            </r>
+            <r>
+              <c>47x38: 49 46 46 42 38 52</c>
+            </r>
+            <r>
+              <c>41x36: 22 26 28 20 31 28</c>
+            </r>
+            <r>
+              <c>50x43: 41 36 42 31 42 32</c>
+            </r>
+            <r>
+              <c>35x37: 31 30 30 39 36 34</c>
+            </r>
+            <r>
+              <c>42x36: 39 34 36 43 41 40</c>
+            </r>
+            <r>
+              <c>46x46: 46 40 32 30 33 44</c>
+            </r>
+            <r>
+              <c>42x37: 34 37 43 43 37 45</c>
+            </r>
+            <r>
+              <c>49x35: 40 34 15 32 31 24</c>
+            </r>
+            <r>
+              <c>35x46: 43 36 48 46 31 42</c>
+            </r>
+            <r>
+              <c>47x39: 35 50 47 42 56 55</c>
+            </r>
+            <r>
+              <c>50x46: 52 68 73 56 66 43</c>
+            </r>
+            <r>
+              <c>41x47: 31 43 27 33 29 31</c>
+            </r>
+            <r>
+              <c>38x38: 34 39 38 48 32 30</c>
+            </r>
+            <r>
+              <c>37x36: 44 25 41 30 33 33</c>
+            </r>
+            <r>
+              <c>39x50: 55 56 59 41 52 39</c>
+            </r>
+            <r>
+              <c>38x44: 30 25 27 28 26 32</c>
+            </r>
+            <r>
+              <c>39x36: 38 34 34 43 32 34</c>
+            </r>
+            <r>
+              <c>40x47: 30 35 41 27 30 31</c>
+            </r>
+            <r>
+              <c>47x45: 53 60 63 50 55 46</c>
+            </r>
+            <r>
+              <c>38x40: 34 50 40 41 41 29</c>
+            </r>
+            <r>
+              <c>39x47: 31 29 38 30 32 35</c>
+            </r>
+            <r>
+              <c>38x50: 35 31 25 27 47 27</c>
+            </r>
+            <r>
+              <c>42x37: 27 30 27 27 30 27</c>
+            </r>
+            <r>
+              <c>37x47: 25 31 34 34 28 27</c>
+            </r>
+            <r>
+              <c>40x43: 24 36 34 27 30 31</c>
+            </r>
+            <r>
+              <c>46x38: 54 42 33 46 43 49</c>
+            </r>
+            <r>
+              <c>41x37: 22 21 21 17 33 42</c>
+            </r>
+            <r>
+              <c>42x40: 42 45 36 46 44 45</c>
+            </r>
+            <r>
+              <c>48x46: 49 63 55 68 50 53</c>
+            </r>
+            <r>
+              <c>49x36: 56 41 42 43 45 44</c>
+            </r>
+            <r>
+              <c>45x49: 33 34 32 52 43 45</c>
+            </r>
+            <r>
+              <c>37x45: 26 30 43 24 25 32</c>
+            </r>
+            <r>
+              <c>40x39: 37 28 27 26 24 26</c>
+            </r>
+            <r>
+              <c>45x43: 36 30 37 39 39 29</c>
+            </r>
+            <r>
+              <c>47x47: 41 34 38 37 46 28</c>
+            </r>
+            <r>
+              <c>42x37: 24 25 32 26 24 37</c>
+            </r>
+            <r>
+              <c>50x42: 57 51 59 47 57 54</c>
+            </r>
+            <r>
+              <c>50x49: 59 60 56 66 76 63</c>
+            </r>
+            <r>
+              <c>42x41: 53 40 46 42 46 39</c>
+            </r>
+            <r>
+              <c>44x50: 37 45 28 35 38 40</c>
+            </r>
+            <r>
+              <c>41x38: 33 15 23 28 32 24</c>
+            </r>
+            <r>
+              <c>48x36: 42 47 44 44 44 45</c>
+            </r>
+            <r>
+              <c>48x38: 36 34 28 30 33 31</c>
+            </r>
+            <r>
+              <c>37x45: 37 24 28 36 27 28</c>
+            </r>
+            <r>
+              <c>48x47: 41 42 37 42 41 36</c>
+            </r>
+            <r>
+              <c>45x48: 51 33 45 44 28 39</c>
+            </r>
+            <r>
+              <c>43x43: 21 36 35 38 32 33</c>
+            </r>
+            <r>
+              <c>39x41: 28 30 24 35 26 25</c>
+            </r>
+            <r>
+              <c>38x44: 29 25 28 25 26 34</c>
+            </r>
+            <r>
+              <c>45x35: 30 31 27 24 31 21</c>
+            </r>
+            <r>
+              <c>47x36: 32 30 35 23 32 28</c>
+            </r>
+            <r>
+              <c>38x48: 36 33 38 34 28 22</c>
+            </r>
+            <r>
+              <c>46x42: 54 56 48 47 49 43</c>
+            </r>
+            <r>
+              <c>37x35: 33 35 28 41 30 31</c>
+            </r>
+            <r>
+              <c>45x49: 62 50 44 64 58 60</c>
+            </r>
+            <r>
+              <c>43x47: 44 32 35 35 30 33</c>
+            </r>
+            <r>
+              <c>45x38: 44 35 33 51 51 50</c>
+            </r>
+            <r>
+              <c>48x36: 36 27 22 36 40 31</c>
+            </r>
+            <r>
+              <c>42x42: 45 49 40 44 42 50</c>
+            </r>
+            <r>
+              <c>40x35: 18 32 28 27 17 21</c>
+            </r>
+            <r>
+              <c>46x44: 45 32 38 26 32 37</c>
+            </r>
+            <r>
+              <c>44x43: 28 37 36 33 29 32</c>
+            </r>
+            <r>
+              <c>44x42: 46 44 43 47 62 46</c>
+            </r>
+            <r>
+              <c>41x43: 29 23 23 40 32 35</c>
+            </r>
+            <r>
+              <c>37x42: 29 39 45 35 47 47</c>
+            </r>
+            <r>
+              <c>49x35: 30 39 27 32 21 26</c>
+            </r>
+            <r>
+              <c>48x38: 33 30 33 36 20 40</c>
+            </r>
+            <r>
+              <c>49x49: 65 69 50 58 72 57</c>
+            </r>
+            <r>
+              <c>37x36: 22 27 17 23 31 23</c>
+            </r>
+            <r>
+              <c>49x42: 37 30 40 43 37 36</c>
+            </r>
+            <r>
+              <c>42x43: 31 26 29 35 39 35</c>
+            </r>
+            <r>
+              <c>40x40: 36 30 25 31 22 25</c>
+            </r>
+            <r>
+              <c>46x41: 42 52 55 43 43 55</c>
+            </r>
+            <r>
+              <c>47x37: 36 48 43 53 46 42</c>
+            </r>
+            <r>
+              <c>48x46: 31 44 40 42 36 47</c>
+            </r>
+            <r>
+              <c>43x37: 36 30 22 24 27 28</c>
+            </r>
+            <r>
+              <c>47x44: 56 45 55 53 51 58</c>
+            </r>
+            <r>
+              <c>39x39: 28 30 30 29 23 28</c>
+            </r>
+            <r>
+              <c>37x36: 24 21 24 25 28 21</c>
+            </r>
+            <r>
+              <c>50x46: 59 58 60 51 62 65</c>
+            </r>
+            <r>
+              <c>38x50: 52 40 53 52 45 50</c>
+            </r>
+            <r>
+              <c>37x45: 38 44 39 43 46 47</c>
+            </r>
+            <r>
+              <c>50x48: 58 68 53 63 61 65</c>
+            </r>
+            <r>
+              <c>49x50: 50 55 69 72 73 62</c>
+            </r>
+            <r>
+              <c>48x39: 24 42 35 39 38 29</c>
+            </r>
+            <r>
+              <c>44x50: 67 49 56 53 58 56</c>
+            </r>
+            <r>
+              <c>46x49: 42 33 38 39 45 43</c>
+            </r>
+            <r>
+              <c>48x35: 33 30 18 29 34 31</c>
+            </r>
+            <r>
+              <c>35x38: 40 32 26 35 35 36</c>
+            </r>
+            <r>
+              <c>39x50: 38 30 27 37 43 32</c>
+            </r>
+            <r>
+              <c>47x42: 41 40 32 35 30 31</c>
+            </r>
+            <r>
+              <c>40x36: 25 28 25 26 32 19</c>
+            </r>
+            <r>
+              <c>37x43: 29 23 23 37 17 39</c>
+            </r>
+            <r>
+              <c>45x44: 35 34 35 34 31 40</c>
+            </r>
+            <r>
+              <c>46x47: 41 36 38 40 32 37</c>
+            </r>
+            <r>
+              <c>43x36: 30 45 43 39 50 35</c>
+            </r>
+            <r>
+              <c>38x40: 22 25 23 32 21 33</c>
+            </r>
+            <r>
+              <c>38x38: 41 29 46 31 38 39</c>
+            </r>
+            <r>
+              <c>42x42: 37 33 36 35 24 31</c>
+            </r>
+            <r>
+              <c>36x41: 20 22 27 28 33 25</c>
+            </r>
+            <r>
+              <c>38x37: 22 22 27 24 25 23</c>
+            </r>
+            <r>
+              <c>43x37: 28 36 26 32 23 22</c>
+            </r>
+            <r>
+              <c>42x43: 37 32 27 39 29 32</c>
+            </r>
+            <r>
+              <c>38x49: 34 37 22 32 40 26</c>
+            </r>
+            <r>
+              <c>41x40: 26 27 23 28 33 31</c>
+            </r>
+            <r>
+              <c>37x36: 29 22 24 16 27 25</c>
+            </r>
+            <r>
+              <c>46x37: 26 26 27 38 31 32</c>
+            </r>
+            <r>
+              <c>38x39: 26 39 36 45 28 51</c>
+            </r>
+            <r>
+              <c>48x44: 46 40 29 40 34 34</c>
+            </r>
+            <r>
+              <c>44x40: 41 35 49 59 47 41</c>
+            </r>
+            <r>
+              <c>49x50: 38 42 38 43 45 49</c>
+            </r>
+            <r>
+              <c>50x39: 45 56 54 50 36 56</c>
+            </r>
+            <r>
+              <c>41x49: 34 27 26 43 32 45</c>
+            </r>
+            <r>
+              <c>39x50: 45 54 48 60 47 45</c>
+            </r>
+            <r>
+              <c>48x43: 53 54 45 44 75 52</c>
+            </r>
+            <r>
+              <c>44x42: 56 49 36 55 48 39</c>
+            </r>
+            <r>
+              <c>48x35: 27 25 27 31 34 32</c>
+            </r>
+            <r>
+              <c>44x35: 30 28 23 27 17 29</c>
+            </r>
+            <r>
+              <c>40x37: 33 44 36 48 29 35</c>
+            </r>
+            <r>
+              <c>37x42: 35 28 24 22 28 30</c>
+            </r>
+            <r>
+              <c>43x40: 42 45 60 50 43 27</c>
+            </r>
+            <r>
+              <c>40x48: 42 36 31 34 35 30</c>
+            </r>
+            <r>
+              <c>35x48: 41 42 43 38 48 48</c>
+            </r>
+            <r>
+              <c>43x47: 31 43 30 43 25 38</c>
+            </r>
+            <r>
+              <c>38x40: 35 40 34 39 44 43</c>
+            </r>
+            <r>
+              <c>41x45: 45 60 43 43 39 51</c>
+            </r>
+            <r>
+              <c>41x40: 53 32 44 42 39 42</c>
+            </r>
+            <r>
+              <c>43x49: 55 54 58 56 47 53</c>
+            </r>
+            <r>
+              <c>46x46: 29 31 39 50 27 49</c>
+            </r>
+            <r>
+              <c>47x45: 36 41 32 29 44 42</c>
+            </r>
+            <r>
+              <c>46x48: 45 37 36 41 43 38</c>
+            </r>
+            <r>
+              <c>36x35: 30 30 39 31 36 30</c>
+            </r>
+            <r>
+              <c>39x47: 52 50 38 39 51 52</c>
+            </r>
+            <r>
+              <c>50x50: 42 47 34 48 39 45</c>
+            </r>
+            <r>
+              <c>49x47: 55 57 60 61 63 60</c>
+            </r>
+            <r>
+              <c>41x37: 34 38 36 45 38 42</c>
+            </r>
+            <r>
+              <c>47x42: 33 38 34 38 30 36</c>
+            </r>
+            <r>
+              <c>44x41: 19 27 40 34 29 33</c>
+            </r>
+            <r>
+              <c>44x49: 50 58 52 48 74 55</c>
+            </r>
+            <r>
+              <c>35x46: 42 39 42 40 38 46</c>
+            </r>
+            <r>
+              <c>42x40: 39 44 34 52 42 46</c>
+            </r>
+            <r>
+              <c>41x46: 43 41 59 50 49 50</c>
+            </r>
+            <r>
+              <c>46x41: 21 41 39 34 29 30</c>
+            </r>
+            <r>
+              <c>46x38: 44 51 43 42 45 44</c>
+            </r>
+            <r>
+              <c>35x36: 14 17 14 28 28 31</c>
+            </r>
+            <r>
+              <c>43x43: 39 42 51 40 50 64</c>
+            </r>
+            <r>
+              <c>48x49: 65 55 66 73 57 46</c>
+            </r>
+            <r>
+              <c>35x41: 26 26 23 23 24 21</c>
+            </r>
+            <r>
+              <c>39x47: 52 47 51 45 37 48</c>
+            </r>
+            <r>
+              <c>39x37: 36 27 47 35 31 46</c>
+            </r>
+            <r>
+              <c>38x40: 24 29 19 32 28 23</c>
+            </r>
+            <r>
+              <c>40x50: 56 41 47 46 64 57</c>
+            </r>
+            <r>
+              <c>37x37: 42 34 32 45 33 24</c>
+            </r>
+            <r>
+              <c>48x44: 26 42 29 40 37 50</c>
+            </r>
+            <r>
+              <c>37x37: 35 37 35 39 39 27</c>
+            </r>
+            <r>
+              <c>36x47: 45 40 47 45 39 44</c>
+            </r>
+            <r>
+              <c>41x50: 59 51 42 44 76 49</c>
+            </r>
+            <r>
+              <c>36x47: 30 32 29 29 28 32</c>
+            </r>
+            <r>
+              <c>45x39: 26 41 33 25 37 33</c>
+            </r>
+            <r>
+              <c>38x37: 30 31 26 13 24 19</c>
+            </r>
+            <r>
+              <c>40x40: 46 32 50 38 42 40</c>
+            </r>
+            <r>
+              <c>48x46: 55 62 53 58 55 56</c>
+            </r>
+            <r>
+              <c>47x39: 51 56 56 49 38 31</c>
+            </r>
+            <r>
+              <c>42x47: 53 52 45 49 54 51</c>
+            </r>
+            <r>
+              <c>41x46: 51 51 55 47 50 38</c>
+            </r>
+            <r>
+              <c>39x40: 32 28 22 32 31 24</c>
+            </r>
+            <r>
+              <c>45x45: 53 40 43 62 50 62</c>
+            </r>
+            <r>
+              <c>40x38: 22 30 23 31 18 31</c>
+            </r>
+            <r>
+              <c>50x42: 45 29 40 39 33 37</c>
+            </r>
+            <r>
+              <c>46x35: 47 45 35 37 48 37</c>
+            </r>
+            <r>
+              <c>38x45: 28 30 21 27 41 33</c>
+            </r>
+            <r>
+              <c>46x42: 36 54 53 41 50 64</c>
+            </r>
+            <r>
+              <c>36x48: 35 34 24 24 34 41</c>
+            </r>
+            <r>
+              <c>40x35: 19 29 26 23 21 25</c>
+            </r>
+            <r>
+              <c>46x40: 32 41 38 28 27 28</c>
+            </r>
+            <r>
+              <c>35x43: 28 16 30 32 27 20</c>
+            </r>
+            <r>
+              <c>46x46: 60 56 57 59 53 41</c>
+            </r>
+            <r>
+              <c>49x40: 50 66 47 47 49 42</c>
+            </r>
+            <r>
+              <c>50x35: 31 26 21 33 29 36</c>
+            </r>
+            <r>
+              <c>37x48: 32 25 38 33 32 31</c>
+            </r>
+            <r>
+              <c>42x36: 28 27 24 23 32 34</c>
+            </r>
+            <r>
+              <c>35x42: 20 20 28 32 25 28</c>
+            </r>
+            <r>
+              <c>42x44: 49 51 54 46 39 44</c>
+            </r>
+            <r>
+              <c>39x36: 27 36 26 27 20 20</c>
+            </r>
+            <r>
+              <c>38x43: 45 40 42 43 43 39</c>
+            </r>
+            <r>
+              <c>37x43: 35 37 24 22 21 29</c>
+            </r>
+            <r>
+              <c>35x35: 29 33 35 31 24 35</c>
+            </r>
+            <r>
+              <c>39x46: 39 31 33 26 29 36</c>
+            </r>
+            <r>
+              <c>45x39: 42 20 33 37 33 29</c>
+            </r>
+            <r>
+              <c>45x50: 38 44 34 35 37 52</c>
+            </r>
+            <r>
+              <c>40x46: 64 44 42 44 56 35</c>
+            </r>
+            <r>
+              <c>36x49: 36 27 35 21 38 34</c>
+            </r>
+            <r>
+              <c>48x41: 40 62 47 42 63 52</c>
+            </r>
+            <r>
+              <c>45x50: 55 66 59 55 49 60</c>
+            </r>
+            <r>
+              <c>50x43: 30 43 39 32 35 44</c>
+            </r>
+            <r>
+              <c>48x50: 38 33 45 48 47 44</c>
+            </r>
+            <r>
+              <c>45x43: 53 31 37 42 18 29</c>
+            </r>
+            <r>
+              <c>36x45: 40 47 33 50 40 38</c>
+            </r>
+            <r>
+              <c>36x43: 27 24 25 29 27 35</c>
+            </r>
+            <r>
+              <c>42x40: 38 17 32 27 28 40</c>
+            </r>
+            <r>
+              <c>50x37: 28 39 37 22 27 39</c>
+            </r>
+            <r>
+              <c>38x44: 31 29 32 23 24 28</c>
+            </r>
+            <r>
+              <c>38x36: 29 19 24 21 30 20</c>
+            </r>
+            <r>
+              <c>47x48: 56 65 45 58 60 62</c>
+            </r>
+            <r>
+              <c>43x50: 54 53 57 56 54 57</c>
+            </r>
+            <r>
+              <c>41x37: 22 33 28 22 23 27</c>
+            </r>
+            <r>
+              <c>45x41: 45 53 45 54 37 47</c>
+            </r>
+            <r>
+              <c>40x37: 36 34 39 43 38 38</c>
+            </r>
+            <r>
+              <c>38x47: 49 33 56 48 34 53</c>
+            </r>
+            <r>
+              <c>40x35: 39 33 33 33 39 39</c>
+            </r>
+            <r>
+              <c>36x49: 39 46 46 38 50 54</c>
+            </r>
+            <r>
+              <c>36x45: 30 27 31 25 33 34</c>
+            </r>
+            <r>
+              <c>44x45: 30 41 36 42 33 28</c>
+            </r>
+            <r>
+              <c>38x36: 29 23 23 21 19 29</c>
+            </r>
+            <r>
+              <c>43x50: 39 41 32 36 38 37</c>
+            </r>
+            <r>
+              <c>49x46: 51 33 33 33 37 53</c>
+            </r>
+            <r>
+              <c>48x48: 36 51 35 36 39 58</c>
+            </r>
+            <r>
+              <c>41x48: 41 37 31 37 30 31</c>
+            </r>
+            <r>
+              <c>49x36: 48 39 40 50 56 41</c>
+            </r>
+            <r>
+              <c>50x41: 30 34 31 45 25 43</c>
+            </r>
+            <r>
+              <c>47x39: 53 45 49 42 55 41</c>
+            </r>
+            <r>
+              <c>35x38: 30 40 30 34 40 32</c>
+            </r>
+            <r>
+              <c>39x42: 37 41 42 38 44 51</c>
+            </r>
+            <r>
+              <c>38x40: 24 32 21 27 26 26</c>
+            </r>
+            <r>
+              <c>43x48: 36 38 40 30 40 40</c>
+            </r>
+            <r>
+              <c>37x46: 42 45 51 44 39 41</c>
+            </r>
+            <r>
+              <c>41x38: 27 32 25 32 15 25</c>
+            </r>
+            <r>
+              <c>47x45: 40 57 58 62 46 61</c>
+            </r>
+            <r>
+              <c>40x37: 31 34 44 46 31 41</c>
+            </r>
+            <r>
+              <c>37x44: 32 23 36 24 26 27</c>
+            </r>
+            <r>
+              <c>41x45: 36 20 43 26 39 30</c>
+            </r>
+            <r>
+              <c>39x50: 30 36 38 35 34 35</c>
+            </r>
+            <r>
+              <c>38x44: 46 46 47 48 36 33</c>
+            </r>
+            <r>
+              <c>37x43: 38 32 44 43 39 49</c>
+            </r>
+            <r>
+              <c>39x43: 30 35 34 38 20 25</c>
+            </r>
+            <r>
+              <c>48x46: 54 53 46 69 62 56</c>
+            </r>
+            <r>
+              <c>50x37: 32 30 33 29 35 33</c>
+            </r>
+            <r>
+              <c>37x47: 62 48 38 40 48 32</c>
+            </r>
+            <r>
+              <c>42x47: 45 51 49 54 52 53</c>
+            </r>
+            <r>
+              <c>42x46: 39 39 42 26 31 33</c>
+            </r>
+            <r>
+              <c>42x42: 47 44 34 49 55 44</c>
+            </r>
+            <r>
+              <c>38x48: 48 48 42 53 50 40</c>
+            </r>
+            <r>
+              <c>36x43: 38 38 38 38 35 50</c>
+            </r>
+            <r>
+              <c>44x49: 67 46 50 60 51 56</c>
+            </r>
+            <r>
+              <c>38x38: 25 30 22 23 20 23</c>
+            </r>
+            <r>
+              <c>44x45: 27 30 48 30 46 29</c>
+            </r>
+            <r>
+              <c>42x41: 52 41 37 48 36 48</c>
+            </r>
+            <r>
+              <c>41x41: 38 45 37 40 53 48</c>
+            </r>
+            <r>
+              <c>47x50: 62 60 61 60 61 58</c>
+            </r>
+            <r>
+              <c>48x42: 32 33 47 41 37 33</c>
+            </r>
+            <r>
+              <c>36x40: 21 21 31 21 30 31</c>
+            </r>
+            <r>
+              <c>37x45: 43 40 38 45 47 44</c>
+            </r>
+            <r>
+              <c>35x48: 22 28 37 28 26 34</c>
+            </r>
+            <r>
+              <c>43x43: 26 41 26 32 26 44</c>
+            </r>
+            <r>
+              <c>39x49: 38 38 35 27 39 30</c>
+            </r>
+            <r>
+              <c>36x37: 33 17 21 18 33 21</c>
+            </r>
+            <r>
+              <c>42x48: 44 57 38 54 54 62</c>
+            </r>
+            <r>
+              <c>49x44: 40 34 42 38 32 37</c>
+            </r>
+            <r>
+              <c>42x44: 42 50 57 53 40 42</c>
+            </r>
+            <r>
+              <c>45x39: 47 44 34 43 46 55</c>
+            </r>
+            <r>
+              <c>48x47: 36 40 40 32 47 44</c>
+            </r>
+            <r>
+              <c>38x47: 36 26 36 34 22 26</c>
+            </r>
+            <r>
+              <c>46x35: 38 32 48 39 41 51</c>
+            </r>
+            <r>
+              <c>41x41: 34 23 20 32 28 31</c>
+            </r>
+            <r>
+              <c>46x39: 62 35 48 47 34 47</c>
+            </r>
+            <r>
+              <c>37x48: 40 50 51 49 41 42</c>
+            </r>
+            <r>
+              <c>49x37: 56 42 55 45 49 34</c>
+            </r>
+            <r>
+              <c>37x37: 33 31 31 44 27 42</c>
+            </r>
+            <r>
+              <c>41x39: 36 45 46 41 45 35</c>
+            </r>
+            <r>
+              <c>37x47: 38 30 25 29 30 27</c>
+            </r>
+            <r>
+              <c>35x41: 36 57 27 34 45 23</c>
+            </r>
+            <r>
+              <c>47x47: 56 50 55 57 57 65</c>
+            </r>
+            <r>
+              <c>45x40: 37 50 40 52 49 49</c>
+            </r>
+            <r>
+              <c>38x37: 24 32 33 16 18 21</c>
+            </r>
+            <r>
+              <c>40x39: 26 30 39 26 11 37</c>
+            </r>
+            <r>
+              <c>48x44: 47 49 65 54 69 47</c>
+            </r>
+            <r>
+              <c>45x48: 37 38 49 40 41 35</c>
+            </r>
+            <r>
+              <c>35x46: 26 22 30 34 23 30</c>
+            </r>
+            <r>
+              <c>43x45: 43 43 58 52 45 57</c>
+            </r>
+            <r>
+              <c>46x42: 53 49 59 45 47 45</c>
+            </r>
+            <r>
+              <c>38x46: 40 37 21 26 31 24</c>
+            </r>
+            <r>
+              <c>40x37: 43 34 31 37 38 44</c>
+            </r>
+            <r>
+              <c>50x42: 46 52 50 55 61 61</c>
+            </r>
+            <r>
+              <c>39x35: 38 35 32 33 32 39</c>
+            </r>
+            <r>
+              <c>35x44: 42 42 49 38 23 40</c>
+            </r>
+            <r>
+              <c>43x45: 31 32 36 43 32 35</c>
+            </r>
+            <r>
+              <c>49x38: 34 22 34 27 40 35</c>
+            </r>
+            <r>
+              <c>42x47: 60 41 49 49 59 48</c>
+            </r>
+            <r>
+              <c>37x50: 47 46 52 37 42 60</c>
+            </r>
+            <r>
+              <c>43x49: 39 35 33 42 42 33</c>
+            </r>
+            <r>
+              <c>42x44: 30 27 31 38 35 34</c>
+            </r>
+            <r>
+              <c>46x43: 34 38 25 39 36 37</c>
+            </r>
+            <r>
+              <c>44x49: 61 45 54 44 66 65</c>
+            </r>
+            <r>
+              <c>40x42: 33 36 32 30 25 25</c>
+            </r>
+            <r>
+              <c>39x38: 41 37 33 38 36 42</c>
+            </r>
+            <r>
+              <c>36x45: 31 29 21 32 28 39</c>
+            </r>
+            <r>
+              <c>42x46: 53 47 55 47 56 42</c>
+            </r>
+            <r>
+              <c>41x42: 30 34 30 27 35 25</c>
+            </r>
+            <r>
+              <c>45x50: 43 44 44 29 38 41</c>
+            </r>
+            <r>
+              <c>47x41: 47 59 54 46 38 50</c>
+            </r>
+            <r>
+              <c>39x37: 27 22 23 39 24 21</c>
+            </r>
+            <r>
+              <c>39x50: 36 33 37 37 35 30</c>
+            </r>
+            <r>
+              <c>37x45: 25 25 32 31 39 28</c>
+            </r>
+            <r>
+              <c>35x36: 27 30 33 33 32 39</c>
+            </r>
+            <r>
+              <c>42x37: 20 29 27 33 34 24</c>
+            </r>
+            <r>
+              <c>45x43: 47 49 49 44 57 54</c>
+            </r>
+            <r>
+              <c>40x38: 26 25 29 20 30 26</c>
+            </r>
+            <r>
+              <c>44x45: 29 44 35 32 31 39</c>
+            </r>
+            <r>
+              <c>37x39: 40 40 37 39 36 30</c>
+            </r>
+            <r>
+              <c>45x41: 43 51 48 46 53 45</c>
+            </r>
+            <r>
+              <c>46x40: 32 39 31 26 35 31</c>
+            </r>
+            <r>
+              <c>47x44: 42 23 42 32 33 38</c>
+            </r>
+            <r>
+              <c>43x48: 53 57 43 51 66 50</c>
+            </r>
+            <r>
+              <c>44x50: 38 36 36 41 26 47</c>
+            </r>
+            <r>
+              <c>43x45: 33 33 32 43 31 37</c>
+            </r>
+            <r>
+              <c>44x39: 48 38 41 56 34 44</c>
+            </r>
+            <r>
+              <c>49x42: 63 54 48 45 63 46</c>
+            </r>
+            <r>
+              <c>46x36: 29 32 34 29 31 25</c>
+            </r>
+            <r>
+              <c>43x39: 36 28 23 34 33 28</c>
+            </r>
+            <r>
+              <c>47x50: 49 42 38 41 33 36</c>
+            </r>
+            <r>
+              <c>38x41: 25 31 28 30 24 18</c>
+            </r>
+            <r>
+              <c>46x41: 30 29 43 32 30 31</c>
+            </r>
+            <r>
+              <c>45x44: 37 28 23 48 36 38</c>
+            </r>
+            <r>
+              <c>49x50: 47 36 49 42 44 37</c>
+            </r>
+            <r>
+              <c>36x43: 41 38 38 36 49 39</c>
+            </r>
+            <r>
+              <c>35x38: 31 29 19 19 25 9</c>
+            </r>
+            <r>
+              <c>43x50: 53 50 57 48 57 67</c>
+            </r>
+            <r>
+              <c>42x49: 42 62 57 52 55 50</c>
+            </r>
+            <r>
+              <c>38x41: 38 36 46 43 33 43</c>
+            </r>
+            <r>
+              <c>42x49: 30 35 39 40 39 41</c>
+            </r>
+            <r>
+              <c>35x44: 22 34 27 25 18 27</c>
+            </r>
+            <r>
+              <c>36x45: 41 44 41 44 47 34</c>
+            </r>
+            <r>
+              <c>42x38: 47 39 37 45 44 34</c>
+            </r>
+            <r>
+              <c>36x46: 38 55 33 44 40 43</c>
+            </r>
+            <r>
+              <c>49x39: 48 53 37 45 54 57</c>
+            </r>
+            <r>
+              <c>49x35: 30 33 25 29 28 30</c>
+            </r>
+            <r>
+              <c>36x39: 32 32 38 36 48 34</c>
+            </r>
+            <r>
+              <c>49x49: 65 49 31 33 41 37</c>
+            </r>
+            <r>
+              <c>50x38: 36 34 26 25 30 41</c>
+            </r>
+            <r>
+              <c>37x38: 44 39 31 38 23 37</c>
+            </r>
+            <r>
+              <c>42x49: 39 34 47 46 38 20</c>
+            </r>
+            <r>
+              <c>41x48: 33 35 30 45 30 34</c>
+            </r>
+            <r>
+              <c>35x47: 50 40 55 42 38 29</c>
+            </r>
+            <r>
+              <c>44x43: 44 40 53 46 63 50</c>
+            </r>
+            <r>
+              <c>39x35: 21 26 26 27 19 24</c>
+            </r>
+            <r>
+              <c>39x49: 39 30 30 38 33 38</c>
+            </r>
+            <r>
+              <c>35x35: 27 24 28 14 12 16</c>
+            </r>
+            <r>
+              <c>36x50: 36 26 26 37 36 30</c>
+            </r>
+            <r>
+              <c>36x39: 25 27 27 26 31 20</c>
+            </r>
+            <r>
+              <c>36x41: 26 23 23 29 29 25</c>
+            </r>
+            <r>
+              <c>47x45: 37 31 40 34 38 44</c>
+            </r>
+            <r>
+              <c>47x41: 35 37 20 32 38 33</c>
+            </r>
+            <r>
+              <c>48x35: 44 42 49 41 38 44</c>
+            </r>
+            <r>
+              <c>39x48: 29 38 36 42 36 27</c>
+            </r>
+            <r>
+              <c>38x46: 51 41 33 53 50 41</c>
+            </r>
+            <r>
+              <c>39x44: 25 28 31 29 36 33</c>
+            </r>
+            <r>
+              <c>49x35: 27 27 38 27 24 32</c>
+            </r>
+            <r>
+              <c>39x35: 35 32 40 35 31 37</c>
+            </r>
+            <r>
+              <c>42x50: 45 49 57 58 51 63</c>
+            </r>
+            <r>
+              <c>45x46: 37 41 32 41 37 36</c>
+            </r>
+            <r>
+              <c>44x50: 39 35 33 42 37 37</c>
+            </r>
+            <r>
+              <c>37x37: 44 36 33 31 30 35</c>
+            </r>
+            <r>
+              <c>36x41: 21 26 31 20 31 26</c>
+            </r>
+            <r>
+              <c>38x42: 46 38 43 44 33 40</c>
+            </r>
+            <r>
+              <c>35x44: 24 25 30 32 21 22</c>
+            </r>
+            <r>
+              <c>49x50: 43 40 41 48 43 40</c>
+            </r>
+            <r>
+              <c>48x47: 48 63 68 57 62 52</c>
+            </r>
+            <r>
+              <c>42x38: 44 36 42 28 51 48</c>
+            </r>
+            <r>
+              <c>37x48: 58 37 33 47 43 53</c>
+            </r>
+            <r>
+              <c>46x44: 46 55 72 43 57 43</c>
+            </r>
+            <r>
+              <c>40x43: 45 50 38 39 47 46</c>
+            </r>
+            <r>
+              <c>40x37: 48 42 47 24 33 34</c>
+            </r>
+            <r>
+              <c>48x50: 42 49 51 47 36 30</c>
+            </r>
+            <r>
+              <c>40x45: 40 33 21 34 31 35</c>
+            </r>
+            <r>
+              <c>49x39: 47 53 44 43 54 54</c>
+            </r>
+            <r>
+              <c>37x46: 33 29 30 24 34 29</c>
+            </r>
+            <r>
+              <c>40x45: 32 33 41 33 25 31</c>
+            </r>
+            <r>
+              <c>35x39: 36 42 43 33 41 18</c>
+            </r>
+            <r>
+              <c>38x46: 52 41 46 52 44 34</c>
+            </r>
+            <r>
+              <c>46x44: 36 36 40 32 33 33</c>
+            </r>
+            <r>
+              <c>38x44: 36 26 22 35 28 20</c>
+            </r>
+            <r>
+              <c>43x36: 29 26 30 29 28 26</c>
+            </r>
+            <r>
+              <c>38x50: 35 37 31 32 25 32</c>
+            </r>
+            <r>
+              <c>50x48: 52 51 41 47 32 32</c>
+            </r>
+            <r>
+              <c>49x48: 41 39 33 53 45 45</c>
+            </r>
+            <r>
+              <c>50x43: 32 32 41 43 35 40</c>
+            </r>
+            <r>
+              <c>37x36: 20 27 19 34 24 20</c>
+            </r>
+            <r>
+              <c>49x40: 41 33 38 28 32 35</c>
+            </r>
+            <r>
+              <c>40x46: 30 42 31 26 28 38</c>
+            </r>
+            <r>
+              <c>35x41: 31 45 49 20 44 36</c>
+            </r>
+            <r>
+              <c>42x37: 31 24 33 17 26 36</c>
+            </r>
+            <r>
+              <c>47x45: 41 44 31 33 35 40</c>
+            </r>
+            <r>
+              <c>46x38: 47 50 53 47 29 40</c>
+            </r>
+            <r>
+              <c>44x37: 28 22 21 33 27 37</c>
+            </r>
+            <r>
+              <c>42x35: 23 29 28 26 32 16</c>
+            </r>
+            <r>
+              <c>39x46: 23 35 23 34 33 46</c>
+            </r>
+            <r>
+              <c>45x50: 44 36 41 44 45 30</c>
+            </r>
+            <r>
+              <c>48x49: 50 38 33 40 44 50</c>
+            </r>
+            <r>
+              <c>49x45: 47 72 51 51 57 61</c>
+            </r>
+            <r>
+              <c>35x41: 18 20 22 34 23 25</c>
+            </r>
+            <r>
+              <c>39x38: 24 26 32 26 20 27</c>
+            </r>
+            <r>
+              <c>45x45: 46 43 30 42 28 36</c>
+            </r>
+            <r>
+              <c>50x44: 26 41 38 42 36 41</c>
+            </r>
+            <r>
+              <c>43x47: 33 37 34 30 38 38</c>
+            </r>
+            <r>
+              <c>45x46: 33 45 31 46 43 27</c>
+            </r>
+            <r>
+              <c>38x45: 40 47 41 45 41 48</c>
+            </r>
+            <r>
+              <c>42x50: 33 47 27 38 43 36</c>
+            </r>
+            <r>
+              <c>38x38: 22 25 22 20 26 29</c>
+            </r>
+            <r>
+              <c>35x41: 32 35 45 27 40 44</c>
+            </r>
+            <r>
+              <c>50x41: 40 35 44 22 33 34</c>
+            </r>
+            <r>
+              <c>41x45: 29 36 33 26 37 33</c>
+            </r>
+            <r>
+              <c>48x48: 42 47 46 41 43 36</c>
+            </r>
+            <r>
+              <c>36x46: 34 34 35 29 21 26</c>
+            </r>
+            <r>
+              <c>48x41: 37 32 35 36 37 30</c>
+            </r>
+            <r>
+              <c>45x36: 30 46 24 35 24 20</c>
+            </r>
+            <r>
+              <c>44x49: 50 66 49 51 62 55</c>
+            </r>
+            <r>
+              <c>49x39: 56 39 52 50 54 45</c>
+            </r>
+            <r>
+              <c>41x45: 53 36 53 48 48 47</c>
+            </r>
+            <r>
+              <c>50x42: 36 39 36 30 46 36</c>
+            </r>
+            <r>
+              <c>49x47: 39 36 47 33 45 40</c>
+            </r>
+            <r>
+              <c>44x42: 28 32 36 44 27 29</c>
+            </r>
+            <r>
+              <c>39x43: 37 25 32 35 26 26</c>
+            </r>
+            <r>
+              <c>37x44: 27 36 33 24 17 31</c>
+            </r>
+            <r>
+              <c>45x47: 29 32 45 42 44 33</c>
+            </r>
+            <r>
+              <c>41x37: 29 34 19 21 25 28</c>
+            </r>
+            <r>
+              <c>35x48: 40 44 48 39 38 49</c>
+            </r>
+            <r>
+              <c>45x41: 42 31 41 31 17 32</c>
+            </r>
+            <r>
+              <c>40x50: 44 34 39 26 36 29</c>
+            </r>
+            <r>
+              <c>45x36: 34 35 33 34 20 23</c>
+            </r>
+            <r>
+              <c>46x35: 42 34 43 42 41 46</c>
+            </r>
+            <r>
+              <c>39x50: 62 39 54 55 47 43</c>
+            </r>
+            <r>
+              <c>39x48: 32 34 38 25 37 42</c>
+            </r>
+            <r>
+              <c>43x38: 46 44 39 32 45 46</c>
+            </r>
+            <r>
+              <c>35x49: 48 43 35 37 38 60</c>
+            </r>
+            <r>
+              <c>47x39: 49 43 52 54 40 43</c>
+            </r>
+            <r>
+              <c>40x47: 34 30 36 26 36 32</c>
+            </r>
+            <r>
+              <c>37x39: 35 45 31 37 42 33</c>
+            </r>
+            <r>
+              <c>43x40: 29 38 24 28 36 27</c>
+            </r>
+            <r>
+              <c>42x45: 40 30 44 35 27 33</c>
+            </r>
+            <r>
+              <c>44x46: 43 53 52 61 49 53</c>
+            </r>
+            <r>
+              <c>42x39: 44 43 37 41 40 46</c>
+            </r>
+            <r>
+              <c>47x41: 31 33 27 28 31 44</c>
+            </r>
+            <r>
+              <c>38x46: 29 38 24 41 25 22</c>
+            </r>
+            <r>
+              <c>39x46: 24 35 40 29 27 39</c>
+            </r>
+            <r>
+              <c>42x45: 36 31 39 27 48 29</c>
+            </r>
+            <r>
+              <c>41x36: 39 43 31 39 33 40</c>
+            </r>
+            <r>
+              <c>48x46: 44 61 46 65 66 59</c>
+            </r>
+            <r>
+              <c>48x39: 33 36 39 37 40 22</c>
+            </r>
+            <r>
+              <c>46x49: 39 48 43 36 36 37</c>
+            </r>
+            <r>
+              <c>38x46: 45 50 41 43 50 41</c>
+            </r>
+            <r>
+              <c>46x42: 48 60 55 46 42 45</c>
+            </r>
+            <r>
+              <c>49x45: 63 56 47 61 63 50</c>
+            </r>
+            <r>
+              <c>49x44: 37 44 39 39 35 30</c>
+            </r>
+            <r>
+              <c>38x44: 50 47 38 43 29 46</c>
+            </r>
+            <r>
+              <c>35x44: 27 32 24 19 31 21</c>
+            </r>
+            <r>
+              <c>42x39: 40 45 43 49 34 39</c>
+            </r>
+            <r>
+              <c>45x42: 36 29 26 40 39 39</c>
+            </r>
+            <r>
+              <c>39x37: 24 24 31 29 25 22</c>
+            </r>
+            <r>
+              <c>47x49: 42 54 33 26 44 40</c>
+            </r>
+            <r>
+              <c>50x39: 48 52 44 41 55 61</c>
+            </r>
+            <r>
+              <c>42x36: 27 20 29 35 24 32</c>
+            </r>
+            <r>
+              <c>43x42: 44 15 41 31 37 27</c>
+            </r>
+            <r>
+              <c>47x35: 25 35 29 26 27 23</c>
+            </r>
+            <r>
+              <c>41x37: 15 28 29 30 34 20</c>
+            </r>
+            <r>
+              <c>37x35: 34 25 38 34 26 41</c>
+            </r>
+            <r>
+              <c>48x44: 48 57 57 54 52 57</c>
+            </r>
+            <r>
+              <c>40x36: 29 43 29 36 42 43</c>
+            </r>
+            <r>
+              <c>43x42: 50 43 50 49 51 37</c>
+            </r>
+            <r>
+              <c>43x43: 33 32 34 36 30 30</c>
+            </r>
+            <r>
+              <c>50x47: 56 66 75 60 47 56</c>
+            </r>
+            <r>
+              <c>39x35: 28 26 27 13 24 24</c>
+            </r>
+            <r>
+              <c>39x44: 31 54 45 37 50 49</c>
+            </r>
+            <r>
+              <c>35x45: 26 30 34 23 28 23</c>
+            </r>
+            <r>
+              <c>47x42: 34 58 48 54 59 53</c>
+            </r>
+            <r>
+              <c>40x35: 47 38 36 27 34 33</c>
+            </r>
+            <r>
+              <c>41x41: 42 47 43 52 43 32</c>
+            </r>
+            <r>
+              <c>40x37: 25 25 22 30 29 25</c>
+            </r>
+            <r>
+              <c>41x48: 35 23 44 41 26 39</c>
+            </r>
+            <r>
+              <c>35x46: 27 22 30 30 30 25</c>
+            </r>
+            <r>
+              <c>44x38: 40 41 51 42 48 38</c>
+            </r>
+            <r>
+              <c>50x42: 34 43 28 38 36 45</c>
+            </r>
+            <r>
+              <c>44x48: 34 41 38 50 31 29</c>
+            </r>
+            <r>
+              <c>40x46: 30 24 31 30 46 34</c>
+            </r>
+            <r>
+              <c>37x35: 30 37 44 28 26 34</c>
+            </r>
+            <r>
+              <c>37x35: 30 35 36 38 27 32</c>
+            </r>
+            <r>
+              <c>39x40: 49 31 34 48 39 38</c>
+            </r>
+            <r>
+              <c>40x44: 35 29 31 33 30 24</c>
+            </r>
+            <r>
+              <c>35x46: 33 48 35 38 45 49</c>
+            </r>
+            <r>
+              <c>44x43: 34 27 35 38 38 24</c>
+            </r>
+            <r>
+              <c>44x42: 49 55 50 44 51 37</c>
+            </r>
+            <r>
+              <c>40x35: 38 36 35 35 37 35</c>
+            </r>
+            <r>
+              <c>35x49: 30 30 32 26 30 28</c>
+            </r>
+            <r>
+              <c>44x36: 23 30 30 29 30 26</c>
+            </r>
+            <r>
+              <c>42x41: 60 34 39 40 49 44</c>
+            </r>
+            <r>
+              <c>39x36: 13 39 28 24 25 26</c>
+            </r>
+            <r>
+              <c>47x49: 59 54 51 62 65 64</c>
+            </r>
+            <r>
+              <c>42x42: 33 31 43 29 21 38</c>
+            </r>
+            <r>
+              <c>49x39: 41 48 47 57 63 42</c>
+            </r>
+            <r>
+              <c>40x40: 24 24 37 29 17 37</c>
+            </r>
+            <r>
+              <c>48x35: 25 25 41 29 29 27</c>
+            </r>
+            <r>
+              <c>50x38: 42 55 45 64 38 45</c>
+            </r>
+            <r>
+              <c>49x40: 54 59 54 42 46 46</c>
+            </r>
+            <r>
+              <c>37x49: 54 47 50 39 40 48</c>
+            </r>
+            <r>
+              <c>46x39: 31 36 32 37 31 28</c>
+            </r>
+            <r>
+              <c>40x39: 20 27 35 38 17 32</c>
+            </r>
+            <r>
+              <c>35x42: 26 26 24 21 23 34</c>
+            </r>
+            <r>
+              <c>37x47: 31 27 31 32 31 27</c>
+            </r>
+            <r>
+              <c>38x49: 29 27 35 29 34 37</c>
+            </r>
+            <r>
+              <c>42x35: 35 38 38 46 39 31</c>
+            </r>
+            <r>
+              <c>37x37: 27 17 24 25 27 24</c>
+            </r>
+            <r>
+              <c>45x45: 47 38 42 35 21 41</c>
+            </r>
+            <r>
+              <c>35x39: 28 27 30 17 19 21</c>
+            </r>
+            <r>
+              <c>36x48: 54 43 44 39 37 47</c>
+            </r>
+            <r>
+              <c>35x46: 27 26 29 21 30 31</c>
+            </r>
+            <r>
+              <c>36x38: 39 33 33 41 19 41</c>
+            </r>
+            <r>
+              <c>41x46: 53 43 46 47 62 43</c>
+            </r>
+            <r>
+              <c>40x39: 25 32 32 23 26 31</c>
+            </r>
+            <r>
+              <c>49x40: 64 53 52 41 36 52</c>
+            </r>
+            <r>
+              <c>41x36: 43 41 35 36 41 32</c>
+            </r>
+            <r>
+              <c>39x44: 44 44 46 43 35 50</c>
+            </r>
+            <r>
+              <c>48x36: 25 28 33 33 36 37</c>
+            </r>
+            <r>
+              <c>44x38: 46 41 50 41 41 39</c>
+            </r>
+            <r>
+              <c>38x47: 51 46 37 48 39 51</c>
+            </r>
+            <r>
+              <c>42x37: 48 42 44 31 30 42</c>
+            </r>
+            <r>
+              <c>39x43: 32 30 39 32 28 21</c>
+            </r>
+            <r>
+              <c>50x48: 59 73 68 54 50 63</c>
+            </r>
+            <r>
+              <c>45x47: 59 43 52 53 63 58</c>
+            </r>
+            <r>
+              <c>49x38: 20 44 37 29 22 39</c>
+            </r>
+            <r>
+              <c>44x37: 43 50 33 38 44 42</c>
+            </r>
+            <r>
+              <c>44x49: 29 43 33 39 40 39</c>
+            </r>
+            <r>
+              <c>45x48: 32 48 51 41 37 31</c>
+            </r>
+            <r>
+              <c>48x43: 58 54 58 43 54 52</c>
+            </r>
+            <r>
+              <c>40x47: 55 38 50 58 53 37</c>
+            </r>
+            <r>
+              <c>39x39: 35 39 42 38 51 33</c>
+            </r>
+            <r>
+              <c>40x42: 33 38 56 50 41 42</c>
+            </r>
+            <r>
+              <c>39x36: 45 36 33 41 33 27</c>
+            </r>
+            <r>
+              <c>43x49: 42 32 33 46 41 29</c>
+            </r>
+            <r>
+              <c>50x36: 32 48 48 56 58 39</c>
+            </r>
+            <r>
+              <c>39x47: 26 37 27 35 36 34</c>
+            </r>
+            <r>
+              <c>40x41: 45 52 37 45 29 40</c>
+            </r>
+            <r>
+              <c>39x42: 52 37 48 40 35 39</c>
+            </r>
+            <r>
+              <c>45x43: 48 41 29 33 26 32</c>
+            </r>
+            <r>
+              <c>42x48: 48 48 56 56 55 49</c>
+            </r>
+            <r>
+              <c>35x40: 22 23 26 23 28 20</c>
+            </r>
+            <r>
+              <c>43x37: 40 44 39 37 34 49</c>
+            </r>
+            <r>
+              <c>50x44: 45 55 61 53 62 65</c>
+            </r>
+            <r>
+              <c>38x40: 26 30 32 23 20 24</c>
+            </r>
+            <r>
+              <c>48x35: 26 30 28 33 29 29</c>
+            </r>
+            <r>
+              <c>39x38: 28 22 29 24 25 27</c>
+            </r>
+            <r>
+              <c>42x42: 47 55 44 36 40 48</c>
+            </r>
+            <r>
+              <c>39x39: 36 24 33 33 20 22</c>
+            </r>
+            <r>
+              <c>49x35: 27 28 37 34 29 21</c>
+            </r>
+            <r>
+              <c>43x46: 33 41 33 31 31 40</c>
+            </r>
+            <r>
+              <c>47x41: 42 50 67 40 55 47</c>
+            </r>
+            <r>
+              <c>37x40: 51 35 41 31 36 34</c>
+            </r>
+            <r>
+              <c>35x41: 19 26 24 25 24 24</c>
+            </r>
+            <r>
+              <c>48x40: 41 56 49 48 47 54</c>
+            </r>
+            <r>
+              <c>35x42: 50 31 38 33 40 35</c>
+            </r>
+            <r>
+              <c>48x38: 41 40 29 21 30 31</c>
+            </r>
+            <r>
+              <c>43x43: 29 30 35 46 30 26</c>
+            </r>
+            <r>
+              <c>39x41: 48 33 42 43 39 41</c>
+            </r>
+            <r>
+              <c>39x37: 47 38 44 20 29 43</c>
+            </r>
+            <r>
+              <c>48x45: 46 45 53 67 62 61</c>
+            </r>
+            <r>
+              <c>46x36: 31 25 31 30 39 24</c>
+            </r>
+            <r>
+              <c>46x35: 29 23 35 26 23 29</c>
+            </r>
+            <r>
+              <c>37x37: 34 32 39 37 37 33</c>
+            </r>
+            <r>
+              <c>40x48: 37 35 36 34 35 31</c>
+            </r>
+            <r>
+              <c>39x42: 35 34 35 28 21 29</c>
+            </r>
+            <r>
+              <c>48x50: 53 59 75 58 64 63</c>
+            </r>
+            <r>
+              <c>43x47: 40 22 43 32 34 39</c>
+            </r>
+            <r>
+              <c>41x37: 35 44 30 37 38 48</c>
+            </r>
+            <r>
+              <c>45x47: 54 56 57 49 71 44</c>
+            </r>
+            <r>
+              <c>37x48: 24 26 44 23 37 38</c>
+            </r>
+            <r>
+              <c>40x38: 34 35 25 21 22 18</c>
+            </r>
+            <r>
+              <c>49x42: 58 50 58 49 57 47</c>
+            </r>
+            <r>
+              <c>37x35: 43 29 38 27 33 30</c>
+            </r>
+            <r>
+              <c>46x49: 50 76 63 40 59 60</c>
+            </r>
+            <r>
+              <c>46x45: 43 37 32 44 38 31</c>
+            </r>
+            <r>
+              <c>47x37: 36 52 45 44 48 44</c>
+            </r>
+            <r>
+              <c>48x49: 64 59 60 56 63 61</c>
+            </r>
+            <r>
+              <c>37x50: 46 43 49 49 50 49</c>
+            </r>
+            <r>
+              <c>36x50: 30 38 21 30 27 45</c>
+            </r>
+            <r>
+              <c>45x36: 46 49 32 42 34 43</c>
+            </r>
+            <r>
+              <c>36x42: 40 30 37 42 40 44</c>
+            </r>
+            <r>
+              <c>41x49: 32 39 33 23 36 45</c>
+            </r>
+            <r>
+              <c>49x35: 47 49 45 41 40 41</c>
+            </r>
+            <r>
+              <c>47x45: 41 54 49 68 41 68</c>
+            </r>
+            <r>
+              <c>36x43: 38 41 44 39 36 40</c>
+            </r>
+            <r>
+              <c>48x38: 43 39 35 48 63 56</c>
+            </r>
+            <r>
+              <c>46x44: 57 46 51 51 47 58</c>
+            </r>
+            <r>
+              <c>43x41: 26 34 27 25 29 40</c>
+            </r>
+            <r>
+              <c>40x42: 48 32 48 47 35 47</c>
+            </r>
+            <r>
+              <c>37x48: 27 26 30 37 39 33</c>
+            </r>
+            <r>
+              <c>49x48: 44 35 43 42 46 46</c>
+            </r>
+            <r>
+              <c>42x38: 24 25 26 31 31 31</c>
+            </r>
+            <r>
+              <c>42x50: 55 58 39 68 57 45</c>
+            </r>
+            <r>
+              <c>42x41: 26 36 29 32 29 30</c>
+            </r>
+            <r>
+              <c>43x50: 36 40 38 44 32 34</c>
+            </r>
+            <r>
+              <c>43x40: 23 32 28 40 28 30</c>
+            </r>
+            <r>
+              <c>36x38: 28 36 30 36 35 45</c>
+            </r>
+            <r>
+              <c>48x48: 28 44 44 47 49 44</c>
+            </r>
+            <r>
+              <c>43x45: 35 30 36 40 35 34</c>
+            </r>
+            <r>
+              <c>48x37: 44 45 54 41 43 47</c>
+            </r>
+            <r>
+              <c>44x42: 51 41 46 43 50 54</c>
+            </r>
+            <r>
+              <c>42x40: 39 32 28 32 22 29</c>
+            </r>
+            <r>
+              <c>49x38: 41 31 21 30 37 32</c>
+            </r>
+            <r>
+              <c>43x37: 39 43 34 47 51 33</c>
+            </r>
+            <r>
+              <c>45x50: 46 64 55 56 68 60</c>
+            </r>
+            <r>
+              <c>42x37: 38 21 25 28 35 21</c>
+            </r>
+            <r>
+              <c>50x41: 61 61 48 47 56 43</c>
+            </r>
+            <r>
+              <c>45x40: 38 35 29 34 28 30</c>
+            </r>
+            <r>
+              <c>36x48: 29 24 35 30 38 35</c>
+            </r>
+            <r>
+              <c>41x40: 33 49 40 42 44 45</c>
+            </r>
+            <r>
+              <c>43x41: 26 35 22 30 34 35</c>
+            </r>
+            <r>
+              <c>48x44: 31 38 37 39 32 46</c>
+            </r>
+            <r>
+              <c>47x46: 32 42 24 36 36 54</c>
+            </r>
+            <r>
+              <c>37x37: 27 16 20 23 27 30</c>
+            </r>
+            <r>
+              <c>48x39: 37 59 54 45 41 51</c>
+            </r>
+            <r>
+              <c>46x36: 39 48 41 41 36 48</c>
+            </r>
+            <r>
+              <c>35x49: 47 58 36 42 37 41</c>
+            </r>
+            <r>
+              <c>46x49: 36 35 42 44 39 44</c>
+            </r>
+            <r>
+              <c>35x45: 31 26 30 24 29 24</c>
+            </r>
+            <r>
+              <c>41x35: 22 26 26 25 20 23</c>
+            </r>
+            <r>
+              <c>41x41: 39 43 39 52 39 45</c>
+            </r>
+            <r>
+              <c>50x37: 32 34 32 35 33 25</c>
+            </r>
+            <r>
+              <c>40x44: 31 26 38 20 38 28</c>
+            </r>
+            <r>
+              <c>43x43: 32 24 38 38 31 33</c>
+            </r>
+            <r>
+              <c>44x49: 41 37 38 39 33 35</c>
+            </r>
+            <r>
+              <c>46x40: 45 58 48 45 46 41</c>
+            </r>
+            <r>
+              <c>41x50: 49 47 46 53 57 64</c>
+            </r>
+            <r>
+              <c>45x48: 38 45 35 33 52 36</c>
+            </r>
+            <r>
+              <c>44x40: 32 38 32 25 33 22</c>
+            </r>
+            <r>
+              <c>38x42: 21 31 29 25 28 33</c>
+            </r>
+            <r>
+              <c>47x36: 47 35 40 46 43 49</c>
+            </r>
+            <r>
+              <c>48x48: 40 50 37 47 39 43</c>
+            </r>
+            <r>
+              <c>47x42: 67 50 45 37 54 51</c>
+            </r>
+            <r>
+              <c>49x42: 52 43 45 56 68 56</c>
+            </r>
+            <r>
+              <c>38x38: 35 40 43 40 22 39</c>
+            </r>
+            <r>
+              <c>42x49: 58 55 65 52 58 32</c>
+            </r>
+            <r>
+              <c>38x44: 33 44 50 43 41 47</c>
+            </r>
+            <r>
+              <c>39x44: 30 36 22 32 28 33</c>
+            </r>
+            <r>
+              <c>49x41: 35 39 25 36 36 36</c>
+            </r>
+            <r>
+              <c>36x40: 31 26 25 24 23 27</c>
+            </r>
+            <r>
+              <c>41x40: 20 27 29 32 28 32</c>
+            </r>
+            <r>
+              <c>48x43: 59 54 57 50 48 49</c>
+            </r>
+            <r>
+              <c>41x46: 43 45 34 26 18 29</c>
+            </r>
+            <r>
+              <c>41x38: 31 25 28 27 20 24</c>
+            </r>
+            <r>
+              <c>40x38: 27 23 33 27 29 16</c>
+            </r>
+            <r>
+              <c>45x43: 34 39 22 44 40 30</c>
+            </r>
+            <r>
+              <c>35x46: 40 39 44 43 37 44</c>
+            </r>
+            <r>
+              <c>45x43: 44 56 53 38 51 57</c>
+            </r>
+            <r>
+              <c>40x44: 38 29 32 26 28 29</c>
+            </r>
+            <r>
+              <c>38x49: 37 39 27 35 23 31</c>
+            </r>
+            <r>
+              <c>37x48: 39 27 37 29 25 34</c>
+            </r>
+            <r>
+              <c>47x49: 57 71 55 55 59 57</c>
+            </r>
+            <r>
+              <c>48x45: 53 49 53 62 55 60</c>
+            </r>
+            <r>
+              <c>43x46: 33 47 27 44 28 31</c>
+            </r>
+            <r>
+              <c>36x37: 40 30 29 38 40 29</c>
+            </r>
+            <r>
+              <c>42x44: 29 32 45 25 27 37</c>
+            </r>
+            <r>
+              <c>45x43: 48 51 37 52 59 52</c>
+            </r>
+            <r>
+              <c>47x40: 48 44 62 49 43 44</c>
+            </r>
+            <r>
+              <c>36x48: 40 55 43 40 24 58</c>
+            </r>
+            <r>
+              <c>45x43: 63 41 52 55 45 41</c>
+            </r>
+            <r>
+              <c>46x47: 45 59 59 49 57 65</c>
+            </r>
+            <r>
+              <c>45x50: 58 49 68 55 55 62</c>
+            </r>
+            <r>
+              <c>37x42: 26 28 35 28 27 23</c>
+            </r>
+            <r>
+              <c>42x39: 44 47 39 43 39 39</c>
+            </r>
+            <r>
+              <c>36x50: 51 40 47 40 45 54</c>
+            </r>
+            <r>
+              <c>39x38: 25 21 32 26 24 28</c>
+            </r>
+            <r>
+              <c>45x44: 61 43 43 47 59 53</c>
+            </r>
+            <r>
+              <c>50x48: 55 61 69 60 73 56</c>
+            </r>
+            <r>
+              <c>42x39: 40 42 42 45 45 39</c>
+            </r>
+            <r>
+              <c>47x48: 51 60 58 57 56 65</c>
+            </r>
+            <r>
+              <c>45x41: 54 47 44 49 42 46</c>
+            </r>
+            <r>
+              <c>40x38: 30 26 21 30 34 15</c>
+            </r>
+            <r>
+              <c>47x37: 51 47 38 40 38 51</c>
+            </r>
+            <r>
+              <c>49x50: 59 40 34 36 40 47</c>
+            </r>
+            <r>
+              <c>39x42: 30 24 33 20 38 36</c>
+            </r>
+            <r>
+              <c>42x47: 63 53 45 43 57 44</c>
+            </r>
+            <r>
+              <c>39x39: 35 33 28 25 25 22</c>
+            </r>
+            <r>
+              <c>39x41: 32 26 32 28 30 21</c>
+            </r>
+            <r>
+              <c>38x37: 25 27 14 25 26 27</c>
+            </r>
+            <r>
+              <c>44x47: 33 37 38 30 39 32</c>
+            </r>
+            <r>
+              <c>42x48: 30 36 39 38 39 41</c>
+            </r>
+            <r>
+              <c>39x43: 39 47 42 51 43 36</c>
+            </r>
+            <r>
+              <c>38x38: 20 31 21 26 21 25</c>
+            </r>
+            <r>
+              <c>38x46: 37 31 24 33 22 33</c>
+            </r>
+            <r>
+              <c>38x50: 59 43 53 47 38 50</c>
+            </r>
+            <r>
+              <c>39x49: 53 44 45 49 64 43</c>
+            </r>
+            <r>
+              <c>38x36: 29 31 23 22 20 18</c>
+            </r>
+            <r>
+              <c>49x47: 41 42 44 36 42 34</c>
+            </r>
+            <r>
+              <c>43x45: 59 46 46 58 41 45</c>
+            </r>
+            <r>
+              <c>35x36: 28 19 23 22 23 16</c>
+            </r>
+            <r>
+              <c>48x41: 50 41 49 50 48 64</c>
+            </r>
+            <r>
+              <c>48x42: 44 33 34 40 35 37</c>
+            </r>
+            <r>
+              <c>45x49: 47 37 45 38 44 29</c>
+            </r>
+            <r>
+              <c>42x49: 30 27 29 44 48 45</c>
+            </r>
+            <r>
+              <c>43x48: 44 32 32 28 39 49</c>
+            </r>
+            <r>
+              <c>39x41: 22 36 25 27 33 25</c>
+            </r>
+            <r>
+              <c>42x48: 33 37 39 34 37 44</c>
+            </r>
+            <r>
+              <c>40x36: 27 25 27 26 21 30</c>
+            </r>
+            <r>
+              <c>40x35: 39 37 37 29 40 35</c>
+            </r>
+            <r>
+              <c>47x40: 29 30 39 36 26 35</c>
+            </r>
+            <r>
+              <c>36x42: 42 30 42 44 31 42</c>
+            </r>
+            <r>
+              <c>39x44: 29 31 30 32 25 34</c>
+            </r>
+            <r>
+              <c>37x46: 27 26 28 36 32 30</c>
+            </r>
+            <r>
+              <c>38x35: 21 28 20 23 21 18</c>
+            </r>
+            <r>
+              <c>47x47: 27 42 46 31 41 37</c>
+            </r>
+            <r>
+              <c>45x45: 37 43 37 32 34 41</c>
+            </r>
+            <r>
+              <c>43x41: 34 34 25 27 34 28</c>
+            </r>
+            <r>
+              <c>35x37: 16 22 25 30 22 16</c>
+            </r>
+            <r>
+              <c>46x47: 42 38 41 38 26 40</c>
+            </r>
+            <r>
+              <c>48x41: 34 37 43 40 29 25</c>
+            </r>
+            <r>
+              <c>50x45: 46 38 38 44 38 36</c>
+            </r>
+            <r>
+              <c>50x49: 45 48 39 31 45 48</c>
+            </r>
+            <r>
+              <c>48x48: 54 55 51 50 89 63</c>
+            </r>
+            <r>
+              <c>46x39: 36 26 31 36 38 28</c>
+            </r>
+            <r>
+              <c>44x37: 42 40 43 41 45 41</c>
+            </r>
+            <r>
+              <c>36x47: 50 32 53 47 44 36</c>
+            </r>
+            <r>
+              <c>46x39: 39 30 33 29 28 35</c>
+            </r>
+            <r>
+              <c>42x39: 30 26 23 35 34 33</c>
+            </r>
+            <r>
+              <c>47x45: 20 41 50 30 40 43</c>
+            </r>
+            <r>
+              <c>48x41: 34 36 33 31 43 30</c>
+            </r>
+            <r>
+              <c>45x38: 41 48 33 69 38 31</c>
+            </r>
+            <r>
+              <c>44x36: 29 30 18 34 37 20</c>
+            </r>
+            <r>
+              <c>35x45: 22 36 26 27 23 30</c>
+            </r>
+            <r>
+              <c>40x43: 27 51 50 37 41 59</c>
+            </r>
+            <r>
+              <c>41x49: 68 47 50 46 48 49</c>
+            </r>
+            <r>
+              <c>40x45: 39 51 45 57 50 36</c>
+            </r>
+            <r>
+              <c>37x37: 21 26 29 19 25 23</c>
+            </r>
+            <r>
+              <c>42x40: 57 40 38 34 50 41</c>
+            </r>
+            <r>
+              <c>46x39: 32 29 30 37 31 35</c>
+            </r>
+            <r>
+              <c>44x40: 28 24 30 30 36 34</c>
+            </r>
+            <r>
+              <c>38x36: 37 39 33 35 33 33</c>
+            </r>
+            <r>
+              <c>38x43: 40 27 20 28 25 28</c>
+            </r>
+            <r>
+              <c>46x48: 36 46 36 45 46 31</c>
+            </r>
+            <r>
+              <c>44x48: 39 34 37 28 42 44</c>
+            </r>
+            <r>
+              <c>38x50: 48 50 38 54 49 52</c>
+            </r>
+            <r>
+              <c>49x47: 62 55 61 52 60 65</c>
+            </r>
+            <r>
+              <c>46x41: 41 35 32 29 21 36</c>
+            </r>
+            <r>
+              <c>41x35: 24 52 42 37 37 30</c>
+            </r>
+            <r>
+              <c>43x50: 37 46 29 49 26 37</c>
+            </r>
+            <r>
+              <c>37x41: 37 44 41 35 36 40</c>
+            </r>
+            <r>
+              <c>37x39: 41 40 25 36 31 46</c>
+            </r>
+            <r>
+              <c>45x36: 45 37 47 53 30 35</c>
+            </r>
+            <r>
+              <c>41x48: 44 47 57 37 57 64</c>
+            </r>
+            <r>
+              <c>49x39: 35 38 27 45 38 25</c>
+            </r>
+            <r>
+              <c>42x38: 43 44 47 43 28 38</c>
+            </r>
+            <r>
+              <c>36x43: 27 25 25 36 32 22</c>
+            </r>
+            <r>
+              <c>41x50: 32 41 27 39 33 36</c>
+            </r>
+            <r>
+              <c>38x49: 25 30 26 34 34 43</c>
+            </r>
+            <r>
+              <c>37x41: 29 24 19 25 29 30</c>
+            </r>
+            <r>
+              <c>40x46: 34 33 25 26 39 37</c>
+            </r>
+            <r>
+              <c>48x35: 33 25 31 26 24 36</c>
+            </r>
+            <r>
+              <c>38x40: 30 26 24 30 26 19</c>
+            </r>
+            <r>
+              <c>38x37: 42 33 34 30 38 40</c>
+            </r>
+            <r>
+              <c>44x46: 40 37 41 24 31 37</c>
+            </r>
+            <r>
+              <c>38x44: 20 32 37 21 25 33</c>
+            </r>
+            <r>
+              <c>43x41: 46 43 61 41 46 37</c>
+            </r>
+            <r>
+              <c>38x44: 45 35 49 34 52 46</c>
+            </r>
+            <r>
+              <c>50x35: 32 44 39 48 46 60</c>
+            </r>
+            <r>
+              <c>42x42: 26 29 36 26 34 44</c>
+            </r>
+            <r>
+              <c>50x50: 68 72 65 57 57 64</c>
+            </r>
+            <r>
+              <c>48x40: 31 38 33 39 38 29</c>
+            </r>
+            <r>
+              <c>37x37: 27 37 38 37 34 38</c>
+            </r>
+            <r>
+              <c>50x37: 55 39 43 43 53 53</c>
+            </r>
+            <r>
+              <c>43x44: 26 35 38 32 26 39</c>
+            </r>
+            <r>
+              <c>37x48: 32 36 39 28 25 31</c>
+            </r>
+            <r>
+              <c>35x37: 24 23 26 18 17 23</c>
+            </r>
+            <r>
+              <c>48x38: 35 36 17 45 27 31</c>
+            </r>
+            <r>
+              <c>44x45: 37 42 38 37 32 24</c>
+            </r>
+            <r>
+              <c>36x49: 40 41 48 45 49 50</c>
+            </r>
+            <r>
+              <c>44x41: 42 46 53 48 44 45</c>
+            </r>
+            <r>
+              <c>49x37: 56 43 55 36 49 42</c>
+            </r>
+            <r>
+              <c>42x35: 22 22 27 28 30 25</c>
+            </r>
+            <r>
+              <c>44x45: 43 57 48 57 52 48</c>
+            </r>
+            <r>
+              <c>41x41: 41 50 40 37 45 46</c>
+            </r>
+            <r>
+              <c>36x49: 29 34 36 25 31 37</c>
+            </r>
+            <r>
+              <c>48x40: 46 51 53 51 45 49</c>
+            </r>
+            <r>
+              <c>42x50: 36 29 40 42 37 40</c>
+            </r>
+            <r>
+              <c>45x46: 56 53 51 53 52 53</c>
+            </r>
+            <r>
+              <c>38x37: 29 31 46 41 40 32</c>
+            </r>
+            <r>
+              <c>44x42: 49 57 47 42 45 44</c>
+            </r>
+            <r>
+              <c>39x47: 26 31 32 43 29 33</c>
+            </r>
+            <r>
+              <c>42x50: 53 44 55 55 62 57</c>
+            </r>
+            <r>
+              <c>48x42: 37 38 35 38 37 39</c>
+            </r>
+            <r>
+              <c>36x39: 38 35 37 35 28 41</c>
+            </r>
+            <r>
+              <c>40x36: 29 25 30 30 20 21</c>
+            </r>
+            <r>
+              <c>39x45: 44 30 35 31 28 26</c>
+            </r>
+            <r>
+              <c>49x47: 49 34 33 55 37 32</c>
+            </r>
+            <r>
+              <c>39x45: 40 43 52 47 51 40</c>
+            </r>
+            <r>
+              <c>49x36: 52 38 41 37 48 56</c>
+            </r>
+            <r>
+              <c>43x44: 40 36 28 31 31 30</c>
+            </r>
+            <r>
+              <c>46x38: 26 42 28 34 25 24</c>
+            </r>
+            <r>
+              <c>50x41: 50 46 51 61 48 58</c>
+            </r>
+            <r>
+              <c>46x49: 49 33 41 39 40 38</c>
+            </r>
+            <r>
+              <c>38x47: 31 31 31 30 31 25</c>
+            </r>
+            <r>
+              <c>50x48: 61 59 65 67 61 57</c>
+            </r>
+            <r>
+              <c>36x41: 36 36 44 41 30 39</c>
+            </r>
+            <r>
+              <c>48x50: 43 41 38 51 41 42</c>
+            </r>
+            <r>
+              <c>39x48: 49 50 43 55 56 37</c>
+            </r>
+            <r>
+              <c>47x50: 52 63 54 68 67 59</c>
+            </r>
+            <r>
+              <c>46x47: 38 30 33 41 48 34</c>
+            </r>
+            <r>
+              <c>38x49: 36 29 33 27 35 31</c>
+            </r>
+            <r>
+              <c>43x36: 29 17 26 38 26 32</c>
+            </r>
+            <r>
+              <c>47x48: 40 35 36 39 50 39</c>
+            </r>
+            <r>
+              <c>41x42: 46 53 38 49 29 45</c>
+            </r>
+            <r>
+              <c>35x35: 24 17 19 17 24 20</c>
+            </r>
+            <r>
+              <c>40x48: 58 40 63 33 61 46</c>
+            </r>
+            <r>
+              <c>47x38: 32 26 33 33 28 27</c>
+            </r>
+            <r>
+              <c>47x45: 34 41 36 38 46 29</c>
+            </r>
+            <r>
+              <c>50x49: 43 37 41 46 42 46</c>
+            </r>
+            <r>
+              <c>45x46: 36 36 38 37 36 42</c>
+            </r>
+            <r>
+              <c>35x37: 27 9 22 25 18 31</c>
+            </r>
+            <r>
+              <c>42x50: 41 64 58 49 57 56</c>
+            </r>
+            <r>
+              <c>40x39: 43 43 30 35 41 47</c>
+            </r>
+            <r>
+              <c>36x46: 24 23 35 35 24 38</c>
+            </r>
+            <r>
+              <c>48x49: 55 64 73 58 64 51</c>
+            </r>
+            <r>
+              <c>45x41: 33 31 24 34 28 45</c>
+            </r>
+            <r>
+              <c>36x50: 53 44 53 40 38 48</c>
+            </r>
+            <r>
+              <c>50x46: 44 35 39 53 36 32</c>
+            </r>
+            <r>
+              <c>39x45: 37 28 35 36 29 29</c>
+            </r>
+            <r>
+              <c>42x47: 51 54 60 48 42 48</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="True" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Output" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="91" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="True" />
+      <Destination ToolID="93" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="Output9" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="95" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="932" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Day12</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="4afa9bb6-cfac-43ab-ae70-38562620c60b" />
+      <Telemetry>
+        <PreviousWorkflowId value="819020d7-f67d-48f2-a6e6-f164780a3331" />
+        <OriginWorkflowId value="f8905802-0a79-4237-ba5c-b8dfb6a1aa79" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
